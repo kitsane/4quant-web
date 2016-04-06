@@ -15,3 +15,7 @@ gem 'middleman-livereload'
 # Asset Gems, will be replaced with external asset pipeline
 gem 'support-for', require: 'support-for' # Needed to work properly with normalize-scss
 gem 'normalize-scss', require: 'normalize-scss'
+
+# Grid framework
+gem 'bourbon', require: 'bourbon'
+gem 'neat', require: 'neat'
