@@ -1,5 +1,6 @@
 company:
   name: '4Quant Ltd.'
+  short_name: '4Quant'
   claim: 'Big Image Analytics'
 
 options:

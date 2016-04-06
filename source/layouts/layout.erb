@@ -3,6 +3,11 @@
   <%= partial 'partials/head' %>
 
   <body class='<%= page_classes %>'>
-    <%= yield %>
+    <%= partial 'partials/navigation' %>
+
+    <main class='content'>
+      <%= yield %>
+    </main>
+
   </body>
 </html>

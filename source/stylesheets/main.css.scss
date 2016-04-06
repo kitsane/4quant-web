@@ -1,11 +1,148 @@
 @charset "utf-8";
 
+// Font import
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
+
 // Library imports
 @import "font-awesome";
 
 // Normalize settings
 @import "normalize";
+
+$base-unit: 'rem';
+$base-font-size: 20px;
+
+$base-font-family: 'Source Sans Pro', sans-serif;
+$h1-font-size: 1.2 * $base-font-size;
+
 @include normalize();
+
+// Grid settings
+$grid-columns: 6;
+$max-width: 665px;
 
 @import "bourbon";
 @import "neat";
+
+// Styles
+$black: #000;
+
+$font-weight-light: 300;
+$font-weight-bold: 600;
+$line-height: 1.5;
+
+$ratio-divider: $line-height;
+
+$spacer: 1em;
+
+$navigation-height: 3em;
+$transparent-white: rgba(252, 252, 252, 0.95);
+
+body {
+  line-height: $line-height;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6, p {
+  margin: {
+    top: 0;
+    bottom: $spacer / 3;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+p, a {
+  font-weight: $font-weight-light;
+}
+
+a {
+  color: $black;
+  white-space: nowrap;
+}
+
+// Utilities
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 450px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+// Grid container (Add your container class)
+.navigation, .content {
+  @include outer-container;
+
+  padding: {
+    left: $spacer;
+    right: $spacer;
+  }
+}
+
+// Grid
+.third {
+  @include span-columns(2);
+}
+
+// Navigation
+.navigation-fixed {
+  background-color: $transparent-white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navigation {
+  height: $navigation-height;
+
+  a, button {
+    vertical-align: middle;
+    line-height: $navigation-height;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  small {
+    font-size: $base-font-size / $ratio-divider;
+    font-weight: $font-weight-bold;
+  }
+
+  button {
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+}
+
+// Main content
+.content {
+  padding-top: $navigation-height + $spacer;
+
+  a {
+      &:hover {
+        opacity: .5;
+      }
+
+      &::after {
+      font-family: FontAwesome;
+      content: "\f08e";
+      display: inline-block;
+      padding-left: .3em;
+      vertical-align: 0.6em;
+      font-size: 0.5em;
+    }
+  }
+}
