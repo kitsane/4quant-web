@@ -11,3 +11,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+
+# Asset Gems, will be replaced with external asset pipeline
+gem 'support-for', require: 'support-for' # Needed to work properly with normalize-scss
+gem 'normalize-scss', require: 'normalize-scss'
