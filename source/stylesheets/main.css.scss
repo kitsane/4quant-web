@@ -10,7 +10,7 @@
 @import "normalize";
 
 $base-unit: 'rem';
-$base-font-size: 20px;
+$base-font-size: 24px;
 
 $base-font-family: 'Source Sans Pro', sans-serif;
 $h1-font-size: 1.2 * $base-font-size;
@@ -19,18 +19,18 @@ $h1-font-size: 1.2 * $base-font-size;
 
 // Grid settings
 $grid-columns: 6;
-$max-width: 665px;
+$max-width: 800px;
 
 @import "bourbon";
 @import "neat";
 
 // Styles
-$black: #000;
-$white: #fff;
+$black: #434343;
+$white: #fcfcfc;
 $grey: #292c2f;
 
 $font-weight-light: 300;
-$font-weight-bold: 600;
+$font-weight-bold: 700;
 $line-height: 1.5;
 $line-height-small: 1.2;
 
@@ -47,7 +47,10 @@ $icon-color: #33383b;
 
 body {
   background-color: $grey;
+  font-weight: $font-weight-light;
   line-height: $line-height;
+  text-rendering: geometricPrecision;
+  color: $black;
 }
 
 // Typography
@@ -64,9 +67,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.03rem;
 }
 
-p, a {
-  font-weight: $font-weight-light;
-}
 
 a {
   color: $black;
@@ -122,7 +122,7 @@ a {
 .navigation {
   height: $navigation-height;
 
-  a, button {
+  a, label {
     vertical-align: middle;
     line-height: $navigation-height;
   }
@@ -136,10 +136,95 @@ a {
     font-weight: $font-weight-bold;
   }
 
-  button {
-    padding: 0;
-    background: transparent;
-    border: none;
+  label {
+    cursor: pointer;
+  }
+
+  .navigation-menu {
+    display: none;
+    opacity: 0;
+    color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $grey;
+    z-index: -1;
+    overflow: auto;
+    animation: fade-out 0.3s ease-out;
+
+    ul {
+      padding: {
+        top: $navigation-height;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      margin: 0;
+      text-align: center;
+    }
+
+    li {
+      padding-bottom: $spacer;
+    }
+
+    a {
+      color: $white;
+      text-transform: capitalize;
+      line-height: $line-height;
+    }
+  }
+
+  input:not(:checked) + label {
+    &::before {
+      font-family: FontAwesome;
+      content: "\f0c9";
+    }
+  }
+
+  input:checked + label {
+    color: $white;
+
+    &::before {
+      font-family: FontAwesome;
+      content: "\f00d";
+    }
+
+    &+ .navigation-menu {
+      display: block;
+      opacity: 1;
+      animation: fade-in 0.3s ease-in;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    display: none;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
@@ -153,11 +238,7 @@ section {
   padding-bottom: $spacer;
 
   a {
-      &:hover {
-        opacity: .5;
-      }
-
-      &::after {
+    &::after {
       font-family: FontAwesome;
       content: "\f08e";
       display: inline-block;

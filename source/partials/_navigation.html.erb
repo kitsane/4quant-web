@@ -1,9 +1,19 @@
 <header class="navigation-fixed">
   <nav class="navigation">
     <div class="third">
-      <button type="button" aria-label="Menu">
-        <i class="fa fa-bars"></i>
-      </button>
+      <input id="menu" type="checkbox" aria-label="Menu" hidden>
+      <label for="menu">
+      </label>
+      <div class="navigation-menu">
+        <ul>
+          <% data.site.main_navigation.each do |label, path| %>
+            <li><%= link_to label, "/#{path}" %></li>
+          <% end %>
+          <% data.site.service_navigation.each do |label, path| %>
+            <li><%= link_to label, "/#{path}" %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
     <div class="third text-center">
       <a href="/"><strong><%= data.site.company.short_name %></strong></a>
