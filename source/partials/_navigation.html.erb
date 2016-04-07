@@ -6,12 +6,8 @@
       </label>
       <div class="navigation-menu">
         <ul>
-          <% data.site.main_navigation.each do |label, path| %>
-            <li><%= link_to label, "/#{path}" %></li>
-          <% end %>
-          <% data.site.service_navigation.each do |label, path| %>
-            <li><%= link_to label, "/#{path}" %></li>
-          <% end %>
+          <%= navigation_list(data.site.main_navigation) %>
+          <%= navigation_list(data.site.service_navigation) %>
         </ul>
       </div>
     </div>

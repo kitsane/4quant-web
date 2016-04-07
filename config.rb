@@ -26,13 +26,15 @@ end
 ###
 # Helpers
 ###
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def navigation_list(navigation)
+    navigation.map do |label, path|
+      content_tag :li do
+        link_to label, "/#{path}"
+      end
+    end.join
+  end
+end
 
 # Build-specific configuration
 configure :build do

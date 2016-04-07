@@ -8,15 +8,15 @@ company:
   email: 'info@4quant.com'
 
 main_navigation:
-  home: ''
-  technology: 'technology'
-  solutions: 'solutions'
-  news: 'news'
-  about: 'about'
+  home: '/'
+  technology: 'technology.html'
+  solutions: 'solutions.html'
+  news: 'news.html'
+  about: 'about.html'
 
 service_navigation:
-  contact: 'contact'
-  legals: 'legals'
+  contact: 'contact.html'
+  legals: 'legals.html'
 
 social_media:
   facebook: 'https://www.facebook.com/4quant/'
