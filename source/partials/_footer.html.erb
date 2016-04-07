@@ -1,0 +1,53 @@
+<footer>
+  <nav class="footer">
+    <div class="full group">
+      <ul>
+        <% data.site.main_navigation.each do |label, path| %>
+          <li><%= link_to label, "/#{path}" %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="full group">
+      <ul>
+        <% data.site.service_navigation.each do |label, path| %>
+          <li><%= link_to label, "/#{path}" %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="half">
+      <div class="group">
+        <p>
+          <small>
+            <%= data.site.company.name %>
+            <br>
+            <%= data.site.company.street %>,
+            <%= data.site.company.city %>
+            <%= data.site.company.contry%>
+            <br>
+            <a href="mailto:<%= data.site.company.email%>"><%= data.site.company.email%></a>
+          </small>
+        </p>
+      </div>
+    </div>
+
+    <div class="half text-right">
+      <div class="group">
+        <% data.site.social_media.each_with_index do |(icon, path), index| %>
+          <% if index > 0 && index % 4 == 0 %>  
+            </div>
+            <div class="group">
+          <% end %>
+
+            <% link_to path do %>
+              <span class="icon">
+                <i class="fa fa-<%= icon %>"></i>
+              </span>
+            <% end %>
+        <% end %>
+      </div>
+    </div>
+
+  </nav>
+</footer>

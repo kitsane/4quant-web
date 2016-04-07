@@ -2,6 +2,31 @@ company:
   name: '4Quant Ltd.'
   short_name: '4Quant'
   claim: 'Big Image Analytics'
+  street: 'Technoparkstrasse 1'
+  city: '8005 Zurich'
+  country: 'Switzerland'
+  email: 'info@4quant.com'
+
+main_navigation:
+  home: ''
+  technology: 'technology'
+  solutions: 'solutions'
+  news: 'news'
+  about: 'about'
+
+service_navigation:
+  contact: 'contact'
+  legals: 'legals'
+
+social_media:
+  facebook: 'https://www.facebook.com/4quant/'
+  twitter: 'https://twitter.com/4quant'
+  linkedin: 'https://www.linkedin.com/company/4quant'
+  slideshare: 'https://de.slideshare.net/KevinMader/'
+  youtube: 'https://www.youtube.com/channel/UCjnOPgOLaj4pQjVeisQe2Mg'
+  medium: 'https://medium.com/@4quant'
+  angellist: 'https://angel.co/4quant'
+  github: 'https://github.com/4Quant'
 
 options:
   language: 'en'

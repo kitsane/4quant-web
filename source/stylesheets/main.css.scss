@@ -26,19 +26,27 @@ $max-width: 665px;
 
 // Styles
 $black: #000;
+$white: #fff;
+$grey: #292c2f;
 
 $font-weight-light: 300;
 $font-weight-bold: 600;
 $line-height: 1.5;
+$line-height-small: 1.2;
 
 $ratio-divider: $line-height;
 
 $spacer: 1em;
+$spacer-small: $spacer / 2;
 
 $navigation-height: 3em;
-$transparent-white: rgba(252, 252, 252, 0.95);
+$transparent-white: rgba(255, 255, 255, 0.95);
+
+$icon-link-size: 2em;
+$icon-color: #33383b;
 
 body {
+  background-color: $grey;
   line-height: $line-height;
 }
 
@@ -81,7 +89,7 @@ a {
 }
 
 // Grid container (Add your container class)
-.navigation, .content {
+.navigation, .content, .footer {
   @include outer-container;
 
   padding: {
@@ -91,6 +99,14 @@ a {
 }
 
 // Grid
+.full {
+  @include span-columns(6);
+}
+
+.half {
+  @include span-columns(3);
+}
+
 .third {
   @include span-columns(2);
 }
@@ -127,9 +143,14 @@ a {
   }
 }
 
+section {
+  background-color: $white;
+}
+
 // Main content
 .content {
   padding-top: $navigation-height + $spacer;
+  padding-bottom: $spacer;
 
   a {
       &:hover {
@@ -145,4 +166,70 @@ a {
       font-size: 0.5em;
     }
   }
+}
+
+footer {
+  background-color: $grey;
+  color: $white;
+}
+
+footer {
+  ul, a {
+    background-color: $grey;
+    color: $white;
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer {
+  padding-top: $spacer;
+
+  .group {
+    margin-bottom: $spacer;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+
+    &::after {
+      content: '·';
+      margin: {
+        left: $spacer-small;
+        right: $spacer-small;
+      }
+    }
+
+    &:last-child::after {
+      content: '';
+    }
+  }
+
+  p {
+    margin: 0;
+    line-height: $line-height-small;
+  }
+}
+
+.icon {
+  width: $icon-link-size;
+  height: $icon-link-size;
+  background: $icon-color;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: $icon-link-size;
+  margin-left: $spacer-small
 }

@@ -5,9 +5,12 @@
   <body class='<%= page_classes %>'>
     <%= partial 'partials/navigation' %>
 
-    <main class='content'>
-      <%= yield %>
-    </main>
+    <section>
+      <main class='content'>
+        <%= yield %>
+      </main>
+    </section>
 
+    <%= partial 'partials/footer' %>
   </body>
 </html>
