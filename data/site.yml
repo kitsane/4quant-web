@@ -8,7 +8,7 @@ company:
   email: 'info@4quant.com'
 
 main_navigation:
-  home: '/'
+  home: ''
   technology: 'technology.html'
   solutions: 'solutions.html'
   news: 'news.html'
