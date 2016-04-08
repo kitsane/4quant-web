@@ -37,8 +37,6 @@ GEM
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.10)
-    font-awesome-sass (4.5.0)
-      sass (>= 3.2)
     haml (4.0.7)
       tilt
     hamster (3.0.0)
@@ -146,7 +144,6 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
-  font-awesome-sass
   middleman (>= 4.0.0)
   middleman-blog (>= 4.0.0)
   middleman-livereload (~> 3.4, >= 3.4.6)

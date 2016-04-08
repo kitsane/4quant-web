@@ -21,6 +21,3 @@ gem 'normalize-scss', require: 'normalize-scss'
 # Grid framework
 gem 'bourbon', require: 'bourbon'
 gem 'neat', require: 'neat'
-
-# Icons
-gem 'font-awesome-sass', require: 'font-awesome-sass'
