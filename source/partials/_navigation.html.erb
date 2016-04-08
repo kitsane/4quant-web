@@ -12,10 +12,14 @@
       </div>
     </div>
     <div class="third text-center">
-      <a href="/"><strong><%= data.site.company.short_name %></strong></a>
+      <% link_to '/' do %>
+        <strong><%= data.site.company.short_name %></strong>
+      <% end %>
     </div>
     <div class="third text-right hidden-mobile">
-      <a href="/"><small><%= data.site.company.claim.upcase %></small></a>
+      <% link_to '/' do %>
+        <small><%= data.site.company.claim.upcase %></small>
+      <% end %>
     </div>
   </nav>
 </header>
