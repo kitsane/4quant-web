@@ -18,7 +18,7 @@ $h1-font-size: 1.2 * $base-font-size;
 @include normalize();
 
 // Grid settings
-$grid-columns: 6;
+$grid-columns: 12;
 $max-width: 800px;
 
 @import "bourbon";
@@ -99,16 +99,28 @@ a {
 }
 
 // Grid
-.full {
-  @include span-columns(6);
+.col-md-2 {
+  @include span-columns(2);
 }
 
-.half {
+.col-md-3 {
   @include span-columns(3);
 }
 
-.third {
-  @include span-columns(2);
+.col-md-4 {
+  @include span-columns(4);
+}
+
+.col-md-6 {
+  @include span-columns(6);
+}
+
+.col-md-10 {
+  @include span-columns(10);
+}
+
+.col-md-12 {
+  @include span-columns(12);
 }
 
 // Navigation
@@ -269,12 +281,13 @@ footer {
   }
 }
 
+.group {
+  display: inline-block;
+  margin-bottom: $spacer;
+}
+
 .footer {
   padding-top: $spacer;
-
-  .group {
-    margin-bottom: $spacer;
-  }
 
   ul {
     list-style: none;
@@ -313,4 +326,24 @@ footer {
   vertical-align: middle;
   line-height: $icon-link-size;
   margin-left: $spacer-small
+}
+
+img {
+  width: 100%;
+}
+
+.brands {
+  display: inline-block;
+  width: 100%;
+}
+
+.brand-image {
+  @include span-columns(3);
+  @include omega(4n);
+
+  margin-bottom: $spacer;
+
+  img {
+    max-width: 150px;
+  }
 }

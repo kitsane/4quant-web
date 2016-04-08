@@ -1,0 +1,27 @@
+team:
+  - name: "Joachim Hagger"
+    title: "CEO"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, deserunt."
+
+  - name: "Kevin Mader"
+    doctor: true
+    title: "CTO"
+    description: "Lecturer at ETH Zurich; Postdoc in the X-Ray Microscopy Group at ETH Zurich and Swiss Light Source at Paul Scherrer Institute"
+
+  - name: "Flavio Trolese"
+    title: "CFO"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod itaque, quos dicta sed temporibus nihil, veniam non quas in nam! Fugit natus maxime cum necessitatibus doloribus nostrum. Est, ut."
+
+advisors:
+  - name: "Prof. Dr. Marco Stampanoni"
+    title: "Lorem ipsum dolor."
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  - name: "Prof. Dr. Keith Cheng"
+    title: "Chief of Experimental Pathology at Penn State Medical Center"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  - name: "Dr. Marcos Garcia Pedreza"
+    title: "Lorem ipsum dolor."
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  - name: "Dr. Bram Stieltjes"
+    title: "Research coordinator on Radiation Therapy at University of Basel"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."

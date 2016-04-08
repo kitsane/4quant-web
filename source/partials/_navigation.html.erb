@@ -1,6 +1,6 @@
 <header class="navigation-fixed">
   <nav class="navigation">
-    <div class="third">
+    <div class="col-md-4">
       <input id="menu" type="checkbox" aria-label="Menu" hidden>
       <label for="menu">
       </label>
@@ -11,12 +11,12 @@
         </ul>
       </div>
     </div>
-    <div class="third text-center">
+    <div class="col-md-4 text-center">
       <% link_to '/' do %>
         <strong><%= data.site.company.short_name %></strong>
       <% end %>
     </div>
-    <div class="third text-right hidden-mobile">
+    <div class="col-md-4 text-right hidden-mobile">
       <% link_to '/' do %>
         <small><%= data.site.company.claim.upcase %></small>
       <% end %>

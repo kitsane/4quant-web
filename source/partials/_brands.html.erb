@@ -1,0 +1,7 @@
+<div class="brands">
+  <% collection.each_with_index do |brand, index| %>
+    <div class="brand-image">
+      <%= image_tag "brands/#{collection_name}/#{brand.image}", alt: brand.name %>
+    </div>
+  <% end %>
+</div>

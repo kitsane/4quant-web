@@ -1,0 +1,22 @@
+<% data.people.team.each do |member| %>
+  <div class="group">
+    <div class="col-md-2">
+      <%= image_tag "people/#{member.name.split(' ').join('-').downcase}.png", alt: member.name %>
+    </div>
+
+    <div class="col-md-10">
+      <p>
+        <strong>
+          <% if member.doctor %>
+            Dr. 
+          <% end %>
+          <%= member.name %>
+        </strong>
+        <br>
+        <%= member.title %>
+        <br>
+        <%= member.description %>
+      </p>
+    </div>
+  </div>
+<% end %>

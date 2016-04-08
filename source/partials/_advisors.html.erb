@@ -1,0 +1,15 @@
+<% data.people.advisors.each do |advisor| %>
+  <div class="group">
+    <div class="col-md-12">
+      <p>
+        <strong>
+          <%= advisor.name %>
+        </strong>
+        <br>
+        <%= advisor.title %>
+        <br>
+        <%= advisor.description %>
+      </p>
+    </div>
+  </div>
+<% end %>
