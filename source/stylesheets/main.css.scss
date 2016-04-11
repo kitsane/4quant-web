@@ -23,6 +23,7 @@ h2 a {
   & + small {
     margin-right: $grid-gutter-width / 2;
     font-size: $font-size-xs;
+    white-space: nowrap;
   }
 }
 
