@@ -35,10 +35,10 @@ end
 # Helpers
 ###
 helpers do
-  def navigation_list(navigation)
+  def navigation_list(navigation, li_class: 'list-inline-item', a_class: '')
     navigation.map do |label, path|
-      content_tag :li do
-        link_to label, "/#{path}"
+      content_tag :li, class: li_class do
+        link_to label, "/#{path}", class: a_class
       end
     end.join
   end

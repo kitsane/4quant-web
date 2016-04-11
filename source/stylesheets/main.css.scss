@@ -2,356 +2,223 @@
 
 // Font import
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
-// Normalize settings
-@import "normalize";
-
-$base-unit: 'rem';
-$base-font-size: 24px;
-
-$base-font-family: 'Source Sans Pro', sans-serif;
-$h1-font-size: 1.2 * $base-font-size;
-$h2-font-size: 1.1 * $base-font-size;
-$h3-font-size: 1 * $base-font-size;
-
-@include normalize();
-
-// Grid settings
-$grid-columns: 12;
-$max-width: 800px;
-
-@import "bourbon";
-@import "neat";
-
-// Styles
-$black: #434343;
-$white: rgba(255, 255, 255, 1);
-$grey: #292c2f;
-$light-grey: #a1a1a1;
-
-$font-weight-light: 300;
-$font-weight-bold: 700;
-$line-height: 1.5;
-$line-height-small: 1.2;
-
-$ratio-divider: $line-height;
-
-$spacer: 1em;
-$spacer-small: $spacer / 2;
-
-$navigation-height: 3em;
-$transparent-white: rgba(255, 255, 255, 0.95);
-
-$icon-link-size: 2em;
-$icon-color: #33383b;
+@import "application_and_bootstrap_variables.css.scss";
+@import "bootstrap";
 
 body {
-  background-color: $grey;
-  font-weight: $font-weight-light;
-  line-height: $line-height;
-  text-rendering: geometricPrecision;
-  color: $black;
-}
-
-// Typography
-h1, h2, h3, h4, h5, h6, p {
-  margin: {
-    top: 0;
-    bottom: $spacer / 3;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-bold;
-  letter-spacing: 0.03rem;
+  padding-top: $navbar-height;
 }
 
 h1 {
   text-transform: uppercase;
 }
 
-a {
-  color: $black;
-  white-space: nowrap;
-}
+h2 a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
 
-// Utilities
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-@media screen and (max-width: 450px) {
-  .hidden-mobile {
-    display: none;
+  & + small {
+    margin-right: $grid-gutter-width / 2;
+    font-size: $font-size-xs;
   }
 }
 
-// Grid container (Add your container class)
-.navigation, .content, .footer {
-  @include outer-container;
+p, small, a, ul {
+  font-weight: $font-weight-light;
+}
 
-  padding: {
-    left: $spacer;
-    right: $spacer;
+.content-container {
+  a[href^="http"] {
+    white-space: nowrap;
   }
-}
 
-// Grid
-.col-md-2 {
-  @include span-columns(2);
-}
-
-.col-md-3 {
-  @include span-columns(3);
-}
-
-.col-md-4 {
-  @include span-columns(4);
-}
-
-.col-md-6 {
-  @include span-columns(6);
-}
-
-.col-md-10 {
-  @include span-columns(10);
-}
-
-.col-md-12 {
-  @include span-columns(12);
-}
-
-// Navigation
-.navigation-fixed {
-  background-color: $transparent-white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-.navigation {
-  height: $navigation-height;
-
-  a, label {
-    vertical-align: middle;
-    line-height: $navigation-height;
+  a[href^="http"]::after {
+    font-family: FontAwesome;
+    content: "\f08e";
+    display: inline-block;
+    font-size: $spacer-x;
+    padding-left: $spacer-x / 2;
+    vertical-align: $spacer-x / 2;
+    height: $spacer;
+    background-color: $white
   }
 
   a {
-    text-decoration: none;
-  }
-
-  small {
-    font-size: $base-font-size / $ratio-divider;
-    font-weight: $font-weight-bold;
-  }
-
-  label {
-    cursor: pointer;
-  }
-
-  .navigation-menu {
-    display: none;
-    opacity: 0;
-    color: $white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $grey;
-    z-index: -1;
-    overflow: auto;
-    animation: fade-out 0.3s ease-out;
-
-    ul {
-      padding: {
-        top: $navigation-height;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    &:link, &:visited, &:hover, &:active {
+      $shadow-offsets-a: 0.03em;
+      $shadow-offsets-b: 0.06em;
+      $shadow-offsets-c: 0.09em;
+      $shadow-offsets-d: 0.12em;
+      $shadow-offsets-e: 0.15em;
+      $link-offset-a: .05em;
+      $link-offset-b: 1px;
+      text-shadow: $shadow-offsets-a 0 $white,
+      $shadow-offsets-a*-1 0 $white,
+      0 $shadow-offsets-a $white,
+      0 $shadow-offsets-a*-1 $white,
+      $shadow-offsets-b 0 $white,
+      $shadow-offsets-b*-1 0 $white,
+      $shadow-offsets-c 0 $white,
+      $shadow-offsets-c*-1 0 $white,
+      $shadow-offsets-d 0 $white,
+      $shadow-offsets-d*-1 0 $white,
+      $shadow-offsets-e 0 $white,
+      $shadow-offsets-e*-1 0 $white;
+      background: {
+        color: transparent;
+        position: 0 88%;
+        repeat: no-repeat, no-repeat, repeat-x;
+        image:   linear-gradient($white, $white),
+        linear-gradient($white, $white),
+        linear-gradient($brand-gray, $brand-gray);
+        size: $link-offset-a $link-offset-b,
+        $link-offset-a $link-offset-b,
+        $link-offset-b $link-offset-b;
       }
-      margin: 0;
-      text-align: center;
-    }
-
-    li {
-      padding-bottom: $spacer;
-    }
-
-    a {
-      color: $white;
-      text-transform: capitalize;
-      line-height: $line-height;
-    }
-  }
-
-  input:not(:checked) + label {
-    &::before {
-      font-family: FontAwesome;
-      content: "\f0c9";
-    }
-  }
-
-  input:checked + label {
-    color: $white;
-
-    &::before {
-      font-family: FontAwesome;
-      content: "\f00d";
-    }
-
-    &+ .navigation-menu {
-      display: block;
-      opacity: 1;
-      animation: fade-in 0.3s ease-in;
     }
   }
 }
 
-@keyframes fade-in {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  1% {
-    display: block;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-
-  1% {
-    display: none;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-section {
+.bg-white {
   background-color: $white;
 }
 
-// Main content
-.content {
-  padding-top: $navigation-height + $spacer;
-  padding-bottom: $spacer;
-
-  a {
-    &::after {
-      font-family: FontAwesome;
-      content: "\f08e";
-      display: inline-block;
-      padding-left: .3em;
-      vertical-align: 0.6em;
-      font-size: 0.5em;
-    }
-  }
-}
-
-footer {
-  background-color: $grey;
-  color: $white;
-}
-
-footer {
-  ul, a {
-    background-color: $grey;
-    color: $white;
-
-    a {
-      text-transform: uppercase;
-    }
+// Navbar
+.navbar {
+  padding: {
+    left: 0;
+    right: 0;
   }
 
   a {
     text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
   }
 }
 
-.group {
-  display: inline-block;
-  margin-bottom: $spacer;
-}
+.navbar-nav {
+  .nav-item {
+    margin-right: $spacer;
 
-.footer {
-  padding-top: $spacer;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    & + .nav-item {
+      margin-left: 0;
+    }
   }
 
+  a {
+    text-transform: uppercase;
+  }
+}
+
+.bg-faded {
+  background-color: $white;
+}
+
+.navbar-toggler {
+  padding: {
+    left: 0;
+    right: 0;
+  }
+}
+
+.navbar-toggler-close {
+  color: $white;
+}
+
+.navbar-brand {
+  display: block;
+  float: initial;
+  margin-right: 0;
+  font-weight: $font-weight-regular;
+}
+
+.navbar-claim {
+  height: calc(#{$navbar-height} - #{$navbar-padding-vertical * 2}); // Height of parent container
+  font-size: $font-size-base / 2;
+  display: block;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+
+  a {
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      color: $brand-gray;
+    }
+  }
+}
+
+.claim {
+  position: absolute;
+  right: 0;
+  margin-right: $grid-gutter-width / 2;
+}
+
+.claim-1 {
+  top: 0;
+}
+
+.claim-2 {
+  top: 33%;
+}
+
+.claim-3 {
+  bottom: 0;
+}
+
+// Navigation open
+.modal {
   li {
-    display: inline;
-
-    &::after {
-      content: '·';
-      margin: {
-        left: $spacer-small;
-        right: $spacer-small;
-      }
-    }
-
-    &:last-child::after {
-      content: '';
-    }
+    width: 250px;
+    margin: 0 auto;
   }
 
-  p {
-    margin: 0;
-    line-height: $line-height-small;
+  a {
+    display: block;
+    color: $white;
+    font-weight: $font-weight-light;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: {
+      top: $spacer-y / 2;
+      bottom: $spacer-y / 2;
+    }
   }
 }
 
-.icon {
-  width: $icon-link-size;
-  height: $icon-link-size;
-  background: $icon-color;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  line-height: $icon-link-size;
-  margin-left: $spacer-small
+// footer
+footer {
+  font-weight: $font-weight-light;
+
+  a {
+    color: $white;
+  }
 }
 
-img {
-  width: 100%;
-}
-
-.brands {
-  display: inline-block;
-  width: 100%;
-}
-
-.brand-image {
-  @include span-columns(3);
-  @include omega(4n);
-
+.fa-icon-row {
   margin-bottom: $spacer;
+}
 
-  img {
-    max-width: 150px;
+.fa-icon {
+  background-color: #33383b;
+  color: $white;
+  display: inline-block;
+  height: $icon-size;
+  width: $icon-size;
+  line-height: $icon-size;
+  text-align: center;
+
+  & + .fa-icon {
+    margin-left: $spacer-x;
   }
 }
 
-.news-date {
-  float: right;
-  text-transform: capitalize;
-  color: $light-grey;
+.img-brand {
+  max-height: 90px;
 }

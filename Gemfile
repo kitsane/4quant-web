@@ -15,9 +15,4 @@ gem 'middleman-blog', '>= 4.0.0'
 gem 'middleman-pry'
 
 # Asset Gems, will be replaced with external asset pipeline
-gem 'support-for', require: 'support-for' # Needed to work properly with normalize-scss
-gem 'normalize-scss', require: 'normalize-scss'
-
-# Grid framework
-gem 'bourbon', require: 'bourbon'
-gem 'neat', require: 'neat'
+gem 'bootstrap', '~> 4.0.0.alpha3', require: 'bootstrap'
