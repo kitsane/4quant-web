@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Font import
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
 @import "application_and_bootstrap_variables.css.scss";
@@ -9,6 +9,7 @@
 
 body {
   padding-top: $navbar-height;
+  font-weight: $font-weight-light;
 }
 
 h1 {
@@ -27,8 +28,16 @@ h2 a {
   }
 }
 
+h3 {
+  font-weight: $font-weight-regular;
+}
+
 p, small, a, ul {
   font-weight: $font-weight-light;
+}
+
+b, strong {
+  font-weight: $font-weight-bold;
 }
 
 .content-container {
@@ -70,7 +79,7 @@ p, small, a, ul {
       $shadow-offsets-e*-1 0 $white;
       background: {
         color: transparent;
-        position: 0 88%;
+        position: 0 92%;
         repeat: no-repeat, no-repeat, repeat-x;
         image:   linear-gradient($white, $white),
         linear-gradient($white, $white),
@@ -114,6 +123,7 @@ p, small, a, ul {
 
   a {
     text-transform: uppercase;
+    font-weight: $font-weight-bold;
   }
 }
 
@@ -141,7 +151,7 @@ p, small, a, ul {
 
 .navbar-claim {
   height: calc(#{$navbar-height} - #{$navbar-padding-vertical * 2}); // Height of parent container
-  font-size: $font-size-base / 2;
+  font-size: $font-size-base / 1.5;
   display: block;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
@@ -159,18 +169,7 @@ p, small, a, ul {
   position: absolute;
   right: 0;
   margin-right: $grid-gutter-width / 2;
-}
-
-.claim-1 {
-  top: 0;
-}
-
-.claim-2 {
   top: 33%;
-}
-
-.claim-3 {
-  bottom: 0;
 }
 
 // Navigation open
@@ -195,8 +194,6 @@ p, small, a, ul {
 
 // footer
 footer {
-  font-weight: $font-weight-light;
-
   .navbar-nav .nav-item {
     margin-right: $spacer-x;
   }
