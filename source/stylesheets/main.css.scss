@@ -105,10 +105,6 @@ b, strong {
 
   a {
     text-decoration: none;
-
-    &:hover {
-      color: $white;
-    }
   }
 }
 
@@ -124,6 +120,7 @@ b, strong {
   a {
     text-transform: uppercase;
     font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
   }
 }
 

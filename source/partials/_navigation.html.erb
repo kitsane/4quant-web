@@ -14,11 +14,9 @@
       </div>
 
       <div class="col-xs-3">
-        <div class="navbar-claim text-xs-right">
-          <% link_to '/' do %>
-            <span class="claim">
-              <%= data.site.company.claim %>
-            </span>
+        <div class="text-xs-right">
+          <% link_to '/', class: 'navbar-claim' do %>
+            <%= data.site.company.claim %>
           <% end %>
         </div>
       </div>
