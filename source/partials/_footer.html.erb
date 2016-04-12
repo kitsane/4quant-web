@@ -1,19 +1,23 @@
-<footer>
-  <nav class="footer">
-    <div class="col-md-12 group">
-      <ul>
-        <%= navigation_list(data.site.main_navigation) %>
-      </ul>
+<footer class="navbar navbar navbar-dark bg-inverse">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav navbar-nav">
+          <%= navigation_list(data.site.main_navigation, li_class: "nav-item", a_class: "nav-link") %>
+        </ul>
+      </div>
     </div>
 
-    <div class="col-md-12 group">
-      <ul>
-        <%= navigation_list(data.site.service_navigation) %>
-      </ul>
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav navbar-nav">
+          <%= navigation_list(data.site.service_navigation, li_class: "nav-item", a_class: "nav-link") %>
+        </ul>
+      </div>
     </div>
 
-    <div class="col-md-6">
-      <div class="group">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
         <p>
           <small>
             <%= data.site.company.name %>
@@ -26,24 +30,19 @@
           </small>
         </p>
       </div>
-    </div>
 
-    <div class="col-md-6 text-right">
-      <div class="group">
+      <div class="col-xs-12 col-sm-6 text-sm-right fa-icon-row">
         <% data.site.social_media.each_with_index do |(icon, path), index| %>
           <% if index > 0 && index % 4 == 0 %>  
             </div>
-            <div class="group">
+            <div class="col-xs-12 col-sm-6 text-sm-right fa-icon-row">
           <% end %>
 
-            <% link_to path do %>
-              <span class="icon">
-                <i class="fa fa-<%= icon %>"></i>
-              </span>
-            <% end %>
+          <% link_to path, class: "fa fa-#{icon} fa-icon fa-align-center" do %>
+            <span class="sr-only"><%= data.site.company.name %> on <%= icon %></span>
+          <% end %>
         <% end %>
       </div>
     </div>
-
-  </nav>
+  </div>
 </footer>

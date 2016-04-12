@@ -1,25 +1,50 @@
-<header class="navigation-fixed">
-  <nav class="navigation">
-    <div class="col-md-4">
-      <input id="menu" type="checkbox" aria-label="Menu" hidden>
-      <label for="menu">
-      </label>
-      <div class="navigation-menu">
-        <ul>
-          <%= navigation_list(data.site.main_navigation) %>
-          <%= navigation_list(data.site.service_navigation) %>
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#mainNavigation">
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+      </div>
+
+      <div class="col-xs-6 text-xs-center">
+        <% link_to '/', class: 'navbar-brand' do %>
+          <strong><%= data.site.company.short_name[0..1] %></strong><%= data.site.company.short_name[2..-1] %>
+        <% end %>
+      </div>
+
+      <div class="col-xs-3">
+        <div class="navbar-claim text-xs-right">
+          <% link_to '/' do %>
+            <span class="claim claim-1"><%= data.site.company.claim.split(" ")[0] %></span>
+            <span class="claim claim-2"><%= data.site.company.claim.split(" ")[1] %></span>
+            <span class="claim claim-3"><%= data.site.company.claim.split(" ")[2] %></span>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav id="mainNavigation" class="modal fade">
+  <div class="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="navbar-toggler navbar-toggler-close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&#10005;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="list-unstyled text-xs-center">
+          <%= navigation_list(data.site.main_navigation, li_class: "") %>
+          <%= navigation_list(data.site.service_navigation, li_class: "") %>
         </ul>
       </div>
     </div>
-    <div class="col-md-4 text-center">
-      <% link_to '/' do %>
-        <strong><%= data.site.company.short_name %></strong>
-      <% end %>
-    </div>
-    <div class="col-md-4 text-right hidden-mobile">
-      <% link_to '/' do %>
-        <small><%= data.site.company.claim.upcase %></small>
-      <% end %>
-    </div>
-  </nav>
-</header>
+  </div>
+</nav>

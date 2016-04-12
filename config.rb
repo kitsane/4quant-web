@@ -27,26 +27,11 @@ activate :blog do |blog|
   blog.permalink = 'news/:year-:month-:day-:title'
   blog.sources = 'news/:year-:month-:day-:title'
   blog.summary_generator = Proc.new  do |resource, rendered, length, ellipsis|
-    "#{rendered.split("SUMMARY_START").last.split("SUMMARY_END").first}#{ellipsis}"
+    "#{rendered.split(SUMMARY_START).last.split(SUMMARY_END).first}#{ellipsis}"
   end
 end
 
-###
-# Helpers
-###
-helpers do
-  def navigation_list(navigation)
-    navigation.map do |label, path|
-      content_tag :li do
-        link_to label, "/#{path}"
-      end
-    end.join
-  end
-
-  def cleanup_summary_start_end_separator(html)
-    html.sub("SUMMARY_START", "").sub("SUMMARY_END", "")
-  end
-end
+# Helpers are in helpers/custom_helpers
 
 # Build-specific configuration
 configure :build do

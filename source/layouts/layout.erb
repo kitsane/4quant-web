@@ -3,14 +3,21 @@
   <%= partial 'partials/head' %>
 
   <body class='<%= page_classes %>'>
-    <%= partial 'partials/navigation' %>
+    <div class="bg-white">
+      <%= partial 'partials/navigation' %>
 
-    <section>
-      <main class='content'>
-        <%= cleanup_summary_start_end_separator(yield) %>
-      </main>
-    </section>
+      <div class="content-container container">
+        <div class="row">
+          <div class="col-xs-12">
+            <%= cleanup_summary_start_end_separator(yield) %>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%= partial 'partials/footer' %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   </body>
 </html>
