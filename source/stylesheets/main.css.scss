@@ -104,8 +104,12 @@ b, strong {
   }
 
   a {
-    text-decoration: none;
-  }
+     text-decoration: none;
+
+     &:hover {
+       color: $white;
+     }
+   }
 }
 
 .navbar-nav {
@@ -119,8 +123,8 @@ b, strong {
 
   a {
     text-transform: uppercase;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-sm;
+//    font-weight: $font-weight-bold;
+  //  font-size: $font-size-sm;
   }
 }
 
@@ -148,7 +152,7 @@ b, strong {
 
 .navbar-claim {
   height: calc(#{$navbar-height} - #{$navbar-padding-vertical * 2}); // Height of parent container
-  font-size: $font-size-base / 1.5;
+  font-size: $font-size-base / 2;
   display: block;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
@@ -166,7 +170,19 @@ b, strong {
   position: absolute;
   right: 0;
   margin-right: $grid-gutter-width / 2;
+//  top: 33%;
+}
+
+.claim-1 {
+  top: 0;
+}
+
+.claim-2 {
   top: 33%;
+}
+
+.claim-3 {
+  bottom: 0;
 }
 
 // Navigation open
