@@ -22,3 +22,4 @@ components
 
 # Node Modules Ignore
 node_modules
+bower_components
