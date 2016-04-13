@@ -16,9 +16,8 @@
       <div class="col-xs-3">
         <div class="navbar-claim text-xs-right">
           <% link_to '/' do %>
-            <span class="claim claim-1"><%= data.site.company.claim.split(" ")[0] %></span>
-            <span class="claim claim-2"><%= data.site.company.claim.split(" ")[1] %></span>
-            <span class="claim claim-3"><%= data.site.company.claim.split(" ")[2] %></span>
+            <%= data.site.company.claim.split(" ")[0] %> <%= data.site.company.claim.split(" ")[1] %><br>
+            <%= data.site.company.claim.split(" ")[2] %>
           <% end %>
         </div>
       </div>
