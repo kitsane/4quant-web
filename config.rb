@@ -23,6 +23,10 @@ configure :development do
   activate :livereload
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
+end
+
 activate :blog do |blog|
   blog.permalink = 'news/:year-:month-:day-:title'
   blog.sources = 'news/:year-:month-:day-:title'
