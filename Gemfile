@@ -12,4 +12,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
 gem 'middleman-blog', '>= 4.0.0'
+gem 'middleman-google-analytics', '~> 2.1'
 gem 'middleman-pry'
