@@ -4,6 +4,218 @@ title: 'Testfield'
 
 ## Testfield
 
+
+
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with ***asterisks*** or ___underscores___.
+
+Combined emphasis with *asterisks_ and _underscores*.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+Here's our logo (hover to see the title text):
+
+Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+Inline `code` has `back-ticks around` it.
+
+~~~javascript
+var sum = function() {
+    var i, x = 0;
+    for (i = 0; i < arguments.length; ++i) {
+        x += arguments[i];
+    }
+    return x;
+}
+sum(1, 2, 3); // returns 6
+
+var displayClosure = function() {
+    var count = 0;
+    return function () {
+        return ++count;
+    };
+}
+var inc = displayClosure();
+inc(); // returns 1
+inc(); // retur/* Finds the lowest common multiple (LCM) of two numbers */
+function LCMCalculator(x, y) { // constructor function
+    var checkInt = function (x) { // inner function
+        if (x % 1 !== 0) {
+            throw new TypeError(x + " is not an integer"); // throw an exception
+        }
+        return x;
+    };
+    this.a = checkInt(x)
+    //   semicolons   ^^^^  are optional, a newline is enough
+    this.b = checkInt(y);
+}
+// The prototype of object instances created by a constructor is
+// that constructor's "prototype" property.
+LCMCalculator.prototype = { // object literal
+    constructor: LCMCalculator, // when reassigning a prototype, set the constructor property appropriately
+    gcd: function () { // method that calculates the greatest common divisor
+        // Euclidean algorithm:
+        var a = Math.abs(this.a), b = Math.abs(this.b), t;
+        if (a < b) {
+            // swap variables
+            t = b;
+            b = a;
+            a = t;
+        }
+        while (b !== 0) {
+            t = b;
+            b = a % b;
+            a = t;
+        }
+        // Only need to calculate GCD once, so "redefine" this method.
+        // (Actually not redefinition—it's defined on the instance itself,
+        // so that this.gcd refers to this "redefinition" instead of LCMCalculator.prototype.gcd.
+        // Note that this leads to a wrong result if the LCMCalculator object members "a" and/or "b" are altered afterwards.)
+        // Also, 'gcd' === "gcd", this['gcd'] === this.gcd
+        this['gcd'] = function () {
+            return a;
+        };
+        return a;
+    },
+    // Object property names can be specified by strings delimited by double (") or single (') quotes.
+    lcm : function () {
+        // Variable names don't collide with object properties, e.g., |lcm| is not |this.lcm|.
+        // not using |this.a*this.b| to avoid FP precision issues
+        var lcm = this.a/this.gcd()*this.b;
+        // Only need to calculate lcm once, so "redefine" this method.
+        this.lcm = function () {
+            return lcm;
+        };
+        return lcm;
+    },
+    toString: function () {
+        return "LCMCalculator: a = " + this.a + ", b = " + this.b;
+    }
+};
+
+// Define generic output function; this implementation only works for Web browsers
+function output(x) {
+    document.body.appendChild(document.createTextNode(x));
+    document.body.appendChild(document.createElement('br'));
+}
+
+// Note: Array's map() and forEach() are defined in JavaScript 1.6.
+// They are used here to demonstrate JavaScript's inherent functional nature.
+[[25, 55], [21, 56], [22, 58], [28, 56]].map(function (pair) { // array literal + mapping function
+    return new LCMCalculator(pair[0], pair[1]);
+}).sort(function (a, b) { // sort with this comparative function
+    return a.lcm() - b.lcm();
+}).forEach(function (obj) {
+    output(obj + ", gcd = " + obj.gcd() + ", lcm = " + obj.lcm());
+});ns 2
+inc(); // returns 3
+
+/* Finds the lowest common multiple (LCM) of two numbers */
+function LCMCalculator(x, y) { // constructor function
+    var checkInt = function (x) { // inner function
+        if (x % 1 !== 0) {
+            throw new TypeError(x + " is not an integer"); // throw an exception
+        }
+        return x;
+    };
+    this.a = checkInt(x)
+    //   semicolons   ^^^^  are optional, a newline is enough
+    this.b = checkInt(y);
+}
+// The prototype of object instances created by a constructor is
+// that constructor's "prototype" property.
+LCMCalculator.prototype = { // object literal
+    constructor: LCMCalculator, // when reassigning a prototype, set the constructor property appropriately
+    gcd: function () { // method that calculates the greatest common divisor
+        // Euclidean algorithm:
+        var a = Math.abs(this.a), b = Math.abs(this.b), t;
+        if (a < b) {
+            // swap variables
+            t = b;
+            b = a;
+            a = t;
+        }
+        while (b !== 0) {
+            t = b;
+            b = a % b;
+            a = t;
+        }
+        // Only need to calculate GCD once, so "redefine" this method.
+        // (Actually not redefinition—it's defined on the instance itself,
+        // so that this.gcd refers to this "redefinition" instead of LCMCalculator.prototype.gcd.
+        // Note that this leads to a wrong result if the LCMCalculator object members "a" and/or "b" are altered afterwards.)
+        // Also, 'gcd' === "gcd", this['gcd'] === this.gcd
+        this['gcd'] = function () {
+            return a;
+        };
+        return a;
+    },
+    // Object property names can be specified by strings delimited by double (") or single (') quotes.
+    lcm : function () {
+        // Variable names don't collide with object properties, e.g., |lcm| is not |this.lcm|.
+        // not using |this.a*this.b| to avoid FP precision issues
+        var lcm = this.a/this.gcd()*this.b;
+        // Only need to calculate lcm once, so "redefine" this method.
+        this.lcm = function () {
+            return lcm;
+        };
+        return lcm;
+    },
+    toString: function () {
+        return "LCMCalculator: a = " + this.a + ", b = " + this.b;
+    }
+};
+
+// Define generic output function; this implementation only works for Web browsers
+function output(x) {
+    document.body.appendChild(document.createTextNode(x));
+    document.body.appendChild(document.createElement('br'));
+}
+
+// Note: Array's map() and forEach() are defined in JavaScript 1.6.
+// They are used here to demonstrate JavaScript's inherent functional nature.
+[[25, 55], [21, 56], [22, 58], [28, 56]].map(function (pair) { // array literal + mapping function
+    return new LCMCalculator(pair[0], pair[1]);
+}).sort(function (a, b) { // sort with this comparative function
+    return a.lcm() - b.lcm();
+}).forEach(function (obj) {
+    output(obj + ", gcd = " + obj.gcd() + ", lcm = " + obj.lcm());
+});
+~~~
+ 
+# h1
+
+~~~python
+s = "Python syntax highlighting"
+print s
+~~~
+
+
+~~~
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+~~~
+Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+
 > My Blockquote is here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -80,78 +292,8 @@ list in dl
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 | col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
 
-
-
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-Here's our logo (hover to see the title text):
-
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-Reference-style:
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-Three or more...
-
----
-
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
 
 
 

@@ -7,6 +7,13 @@
 @import "application_and_bootstrap_variables.css.scss";
 @import "bootstrap";
 
+// Syntax Highlighting pygments SCSS
+@import "pygments/native.scss";  // Choose color sheme from pygments folder
+.highlight {
+  font-size: $font-size-base * 0.7; // Adapt font size
+  padding: $spacer;  // padding arround the code box
+}
+
 body {
   padding-top: $navbar-height;
   font-weight: $font-weight-light;

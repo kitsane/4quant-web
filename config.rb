@@ -26,7 +26,23 @@ end
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
 end
+###
+# Markdown
+###
 
+set :markdown_engine
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+###
+# Code highlighting
+###
+
+activate :syntax
+
+
+##
+# Blog
+##
 activate :blog do |blog|
   blog.permalink = 'news/:year-:month-:day-:title'
   blog.sources = 'news/:year-:month-:day-:title'
