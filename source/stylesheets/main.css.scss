@@ -134,6 +134,7 @@ b, strong {
 }
 
 .navbar-toggler {
+  outline: 0 !important; // get rid of blue thingie
   padding: {
     left: 0;
     right: 0;
