@@ -182,7 +182,6 @@ b, strong {
     color: $white;
     font-weight: $font-weight-light;
     text-decoration: none;
-    text-transform: capitalize;
     padding: {
       top: $spacer-y / 2;
       bottom: $spacer-y / 2;
@@ -192,6 +191,9 @@ b, strong {
 
 // footer
 footer {
+  p address {
+    line-height: $line-height * 0.75;
+  }
   .navbar-nav .nav-item {
     margin-right: $spacer-x;
   }
@@ -206,9 +208,12 @@ footer {
       content: '·';
     }
   }
-
   a {
+    font-size: $font-size-h1;
+  }
+  a, p, address {
     color: $white;
+    font-size: 80%;
   }
 }
 

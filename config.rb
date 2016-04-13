@@ -36,7 +36,7 @@ SUMMARY_START = "SUMMARY_START"
 SUMMARY_END = "SUMMARY_END"
 
 helpers do
-  def navigation_list(navigation, li_class: 'list-inline-item', a_class: '')
+  def navigation_list(navigation, li_class: 'list-inline-item nav-item', a_class: 'nav-link')
     navigation.map do |label, path|
       content_tag :li, class: li_class do
         link_to label, "/#{path}", class: a_class
