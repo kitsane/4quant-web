@@ -24,7 +24,7 @@ configure :development do
 end
 
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
+  ga.tracking_id = 'UA-XXXXXXX-X' # ToDo: Get 4Quant UA-ID!
 end
 ###
 # Markdown
@@ -39,6 +39,11 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :syntax
 
+##
+# Email Obfuscation
+##
+activate :protect_emails
+
 
 ##
 # Blog
@@ -51,7 +56,9 @@ activate :blog do |blog|
   end
 end
 
-# Helpers
+##
+# Helpers for News
+##
 SUMMARY_START = "SUMMARY_START"
 SUMMARY_END = "SUMMARY_END"
 
