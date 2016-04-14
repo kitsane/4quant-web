@@ -226,8 +226,9 @@ footer {
     }
   }
 
-  a {
+  a, p, address {
     color: $white;
+    font-size: $font-size-xs;
   }
 }
 
