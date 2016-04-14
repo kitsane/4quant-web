@@ -1,0 +1,35 @@
+// Grid breakpoints
+// $grid-breakpoints: (
+//   // Extra small screen / phone
+//   xs: 0,
+//   // Small screen / phone
+//   sm: 544px,
+//   // Medium screen / tablet
+//   md: 768px,
+//   // Large screen / desktop
+//   lg: 992px,
+//   // Extra large screen / wide desktop
+//   xl: 1200px
+// ) !default;
+$font-sizes-responsive: (
+  // Extra small screen / phone
+  xs: 10px,
+  // Small screen / phone
+  sm: 15px,
+  // Medium screen / tablet
+  md: 18px,
+  // Large screen / desktop
+  lg: 20px,
+  // Extra large screen / wide desktop
+  xl: 22px
+                         );
+
+@mixin font-size($grid-breakpoints) {
+  @each $bp-name:$bp-value in $fs-map {
+    @media (max-width: $bp-value) {
+      "."$bp-name {
+        font-size: map-get($font-sizes-responsive, $bp-name);
+      }
+    }
+  }
+}
