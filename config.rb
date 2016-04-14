@@ -19,9 +19,9 @@ page '/*.txt', layout: false
 # General configuration
 
 # Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
+# configure :development do
+  # activate :livereload  # This crashes all the time here. cmd + R isn't such a pain
+# end
 
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-XXXXXXX-X' # ToDo: Get 4Quant UA-ID!
