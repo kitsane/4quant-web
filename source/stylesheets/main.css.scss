@@ -10,7 +10,7 @@
 // Syntax Highlighting pygments SCSS
 @import "pygments/native.scss";  // Choose color sheme from pygments folder
 .syntax {
-  font-size: $font-size-base * 0.7; // Adapt font size
+  font-size: $font-size-base * $syntax-smaller-font; // Adapt font size
   padding: $spacer;  // padding arround the code box
 }
 
