@@ -30,14 +30,15 @@ end
 # Markdown
 ###
 
-set :markdown_engine
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown_engine, :kramdown
+# set :markdown_engine
+# set :markdown, :fenced_code_blocks => false, :smartypants => false
 
 ###
 # Code highlighting
 ###
 
-activate :syntax
+activate :syntax, :line_numbers => false
 
 ##
 # Email Obfuscation

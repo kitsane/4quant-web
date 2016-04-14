@@ -4,6 +4,13 @@ title: 'Testfield'
 
 ## Testfield
 
+| Tables        | Are           | Cool  |
+| ------------- |-------------| -----|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
 abcde­fghijklmnopqrstu­vwxyzabcde­fghijklmnopqrstu­vwxyzabcde­fghijklmnopqrstu­vwxyzabcde­fghijklmnopqrstu­vwxyzabcde­fghijklmnopqrstu­vwxyzabcde­fghijklmnopqrstu­vwxyzabcde­fghijklmnopqrstu­vwxyzabcde­fghijklmnopqrstu­vwxyz
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
