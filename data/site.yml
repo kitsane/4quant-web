@@ -6,6 +6,7 @@ company:
   city: '8005 Zurich'
   country: 'Switzerland'
   email: 'info@4quant.com'
+  email_intag: 'info AT 4quant.com'
 
 main_navigation:
   home: ''
