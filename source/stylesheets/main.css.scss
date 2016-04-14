@@ -94,6 +94,16 @@ b, strong {
     }
   }
 
+  table {
+    @extend .table;
+    @extend .table-sm;
+  } 
+
+  blockquote {
+    @extend .blockquote;
+    font-size: $font-size-base;
+  }
+
   // Google Maps image
   .google-maps {
     width: 100%;
