@@ -58,7 +58,9 @@ b, strong {
     height: $spacer;
     background-color: $white
   }
-
+  a.imglink[href^="http"]::after {
+    content: ""; // Remove the external link symbol
+  }
   a {
     &:link, &:visited, &:hover, &:active {
       $shadow-offsets-a: 0.03em;

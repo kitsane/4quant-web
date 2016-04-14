@@ -13,4 +13,4 @@ You can get in touch with us through:
 
 [Find us with Google Maps](https://goo.gl/maps/f7hLrM6kgok)
 
-<img class="google-maps" src="http://maps.googleapis.com/maps/api/staticmap?autoscale=2&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CTechnoparkstrasse+1,+8005+Zürich" alt="Google Map of Technoparkstrasse 1, 8005 Zürich">
+<a class="imglink" href="https://goo.gl/maps/f7hLrM6kgok" target="_blank"><img class="google-maps" src="http://maps.googleapis.com/maps/api/staticmap?autoscale=2&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CTechnoparkstrasse+1,+8005+Zürich" alt="Google Map of Technoparkstrasse 1, 8005 Zürich"></a>
