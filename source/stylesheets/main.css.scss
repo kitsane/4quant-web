@@ -134,6 +134,10 @@ b, strong {
 }
 
 .navbar-toggler {
+  &:focus {
+    outline: transparent;
+  }
+
   padding: {
     left: 0;
     right: 0;
