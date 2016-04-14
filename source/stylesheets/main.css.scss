@@ -5,7 +5,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
 @import "application_and_bootstrap_variables.css.scss";
-@import "bootstrap";
+@import '../../bower_components/bootstrap/scss/bootstrap.scss';
+@import '../../bower_components/font-awesome/scss/font-awesome.scss';
 
 body {
   padding-top: $navbar-height;

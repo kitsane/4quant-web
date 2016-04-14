@@ -13,6 +13,3 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
 gem 'middleman-blog', '>= 4.0.0'
 gem 'middleman-pry'
-
-# Asset Gems, will be replaced with external asset pipeline
-gem 'bootstrap', '~> 4.0.0.alpha3', require: 'bootstrap'

@@ -31,6 +31,13 @@ activate :blog do |blog|
   end
 end
 
+activate :external_pipeline do |pipe|
+  pipe.name = :gulp
+  pipe.command = build? ? './node_modules/gulp/bin/gulp.js' : './node_modules/gulp/bin/gulp.js watch'
+  pipe.source = ".tmp/dist"
+  pipe.latency = 1
+end
+
 # Helpers
 SUMMARY_START = "SUMMARY_START"
 SUMMARY_END = "SUMMARY_END"

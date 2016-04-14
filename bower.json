@@ -1,0 +1,23 @@
+{
+  "name": "4quant-web",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andi Staub <andi.staub@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kitsane/4quant-web",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2",
+    "jquery": "^2.2.3",
+    "font-awesome": "fontawesome#^4.6.1"
+  }
+}
