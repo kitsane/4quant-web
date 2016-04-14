@@ -13,12 +13,12 @@
           </div>
         </div>
       </div>
-    </div>
 
     <%= partial 'partials/footer' %>
 
     <% if config[:environment] == :production %>
       <%= google_analytics_universal_tag %>
     <% end %>
+    </div>
   </body>
 </html>
