@@ -38,7 +38,7 @@ set :markdown_engine, :kramdown
 # Code highlighting
 ###
 
-activate :syntax, :line_numbers => false
+activate :syntax, line_numbers: false, css_class: 'syntax'
 
 ##
 # Email Obfuscation
