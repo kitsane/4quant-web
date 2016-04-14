@@ -42,6 +42,8 @@ activate :external_pipeline do |pipe|
   pipe.latency = 1
 end
 
+activate :syntax, css_class: 'syntax'
+
 # Helpers
 SUMMARY_START = "SUMMARY_START"
 SUMMARY_END = "SUMMARY_END"

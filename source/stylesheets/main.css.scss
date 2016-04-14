@@ -7,6 +7,7 @@
 @import "application_and_bootstrap_variables.css.scss";
 @import '../../bower_components/bootstrap/scss/bootstrap.scss';
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';
+@import '../../bower_components/sass-pygments/styles/native.scss';
 
 body {
   font-weight: $font-weight-light;
@@ -97,6 +98,11 @@ b, strong {
   .google-maps {
     width: 100%;
   }
+}
+
+.syntax {
+  font-size: $font-size-xs;
+  padding: $spacer;
 }
 
 .bg-white {
