@@ -24,7 +24,7 @@ h2 a {
 
   & + small {
     margin-right: $grid-gutter-width / 2;
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
     white-space: nowrap;
   }
 }
@@ -111,7 +111,7 @@ b, strong {
 }
 
 .syntax {
-  font-size: $font-size-xs;
+  font-size: $font-size-sm;
   padding: $spacer;
 }
 
@@ -178,7 +178,7 @@ b, strong {
 }
 
 .navbar-claim {
-  font-size: $font-size-base / 2;
+  font-size: $font-size-xs;
   padding-top: .6rem;
   display: block;
   font-weight: $font-weight-bold;
@@ -232,7 +232,7 @@ footer {
 
   a, p, address {
     color: $white;
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
   }
 }
 
