@@ -111,7 +111,12 @@ b, strong {
   table {
     @extend .table;
     @extend .table-sm;
-  } 
+  }
+  // Bootstrap blockquote
+  blockquote {
+    @extend .blockquote;
+    font-size: $font-size-base;
+  }
 }
 
 .bg-white {
