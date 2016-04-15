@@ -253,8 +253,17 @@ footer {
   display: table-row;
   height: 1px;
 
+  .nav {
+    display: inline-block;
+    padding-bottom: $spacer;
+  }
+
   .navbar-nav .nav-item {
     margin-right: $spacer-x;
+  }
+
+  .navbar-nav .nav-link {
+    padding-bottom: 0;
   }
 
   li {

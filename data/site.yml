@@ -13,8 +13,6 @@ main_navigation:
   solutions: 'solutions.html'
   news: 'news.html'
   about: 'about.html'
-
-service_navigation:
   contact: 'contact.html'
   legals: 'legals.html'
 
