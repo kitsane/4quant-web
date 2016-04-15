@@ -1,20 +1,8 @@
 <footer class="navbar navbar-dark bg-inverse">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <ul class="nav navbar-nav">
-          <%= navigation_list(data.site.main_navigation, li_class: "nav-item", a_class: "nav-link") %>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <ul class="nav navbar-nav">
-          <%= navigation_list(data.site.service_navigation, li_class: "nav-item", a_class: "nav-link") %>
-        </ul>
-      </div>
-    </div>
+    <ul class="nav navbar-nav">
+      <%= navigation_list(data.site.main_navigation, li_class: "nav-item", a_class: "nav-link") %>
+    </ul>
 
     <div class="row">
       <div class="col-xs-12 col-sm-6">
