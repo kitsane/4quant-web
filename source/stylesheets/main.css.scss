@@ -130,6 +130,7 @@ b, strong {
   table {
     @extend .table;
     @extend .table-sm;
+    @extend .table-striped;
     font-size: $font-size-sm;
   }
 
