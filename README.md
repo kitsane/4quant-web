@@ -1,9 +1,6 @@
 # 4Quant Webpage
 
-This project contains the static site for [http://www.4quant.com](http://www.4quant.com) and makes use of the following tools:
-
-* [Middleman](https://middlemanapp.com/) to generate the static web page.
-* [Gulp](https://gulpjs.com/) to manage front end assets
+This project contains the static site for [http://www.4quant.com](http://www.4quant.com).
 
 ## Installation
 
@@ -30,6 +27,15 @@ $ gem install bundler
 ### Node 
 
 [Node](https://www.nodejs.org/) needs to be installed on your Machine. 
+
+### ImageMagick
+
+[ImageMagick](http://www.imagemagick.org/)
+
+On mac:
+```Bash
+$ brew install imagemagick
+```
 
 ## Prepare
 
