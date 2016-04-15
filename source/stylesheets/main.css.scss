@@ -9,6 +9,11 @@
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';
 @import '../../bower_components/sass-pygments/styles/native.scss';
 
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-weight: $font-weight-light;
   height: 100%;
@@ -225,6 +230,9 @@ b, strong {
 
 // footer
 footer {
+  display: table-row;
+  height: 1px;
+
   .navbar-nav .nav-item {
     margin-right: $spacer-x;
   }
@@ -266,17 +274,4 @@ footer {
 
 .img-brand {
   max-height: 90px;
-}
-
-
-//responsive sticky footer
-
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-footer {
-  display: table-row;
-  height: 1px;
 }
