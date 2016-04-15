@@ -39,6 +39,7 @@ To install all dependencies, bundle the project:
 $ bundle
 $ npm install
 $ bower install
+$ gulp
 ```
 
 ## Run
