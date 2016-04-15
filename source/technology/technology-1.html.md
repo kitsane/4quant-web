@@ -1,6 +1,6 @@
 ---
 
-title: Solutions
+title: technology-1.html
 
 ---
 
