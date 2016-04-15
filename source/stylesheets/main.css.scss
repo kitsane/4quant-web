@@ -106,6 +106,7 @@ b, strong {
   table {
     @extend .table;
     @extend .table-sm;
+    font-size: $font-size-sm;
   }
 
   blockquote {
