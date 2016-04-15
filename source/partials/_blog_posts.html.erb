@@ -1,0 +1,14 @@
+<% if !defined?(display_articles) || display_articles > blog.articles.length %>
+  <% display_articles = blog.articles.length %>
+<% end %>
+
+<% blog.articles[0..display_articles].each do |article| %>
+  <h2>
+    <%= link_to article.title, article %>
+    <small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small>
+  </h2>
+  <p>
+    <%= article.summary %>
+    <%= link_to 'Read more', article %>
+  </p>
+<% end %>
