@@ -9,14 +9,14 @@ Ever cheaper and smaller cameras make video recording omnipresent in our world. 
 
 Traditional big data solutions are restricted to metadata interpretation. Direct [image analytics](image-analysis.html) failed due to huge infrastructure costs, manual handling, performance restrictions, and archived image material that is nearly inaccessible for further analysis.
 
-# 4QUANT PROVIDES OUTSTANDING IMAGE ANALYTICS
+## 4Quant provides outstanding image analytics
 
 4Quant developed a lightning-fast image processing technology.  
 
 With the click of a button, our [solution](solutions.html) analyses petabytes of image data, from single image databases to thousands of camera streams — in [real time](realtime.html).
 Our decades of expertise in image analytics enables you to obtain reliable answers to your image analysis demands. Using sophisticated analytics distribution in clustered environments, our technology is highly scalable.
 
-# UNLIMITED SCALABILITY, SEAMLESS CUSTOMIZATION AND UNPRECEDENTED SPEED
+## Unlimited scalibility, seamless customization and unprecedent speed
 
 4Quant offers [solutions](solutions.html) for any stage in the [image processing](image-analysis.html) life cycle:
 
@@ -26,4 +26,3 @@ Our [Ad-hoc query solution](solutions.html) provides you with maximum flexibilit
 
 Our [Image Query and Analysis Engine](solutions.html) is the most convenient search tool for image information. Being more powerful, flexible, and customized than popular image search engines, we set the standard for commercial image queries.
 
-# Architecture
