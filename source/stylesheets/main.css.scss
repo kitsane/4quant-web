@@ -113,6 +113,10 @@ b, strong {
     font-size: $font-size-base;
   }
 
+  ul, ol {
+    padding-left: $spacer;
+  }
+
   // Google Maps image
   .google-maps {
     width: 100%;
