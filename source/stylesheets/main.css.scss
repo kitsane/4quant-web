@@ -74,9 +74,17 @@ b, strong {
   font-weight: $font-weight-bold;
 }
 
+.breadcrumb {
+  padding: 0;
+  background-color: $white;
+  font-size: $font-size-xs;
+}
+
 .content-container {
   padding-top: 4rem;
+}
 
+.content {
   a[href^="http"] {
     white-space: nowrap;
   }

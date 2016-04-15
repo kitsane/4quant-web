@@ -23,6 +23,8 @@ configure :development do
   activate :livereload
 end
 
+activate :breadcrumbs
+
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-48764461-1'
 end

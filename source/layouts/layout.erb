@@ -7,18 +7,28 @@
       <%= partial 'partials/navigation' %>
 
       <div class="content-container container">
-        <div class="row">
+        <% unless current_page.data.title.downcase == 'home' %>
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="breadcrumb">
+                <%= breadcrumbs current_page, wrapper: :li, separator: nil %>
+              </ul>
+            </div>
+          </div>
+        <% end %>
+
+        <div class="row content">
           <div class="col-xs-12">
             <%= cleanup_summary_start_end_separator(yield) %>
           </div>
         </div>
       </div>
 
-    <%= partial 'partials/footer' %>
+      <%= partial 'partials/footer' %>
 
-    <% if config[:environment] == :production %>
-      <%= google_analytics_universal_tag %>
-    <% end %>
+      <% if config[:environment] == :production %>
+        <%= google_analytics_universal_tag %>
+      <% end %>
     </div>
   </body>
 </html>
