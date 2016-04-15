@@ -19,6 +19,8 @@
     "bootstrap": "v4.0.0-alpha.2",
     "jquery": "^2.2.3",
     "font-awesome": "fontawesome#^4.6.1",
-    "sass-pygments": "git://github.com/dwayne/sass-pygments.git"
+    "sass-pygments": "git://github.com/dwayne/sass-pygments.git",
+    "reveal.js": "^3.2",
+    "MathJax": "^2.6.1"
   }
 }

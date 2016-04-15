@@ -49,7 +49,37 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
-gulp.task('default', ['sass', 'scripts', 'icons', 'images']);
+gulp.task('markedjs', function() {
+    gulp.src([
+      config.bowerDir + "/reveal.js/plugin/markdown/marked.js",
+      config.bowerDir + "/reveal.js/plugin/markdown/markdown.js",
+      config.bowerDir + "/reveal.js/lib/js/classList.js",
+      config.bowerDir + "/reveal.js/lib/js/head.min.js",
+      config.bowerDir + "/reveal.js/plugin/math/math.js"
+      ])
+      .pipe(sourcemaps.init())
+      .pipe(babel({ presets: ['es2015'] }))
+      // .pipe(concat("markedjs.js"))
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest(config.outputDir + '/javascripts'));
+});
+
+gulp.task('revealjs', function() {
+    return gulp.src([
+      
+      // config.bowerDir + "/reveal.js/lib/js/classList.js",
+      // config.bowerDir + "/reveal.js/lib/js/head.min.js",
+      config.bowerDir + "/reveal.js/js/reveal.js",
+      "source/javascripts/reveal_initialize.js"
+    ])
+    .pipe(sourcemaps.init())
+    // .pipe(babel({ presets: ['es2015'] }))
+    .pipe(concat("reveal.js"))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(config.outputDir + '/javascripts'));
+});
+
+gulp.task('default', ['sass', 'scripts', 'revealjs', 'markedjs', 'icons', 'images']);
 
 gulp.task('watch', function() {
   gulp.watch(config.bowerDir  + '/**/*', ['sass', 'scripts', 'icons']);
