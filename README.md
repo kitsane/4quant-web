@@ -65,3 +65,14 @@ $ bundle exec middleman build
 ```
 
 The site will be generated to the `build` directory.
+
+## Deployment
+
+To deploy the final site to github use:
+
+```Bash
+$ bundle exec middleman deploy
+```
+
+You can visit the site under [4quant](http://kitsane.github.io/4quant-web).
+

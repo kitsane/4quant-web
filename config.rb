@@ -44,6 +44,11 @@ end
 
 activate :syntax, css_class: 'syntax'
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true
+end
+
 # Helpers
 SUMMARY_START = "SUMMARY_START"
 SUMMARY_END = "SUMMARY_END"
@@ -85,4 +90,7 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
+  activate :relative_assets
+  set :relative_links, true
 end
