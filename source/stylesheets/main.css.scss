@@ -5,6 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
 @import "application_and_bootstrap_variables.css.scss";
+
 @import '../../bower_components/bootstrap/scss/bootstrap.scss';
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';
 @import '../../bower_components/sass-pygments/styles/native.scss';
@@ -19,6 +20,24 @@ body {
   height: 100%;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+  html {
+    font-size: $font-size-root - 2;
+  }
+}
+
+@media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+  html {
+    font-size: $font-size-root - 4;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 760px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 .content-wrapper {
