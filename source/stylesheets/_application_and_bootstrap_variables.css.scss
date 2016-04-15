@@ -106,12 +106,12 @@ $font-size-h6:               1rem !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
+$display3-size: 2.2rem !default;
 $display4-size:               3.5rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;
-$display3-weight:             300 !default;
+$display3-weight: 600 !default;
 $display4-weight:             300 !default;
 
 $line-height:                1.5 !default;
@@ -357,8 +357,8 @@ $pager-active-color:                   $pagination-active-color !default;
 $pager-disabled-color:                 $pagination-disabled-color !default;
 
 // Jumbotron
-$jumbotron-padding:              2rem !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-padding:              1rem !default;
+$jumbotron-bg: $transparent !default;
 
 // Form states and alerts
 $state-success-text:             #3c763d !default;

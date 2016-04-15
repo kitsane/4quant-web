@@ -6,20 +6,12 @@
           <span aria-hidden="true">&#9776;</span>
         </button>
       </div>
-
       <div class="col-xs-6 text-xs-center">
         <% link_to '/', class: 'navbar-brand' do %>
-          <strong><%= data.site.company.short_name[0..1] %></strong><%= data.site.company.short_name[2..-1] %>
+          <strong><%= data.site.company.short_name[0..1] %></strong><%= data.site.company.short_name[2..-1] %><span class="small text-muted text-uppercase"> | <%= data.site.company.claim %></span>
         <% end %>
       </div>
-
       <div class="col-xs-3">
-        <div class="navbar-claim text-xs-right">
-          <% link_to '/' do %>
-            <%= data.site.company.claim.split(" ")[0] %>&nbsp;<%= data.site.company.claim.split(" ")[1] %><br>
-            <%= data.site.company.claim.split(" ")[2] %>
-          <% end %>
-        </div>
       </div>
     </div>
   </div>

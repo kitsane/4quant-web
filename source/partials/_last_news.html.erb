@@ -3,9 +3,9 @@
 <% end %>
 
 <% blog.articles[0..display_articles].each do |article| %>
-  <h2 class="m-b-0">
+  <h3 class="m-b-0">
     <%= article.title %>
-  </h2>
+  </h3>
   <p class="m-b-0">
     <small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small>
   </p>
