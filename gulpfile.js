@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     babel = require('gulp-babel'),
     bower = require('gulp-bower'),
     concat = require('gulp-concat'),
+    imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps');
@@ -15,12 +16,18 @@ gulp.task('bower', function() {
   return bower();
 });
 
-gulp.task('icons', function() { 
-  return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*') 
-    .pipe(gulp.dest(config.outputDir + '/fonts')); 
+gulp.task('icons', function() {
+  return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*')
+    .pipe(gulp.dest(config.outputDir + '/fonts'));
 });
 
-gulp.task('sass', function() { 
+gulp.task('images', function() {
+  return gulp.src('source/images/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest(config.outputDir + '/images'));
+});
+
+gulp.task('sass', function() {
   return gulp.src('source/stylesheets/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -42,10 +49,11 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
-gulp.task('default', ['sass', 'scripts', 'icons']);
+gulp.task('default', ['sass', 'scripts', 'icons', 'images']);
 
 gulp.task('watch', function() {
   gulp.watch(config.bowerDir  + '/**/*', ['sass', 'scripts', 'icons']);
+  gulp.watch('source/images/**/*', ['images']);
   gulp.watch('source/stylesheets/**/*.scss', ['sass']);
   gulp.watch('source/javascripts/**/*.js', ['scripts']);
 });
