@@ -20,7 +20,7 @@ page '/*.txt', layout: false
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+#  activate :livereload
 end
 
 activate :breadcrumbs
@@ -88,10 +88,10 @@ configure :build do
   end
 
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   activate :relative_assets
   set :relative_links, true
