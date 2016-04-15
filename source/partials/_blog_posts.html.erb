@@ -4,7 +4,7 @@
 
 <% blog.articles[0..display_articles].each do |article| %>
   <h2>
-    <%= link_to article.title, article %>
+    <%= article.title %>
     <small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small>
   </h2>
   <p>
