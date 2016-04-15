@@ -11,6 +11,15 @@
 
 body {
   font-weight: $font-weight-light;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content-wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -113,10 +122,6 @@ b, strong {
 .syntax {
   font-size: $font-size-sm;
   padding: $spacer;
-}
-
-.bg-white {
-  background-color: $white;
 }
 
 // Navbar
@@ -264,18 +269,6 @@ footer {
 html {
   height: 100%;
   overflow: hidden;
-}
-
-body {
-  height: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-.bg-white {
-  display: table;
-  height: 100%;
-  width: 100%;
 }
 
 footer {
