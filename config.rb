@@ -23,7 +23,7 @@ page '/slides/*', layout: :slides_layout
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  # activate :livereload
 end
 
 activate :google_analytics do |ga|

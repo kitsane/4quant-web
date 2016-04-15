@@ -2,8 +2,10 @@ Reveal.initialize({
 
   dependencies: [
     // Interpret Markdown in <section> elements
-    { src: '/javascripts/marked.js', async: true, condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-    { src: '/javascripts/markdown.js', async: true, condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: '/javascripts/classList.js', condition: function() { return !document.body.classList; } },
+    { src: '/javascripts/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: '/javascripts/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: '/javascripts/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
     { src: '/javascripts/math.js', async: true  }
   ],
 
@@ -23,10 +25,10 @@ Reveal.initialize({
   keyboard: true,
 
   // Enable the slide overview mode
-  overview: true,
+  overview: false,
 
   // Vertical centering of slides
-  center: false,
+  center: true,
 
   // Enables touch navigation on devices with touch input
   touch: true,
@@ -42,7 +44,7 @@ Reveal.initialize({
 
   // Flags if the presentation is running in an embedded mode,
   // i.e. contained within a limited portion of the screen
-  embedded: true,
+  embedded: false,
 
   // Flags if we should show a help overlay when the questionmark
   // key is pressed

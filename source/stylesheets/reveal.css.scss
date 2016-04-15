@@ -1,2 +1,6 @@
 @import "../../bower_components/reveal.js/css/reveal.scss";
-@import "../../bower_components/reveal.js/css/theme/white.css";
+@import "../../bower_components/reveal.js/css/theme/template/mixins.scss";
+
+@import "../../bower_components/reveal.js/css/theme/template/settings.scss";
+@import "../../bower_components/reveal.js/css/theme/template/theme.scss";
+@import "../../bower_components/reveal.js/css/theme/source/white.scss";
