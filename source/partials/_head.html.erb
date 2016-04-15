@@ -3,7 +3,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <% if config[:environment] == :development %>
+    <link rel="icon" type="image/png" href="images/favicon.svg" />
+  <% else %>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="application-name" content="Name">
+    <meta name="msapplication-tooltip" content="Tooltip">
+    <meta name="msapplication-config" content="ieconfig.xml">
+  <% end %>
 
   <title>
     <%= data.site.company.name %> | <%= current_page.data.title || data.site.company.claim.upcase %>
