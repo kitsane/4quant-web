@@ -8,6 +8,8 @@ customers:
     image: "universitatsspital-basel.png"
   - name: "Varian Medical Systems"
     image: "varian.png"
+  - name: "Clariant"
+    image: "clariant.png"
   - name: "Paul Scherer Institut"
     image: "psi.png"
   - name: "ETH"

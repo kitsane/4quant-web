@@ -62,10 +62,6 @@ h2 a {
   }
 }
 
-h3 {
-  font-weight: $font-weight-regular;
-}
-
 p, small, a, ul {
   font-weight: $font-weight-light;
 }
@@ -249,36 +245,21 @@ footer {
 }
 
 .card {
-  border-top-color: $white;
-  border-top-style: solid;
-  border-top-width: 0px;
-  border-right-color: $white;
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-bottom-color: $white;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-style: solid;
-  border-left-width: 1px;
+  border: 0;
 }
 
 .card-text{
   margin-bottom: $spacer-y / 2;
-}
-
-.card-link {
-//  font-size: 80%;
+  line-height: $line-height-sm;
 }
 
 .card-title {
   margin-bottom: 0;
 }
 
-.card-block{
+.card-block {
   padding-top: $spacer / 2;
   padding-right: $spacer / 2;
   padding-left: $spacer;
   padding-bottom: $spacer / 2;
-  font-size:$font-size-base * .8;
 }
