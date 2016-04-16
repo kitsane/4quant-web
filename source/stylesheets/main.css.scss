@@ -262,3 +262,23 @@ footer {
   border-left-style: solid;
   border-left-width: 1px;
 }
+
+.card-text{
+  margin-bottom: $spacer-y / 2;
+}
+
+.card-link {
+//  font-size: 80%;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-block{
+  padding-top: $spacer / 2;
+  padding-right: $spacer / 2;
+  padding-left: $spacer;
+  padding-bottom: $spacer / 2;
+  font-size:$font-size-base * .8;
+}

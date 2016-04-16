@@ -12,12 +12,29 @@ team:
     title: "CFO"
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod itaque, quos dicta sed temporibus nihil, veniam non quas in nam! Fugit natus maxime cum necessitatibus doloribus nostrum. Est, ut."
 
+  - name: "Christian Spindler"
+    doctor: true
+    title: "Data Analyst"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod itaque, quos dicta sed temporibus nihil, veniam non quas in nam! Fugit natus maxime cum necessitatibus doloribus nostrum. Est, ut."
+
+  - name: "Samuel Benz"
+    title: "Software Engineer"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod itaque, quos dicta sed temporibus nihil, veniam non quas in nam! Fugit natus maxime cum necessitatibus doloribus nostrum. Est, ut."
+
+  - name: "Andreas Staub"
+    title: "Software Engineer"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod itaque, quos dicta sed temporibus nihil, veniam non quas in nam! Fugit natus maxime cum necessitatibus doloribus nostrum. Est, ut."
+
+  - name: "Kasper Vollenweider"
+    title: "Software Engineer"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod itaque, quos dicta sed temporibus nihil, veniam non quas in nam! Fugit natus maxime cum necessitatibus doloribus nostrum. Est, ut."
+
 advisors:
   - name: "Prof. Dr. Marco Stampanoni"
     title: "Lorem ipsum dolor."
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
   - name: "Prof. Dr. Keith Cheng"
-    title: "Chief of Experimental Pathology at Penn State Medical Center"
+    title: "Chief of Experimental Pathology"
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
   - name: "Dr. Marcos Garcia Pedreza"
     title: "Lorem ipsum dolor."

@@ -30,30 +30,30 @@ title: "Home"
              <div class="card card-block">
                <h3 class="card-title">Radiology</h3>
                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-               <a href="#" class="card-link">Read more</a>
+               <div class="text-xs-right"><a href="#" class="card-link">Read more</a></div>
              </div>
            </div>
            <div class="col-sm-6">
              <div class="card card-block">
                <h3 class="card-title">Geoimaging</h3>
                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-               <a href="#" class="card-link">Read more</a>
+               <div class="text-xs-right"><a href="#" class="card-link">Read more</a></div>
              </div>
            </div>
          </div>
          <div class="row p-b-2">
            <div class="col-sm-6">
              <div class="card card-block">
-               <h3 class="card-title">Industry 4.0</h3>
+               <h3 class="card-title">3-D</h3>
                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-               <a href="#" class="card-link">Read more</a>
+               <div class="text-xs-right"><a href="#" class="card-link">Read more</a></div>
              </div>
            </div>
            <div class="col-sm-6">
              <div class="card card-block">
-               <h3 class="card-title">Geoimaging</h3>
+               <h3 class="card-title">Industry 4.0</h3>
                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-               <a href="#" class="card-link">Read more</a>
+               <div class="text-xs-right"><a href="#" class="card-link">Read more</a></div>
              </div>
            </div>
          </div>
@@ -102,10 +102,11 @@ title: "Home"
       </div>
     </div>
     <div class="row p-b-2">
-      <div class="col-sm-3"><img src="images/brands/customers/universitatsspital-basel.png" class="img-rounded img-fluid"></div>
-      <div class="col-sm-3"><img src="images/brands/customers/universitatsspital-basel.png" class="img-rounded img-fluid"></div>
-      <div class="col-sm-3"><img src="images/brands/customers/universitatsspital-basel.png" class="img-rounded img-fluid"></div>
-      <div class="col-sm-3"><img src="images/brands/customers/universitatsspital-basel.png" class="img-rounded img-fluid"></div>
+      <% data.brands.customers.each do |brand| %>
+        <div class="col-sm-3 col-xs-4 p-b-1">
+          <%= image_tag "brands/customers/#{brand.image}", alt: brand.name, class: 'img-rounded img-fluid' %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

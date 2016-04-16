@@ -1,14 +1,13 @@
+<div class="row m-b-1">
 <% data.people.advisors.each do |advisor| %>
-  <div class="row">
-    <div class="col-xs-12">
-        <h3>
-          <%= advisor.name %>
-        </h3>
-        <p>
-        <%= advisor.title %>
-        <br>
-        <%= advisor.description %>
-      </p>
+  <div class="col-xs-12 col-sm-6 p-x-0">
+    <div class="card-block p-t-0">
+      <h3 class="card-title">
+        <%= advisor.name %>
+        <div class="text-muted"><%= advisor.title %></div>
+      </h3>
+      <p class="card-text"><%= advisor.description %></p>
     </div>
   </div>
 <% end %>
+</div>
