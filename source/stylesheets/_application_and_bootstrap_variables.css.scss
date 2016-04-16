@@ -13,7 +13,7 @@ $navbar-height: 60px;
 
 // Bootstrap variables
 $gray-dark: $brand-gray-dark;
-$gray:                      #55595c !default;
+$gray:$brand-gray !default;
 $gray-light: $brand-gray-light;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
@@ -26,10 +26,10 @@ $brand-danger:              #d9534f !default;
 
 // Options
 $enable-flex:               false !default;
-$enable-rounded: false;
+$enable-rounded: true;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
-$enable-transitions:        false !default;
+$enable-transitions:   true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 
@@ -62,7 +62,7 @@ $body-bg: $white;
 $body-color: $brand-gray;
 
 // Links
-$link-color: $brand-gray;
+$link-color: $brand-primary;
 $link-decoration: none;
 $link-hover-color: none;
 $link-hover-decoration: none;
@@ -106,7 +106,7 @@ $font-size-h6:               1rem !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
-$display3-size: 2.2rem !default;
+$display3-size: 1.8rem !default;
 $display4-size:               3.5rem !default;
 
 $display1-weight:             300 !default;
@@ -171,13 +171,13 @@ $table-border-color:            $gray-lighter !default;
 // Buttons
 $btn-padding-x:                  1rem !default;
 $btn-padding-y:                  .375rem !default;
-$btn-font-weight:                normal !default;
+$btn-font-weight:     $font-weight-light !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
-$btn-secondary-color:            $gray-dark !default;
+$btn-secondary-color:  $gray-dark !default;
 $btn-secondary-bg:               #fff !default;
 $btn-secondary-border:           #ccc !default;
 

@@ -86,54 +86,8 @@ b, strong {
 }
 
 .content {
-  a[href^="http"] {
-    white-space: nowrap;
-  }
-
-  a[href^="http"]::after {
-    font-family: FontAwesome;
-    content: "\f08e";
-    display: inline-block;
-    font-size: $spacer-x;
-    padding-left: $spacer-x / 8;
-    vertical-align: $spacer-x / 2;
-    height: $spacer;
-    background-color: $white
-  }
-
   a {
-    &:link, &:visited, &:hover, &:active {
-      $shadow-offsets-a: 0.03em;
-      $shadow-offsets-b: 0.06em;
-      $shadow-offsets-c: 0.09em;
-      $shadow-offsets-d: 0.12em;
-      $shadow-offsets-e: 0.15em;
-      $link-offset-a: .05em;
-      $link-offset-b: 1px;
-      text-shadow: $shadow-offsets-a 0 $white,
-      $shadow-offsets-a*-1 0 $white,
-      0 $shadow-offsets-a $white,
-      0 $shadow-offsets-a*-1 $white,
-      $shadow-offsets-b 0 $white,
-      $shadow-offsets-b*-1 0 $white,
-      $shadow-offsets-c 0 $white,
-      $shadow-offsets-c*-1 0 $white,
-      $shadow-offsets-d 0 $white,
-      $shadow-offsets-d*-1 0 $white,
-      $shadow-offsets-e 0 $white,
-      $shadow-offsets-e*-1 0 $white;
-      background: {
-        color: transparent;
-        position: 0 92%;
-        repeat: no-repeat, no-repeat, repeat-x;
-        image:   linear-gradient($white, $white),
-        linear-gradient($white, $white),
-        linear-gradient($brand-gray, $brand-gray);
-        size: $link-offset-a $link-offset-b,
-        $link-offset-a $link-offset-b,
-        $link-offset-b $link-offset-b;
-      }
-    }
+    text-decoration: none;
   }
 
   table {
@@ -172,7 +126,6 @@ b, strong {
 
   a {
      text-decoration: none;
-
      &:hover {
        color: $white;
      }
@@ -190,8 +143,6 @@ b, strong {
 
   a {
     text-transform: uppercase;
-//    font-weight: $font-weight-bold;
-  //  font-size: $font-size-sm;
   }
 }
 

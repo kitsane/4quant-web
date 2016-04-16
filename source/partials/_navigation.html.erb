@@ -1,17 +1,17 @@
 <nav class="navbar navbar-fixed-top navbar-light bg-faded">
   <div class="container">
     <div class="row">
-      <div class="col-xs-3">
+      <div class="col-xs-2">
         <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#mainNavigation">
           <span aria-hidden="true">&#9776;</span>
         </button>
       </div>
-      <div class="col-xs-6 text-xs-center">
+      <div class="col-xs-8 text-xs-center">
         <% link_to '/', class: 'navbar-brand' do %>
           <strong><%= data.site.company.short_name[0..1] %></strong><%= data.site.company.short_name[2..-1] %><span class="small text-muted text-uppercase"> | <%= data.site.company.claim %></span>
         <% end %>
       </div>
-      <div class="col-xs-3">
+      <div class="col-xs-2">
       </div>
     </div>
   </div>
