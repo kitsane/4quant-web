@@ -8,7 +8,9 @@
       </div>
       <div class="col-xs-6 text-xs-center">
         <% link_to '/', class: 'navbar-brand' do %>
-          <strong><%= data.site.company.short_name[0..1] %></strong><%= data.site.company.short_name[2..-1] %><span class="small text-muted text-uppercase"> | <%= data.site.company.claim %></span>
+          <strong><%= data.site.company.short_name[0..1] %></strong><%= data.site.company.short_name[2..-1] %>
+          <span class="text-muted text-uppercase hidden-xs-down "> | </span>
+          <span class="small text-muted text-uppercase text-nowrap hidden-xs-down"><%= data.site.company.claim %></span>
         <% end %>
       </div>
       <div class="col-xs-3">
