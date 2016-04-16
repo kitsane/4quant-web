@@ -413,6 +413,7 @@ which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
       <img class="card-img-top" src="http://localhost:4567/images/people/joachim-hagger.png" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">Joachim Hagger</h4>
+        <p class="text-muted">CEO</p>
         <p class="card-text">Lecturer at ETH Zurich; Postdoc in the X-Ray Microscopy Group at ETH Zurich and Swiss Light Source at Paul Scherrer Institute</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
@@ -434,3 +435,16 @@ which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
       </div>
     </div>
   </div>
+
+  <div class="content-section-a">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-9">
+                   <hr class="section-heading-spacer">
+                   <div class="clearfix"></div>
+                   <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
+                   <p>This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+               </div>
+           </div>
+       </div>
+   </div>

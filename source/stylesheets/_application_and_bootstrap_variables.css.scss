@@ -25,7 +25,7 @@ $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
 // Options
-$enable-flex:               false !default;
+$enable-flex:    true !default;
 $enable-rounded: true;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
@@ -97,9 +97,9 @@ $font-size-lg:               1.25rem !default;
 $font-size-sm: .8rem;
 $font-size-xs: .6rem;
 
-$font-size-h1: 1.1rem;
-$font-size-h2: 1.1rem;
-$font-size-h3: 1.1rem;
+$font-size-h1: 1.3rem;
+$font-size-h2: 1.2rem;
+$font-size-h3: 1.0rem;
 $font-size-h4: 1.0rem;
 $font-size-h5: 1.0rem;
 $font-size-h6:               1rem !default;
@@ -378,7 +378,7 @@ $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken($state-danger-bg, 5%) !default;
 
 // Cards
-$card-spacer-x:            1.25rem !default;
+$card-spacer-x:   1rem !default;
 $card-spacer-y:            .75rem !default;
 $card-border-width:        1px !default;
 $card-border-radius:       $border-radius !default;

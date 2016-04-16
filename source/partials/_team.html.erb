@@ -1,7 +1,7 @@
 <% data.people.team.each do |member| %>
   <div class="row m-b-1">
     <div class="col-xs-12 col-sm-2 p-r-0">
-      <%= image_tag "people/#{member.name.split(' ').join('-').downcase}.png", alt: member.name, class: 'img-fluid m-b-1' %>
+      <%= image_tag "people/#{member.name.split(' ').join('-').downcase}.png", alt: member.name, class: 'img-fluid m-b-1 img-rounded' %>
     </div>
 
     <div class="col-xs-12 col-sm-10">
