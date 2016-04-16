@@ -3,14 +3,13 @@
 <% end %>
 
 <% blog.articles[0..display_articles].each do |article| %>
-  <h3 class="m-b-0">
-    <%= article.title %>
-  </h3>
-  <p class="m-b-0">
-    <small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small>
-  </p>
-  <p>
-    <%= article.summary %>
-    <%= link_to 'Read more', article %>
-  </p>
+
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading"><%= article.title %>
+        <small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small>
+      </h4>
+      <%= article.summary %><%= link_to 'Read more', article %>
+    </div>
+  </div>
 <% end %>

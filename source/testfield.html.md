@@ -312,3 +312,36 @@ $$I = \int \rho R^{2} dV$$
 
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+
+
+<div class="row marketing">
+  <div class="col-md-6">
+    <h4>Radiology</h4>
+    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+    <h4>Industry 4.0</h4>
+    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+    <h4>Subheading</h4>
+    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+  </div>
+  <div class="col-md-6">
+    <h4>Geoimaging</h4>
+      <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+      <h4>Subheading</h4>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+      <h4>Subheading</h4>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Man vergisst nicht, wenn man vergessen will. [Friedrich Nietzsche]</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Man vergisst nicht, wenn man vergessen will. [Friedrich Nietzsche]</p>
+    </div>
+  </div>
