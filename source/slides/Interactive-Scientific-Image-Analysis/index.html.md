@@ -630,7 +630,7 @@
 
         The stitching itself, rather than rewriting the original data can be done in a lazy fashion as certain regions of the image are read.
 
-        <div class='code'>
+        ~~~ python
           def getView(tPos,tSize) = <br>
             stImgs. <br>
             filter(x=>abs(x-tPos)<img.size). <br>
@@ -638,7 +638,7 @@
              val oImg = new Image(tSize) <br>
              oImg.copy(img,x,tPos) <br>
           }.addImages(AVG)
-        </div>
+        ~~~
 
         This also ensures the original data is left unaltered and all analysis is reversible.
       </script>

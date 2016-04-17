@@ -1,3 +1,4 @@
+@import "codepen-embed.scss";
 @import "../../bower_components/reveal.js/css/reveal.scss";
 @import "../../bower_components/reveal.js/css/theme/template/mixins.scss";
 
@@ -5,3 +6,17 @@
 @import "../../bower_components/reveal.js/css/theme/template/theme.scss";
 @import "../../bower_components/reveal.js/css/theme/source/white.scss";
 @import "application_and_bootstrap_variables.css.scss";
+
+.reveal {
+	font-family: $font-family-sans-serif;
+	color:$gray-dark;
+	h1,h2,h3,h4,h5,h6,p,section,a {
+		font-family: $font-family-sans-serif;
+		color:$gray-dark;
+	}
+	section {
+		img {
+			border: none;
+		}
+	}
+}
