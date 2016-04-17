@@ -5,13 +5,13 @@
     		<%= data.site.company.name %> | <%= current_page.data.title || data.site.company.claim.upcase %>
 		</title>
 		<%= stylesheet_link_tag :reveal %>
-		<%= javascript_include_tag :reveal %>
 	</head>
 	<body class='<%= page_classes %>'>
     <%= yield %>
+    <%= javascript_include_tag 'head.min' %>
+    <%= javascript_include_tag :reveal %>
     <% if config[:environment] == :production %>
       <%= google_analytics_universal_tag %>
     <% end %>
-
     </body>
 </html>
