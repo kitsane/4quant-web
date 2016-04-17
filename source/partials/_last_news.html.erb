@@ -8,7 +8,7 @@
     <%= article.title %><br/>
     <small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small>
   </h4>
-  <p class="card-text"><small><%= article.summary %></small></p>
+  <p class="card-text m-b-0"><small><%= article.summary %></small></p>
   <div class="text-xs-right"><small><%= link_to 'Read more', article, class: 'card-link' %></small></div>
 </div>
 <% end %>
