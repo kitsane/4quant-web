@@ -7,6 +7,8 @@ date: 2016-04-16
 
 SUMMARY_START There are 5 must-have core elements on any landing page, which can be broken down further into a more detailed list of building blocksSUMMARY_END:
 
+from http://unbounce.com/landing-pages/7-elements-of-a-winning-landing-page/
+
 1. Your Unique Selling Proposition (USP)
   * The main headline (A)
   * A supporting headline (B)
