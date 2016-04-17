@@ -69,10 +69,7 @@ gulp.task('revealjs', function() {
       config.bowerDir + "/reveal.js/js/reveal.js",
       "source/javascripts/reveal_initialize.js"
     ])
-    // .pipe(sourcemaps.init())
-    // .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat("reveal.js"))
-    // .pipe(sourcemaps.write())
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
