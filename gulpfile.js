@@ -61,6 +61,7 @@ gulp.task('markedjs', function() {
       config.bowerDir + "/reveal.js/lib/js/head.min.js",
       config.bowerDir + "/reveal.js/plugin/math/math.js"
       ])
+      .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
@@ -70,6 +71,7 @@ gulp.task('revealjs', function() {
       "source/javascripts/reveal_initialize.js"
     ])
     .pipe(concat("reveal.js"))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
