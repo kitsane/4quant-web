@@ -393,7 +393,7 @@
       <script type='text/template'>
         ## Making Coding Simpler with Types
 
-        ~~~
+        <pre><code>
             trait BasicMathSupport[T] extends Serializable {
                 def plus(a: T, b: T): T
                 def times(a: T, b: T): T
@@ -405,7 +405,7 @@
                 def divide(a: T, b: T): T = times(a, invert(b))
                 def compare(a: T, b: T): Int
             }
-        ~~~
+        </code></pre>
       </script>
     </section>
 
@@ -415,7 +415,7 @@
 
         * Simple filter implementation
 
-        ~~~
+        <pre><code>
           def SimpleFilter[T](inImage: Image[T])
           (implicit val wst: BasicMathSupport[T]) = {
           val width: Double = 1
@@ -423,18 +423,18 @@
           kernelReduce = (ptA,ptB) => (ptA + ptB) \* 0.5
           runFilter(inImage,kernel,kernelReduce)
           }
-        ~~~
+        </code></pre>
 
         * Spectra as well supported types
 
-        ~~~
+        <pre><code>
         implicit val SpectraBMS = new BasicMathSupport[Array[Double]] {
             def plus(a: Array[Double], b: Array[Double]) =
               a.zip(b).map(\_ + \_)
         ...
             def scale(a: Array[Double], b: Double) =
               a.map(_*b)
-        ~~~
+        </code></pre>
       </script>
     </section>
 
@@ -511,23 +511,23 @@
             * `val bones = sc.loadImages("work/f2_bones/*/bone.tif")`
             * Segment hard and soft tissues
 
-        ~~~
+        <pre><code>
           val hardTissue = bones.threshold(OTSU)
           val softTissue = hardTissue.invert
-        ~~~
+        </code></pre>
 
         * Label cells
 
-        ~~~
+        <div class='code'>
           val cells = hardTissue.componentLabel.
           filter(c=>c.size>100 & c.size<1000)
-        ~~~
+        </div>
 
         * Export results
 
-        ~~~
+        <pre><code>
           cells.shapeAnalysis.WriteOutput("lacuna.csv")
-        ~~~
+        </code></pre>
       </script>
     </section>
 
@@ -602,13 +602,13 @@
       <script type='text/template'>
         ## Science Problems: Big Stitching
 
-        ~~~
+        <pre><code>
           dispField = Images.
             cartesian(Images).map{
             ((xA,ImgA), (xB,ImgB)) =>
               xcorr(ImgA,ImgB,in=xB-xA)
             }
-        ~~~
+        </code></pre>
 
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-022.png)
       </script>
@@ -630,7 +630,7 @@
 
         The stitching itself, rather than rewriting the original data can be done in a lazy fashion as certain regions of the image are read.
 
-        ~~~ python
+        <pre><code>
           def getView(tPos,tSize) =
             stImgs.
             filter(x=>abs(x-tPos)<img.size).
@@ -638,7 +638,7 @@
              val oImg = new Image(tSize)
              oImg.copy(img,x,tPos)
           }.addImages(AVG)
-        ~~~
+        </code></pre>
 
         This also ensures the original data is left unaltered and all analysis is reversible.
       </script>
@@ -648,9 +648,9 @@
       <script type='text/template'>
         ## Viewing Regions
 
-        ~~~
+        <pre><code>
           getView(Pos(26.5,13),Size(2,2))
-        ~~~
+        </code></pre>
 
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-024.png)
       </script>
@@ -683,24 +683,24 @@
       <script type='text/template'>
         ## Streaming Analysis Real-time Webcam Processing
 
-        ~~~
+        <pre><code>
           val wr = new WebcamReceiver()
           val ssc = sc.toStreaming(strTime)
           val imgList = ssc.receiverStream(wr)
-        ~~~
+        </code></pre>
 
         ### Filter images
 
-        ~~~
+        <pre><code>
           val filtImgs = allImgs.mapValues(\_.run("Median...","radius=3"))
-        ~~~
+        </code></pre>
 
         ### Create a background image
 
-        ~~~
+        <pre><code>
           val totImgs = inImages.count()
           val bgImage = inImages.reduce(\_ add \_).multiply(1.0/totImgs)
-        ~~~
+        </code></pre>
       </script>
     </section>
 
@@ -710,7 +710,7 @@
 
         ### Remove the background image and find the mean value
 
-        ~~~
+        <pre><code>
           val eventImages = filtImgs.
               transform{
               inImages =>
@@ -722,14 +722,14 @@
                 }
                 corImage
             }
-        ~~~
+        </code></pre>
 
         ### Show the outliers
 
-        ~~~
+        <pre><code>
           eventImages.filter(iv => Math.abs(iv.\_1)>20).
             foreachRDD(showResultsStr("outlier",\_))
-        ~~~
+        </code></pre>
       </script>
     </section>
 
@@ -774,7 +774,7 @@
         * Thanks to Map-Reduce, it is *fault-tolerant, parallel, distributed*
         * Thanks to Java, it is *hardware agnostic*
 
-        ~~~ python
+        <div class='code'>
           def spread\_voxels(pvec: ((Int,Int),Double), windSize: Int = 1) = {
           val wind=(-windSize to windSize)
           val pos=pvec.\_1
@@ -786,7 +786,7 @@
           val filtImg=roiImg.
               flatMap(cvec => spread\_voxels(cvec)).
               filter(roiFun).reduceByKey(\_ + \_)
-        ~~~
+        </div>
 
         * But it is also not really so readable
       </script>
@@ -994,9 +994,9 @@
 
         Now instead of trying to find the intensity for the ring, we can combine density and distance to identify it
 
-        ~~~
+        <div class='code'>
           if f(5&#60;Distance&#60;10&0.5&#60;Intensity&#60;1.0)
-        ~~~
+        </div>
 
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-036.png)
       </script>
