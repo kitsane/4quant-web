@@ -59,7 +59,8 @@ gulp.task('markedjs', function() {
       config.bowerDir + "/reveal.js/plugin/highlight/highlight.js",
       config.bowerDir + "/reveal.js/lib/js/classList.js",
       config.bowerDir + "/reveal.js/lib/js/head.min.js",
-      config.bowerDir + "/reveal.js/plugin/math/math.js"
+      config.bowerDir + "/reveal.js/plugin/math/math.js",
+      config.bowerDir + "/reveal.js/plugin/zoom-js/zoom.js"
       ])
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.outputDir + '/javascripts'));
