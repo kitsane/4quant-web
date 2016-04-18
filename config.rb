@@ -9,6 +9,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# Slides
+page '/slides/*', layout: :slides_layout
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -20,7 +23,7 @@ page '/*.txt', layout: false
 
 # Reload the browser automatically whenever files change
 configure :development do
-#  activate :livereload
+ activate :livereload
 end
 
 activate :breadcrumbs

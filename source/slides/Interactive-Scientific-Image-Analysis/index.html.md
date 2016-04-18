@@ -609,7 +609,6 @@
               xcorr(ImgA,ImgB,in=xB-xA) <br>
             }
         </div>
-
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-022.png)
       </script>
     </section>
