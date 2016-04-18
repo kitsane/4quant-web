@@ -13,38 +13,37 @@ SUMMARY_STARTThe standard procedure for both radiotherapy and surgery involves m
 
 The latest surgical suites and MRI technologies have made subsecond measurements a reality. These measurements are already being used to assist therapy, but the value is limited without the ability to process the images in real-time.
 
-<div class="code">SELECT Image as ChestCT FROM PatientImages WHERE Modality="CT" AND Region="Chest"</div>
-
 ```
 SELECT Image as ChestCT FROM PatientImages WHERE Modality="CT" AND Region="Chest"
 ```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-001.gif">
+<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-001.gif" class="img-fluid">
 
 ### Perform Segmentation
 
-<div class="code">SELECT CHEST_SEGMENTATION(Image) as ChestSeg FROM ChestCT</div>
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-002.gif">
+```SELECT CHEST_SEGMENTATION(Image) as ChestSeg FROM ChestCT```
+
+<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-002.gif" class="img-fluid">
 
 ### Extract the heart since it is the most dose-sensitive
 
-<div class="code">SELECT HeartRegion FROM ChestSeq</div>
+```SELECT HeartRegion FROM ChestSeq```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-003.gif">
+<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-003.gif" class="img-fluid">
 
 ### Track the Position of the Heart
 
-<div class="code">SELECT CenterOfMass(roi) FROM HeartRegion GROUP BY time</div>
+```SELECT CenterOfMass(roi) FROM HeartRegion GROUP BY time```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-004.png">
+<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-004.png" class="img-fluid">
 
 It is also possible to create outlines from the structures which can then be used to update surgical plans, and provide information to the latest generation of devices which can then updating the treatment plan in real time.
 
-<div class="code">SELECT CreateOutlines(roi) FROM HeartRegion GROUP BY Organ</div>
+```SELECT CreateOutlines(roi) FROM HeartRegion GROUP BY Organ```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-005.png">
+<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-005.png" class="img-fluid">
 
-### *Image Query and Analysis Engine*
+### Image Query and Analysis Engine
 
 Despite recent boosts in popularity, both personalized and precision medicine are typically far removed from the clinical setting. In many of these cases, all of the data required for significantly better informed diagnosis. Hospitals are required to archive a majority of patient imaging studies and scans for a minimum of 10 years. These essential data are just sitting unused on PACS, tapes, and other storage volumes
 
@@ -56,7 +55,7 @@ The quantitatively meaningful data can then be used to train machine learning al
 
 Here we show a simple decision tree trained to identify lesions using color, position, texture and shape.
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-006.png">
+<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-006.png" class="img-fluid">
 
 Furthermore the ability to parallelize and scale means thousands to millions of videos can be analyzed at the same time to learn even more about the structures of the digestive track and identify new possibilities for diagnosis.
 
@@ -65,12 +64,12 @@ Furthermore the ability to parallelize and scale means thousands to millions of 
 The first question is how the data can be processed. The basic work is done by a simple workflow on top of our Spark Image Layer. This abstracts away the complexities of cloud computing and distributed analysis. You focus only on the core task of image processing.
 
 <div class="half-width-image">
-  <img alt='4Quant' class='' src="images/realtime-mri-segmentation/mammo-007.svg">
+  <img alt='4Quant' class='' src="images/realtime-mri-segmentation/mammo-007.svg" class="img-fluid">
 </div>
 
 The true value of such a scalable system is not in the single analysis, but in the ability to analyze hundreds, thousands, and even millions of samples at the same time.
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-008.svg">
+<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-008.svg" class="img-fluid">
 
 With cloud-integration and Big Data-based frameworks, even handling an entire city network with 100s of drones and cameras running continuously is an easy task without worrying about networks, topology, or fault-tolerance.
 
@@ -80,16 +79,16 @@ With cloud-integration and Big Data-based frameworks, even handling an entire ci
 
 Once the cluster has been comissioned and you have the StreamingSparkContext called `ssc` (automatically provided in [Databricks Cloud](https://databricks.com/product/databricks) or [Zeppelin](http://zeppelin.incubator.apache.org/)), the data can be loaded using the Spark Image Layer. Since we are using real-time analysis, we acquire the images from a streaming source.
 
-<div class="code">
+```
   val mriScanner = MedicalCameraReceiver("https://mri-scanner-8091")<br/>
   val metaImageStream = ssc.receiverStream(mriScanner)
-</div>
+```
 
 Although we execute the command on one machine, the analysis will be distributed over the entire set of cluster resources available to `ssc`. To further process the images, we can take advantage of the rich set of functionality built into Spark Image Layer. The entire pipeline can then be started to run in real-time on all the new images as they stream in. If the tasks become more computationally intensive, then the computing power can be scaled up and down elastically using on-premise or cloud-based machines based on the regulatory nature of the environment.
 
 ## Learn More
 
-*4Quant* is active in a number of different areas from medicine to remote sensing. Our image processing framework (Spark Image Layer) and our query engine (*Image Query and Analysis Engine*) are widely adaptable to a number of different specific applications.
+4Quant is active in a number of different areas from medicine to remote sensing. Our image processing framework (Spark Image Layer) and our query engine (*Image Query and Analysis Engine*) are widely adaptable to a number of different specific applications.
 
 Check out our other use-cases to see how *4Quant* can help you
 
