@@ -1,23 +1,108 @@
-@import "codepen-embed.scss";
-@import "../../bower_components/reveal.js/css/reveal.scss";
-@import "../../bower_components/reveal.js/css/theme/template/mixins.scss";
+@charset "utf-8";
 
-@import "../../bower_components/reveal.js/css/theme/template/settings.scss";
-@import "../../bower_components/reveal.js/css/theme/template/theme.scss";
-@import "../../bower_components/reveal.js/css/theme/source/white.scss";
+// Font import
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
 @import "application_and_bootstrap_variables.css.scss";
 
+// bootstrap parts used
+@import "../../bower_components/bootstrap/scss/mixins.scss";
+@import "../../bower_components/bootstrap/scss/tables.scss";
+@import "../../bower_components/bootstrap/scss/type.scss";
+
+// Syntax hilight for highlight.js
+@import "codepen-embed.scss";
+
+// Reveal scss and theme
+@import "../../bower_components/reveal.js/css/reveal.scss";
+@import "../../bower_components/reveal.js/css/theme/source/white.scss";
+
+html {
+  height: 100%;
+  overflow: hidden;
+  font-size: $font-size-root;
+}
+
+body {
+  font-weight: $font-weight-light;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: $body-bg;
+  color:$gray-dark;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+}
+@media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+  html {
+    font-size: $font-size-root - 2;
+  }
+}
+
+@media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+  html {
+    font-size: $font-size-root - 4;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 760px) {
+  html {
+    font-size: 18px;
+  }
+}
+h1 {
+  text-transform: uppercase;
+}
+
+h2 a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+
+  & + small {
+    margin-right: $grid-gutter-width / 2;
+    font-size: $font-size-sm;
+    white-space: nowrap;
+  }
+}
+
+p, small, a, ul {
+  font-weight: $font-weight-light;
+}
+
+b, strong {
+  font-weight: $font-weight-bold;
+}
+a {
+	&:hover, &:active, &:visited, &:link {
+		color: $brand-primary;
+	}
+}
 .reveal {
-	font-family: $font-family-sans-serif;
-	color:$gray-dark;
-	h1,h2,h3,h4,h5,h6,p,section,a,ul,ol,li {
-		font-family: $font-family-sans-serif;
-		color:$gray-dark;
+	h1,h2,h3,h4,h5,h6,p,section,a,ul,ol,li,dd,dt,code,div,dl {
 		text-align: left;
 	}
-	section {
-		img {
-			border: none;
-		}
+	img {
+		border: none;
+	}
+	p, small, a, ul {
+	  font-weight: $font-weight-light;
+	}
+	b, strong {
+	  font-weight: $font-weight-bold;
+	}
+	ul, ol {
+	    padding-left: $spacer;
+	}
+	table {
+		@extend .table;
+	    @extend .table-sm;
+	    @extend .table-striped;
+	    font-size: $font-size-base;
+	}
+	blockquote {
+		@extend .blockquote;
+	    font-size: $font-size-base;
 	}
 }
