@@ -8,9 +8,9 @@
         Kevin Mader <br>
         1 July 2014, Spark Summit
 
-        ![Paul Scherrer Institute](../images/slides/ss/ss-001.png)
-        ![ETH Zurich](../images/slides/ss/ss-002.png)
-        ![4Quant](../images/slides/ss/ss-003.png)
+        ![Paul Scherrer Institute](/slides/ssPresentation/images/ss-001.png)
+        ![ETH Zurich](/slides/ssPresentation/images/ss-002.png)
+        ![4Quant](/slides/ssPresentation/images/ss-003.png)
       </script>
     </section>
 
@@ -34,7 +34,7 @@
 
         A modern image analysis infrastructure to make complex problems simple and handle the flood of data from current and next generation instruments
 
-        ![](../images/slides/ss/ss-004.png)
+        ![](/slides/ssPresentation/images/ss-004.png)
       </script>
     </section>
 
@@ -57,7 +57,7 @@
 
         Images are only as useful as what you can do with them, the bottleneck isn&#39;t measurement speed, but analysis
 
-        ![](../images/slides/ss/ss-005.png)
+        ![](/slides/ssPresentation/images/ss-005.png)
 
         *Adapted from: Sboner A,et. al. Genome Biology, 2011*
       </script>
@@ -74,7 +74,7 @@
             * with **1.8mm** field of view
         * achieve **>10 Hz** temporal resolution
 
-        ![](../images/slides/ss/ss-006.png)
+        ![](/slides/ssPresentation/images/ss-006.png)
 
         *[1] Mokso et al., J. Phys. D, 46(49),2013*
       </script>
@@ -277,7 +277,7 @@
       <script type='text/template'>
         ## Imaging as Machine Learning
 
-        ![](../images/slides/ss/ss-007.png)
+        ![](/slides/ssPresentation/images/ss-007.png)
       </script>
     </section>
 
@@ -285,7 +285,7 @@
       <script type='text/template'>
         ## Imaging as Machine Learning
         
-        ![](../images/slides/ss/ss-008.png) 
+        ![](/slides/ssPresentation/images/ss-008.png) 
       </script>
     </section>
 
@@ -293,7 +293,7 @@
       <script type='text/template'>
         ## Phenotype Pipeline Example
 
-        ![](../images/slides/ss/ss-009.png)
+        ![](/slides/ssPresentation/images/ss-009.png)
       </script>
     </section>
 
@@ -320,7 +320,7 @@
       <script type='text/template'>
         ## Solution Spark: Imaging Layer / TIPL
 
-        ![](../images/slides/ss/ss-010.png)
+        ![](/slides/ssPresentation/images/ss-010.png)
       </script>
     </section>
 
@@ -328,7 +328,7 @@
       <script type='text/template'>
         ## Spark Imaging Performance
 
-        ![](../images/slides/ss/ss-011.png)
+        ![](/slides/ssPresentation/images/ss-011.png)
       </script>
     </section>
 
@@ -336,7 +336,7 @@
       <script type='text/template'>
         ## Spark Imaging Performance
 
-        ![](../images/slides/ss/ss-012.png)
+        ![](/slides/ssPresentation/images/ss-012.png)
       </script>
     </section>
 
@@ -361,7 +361,7 @@
       <script type='text/template'>
         ## Performance Extrapolated 
 
-        ![](../images/slides/ss/ss-013.png)
+        ![](/slides/ssPresentation/images/ss-013.png)
       </script>
     </section>
 
@@ -369,7 +369,7 @@
       <script type='text/template'>
         ## Performance Extrapolated
 
-        ![](../images/slides/ss/ss-014.png)
+        ![](/slides/ssPresentation/images/ss-014.png)
       </script>
     </section>
 
@@ -413,7 +413,7 @@
 
         How does this result look visually? Each line shows the mean ± standard deviation for sample. The range within a single sample is clearly much larger than between
 
-        ![](../images/slides/ss/ss-015.png)
+        ![](/slides/ssPresentation/images/ss-015.png)
       </script>
     </section>
 
@@ -437,7 +437,7 @@
       <script type='text/template'>
         ## Reducing Variability
 
-        ![](../images/slides/ss/ss-016.png)
+        ![](/slides/ssPresentation/images/ss-016.png)
       </script>
     </section>
 
@@ -498,7 +498,7 @@
         * Spark Streaming on ZeroMQ pipe
 
         <p class='title-image-block'>
-          <img alt='' src='../images/slides/ss/ss-017.png'>
+          <img alt='' src='/slides/ssPresentation/images/ss-017.png'>
         </p>
       </script>
     </section>
@@ -537,7 +537,7 @@
 
         Such systems can be easily represented by a graph, and analyzed using GraphX in a distributed, fault tolerant manner.
 
-        ![](../images/slides/ss/ss-018.png)
+        ![](/slides/ssPresentation/images/ss-018.png)
       </script>
     </section>
 
@@ -566,7 +566,7 @@
       <script type='text/template'>
         ## Cellular Potts Simulations
 
-        ![](../images/slides/ss/ss-019.png)
+        ![](/slides/ssPresentation/images/ss-019.png)
       </script>
     </section>
 
@@ -574,7 +574,7 @@
       <script type='text/template'>
         ## Cellular Potts Simulations
 
-        ![](../images/slides/ss/ss-020.png)
+        ![](/slides/ssPresentation/images/ss-020.png)
       </script>
     </section>
 
@@ -625,7 +625,7 @@
         * AIT at PSI
         * TOMCAT Group
 
-        ![](../images/slides/ss/ss-021.png)
+        ![](/slides/ssPresentation/images/ss-021.png)
       </script>
     </section>
 
