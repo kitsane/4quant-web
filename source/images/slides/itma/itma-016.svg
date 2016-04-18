@@ -1,0 +1,37 @@
+
+<svg width="123pt" height="280pt"
+ viewBox="0.00 0.00 122.74 280.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 276)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-276 118.745,-276 118.745,4 -4,4"/>
+<!-- user -->
+<g id="node1" class="node"><title>user</title>
+<ellipse fill="none" stroke="purple" cx="44" cy="-242" rx="28.9004" ry="29.0318"/>
+<text text-anchor="middle" x="44" y="-237.8" font-family="Times,serif" font-size="14.00">User</text>
+</g>
+<!-- driver -->
+<g id="node2" class="node"><title>driver</title>
+<polygon fill="lightgray" stroke="lightgray" points="71,-142 17,-142 17,-106 71,-106 71,-142"/>
+<text text-anchor="middle" x="44" y="-119.8" font-family="Times,serif" font-size="14.00">Driver</text>
+</g>
+<!-- user&#45;&gt;driver -->
+<g id="edge1" class="edge"><title>user&#45;&gt;driver</title>
+<path fill="none" stroke="black" d="M44,-212.623C44,-194.318 44,-170.633 44,-152.503"/>
+<polygon fill="black" stroke="black" points="47.5001,-152.292 44,-142.292 40.5001,-152.292 47.5001,-152.292"/>
+<text text-anchor="middle" x="64.2125" y="-181.2" font-family="Times,serif" font-size="14.00">Load</text>
+<text text-anchor="middle" x="64.2125" y="-164.4" font-family="Times,serif" font-size="14.00">Images</text>
+</g>
+<!-- master -->
+<g id="node3" class="node"><title>master</title>
+<polygon fill="lightgreen" stroke="lightgreen" points="88.0192,-36 -0.0192371,-36 -0.0192371,-0 88.0192,-0 88.0192,-36"/>
+<text text-anchor="middle" x="44" y="-13.8" font-family="Times,serif" font-size="14.00">Master Node</text>
+</g>
+<!-- driver&#45;&gt;master -->
+<g id="edge2" class="edge"><title>driver&#45;&gt;master</title>
+<path fill="none" stroke="black" d="M44,-105.827C44,-89.6431 44,-65.1307 44,-46.2733"/>
+<polygon fill="black" stroke="black" points="47.5001,-46.199 44,-36.199 40.5001,-46.199 47.5001,-46.199"/>
+<text text-anchor="middle" x="79.3724" y="-75.2" font-family="Times,serif" font-size="14.00">read_images</text>
+<text text-anchor="middle" x="79.3724" y="-58.4" font-family="Times,serif" font-size="14.00">(0&#45;9)</text>
+</g>
+</g>
+</svg>

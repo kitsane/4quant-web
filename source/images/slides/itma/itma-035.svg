@@ -1,0 +1,92 @@
+
+<svg width="443pt" height="355pt"
+ viewBox="0.00 0.00 443.45 355.38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 351.384)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-351.384 439.454,-351.384 439.454,4 -4,4"/>
+<!-- cam -->
+<g id="node1" class="node"><title>cam</title>
+<ellipse fill="pink" stroke="pink" cx="135.379" cy="-329.384" rx="45.2054" ry="18"/>
+<text text-anchor="middle" x="135.379" y="-325.184" font-family="Times,serif" font-size="14.00">Webcam</text>
+</g>
+<!-- spark -->
+<g id="node2" class="node"><title>spark</title>
+<ellipse fill="lightgreen" stroke="lightgreen" cx="133.137" cy="-250.598" rx="52.0072" ry="29.3315"/>
+<text text-anchor="middle" x="133.137" y="-254.798" font-family="Times,serif" font-size="14.00">Spark</text>
+<text text-anchor="middle" x="133.137" y="-237.998" font-family="Times,serif" font-size="14.00">Streaming</text>
+</g>
+<!-- cam&#45;&gt;spark -->
+<g id="edge1" class="edge"><title>cam&#45;&gt;spark</title>
+<path fill="none" stroke="black" d="M134.859,-311.111C134.681,-304.87 134.475,-297.624 134.268,-290.362"/>
+<polygon fill="black" stroke="black" points="137.762,-290.083 133.979,-280.187 130.765,-290.283 137.762,-290.083"/>
+</g>
+<!-- filter -->
+<g id="node3" class="node"><title>filter</title>
+<ellipse fill="lightgray" stroke="lightgray" cx="151.263" cy="-166.98" rx="63.7396" ry="18"/>
+<text text-anchor="middle" x="151.263" y="-162.78" font-family="Times,serif" font-size="14.00">Median Filter</text>
+</g>
+<!-- spark&#45;&gt;filter -->
+<g id="edge2" class="edge"><title>spark&#45;&gt;filter</title>
+<path fill="none" stroke="black" d="M139.476,-221.352C141.334,-212.781 143.361,-203.433 145.201,-194.944"/>
+<polygon fill="black" stroke="black" points="148.632,-195.639 147.33,-185.124 141.791,-194.156 148.632,-195.639"/>
+</g>
+<!-- group -->
+<g id="node4" class="node"><title>group</title>
+<ellipse fill="lightgreen" stroke="lightgreen" cx="46.2253" cy="-110.213" rx="46.4516" ry="29.3315"/>
+<text text-anchor="middle" x="46.2253" y="-114.413" font-family="Times,serif" font-size="14.00">Group</text>
+<text text-anchor="middle" x="46.2253" y="-97.6129" font-family="Times,serif" font-size="14.00">Every 3s</text>
+</g>
+<!-- filter&#45;&gt;group -->
+<g id="edge3" class="edge"><title>filter&#45;&gt;group</title>
+<path fill="none" stroke="black" d="M121.724,-151.016C112.057,-145.792 101.095,-139.867 90.5802,-134.185"/>
+<polygon fill="black" stroke="black" points="91.9607,-130.952 81.4992,-129.277 88.6324,-137.11 91.9607,-130.952"/>
+</g>
+<!-- subtract -->
+<g id="node6" class="node"><title>subtract</title>
+<ellipse fill="lightgray" stroke="lightgray" cx="264.917" cy="-64.6712" rx="43.4357" ry="18"/>
+<text text-anchor="middle" x="264.917" y="-60.4712" font-family="Times,serif" font-size="14.00">Subtract</text>
+</g>
+<!-- filter&#45;&gt;subtract -->
+<g id="edge6" class="edge"><title>filter&#45;&gt;subtract</title>
+<path fill="none" stroke="black" d="M170.543,-149.625C189.412,-132.64 218.277,-106.655 239.116,-87.8965"/>
+<polygon fill="black" stroke="black" points="241.581,-90.3865 246.672,-81.0947 236.898,-85.1838 241.581,-90.3865"/>
+</g>
+<!-- average -->
+<g id="node5" class="node"><title>average</title>
+<ellipse fill="lightgray" stroke="lightgray" cx="140.247" cy="-29.4156" rx="44.6773" ry="29.3315"/>
+<text text-anchor="middle" x="140.247" y="-33.6156" font-family="Times,serif" font-size="14.00">Average</text>
+<text text-anchor="middle" x="140.247" y="-16.8156" font-family="Times,serif" font-size="14.00">Images</text>
+</g>
+<!-- group&#45;&gt;average -->
+<g id="edge4" class="edge"><title>group&#45;&gt;average</title>
+<path fill="none" stroke="black" d="M73.9264,-86.4081C83.6818,-78.0249 94.7799,-68.4878 105.069,-59.6458"/>
+<polygon fill="black" stroke="black" points="107.441,-62.2224 112.744,-53.0503 102.879,-56.9134 107.441,-62.2224"/>
+</g>
+<!-- average&#45;&gt;subtract -->
+<g id="edge5" class="edge"><title>average&#45;&gt;subtract</title>
+<path fill="none" stroke="black" d="M181.76,-41.1552C193.833,-44.5692 207.083,-48.3162 219.388,-51.7961"/>
+<polygon fill="black" stroke="black" points="218.439,-55.1648 229.014,-54.5181 220.344,-48.4289 218.439,-55.1648"/>
+</g>
+<!-- mean -->
+<g id="node7" class="node"><title>mean</title>
+<ellipse fill="lightgray" stroke="lightgray" cx="302.523" cy="-241.406" rx="71.8067" ry="18"/>
+<text text-anchor="middle" x="302.523" y="-237.206" font-family="Times,serif" font-size="14.00">Calculate Mean</text>
+</g>
+<!-- subtract&#45;&gt;mean -->
+<g id="edge7" class="edge"><title>subtract&#45;&gt;mean</title>
+<path fill="none" stroke="black" d="M268.8,-82.9193C275.376,-113.824 288.747,-176.661 296.531,-213.247"/>
+<polygon fill="black" stroke="black" points="293.157,-214.205 298.662,-223.258 300.004,-212.748 293.157,-214.205"/>
+</g>
+<!-- outlier -->
+<g id="node8" class="node"><title>outlier</title>
+<ellipse fill="lightgreen" stroke="lightgreen" cx="392.251" cy="-168.475" rx="43.4069" ry="29.3315"/>
+<text text-anchor="middle" x="392.251" y="-172.675" font-family="Times,serif" font-size="14.00">Keep</text>
+<text text-anchor="middle" x="392.251" y="-155.875" font-family="Times,serif" font-size="14.00">Outliers</text>
+</g>
+<!-- mean&#45;&gt;outlier -->
+<g id="edge8" class="edge"><title>mean&#45;&gt;outlier</title>
+<path fill="none" stroke="black" d="M323.788,-224.123C333.546,-216.191 345.386,-206.567 356.458,-197.568"/>
+<polygon fill="black" stroke="black" points="358.79,-200.182 364.343,-191.159 354.375,-194.75 358.79,-200.182"/>
+</g>
+</g>
+</svg>

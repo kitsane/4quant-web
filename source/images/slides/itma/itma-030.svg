@@ -1,0 +1,123 @@
+
+<svg width="307pt" height="476pt"
+ viewBox="0.00 0.00 307.00 476.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 472)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-472 303,-472 303,4 -4,4"/>
+<!-- Query -->
+<g id="node1" class="node"><title>Query</title>
+<polygon fill="red" stroke="red" points="158,-468 104,-468 104,-432 158,-432 158,-468"/>
+<text text-anchor="middle" x="131" y="-445.8" font-family="Times,serif" font-size="14.00">Query</text>
+</g>
+<!-- Spark SQL -->
+<g id="node5" class="node"><title>Spark SQL</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="169.951,-396 92.0485,-396 92.0485,-360 169.951,-360 169.951,-396"/>
+<text text-anchor="middle" x="131" y="-373.8" font-family="Times,serif" font-size="14.00">Spark SQL</text>
+</g>
+<!-- Query&#45;&gt;Spark SQL -->
+<g id="edge10" class="edge"><title>Query&#45;&gt;Spark SQL</title>
+<path fill="none" stroke="red" d="M131,-431.697C131,-423.983 131,-414.712 131,-406.112"/>
+<polygon fill="red" stroke="red" points="134.5,-406.104 131,-396.104 127.5,-406.104 134.5,-406.104"/>
+</g>
+<!-- Private Database -->
+<g id="node2" class="node"><title>Private Database</title>
+<polygon fill="red" stroke="red" points="299.341,-396 188.659,-396 188.659,-360 299.341,-360 299.341,-396"/>
+<text text-anchor="middle" x="244" y="-373.8" font-family="Times,serif" font-size="14.00">Private Database</text>
+</g>
+<!-- SDB -->
+<g id="node3" class="node"><title>SDB</title>
+<polygon fill="lightgreen" stroke="lightgreen" points="201.454,-324 60.546,-324 60.546,-288 201.454,-288 201.454,-324"/>
+<text text-anchor="middle" x="131" y="-301.8" font-family="Times,serif" font-size="14.00">Spark Image Database</text>
+</g>
+<!-- Private Database&#45;&gt;SDB -->
+<g id="edge7" class="edge"><title>Private Database&#45;&gt;SDB</title>
+<path fill="none" stroke="black" d="M216.357,-359.876C201.172,-350.469 182.185,-338.708 165.977,-328.667"/>
+<ellipse fill="black" stroke="black" cx="162.15" cy="-326.296" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- SIL -->
+<g id="node4" class="node"><title>SIL</title>
+<polygon fill="lightgreen" stroke="lightgreen" points="124.46,-252 1.53996,-252 1.53996,-216 124.46,-216 124.46,-252"/>
+<text text-anchor="middle" x="63" y="-229.8" font-family="Times,serif" font-size="14.00">Spark Image Layer</text>
+</g>
+<!-- SDB&#45;&gt;SIL -->
+<g id="edge12" class="edge"><title>SDB&#45;&gt;SIL</title>
+<path fill="none" stroke="red" d="M114.191,-287.697C105.874,-279.135 95.6946,-268.656 86.6101,-259.304"/>
+<polygon fill="red" stroke="red" points="89.094,-256.838 79.6156,-252.104 84.073,-261.716 89.094,-256.838"/>
+</g>
+<!-- SDB&#45;&gt;Spark SQL -->
+<g id="edge1" class="edge"><title>SDB&#45;&gt;Spark SQL</title>
+<path fill="none" stroke="black" d="M136.895,-324.104C137.762,-332.383 137.97,-342.488 137.517,-351.64"/>
+<ellipse fill="black" stroke="black" cx="137.214" cy="-355.708" rx="4" ry="4"/>
+</g>
+<!-- Spark Core -->
+<g id="node6" class="node"><title>Spark Core</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="102.526,-108 23.4735,-108 23.4735,-72 102.526,-72 102.526,-108"/>
+<text text-anchor="middle" x="63" y="-85.8" font-family="Times,serif" font-size="14.00">Spark Core</text>
+</g>
+<!-- SDB&#45;&gt;Spark Core -->
+<g id="edge8" class="edge"><title>SDB&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M144.9,-287.711C168.006,-256.726 208.957,-190.623 179,-144 163.88,-120.468 135.435,-107.255 110.498,-99.9062"/>
+<ellipse fill="black" stroke="black" cx="106.403" cy="-98.7809" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- SIL&#45;&gt;Spark Core -->
+<g id="edge2" class="edge"><title>SIL&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M38.9859,-215.846C29.9864,-206.124 21.175,-193.274 17,-180 12.1994,-164.737 12.1994,-159.263 17,-144 20.3269,-133.422 26.598,-123.114 33.5624,-114.443"/>
+<ellipse fill="black" stroke="black" cx="36.3735" cy="-111.184" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- SIL&#45;&gt;Spark Core -->
+<g id="edge13" class="edge"><title>SIL&#45;&gt;Spark Core</title>
+<path fill="none" stroke="red" d="M54.9403,-215.846C47.9864,-206.124 39.175,-193.274 35,-180 30.1994,-164.737 30.1994,-159.263 35,-144 38.066,-134.252 43.6324,-124.733 49.1274,-116.513"/>
+<polygon fill="red" stroke="red" points="52.1043,-118.363 54.9403,-108.154 46.3573,-114.366 52.1043,-118.363"/>
+</g>
+<!-- MLLib -->
+<g id="node7" class="node"><title>MLLib</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="91.3312,-180 34.6688,-180 34.6688,-144 91.3312,-144 91.3312,-180"/>
+<text text-anchor="middle" x="63" y="-157.8" font-family="Times,serif" font-size="14.00">MLLib</text>
+</g>
+<!-- SIL&#45;&gt;MLLib -->
+<g id="edge5" class="edge"><title>SIL&#45;&gt;MLLib</title>
+<path fill="none" stroke="black" d="M63,-215.697C63,-207.389 63,-197.277 63,-188.141"/>
+<ellipse fill="black" stroke="black" cx="63" cy="-184.104" rx="4" ry="4"/>
+</g>
+<!-- GraphX -->
+<g id="node8" class="node"><title>GraphX</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="170.316,-180 109.684,-180 109.684,-144 170.316,-144 170.316,-180"/>
+<text text-anchor="middle" x="140" y="-157.8" font-family="Times,serif" font-size="14.00">GraphX</text>
+</g>
+<!-- SIL&#45;&gt;GraphX -->
+<g id="edge6" class="edge"><title>SIL&#45;&gt;GraphX</title>
+<path fill="none" stroke="black" d="M82.0337,-215.697C92.0109,-206.626 104.355,-195.404 115.085,-185.65"/>
+<ellipse fill="black" stroke="black" cx="118.225" cy="-182.795" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Spark SQL&#45;&gt;SDB -->
+<g id="edge11" class="edge"><title>Spark SQL&#45;&gt;SDB</title>
+<path fill="none" stroke="red" d="M125.084,-359.697C124.289,-351.983 124.062,-342.712 124.405,-334.112"/>
+<polygon fill="red" stroke="red" points="127.898,-334.324 125.105,-324.104 120.915,-333.836 127.898,-334.324"/>
+</g>
+<!-- Master Cloud Node -->
+<g id="node9" class="node"><title>Master Cloud Node</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="126.314,-36 -0.313847,-36 -0.313847,-0 126.314,-0 126.314,-36"/>
+<text text-anchor="middle" x="63" y="-13.8" font-family="Times,serif" font-size="14.00">Master Cloud Node</text>
+</g>
+<!-- Spark Core&#45;&gt;Master Cloud Node -->
+<g id="edge9" class="edge"><title>Spark Core&#45;&gt;Master Cloud Node</title>
+<path fill="none" stroke="black" d="M57.0843,-71.6966C56.2274,-63.3893 56.0306,-53.2771 56.4939,-44.1407"/>
+<ellipse fill="black" stroke="black" cx="56.8016" cy="-40.0928" rx="4" ry="4"/>
+</g>
+<!-- Spark Core&#45;&gt;Master Cloud Node -->
+<g id="edge14" class="edge"><title>Spark Core&#45;&gt;Master Cloud Node</title>
+<path fill="none" stroke="red" d="M68.9157,-71.6966C69.7114,-63.9827 69.9379,-54.7125 69.5953,-46.1124"/>
+<polygon fill="red" stroke="red" points="73.0846,-45.8356 68.895,-36.1043 66.1016,-46.3243 73.0846,-45.8356"/>
+</g>
+<!-- MLLib&#45;&gt;Spark Core -->
+<g id="edge3" class="edge"><title>MLLib&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M63,-143.697C63,-135.389 63,-125.277 63,-116.141"/>
+<ellipse fill="black" stroke="black" cx="63" cy="-112.104" rx="4" ry="4"/>
+</g>
+<!-- GraphX&#45;&gt;Spark Core -->
+<g id="edge4" class="edge"><title>GraphX&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M120.966,-143.697C110.989,-134.626 98.6449,-123.404 87.9154,-113.65"/>
+<ellipse fill="black" stroke="black" cx="84.7745" cy="-110.795" rx="4.00002" ry="4.00002"/>
+</g>
+</g>
+</svg>

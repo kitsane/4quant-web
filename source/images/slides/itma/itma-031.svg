@@ -1,0 +1,393 @@
+
+<svg width="663pt" height="535pt"
+ viewBox="0.00 0.00 663.43 534.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 530.798)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-530.798 659.433,-530.798 659.433,4 -4,4"/>
+<!-- Query -->
+<g id="node1" class="node"><title>Query</title>
+<polygon fill="red" stroke="red" points="62.1951,-504.006 8.19515,-504.006 8.19515,-468.006 62.1951,-468.006 62.1951,-504.006"/>
+<text text-anchor="middle" x="35.1951" y="-481.806" font-family="Times,serif" font-size="14.00">Query</text>
+</g>
+<!-- Spark SQL -->
+<g id="node15" class="node"><title>Spark SQL</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="210.591,-517.122 132.39,-517.122 132.39,-481.122 210.591,-481.122 210.591,-517.122"/>
+<text text-anchor="middle" x="171.491" y="-494.922" font-family="Times,serif" font-size="14.00">Spark SQL</text>
+</g>
+<!-- Query&#45;&gt;Spark SQL -->
+<g id="edge34" class="edge"><title>Query&#45;&gt;Spark SQL</title>
+<path fill="none" stroke="red" d="M62.449,-488.629C79.5284,-490.272 102.046,-492.439 122.182,-494.377"/>
+<polygon fill="red" stroke="red" points="121.857,-497.862 132.146,-495.336 122.528,-490.894 121.857,-497.862"/>
+</g>
+<!-- Private Database -->
+<g id="node2" class="node"><title>Private Database</title>
+<polygon fill="red" stroke="red" points="110.682,-289.621 -0.227836,-289.621 -0.227836,-253.621 110.682,-253.621 110.682,-289.621"/>
+<text text-anchor="middle" x="55.2269" y="-267.421" font-family="Times,serif" font-size="14.00">Private Database</text>
+</g>
+<!-- SDB -->
+<g id="node13" class="node"><title>SDB</title>
+<polygon fill="lightgreen" stroke="lightgreen" points="236.388,-381.095 94.5116,-381.095 94.5116,-345.095 236.388,-345.095 236.388,-381.095"/>
+<text text-anchor="middle" x="165.45" y="-358.895" font-family="Times,serif" font-size="14.00">Spark Image Database</text>
+</g>
+<!-- Private Database&#45;&gt;SDB -->
+<g id="edge7" class="edge"><title>Private Database&#45;&gt;SDB</title>
+<path fill="none" stroke="black" d="M77.0034,-289.693C94.2136,-303.976 118.371,-324.024 137.091,-339.559"/>
+<ellipse fill="black" stroke="black" cx="140.641" cy="-342.505" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 1 -->
+<g id="node3" class="node"><title>Worker 1</title>
+<polygon fill="lightblue" stroke="lightblue" points="351.373,-340.964 281.872,-340.964 281.872,-304.964 351.373,-304.964 351.373,-340.964"/>
+<text text-anchor="middle" x="316.622" y="-318.764" font-family="Times,serif" font-size="14.00">Worker 1</text>
+</g>
+<!-- Worker 3 -->
+<g id="node5" class="node"><title>Worker 3</title>
+<polygon fill="lightblue" stroke="lightblue" points="619.603,-354.759 550.102,-354.759 550.102,-318.759 619.603,-318.759 619.603,-354.759"/>
+<text text-anchor="middle" x="584.853" y="-332.559" font-family="Times,serif" font-size="14.00">Worker 3</text>
+</g>
+<!-- Worker 1&#45;&gt;Worker 3 -->
+<g id="edge56" class="edge"><title>Worker 1&#45;&gt;Worker 3</title>
+<path fill="none" stroke="gray" d="M351.477,-334.26C399.763,-341.8 487.038,-346.568 540.091,-344.798"/>
+<polygon fill="gray" stroke="gray" points="540.386,-348.288 550.223,-344.356 540.08,-341.295 540.386,-348.288"/>
+</g>
+<!-- Storage 1 -->
+<g id="node7" class="node"><title>Storage 1</title>
+<ellipse fill="pink" stroke="pink" cx="425.715" cy="-294.492" rx="47.5537" ry="18"/>
+<text text-anchor="middle" x="425.715" y="-290.292" font-family="Times,serif" font-size="14.00">Storage 1</text>
+</g>
+<!-- Worker 1&#45;&gt;Storage 1 -->
+<g id="edge26" class="edge"><title>Worker 1&#45;&gt;Storage 1</title>
+<path fill="none" stroke="gray" d="M351.44,-313.877C360.025,-311.636 369.363,-309.199 378.429,-306.833"/>
+<ellipse fill="gray" stroke="gray" cx="382.429" cy="-305.789" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Storage 3 -->
+<g id="node9" class="node"><title>Storage 3</title>
+<ellipse fill="pink" stroke="pink" cx="553.261" cy="-424.846" rx="47.5537" ry="18"/>
+<text text-anchor="middle" x="553.261" y="-420.646" font-family="Times,serif" font-size="14.00">Storage 3</text>
+</g>
+<!-- Worker 1&#45;&gt;Storage 3 -->
+<g id="edge27" class="edge"><title>Worker 1&#45;&gt;Storage 3</title>
+<path fill="none" stroke="gray" d="M351.285,-337.887C394.609,-356.54 468.571,-388.383 513.959,-407.925"/>
+<ellipse fill="gray" stroke="gray" cx="517.864" cy="-409.606" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Storage 4 -->
+<g id="node10" class="node"><title>Storage 4</title>
+<ellipse fill="pink" stroke="pink" cx="500.441" cy="-508.798" rx="47.5537" ry="18"/>
+<text text-anchor="middle" x="500.441" y="-504.598" font-family="Times,serif" font-size="14.00">Storage 4</text>
+</g>
+<!-- Worker 1&#45;&gt;Storage 4 -->
+<g id="edge19" class="edge"><title>Worker 1&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M334.582,-341.121C368.23,-375.137 440.693,-448.395 477.693,-485.801"/>
+<ellipse fill="gray" stroke="gray" cx="480.932" cy="-489.075" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 2 -->
+<g id="node4" class="node"><title>Worker 2</title>
+<polygon fill="lightblue" stroke="lightblue" points="377.137,-424.415 307.636,-424.415 307.636,-388.415 377.137,-388.415 377.137,-424.415"/>
+<text text-anchor="middle" x="342.387" y="-402.215" font-family="Times,serif" font-size="14.00">Worker 2</text>
+</g>
+<!-- Worker 2&#45;&gt;Worker 1 -->
+<g id="edge44" class="edge"><title>Worker 2&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M342.555,-388.304C340.425,-377.303 336.369,-363.051 331.966,-350.661"/>
+<polygon fill="gray" stroke="gray" points="335.206,-349.333 328.391,-341.221 328.66,-351.812 335.206,-349.333"/>
+</g>
+<!-- Worker 2&#45;&gt;Worker 1 -->
+<g id="edge57" class="edge"><title>Worker 2&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M330.701,-388.361C326.255,-377.443 321.726,-363.307 318.661,-350.967"/>
+<polygon fill="gray" stroke="gray" points="322.061,-350.131 316.465,-341.134 315.229,-351.657 322.061,-350.131"/>
+</g>
+<!-- Worker 2&#45;&gt;Worker 2 -->
+<g id="edge55" class="edge"><title>Worker 2&#45;&gt;Worker 2</title>
+<path fill="none" stroke="gray" d="M377.055,-413.145C387.174,-412.913 395.012,-410.669 395.012,-406.415 395.012,-403.757 391.95,-401.883 387.184,-400.796"/>
+<polygon fill="gray" stroke="gray" points="387.377,-397.296 377.055,-399.686 386.615,-404.254 387.377,-397.296"/>
+</g>
+<!-- Worker 2&#45;&gt;Worker 3 -->
+<g id="edge46" class="edge"><title>Worker 2&#45;&gt;Worker 3</title>
+<path fill="none" stroke="gray" d="M377.213,-406.316C422.123,-398.592 499.885,-376.574 546.459,-358.659"/>
+<polygon fill="gray" stroke="gray" points="547.901,-361.852 555.901,-354.905 545.315,-355.347 547.901,-361.852"/>
+</g>
+<!-- Worker 2&#45;&gt;Worker 3 -->
+<g id="edge51" class="edge"><title>Worker 2&#45;&gt;Worker 3</title>
+<path fill="none" stroke="gray" d="M370.992,-388.413C412.701,-371.165 490.496,-348.43 539.896,-338.731"/>
+<polygon fill="gray" stroke="gray" points="540.786,-342.126 549.983,-336.866 539.513,-335.243 540.786,-342.126"/>
+</g>
+<!-- Worker 4 -->
+<g id="node6" class="node"><title>Worker 4</title>
+<polygon fill="lightblue" stroke="lightblue" points="507.666,-251.018 438.164,-251.018 438.164,-215.018 507.666,-215.018 507.666,-251.018"/>
+<text text-anchor="middle" x="472.915" y="-228.818" font-family="Times,serif" font-size="14.00">Worker 4</text>
+</g>
+<!-- Worker 2&#45;&gt;Worker 4 -->
+<g id="edge47" class="edge"><title>Worker 2&#45;&gt;Worker 4</title>
+<path fill="none" stroke="gray" d="M368.278,-388.133C397.97,-357.354 443.985,-296.003 464.072,-260.206"/>
+<polygon fill="gray" stroke="gray" points="467.221,-261.738 468.806,-251.262 461.034,-258.463 467.221,-261.738"/>
+</g>
+<!-- Storage 2 -->
+<g id="node8" class="node"><title>Storage 2</title>
+<ellipse fill="pink" stroke="pink" cx="324.055" cy="-507.968" rx="47.5537" ry="18"/>
+<text text-anchor="middle" x="324.055" y="-503.768" font-family="Times,serif" font-size="14.00">Storage 2</text>
+</g>
+<!-- Worker 2&#45;&gt;Storage 2 -->
+<g id="edge22" class="edge"><title>Worker 2&#45;&gt;Storage 2</title>
+<path fill="none" stroke="gray" d="M339.109,-424.571C336.242,-440.456 332.041,-463.728 328.805,-481.655"/>
+<ellipse fill="gray" stroke="gray" cx="328.015" cy="-486.034" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Worker 2&#45;&gt;Storage 4 -->
+<g id="edge14" class="edge"><title>Worker 2&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M354.285,-424.462C375.76,-444.497 421.032,-475.051 455.626,-493.793"/>
+<ellipse fill="gray" stroke="gray" cx="459.298" cy="-495.735" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 2&#45;&gt;Storage 4 -->
+<g id="edge25" class="edge"><title>Worker 2&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M377.209,-416.19C409.929,-432.656 457.293,-463.687 482.868,-485.683"/>
+<ellipse fill="gray" stroke="gray" cx="485.899" cy="-488.397" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 2&#45;&gt;Storage 4 -->
+<g id="edge30" class="edge"><title>Worker 2&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M370.28,-424.484C397.975,-442.424 440.355,-469.876 469.174,-488.545"/>
+<ellipse fill="gray" stroke="gray" cx="472.835" cy="-490.916" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Storage 6 -->
+<g id="node12" class="node"><title>Storage 6</title>
+<ellipse fill="pink" stroke="pink" cx="607.657" cy="-215.892" rx="47.5537" ry="18"/>
+<text text-anchor="middle" x="607.657" y="-211.692" font-family="Times,serif" font-size="14.00">Storage 6</text>
+</g>
+<!-- Worker 2&#45;&gt;Storage 6 -->
+<g id="edge24" class="edge"><title>Worker 2&#45;&gt;Storage 6</title>
+<path fill="none" stroke="gray" d="M367.822,-388.147C417.34,-352.582 526.4,-274.252 578.644,-236.729"/>
+<ellipse fill="gray" stroke="gray" cx="582.078" cy="-234.263" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 3&#45;&gt;Worker 1 -->
+<g id="edge40" class="edge"><title>Worker 3&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M549.998,-325.462C501.712,-317.922 414.437,-313.155 361.384,-314.925"/>
+<polygon fill="gray" stroke="gray" points="361.089,-311.434 351.252,-315.367 361.395,-318.427 361.089,-311.434"/>
+</g>
+<!-- Worker 3&#45;&gt;Worker 1 -->
+<g id="edge49" class="edge"><title>Worker 3&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M550.061,-334.97C501.822,-332.489 414.578,-328.002 361.492,-325.271"/>
+<polygon fill="gray" stroke="gray" points="361.519,-321.768 351.352,-324.75 361.159,-328.759 361.519,-321.768"/>
+</g>
+<!-- Worker 3&#45;&gt;Worker 2 -->
+<g id="edge41" class="edge"><title>Worker 3&#45;&gt;Worker 2</title>
+<path fill="none" stroke="gray" d="M550.113,-346.739C507.081,-359.101 433.713,-380.179 386.678,-393.691"/>
+<polygon fill="gray" stroke="gray" points="385.706,-390.329 377.062,-396.454 387.639,-397.057 385.706,-390.329"/>
+</g>
+<!-- Worker 3&#45;&gt;Worker 3 -->
+<g id="edge45" class="edge"><title>Worker 3&#45;&gt;Worker 3</title>
+<path fill="none" stroke="gray" d="M619.521,-343.489C629.64,-343.256 637.478,-341.013 637.478,-336.759 637.478,-334.1 634.416,-332.227 629.649,-331.139"/>
+<polygon fill="gray" stroke="gray" points="629.843,-327.639 619.521,-330.029 629.08,-334.598 629.843,-327.639"/>
+</g>
+<!-- Worker 3&#45;&gt;Worker 4 -->
+<g id="edge43" class="edge"><title>Worker 3&#45;&gt;Worker 4</title>
+<path fill="none" stroke="gray" d="M578.472,-318.758C565.93,-301.039 539.401,-274.767 515.943,-255.752"/>
+<polygon fill="gray" stroke="gray" points="517.827,-252.781 507.802,-249.355 513.502,-258.285 517.827,-252.781"/>
+</g>
+<!-- Worker 3&#45;&gt;Worker 4 -->
+<g id="edge53" class="edge"><title>Worker 3&#45;&gt;Worker 4</title>
+<path fill="none" stroke="gray" d="M550.075,-320.505C528.183,-303.896 501.444,-278.613 485.614,-259.257"/>
+<polygon fill="gray" stroke="gray" points="488.219,-256.903 479.354,-251.101 482.666,-261.165 488.219,-256.903"/>
+</g>
+<!-- Worker 3&#45;&gt;Storage 4 -->
+<g id="edge15" class="edge"><title>Worker 3&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M575.979,-354.845C560.867,-385.644 530.104,-448.342 512.863,-483.481"/>
+<ellipse fill="gray" stroke="gray" cx="510.958" cy="-487.364" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Storage 5 -->
+<g id="node11" class="node"><title>Storage 5</title>
+<ellipse fill="pink" stroke="pink" cx="535.183" cy="-134.225" rx="47.5537" ry="18"/>
+<text text-anchor="middle" x="535.183" y="-130.025" font-family="Times,serif" font-size="14.00">Storage 5</text>
+</g>
+<!-- Worker 3&#45;&gt;Storage 5 -->
+<g id="edge32" class="edge"><title>Worker 3&#45;&gt;Storage 5</title>
+<path fill="none" stroke="gray" d="M580.357,-318.428C571.51,-282.353 551.814,-202.04 541.601,-160.397"/>
+<ellipse fill="gray" stroke="gray" cx="540.585" cy="-156.253" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Worker 3&#45;&gt;Storage 6 -->
+<g id="edge23" class="edge"><title>Worker 3&#45;&gt;Storage 6</title>
+<path fill="none" stroke="gray" d="M588.267,-318.664C592.095,-298.37 598.339,-265.276 602.704,-242.141"/>
+<ellipse fill="gray" stroke="gray" cx="603.478" cy="-238.041" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Worker 4&#45;&gt;Worker 1 -->
+<g id="edge50" class="edge"><title>Worker 4&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M438.203,-234.85C404.761,-246.752 356.293,-275.051 331.579,-297.428"/>
+<polygon fill="gray" stroke="gray" points="328.815,-295.238 324.164,-304.757 333.736,-300.217 328.815,-295.238"/>
+</g>
+<!-- Worker 4&#45;&gt;Worker 1 -->
+<g id="edge52" class="edge"><title>Worker 4&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M465.545,-251.035C446.434,-272.218 397.737,-302.314 361.004,-317.411"/>
+<polygon fill="gray" stroke="gray" points="359.546,-314.222 351.472,-321.082 362.062,-320.754 359.546,-314.222"/>
+</g>
+<!-- Worker 4&#45;&gt;Worker 1 -->
+<g id="edge54" class="edge"><title>Worker 4&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M451.676,-251.02C428.331,-266.665 390.263,-288.959 360.468,-304.669"/>
+<polygon fill="gray" stroke="gray" points="358.775,-301.605 351.513,-309.319 362.001,-307.817 358.775,-301.605"/>
+</g>
+<!-- Worker 4&#45;&gt;Worker 1 -->
+<g id="edge58" class="edge"><title>Worker 4&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M438.131,-246.609C410.552,-260.677 372.469,-282.583 346.309,-299.42"/>
+<polygon fill="gray" stroke="gray" points="344.369,-296.507 337.926,-304.917 348.208,-302.36 344.369,-296.507"/>
+</g>
+<!-- Worker 4&#45;&gt;Worker 2 -->
+<g id="edge39" class="edge"><title>Worker 4&#45;&gt;Worker 2</title>
+<path fill="none" stroke="gray" d="M447.024,-251.3C417.332,-282.079 371.317,-343.43 351.23,-379.227"/>
+<polygon fill="gray" stroke="gray" points="348.08,-377.696 346.496,-388.171 354.267,-380.97 348.08,-377.696"/>
+</g>
+<!-- Worker 4&#45;&gt;Worker 2 -->
+<g id="edge48" class="edge"><title>Worker 4&#45;&gt;Worker 2</title>
+<path fill="none" stroke="gray" d="M459.193,-251.247C435.984,-282.078 388.901,-344.624 362.142,-380.172"/>
+<polygon fill="gray" stroke="gray" points="359.339,-378.076 356.121,-388.171 364.931,-382.286 359.339,-378.076"/>
+</g>
+<!-- Worker 4&#45;&gt;Worker 3 -->
+<g id="edge42" class="edge"><title>Worker 4&#45;&gt;Worker 3</title>
+<path fill="none" stroke="gray" d="M492.413,-251.088C510.52,-267.869 537.647,-293.01 557.837,-311.722"/>
+<polygon fill="gray" stroke="gray" points="555.489,-314.317 565.202,-318.548 560.247,-309.183 555.489,-314.317"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 1 -->
+<g id="edge33" class="edge"><title>Worker 4&#45;&gt;Storage 1</title>
+<path fill="none" stroke="gray" d="M459.009,-251.13C454.376,-257.164 449.139,-263.984 444.214,-270.398"/>
+<ellipse fill="gray" stroke="gray" cx="441.471" cy="-273.971" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 3 -->
+<g id="edge20" class="edge"><title>Worker 4&#45;&gt;Storage 3</title>
+<path fill="none" stroke="gray" d="M480.474,-251.065C494.807,-285.285 525.976,-359.701 542.491,-399.131"/>
+<ellipse fill="gray" stroke="gray" cx="544.236" cy="-403.298" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 4 -->
+<g id="edge16" class="edge"><title>Worker 4&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M467.667,-251.389C464.269,-299.237 476.651,-427.772 489.444,-483.005"/>
+<ellipse fill="gray" stroke="gray" cx="490.447" cy="-487.029" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 4 -->
+<g id="edge18" class="edge"><title>Worker 4&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M482.034,-251.252C494.808,-298.859 507.92,-427.007 506.086,-482.543"/>
+<ellipse fill="gray" stroke="gray" cx="505.867" cy="-486.815" rx="4" ry="4"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 4 -->
+<g id="edge31" class="edge"><title>Worker 4&#45;&gt;Storage 4</title>
+<path fill="none" stroke="gray" d="M474.721,-251.113C479.455,-298.545 492.242,-426.65 497.801,-482.344"/>
+<ellipse fill="gray" stroke="gray" cx="498.231" cy="-486.657" rx="4" ry="4"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 5 -->
+<g id="edge17" class="edge"><title>Worker 4&#45;&gt;Storage 5</title>
+<path fill="none" stroke="gray" d="M498.316,-214.906C511.018,-199.372 524.729,-177.124 532.11,-159.808"/>
+<ellipse fill="gray" stroke="gray" cx="533.589" cy="-155.972" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 5 -->
+<g id="edge21" class="edge"><title>Worker 4&#45;&gt;Storage 5</title>
+<path fill="none" stroke="gray" d="M473.211,-214.588C478.919,-198.046 492.883,-174.117 506.436,-156.553"/>
+<ellipse fill="gray" stroke="gray" cx="509.276" cy="-153.037" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 5 -->
+<g id="edge29" class="edge"><title>Worker 4&#45;&gt;Storage 5</title>
+<path fill="none" stroke="gray" d="M484.336,-214.898C494.228,-199.203 508.631,-176.352 519.584,-158.974"/>
+<ellipse fill="gray" stroke="gray" cx="521.911" cy="-155.282" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Worker 4&#45;&gt;Storage 6 -->
+<g id="edge28" class="edge"><title>Worker 4&#45;&gt;Storage 6</title>
+<path fill="none" stroke="gray" d="M507.614,-228.608C521.758,-226.81 538.436,-224.69 554.077,-222.702"/>
+<ellipse fill="gray" stroke="gray" cx="558.175" cy="-222.181" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- SIL -->
+<g id="node14" class="node"><title>SIL</title>
+<polygon fill="lightgreen" stroke="lightgreen" points="148.349,-77.773 24.7875,-77.773 24.7875,-41.773 148.349,-41.773 148.349,-77.773"/>
+<text text-anchor="middle" x="86.5684" y="-55.573" font-family="Times,serif" font-size="14.00">Spark Image Layer</text>
+</g>
+<!-- SDB&#45;&gt;SIL -->
+<g id="edge36" class="edge"><title>SDB&#45;&gt;SIL</title>
+<path fill="none" stroke="red" d="M160.752,-345.029C147.521,-294.151 109.873,-149.386 93.8894,-87.924"/>
+<polygon fill="red" stroke="red" points="97.246,-86.9248 91.3417,-78.1276 90.4714,-88.6866 97.246,-86.9248"/>
+</g>
+<!-- SDB&#45;&gt;Spark SQL -->
+<g id="edge1" class="edge"><title>SDB&#45;&gt;Spark SQL</title>
+<path fill="none" stroke="black" d="M161.497,-381.369C160.157,-404.821 161.725,-445.677 164.807,-472.563"/>
+<ellipse fill="black" stroke="black" cx="165.35" cy="-476.794" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Spark Core -->
+<g id="node16" class="node"><title>Spark Core</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="259.356,-202.067 179.615,-202.067 179.615,-166.067 259.356,-166.067 259.356,-202.067"/>
+<text text-anchor="middle" x="219.486" y="-179.867" font-family="Times,serif" font-size="14.00">Spark Core</text>
+</g>
+<!-- SDB&#45;&gt;Spark Core -->
+<g id="edge8" class="edge"><title>SDB&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M170.929,-344.943C180.557,-313.043 200.542,-246.829 211.636,-210.073"/>
+<ellipse fill="black" stroke="black" cx="212.837" cy="-206.096" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- SIL&#45;&gt;Spark Core -->
+<g id="edge2" class="edge"><title>SIL&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M99.2269,-77.8459C119.087,-99.7943 157.865,-136.589 186.078,-160.658"/>
+<ellipse fill="black" stroke="black" cx="189.226" cy="-163.312" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- SIL&#45;&gt;Spark Core -->
+<g id="edge37" class="edge"><title>SIL&#45;&gt;Spark Core</title>
+<path fill="none" stroke="red" d="M113.64,-77.8433C139.319,-99.1804 177.147,-134.568 200.001,-158.644"/>
+<polygon fill="red" stroke="red" points="197.491,-161.085 206.86,-166.031 202.62,-156.322 197.491,-161.085"/>
+</g>
+<!-- MLLib -->
+<g id="node17" class="node"><title>MLLib</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="329.063,-47.0825 272.179,-47.0825 272.179,-11.0825 329.063,-11.0825 329.063,-47.0825"/>
+<text text-anchor="middle" x="300.621" y="-24.8825" font-family="Times,serif" font-size="14.00">MLLib</text>
+</g>
+<!-- SIL&#45;&gt;MLLib -->
+<g id="edge5" class="edge"><title>SIL&#45;&gt;MLLib</title>
+<path fill="none" stroke="black" d="M148.481,-50.896C185.998,-45.517 232.567,-38.8399 264.232,-34.2999"/>
+<ellipse fill="black" stroke="black" cx="268.387" cy="-33.7042" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- GraphX -->
+<g id="node18" class="node"><title>GraphX</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="539.173,-36 477.996,-36 477.996,-0 539.173,-0 539.173,-36"/>
+<text text-anchor="middle" x="508.585" y="-13.8" font-family="Times,serif" font-size="14.00">GraphX</text>
+</g>
+<!-- SIL&#45;&gt;GraphX -->
+<g id="edge6" class="edge"><title>SIL&#45;&gt;GraphX</title>
+<path fill="none" stroke="black" d="M148.385,-53.6541C236.674,-44.9149 396.309,-29.1135 469.727,-21.8463"/>
+<ellipse fill="black" stroke="black" cx="473.842" cy="-21.439" rx="4" ry="4"/>
+</g>
+<!-- Spark SQL&#45;&gt;SDB -->
+<g id="edge35" class="edge"><title>Spark SQL&#45;&gt;SDB</title>
+<path fill="none" stroke="red" d="M175.444,-480.848C176.754,-457.904 175.282,-418.3 172.332,-391.419"/>
+<polygon fill="red" stroke="red" points="175.799,-390.942 171.082,-381.456 168.854,-391.813 175.799,-390.942"/>
+</g>
+<!-- Master Cloud Node -->
+<g id="node19" class="node"><title>Master Cloud Node</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="405.158,-209.629 278.321,-209.629 278.321,-173.629 405.158,-173.629 405.158,-209.629"/>
+<text text-anchor="middle" x="341.74" y="-187.429" font-family="Times,serif" font-size="14.00">Master Cloud Node</text>
+</g>
+<!-- Spark Core&#45;&gt;Master Cloud Node -->
+<g id="edge9" class="edge"><title>Spark Core&#45;&gt;Master Cloud Node</title>
+<path fill="none" stroke="black" d="M259.46,-192.944C262.991,-193.289 266.629,-193.607 270.318,-193.895"/>
+<ellipse fill="black" stroke="black" cx="274.466" cy="-194.191" rx="4" ry="4"/>
+</g>
+<!-- Spark Core&#45;&gt;Master Cloud Node -->
+<g id="edge38" class="edge"><title>Spark Core&#45;&gt;Master Cloud Node</title>
+<path fill="none" stroke="red" d="M259.233,-180.16C262.215,-180.231 265.275,-180.332 268.379,-180.459"/>
+<polygon fill="red" stroke="red" points="268.239,-183.956 278.399,-180.954 268.584,-176.965 268.239,-183.956"/>
+</g>
+<!-- MLLib&#45;&gt;Spark Core -->
+<g id="edge3" class="edge"><title>MLLib&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M291.155,-47.1646C276.759,-74.6643 249.303,-127.11 232.87,-158.5"/>
+<ellipse fill="black" stroke="black" cx="230.998" cy="-162.076" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- GraphX&#45;&gt;Spark Core -->
+<g id="edge4" class="edge"><title>GraphX&#45;&gt;Spark Core</title>
+<path fill="none" stroke="black" d="M477.92,-35.6149C424.964,-66.0345 316.472,-128.356 258.326,-161.756"/>
+<ellipse fill="black" stroke="black" cx="254.618" cy="-163.886" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Master Cloud Node&#45;&gt;Worker 1 -->
+<g id="edge10" class="edge"><title>Master Cloud Node&#45;&gt;Worker 1</title>
+<path fill="none" stroke="gray" d="M338.247,-209.891C333.917,-232.532 326.508,-271.273 321.588,-296.999"/>
+<ellipse fill="gray" stroke="gray" cx="320.837" cy="-300.928" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- Master Cloud Node&#45;&gt;Worker 2 -->
+<g id="edge11" class="edge"><title>Master Cloud Node&#45;&gt;Worker 2</title>
+<path fill="none" stroke="gray" d="M341.795,-209.942C341.909,-247.985 342.174,-335.697 342.307,-379.914"/>
+<ellipse fill="gray" stroke="gray" cx="342.32" cy="-384.149" rx="4" ry="4"/>
+</g>
+<!-- Master Cloud Node&#45;&gt;Worker 3 -->
+<g id="edge12" class="edge"><title>Master Cloud Node&#45;&gt;Worker 3</title>
+<path fill="none" stroke="gray" d="M372.038,-209.716C416.472,-236.241 499.242,-285.652 547.419,-314.412"/>
+<ellipse fill="gray" stroke="gray" cx="551.12" cy="-316.622" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Master Cloud Node&#45;&gt;Worker 4 -->
+<g id="edge13" class="edge"><title>Master Cloud Node&#45;&gt;Worker 4</title>
+<path fill="none" stroke="gray" d="M398.893,-209.662C409.462,-212.997 420.328,-216.425 430.368,-219.593"/>
+<ellipse fill="gray" stroke="gray" cx="434.408" cy="-220.868" rx="4.00001" ry="4.00001"/>
+</g>
+</g>
+</svg>
