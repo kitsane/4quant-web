@@ -59,20 +59,25 @@ h2 a {
   font-size: inherit;
   font-weight: inherit;
   text-decoration: none;
-
+  text-transform: none;
   & + small {
     margin-right: $grid-gutter-width / 2;
     font-size: $font-size-sm;
     white-space: nowrap;
   }
 }
-
+h2 {
+  text-transform: none;
+}
 p, small, a, ul {
   font-weight: $font-weight-light;
 }
 
 b, strong {
   font-weight: $font-weight-bold;
+}
+img {
+    border: none;
 }
 a {
 	&:hover, &:active, &:visited, &:link {
