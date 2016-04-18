@@ -10,9 +10,10 @@
 .reveal {
 	font-family: $font-family-sans-serif;
 	color:$gray-dark;
-	h1,h2,h3,h4,h5,h6,p,section,a {
+	h1,h2,h3,h4,h5,h6,p,section,a,ul,ol,li {
 		font-family: $font-family-sans-serif;
 		color:$gray-dark;
+		text-align: left;
 	}
 	section {
 		img {
