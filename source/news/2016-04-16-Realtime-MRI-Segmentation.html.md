@@ -15,6 +15,10 @@ The latest surgical suites and MRI technologies have made subsecond measurements
 
 <div class="code">SELECT Image as ChestCT FROM PatientImages WHERE Modality="CT" AND Region="Chest"</div>
 
+```
+SELECT Image as ChestCT FROM PatientImages WHERE Modality="CT" AND Region="Chest"
+```
+
 <img alt='4Quant' src="images/realtime-mri-segmentation/mammo-001.gif">
 
 ### Perform Segmentation
