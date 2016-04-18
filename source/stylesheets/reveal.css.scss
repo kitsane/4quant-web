@@ -84,30 +84,48 @@ a {
 		color: $brand-primary;
 	}
 }
+img {
+  border: none;
+}
+h2 {
+  text-transform: none;
+}
 .reveal {
-	h1,h2,h3,h4,h5,h6,p,section,a,ul,ol,li,dd,dt,code,div,dl {
-		text-align: left;
-	}
-	img {
-		border: none;
-	}
-	p, small, a, ul {
-	  font-weight: $font-weight-light;
-	}
-	b, strong {
-	  font-weight: $font-weight-bold;
-	}
-	ul, ol {
-	    padding-left: $spacer;
-	}
-	table {
-		@extend .table;
-	    @extend .table-sm;
-	    @extend .table-striped;
-	    font-size: $font-size-base;
-	}
-	blockquote {
-		@extend .blockquote;
-	    font-size: $font-size-base;
-	}
+  h1,h2,h3,h4,h5,h6,p,section,a,ul,ol,li,dd,dt,code,div,dl {
+    text-align: left;
+    color:$gray-dark;
+    font-family: $font-family-sans-serif;
+  }
+  section {
+    img {
+      border: none;
+    }
+    h2,h3 {
+      text-transform: none;
+    }
+    h1,h2,h3,h4,h5,h6,p,section,a,ul,ol,li,dd,dt,code,div,dl {
+      text-align: left;
+      color:$gray-dark;
+      font-family: $font-family-sans-serif;
+    }
+    p, small, a, ul {
+      font-weight: $font-weight-light;
+    }
+    b, strong {
+      font-weight: $font-weight-bold;
+    }
+    ul, ol {
+        padding-left: $spacer;
+    }
+    table {
+      @extend .table;
+        @extend .table-sm;
+        @extend .table-striped;
+        font-size: $font-size-base;
+    }
+    blockquote {
+      @extend .blockquote;
+      font-size: $font-size-base;
+    }
+  }
 }
