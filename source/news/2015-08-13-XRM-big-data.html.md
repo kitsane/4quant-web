@@ -11,7 +11,7 @@ date: 2015-08-13
 
 ## Scaling Up: Image Processing and Analytics using Spark
 
-[The presentation](/slides/XRM-BigDataPres.html)
+[The presentation](/slides/XRM-BigDataPres/)
 
 ### Kevin Mader (4Quant and ETH Zurich)
 
