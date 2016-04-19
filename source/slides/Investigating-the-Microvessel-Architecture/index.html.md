@@ -9,9 +9,9 @@
         <br>
         K. Mader, A. Patera, A. Astolfo, M. Schneider, B. Weber, M. Stampanoni (4quant.com/SRI2015)
 
-        ![SIL](/slides/Investigating-the-Microvessel-Architecture/images/itma-001.png)
-        ![Paul Scherrer Institute](/slides/Investigating-the-Microvessel-Architecture/images/itma-002.png)
-        ![ETH Zurich](/slides/Investigating-the-Microvessel-Architecture/images/itma-003.png)
+        ![SIL](Investigating-the-Microvessel-Architecture/itma-001.png)
+        ![Paul Scherrer Institute](Investigating-the-Microvessel-Architecture/itma-002.png)
+        ![ETH Zurich](Investigating-the-Microvessel-Architecture/itma-003.png)
       </script>
     </section>
 
