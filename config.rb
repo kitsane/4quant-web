@@ -10,7 +10,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # Slides
-page '/slides/*', layout: :slides_layout
+# page '/slides/*', layout: :slides_layout
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -33,6 +33,8 @@ activate :google_analytics do |ga|
 end
 
 activate :blog do |blog|
+  blog.name = 'news'
+  blog.layout = 'layout'
   blog.permalink = 'news/:year-:month-:day-:title/index.html'
   blog.sources = 'news/:year-:month-:day-:title/index.html'
   blog.summary_generator = Proc.new  do |resource, rendered, length, ellipsis|
@@ -40,9 +42,11 @@ activate :blog do |blog|
   end
 end
 
-activate :blog do |slides|
-  slides.permalink = 'slides/:title/index.html.md'
-  slides.sources = 'slides/:title/index.html.md'
+activate :blog do |blog|
+  blog.name = 'slides'
+  blog.layout = 'slides_layout'
+  blog.permalink = 'slides/:title/index.html.md'
+  blog.sources = 'slides/:title/index.html.md'
 end
 
 
@@ -77,12 +81,12 @@ helpers do
     html.sub(SUMMARY_START, "").sub(SUMMARY_END, "")
   end
 
-  def slide_img(directory)
-    img_path = Pathname.new(directory)
-    parent = img_path.parent
-    parentstring = parent.to_str
-    content_tag :li, class: 'img_fluid', src: "/slides/#{parentstring}/images/#{filename}", alt: filename
-  end
+  # def slide_img(directory)
+  #   img_path = Pathname.new(directory)
+  #   parent = img_path.parent
+  #   parentstring = parent.to_str
+  #   content_tag :li, class: 'img_fluid', src: "/slides/#{parentstring}/images/#{filename}", alt: filename
+  # end
 end
 
 # Build-specific configuration

@@ -1,13 +1,12 @@
-<% if !defined?(display_slides) || display_slides > slides.articles.length %>
-  <% display_slides = slides.articles.length %>
-<% end %>
+<% slides.articles[0...5].each do |article| %>
+  <article>
+    <h1>
+      <a href="<%= article.url %>"><%= article.title %></a>
+      <time><%= article.date.strftime('%b %e %Y') %></time>
+    </h1>
 
-<% slides.articles[0..display_slides].each do |article| %>
-<div class="card card-block text-xs-left p-l-0">
-  <h2 class="card-title">
-    <a href="<%= article.url %>"><%= article.title %></a>
-    <br/>
-  </h2>
-  <%= link_to 'Show Slide', article, class: 'card-link', target: '_blank' %>
-</div>
+    <%= article.summary %>
+
+    <a href="<%= article.url %>">Read more</a>
+  </article>
 <% end %>
