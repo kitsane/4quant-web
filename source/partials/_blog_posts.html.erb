@@ -4,7 +4,11 @@
 
 <% blog.articles[0..display_articles].each do |article| %>
 <div class="card card-block text-xs-left p-l-0">
-  <h2 class="card-title"><%= article.title %><br/><small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small></h2>
+  <h2 class="card-title">
+    <a href="<%= article.url %>"><%= article.title %></a>
+    <br/>
+    <small class="text-muted"><%= article.date.strftime('%B %e, %Y') %></small>
+  </h2>
   <%= article.summary %>
   <%= link_to 'Read more', article, class: 'card-link' %>
 </div>

@@ -54,6 +54,7 @@ h2 a {
   font-size: inherit;
   font-weight: inherit;
   text-decoration: none;
+  color: $body-color;
 
   & + small {
     margin-right: $grid-gutter-width / 2;

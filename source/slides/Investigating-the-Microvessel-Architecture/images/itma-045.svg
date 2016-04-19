@@ -1,0 +1,91 @@
+
+<svg width="450pt" height="277pt"
+ viewBox="0.00 0.00 449.60 277.22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 273.223)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-273.223 445.601,-273.223 445.601,4 -4,4"/>
+<!-- Model -->
+<g id="node1" class="node"><title>Model</title>
+<polygon fill="lightgray" stroke="lightgray" points="54,-154.012 0,-154.012 0,-118.012 54,-118.012 54,-154.012"/>
+<text text-anchor="middle" x="27" y="-131.812" font-family="Times,serif" font-size="14.00">Model</text>
+</g>
+<!-- Hypothesis -->
+<g id="node2" class="node"><title>Hypothesis</title>
+<ellipse fill="none" stroke="lightgray" cx="142.212" cy="-251.223" rx="54.4739" ry="18"/>
+<text text-anchor="middle" x="142.212" y="-247.023" font-family="Times,serif" font-size="14.00">Hypothesis</text>
+</g>
+<!-- Model&#45;&gt;Hypothesis -->
+<g id="edge5" class="edge"><title>Model&#45;&gt;Hypothesis</title>
+<path fill="none" stroke="blue" d="M38.501,-154.163C55.3178,-174.198 86.8545,-206.271 110.806,-228.074"/>
+<polygon fill="blue" stroke="blue" points="108.5,-230.707 118.287,-234.764 113.166,-225.489 108.5,-230.707"/>
+</g>
+<!-- Hypothesis&#45;&gt;Model -->
+<g id="edge4" class="edge"><title>Hypothesis&#45;&gt;Model</title>
+<path fill="none" stroke="green" d="M131.137,-233.581C114.885,-214.126 84.2813,-182.903 60.3912,-160.976"/>
+<polygon fill="green" stroke="green" points="62.6652,-158.313 52.8973,-154.21 57.9743,-163.509 62.6652,-158.313"/>
+</g>
+<!-- Data -->
+<g id="node4" class="node"><title>Data</title>
+<polygon fill="lightgray" stroke="lightgray" points="284.423,-154.012 230.423,-154.012 230.423,-118.012 284.423,-118.012 284.423,-154.012"/>
+<text text-anchor="middle" x="257.423" y="-131.812" font-family="Times,serif" font-size="14.00">Data</text>
+</g>
+<!-- Hypothesis&#45;&gt;Data -->
+<g id="edge6" class="edge"><title>Hypothesis&#45;&gt;Data</title>
+<path fill="none" stroke="blue" d="M159.71,-233.725C178.968,-214.467 210.098,-183.336 232.037,-161.397"/>
+<polygon fill="blue" stroke="blue" points="234.784,-163.601 239.38,-154.055 229.834,-158.651 234.784,-163.601"/>
+</g>
+<!-- Statistics
+Validation -->
+<g id="node5" class="node"><title>Statistics
+Validation</title>
+<polygon fill="lightsteelblue" stroke="lightsteelblue" points="179.81,-41.4019 104.613,-41.4019 104.613,-0.198095 179.81,-0.198095 179.81,-41.4019"/>
+<text text-anchor="middle" x="142.212" y="-25" font-family="Times,serif" font-size="14.00">Statistics</text>
+<text text-anchor="middle" x="142.212" y="-8.2" font-family="Times,serif" font-size="14.00">Validation</text>
+</g>
+<!-- Hypothesis&#45;&gt;Statistics
+Validation -->
+<g id="edge8" class="edge"><title>Hypothesis&#45;&gt;Statistics
+Validation</title>
+<path fill="none" stroke="blue" d="M146.055,-233.142C149.589,-193.886 149.901,-100.468 146.988,-51.6754"/>
+<polygon fill="blue" stroke="blue" points="150.46,-51.1453 146.272,-41.4132 143.477,-51.6326 150.46,-51.1453"/>
+</g>
+<!-- Experiment -->
+<g id="node3" class="node"><title>Experiment</title>
+<ellipse fill="none" stroke="lightgray" cx="385.512" cy="-136.012" rx="56.1782" ry="18"/>
+<text text-anchor="middle" x="385.512" y="-131.812" font-family="Times,serif" font-size="14.00">Experiment</text>
+</g>
+<!-- Experiment&#45;&gt;Data -->
+<g id="edge1" class="edge"><title>Experiment&#45;&gt;Data</title>
+<path fill="none" stroke="green" d="M329.33,-136.012C317.513,-136.012 305.332,-136.012 294.431,-136.012"/>
+<polygon fill="green" stroke="green" points="294.426,-132.512 284.426,-136.012 294.426,-139.512 294.426,-132.512"/>
+</g>
+<!-- Data&#45;&gt;Statistics
+Validation -->
+<g id="edge2" class="edge"><title>Data&#45;&gt;Statistics
+Validation</title>
+<path fill="none" stroke="green" d="M245.922,-117.861C230.274,-99.2178 201.882,-70.1539 178.715,-48.6382"/>
+<polygon fill="green" stroke="green" points="180.825,-45.8249 171.085,-41.6569 176.1,-50.9895 180.825,-45.8249"/>
+</g>
+<!-- Data&#45;&gt;Statistics
+Validation -->
+<g id="edge7" class="edge"><title>Data&#45;&gt;Statistics
+Validation</title>
+<path fill="none" stroke="blue" d="M231.639,-117.913C210.794,-99.4495 181.962,-70.7121 162.672,-49.2323"/>
+<polygon fill="blue" stroke="blue" points="165.262,-46.8772 156.029,-41.6795 160.005,-51.5 165.262,-46.8772"/>
+</g>
+<!-- Statistics
+Validation&#45;&gt;Model -->
+<g id="edge9" class="edge"><title>Statistics
+Validation&#45;&gt;Model</title>
+<path fill="none" stroke="red" d="M121.348,-41.6639C101.517,-61.4945 71.7167,-91.2949 50.9309,-112.081"/>
+<ellipse fill="red" stroke="red" cx="47.8857" cy="-115.126" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- Statistics
+Validation&#45;&gt;Hypothesis -->
+<g id="edge3" class="edge"><title>Statistics
+Validation&#45;&gt;Hypothesis</title>
+<path fill="none" stroke="green" d="M138.131,-41.6549C134.757,-83.1768 134.581,-176.211 137.605,-223.089"/>
+<polygon fill="green" stroke="green" points="134.122,-223.451 138.37,-233.157 141.102,-222.921 134.122,-223.451"/>
+</g>
+</g>
+</svg>

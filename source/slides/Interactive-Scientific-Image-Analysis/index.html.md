@@ -393,6 +393,7 @@
       <script type='text/template'>
         ## Making Coding Simpler with Types
 
+<<<<<<< HEAD
         <pre><code>
             trait BasicMathSupport[T] extends Serializable {
                 def plus(a: T, b: T): T
@@ -406,6 +407,21 @@
                 def compare(a: T, b: T): Int
             }
         </code></pre>
+=======
+        <div class='code'>
+            trait BasicMathSupport[T] extends Serializable { <br>
+                def plus(a: T, b: T): T <br>
+                def times(a: T, b: T): T <br>
+                def scale(a: T, b: Double): T <br>
+                def negate(a: T): T = scale(a,-1) <br>
+                def invert(a: T): T <br>
+                def abs(a: T): T <br>
+                def minus(a: T, b: T): T = plus(a, negate(b)) <br>
+                def divide(a: T, b: T): T = times(a, invert(b)) <br>
+                def compare(a: T, b: T): Int <br>
+            }
+        </div>
+>>>>>>> master
       </script>
     </section>
 
@@ -415,6 +431,7 @@
 
         * Simple filter implementation
 
+<<<<<<< HEAD
         <pre><code>
           def SimpleFilter[T](inImage: Image[T])
           (implicit val wst: BasicMathSupport[T]) = {
@@ -428,13 +445,32 @@
         * Spectra as well supported types
 
         <pre><code>
+=======
+        <div class='code'>
+          def SimpleFilter[T](inImage: Image[T]) <br>
+          (implicit val wst: BasicMathSupport[T]) = { <br>
+          val width: Double = 1 <br>
+          kernel = (pos: D3int,value: T) => value \* exp(-(pos.mag/width)\*\*2) <br>
+          kernelReduce = (ptA,ptB) => (ptA + ptB) \* 0.5 <br>
+          runFilter(inImage,kernel,kernelReduce) <br>
+          }
+        </div>
+
+        * Spectra as well supported types
+
+        <div class='code'>
+>>>>>>> master
         implicit val SpectraBMS = new BasicMathSupport[Array[Double]] {
             def plus(a: Array[Double], b: Array[Double]) =
               a.zip(b).map(\_ + \_)
         ...
             def scale(a: Array[Double], b: Double) =
               a.map(_*b)
+<<<<<<< HEAD
         </code></pre>
+=======
+        </div>
+>>>>>>> master
       </script>
     </section>
 
@@ -511,6 +547,7 @@
             * `val bones = sc.loadImages("work/f2_bones/*/bone.tif")`
             * Segment hard and soft tissues
 
+<<<<<<< HEAD
         <pre><code>
           val hardTissue = bones.threshold(OTSU)
           val softTissue = hardTissue.invert
@@ -519,15 +556,31 @@
         * Label cells
 
         <div class='code'>
+=======
+        <div class="code">
+          val hardTissue = bones.threshold(OTSU) <br>
+          val softTissue = hardTissue.invert
+        </div>
+
+        * Label cells
+
+        <div class="code">
+>>>>>>> master
           val cells = hardTissue.componentLabel.
           filter(c=>c.size>100 & c.size<1000)
         </div>
 
         * Export results
 
+<<<<<<< HEAD
         <pre><code>
           cells.shapeAnalysis.WriteOutput("lacuna.csv")
         </code></pre>
+=======
+        <div class="code">
+          cells.shapeAnalysis.WriteOutput("lacuna.csv")
+        </div>
+>>>>>>> master
       </script>
     </section>
 
@@ -602,6 +655,7 @@
       <script type='text/template'>
         ## Science Problems: Big Stitching
 
+<<<<<<< HEAD
         <pre><code>
           dispField = Images.
             cartesian(Images).map{
@@ -609,6 +663,15 @@
               xcorr(ImgA,ImgB,in=xB-xA)
             }
         </code></pre>
+=======
+        <div class='code'>
+          dispField = Images. <br>
+            cartesian(Images).map{ <br>
+            ((xA,ImgA), (xB,ImgB)) => <br>
+              xcorr(ImgA,ImgB,in=xB-xA) <br>
+            }
+        </div>
+>>>>>>> master
 
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-022.png)
       </script>
@@ -630,6 +693,7 @@
 
         The stitching itself, rather than rewriting the original data can be done in a lazy fashion as certain regions of the image are read.
 
+<<<<<<< HEAD
         <pre><code>
           def getView(tPos,tSize) =
             stImgs.
@@ -639,6 +703,17 @@
              oImg.copy(img,x,tPos)
           }.addImages(AVG)
         </code></pre>
+=======
+        <div class='code'>
+          def getView(tPos,tSize) = <br>
+            stImgs. <br>
+            filter(x=>abs(x-tPos)<img.size). <br>
+            map { (x,img) => <br>
+             val oImg = new Image(tSize) <br>
+             oImg.copy(img,x,tPos) <br>
+          }.addImages(AVG)
+        </div>
+>>>>>>> master
 
         This also ensures the original data is left unaltered and all analysis is reversible.
       </script>
@@ -648,9 +723,15 @@
       <script type='text/template'>
         ## Viewing Regions
 
+<<<<<<< HEAD
         <pre><code>
           getView(Pos(26.5,13),Size(2,2))
         </code></pre>
+=======
+        <div class='code'>
+          getView(Pos(26.5,13),Size(2,2))
+        </div>
+>>>>>>> master
 
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-024.png)
       </script>
@@ -683,6 +764,7 @@
       <script type='text/template'>
         ## Streaming Analysis Real-time Webcam Processing
 
+<<<<<<< HEAD
         <pre><code>
           val wr = new WebcamReceiver()
           val ssc = sc.toStreaming(strTime)
@@ -701,6 +783,26 @@
           val totImgs = inImages.count()
           val bgImage = inImages.reduce(\_ add \_).multiply(1.0/totImgs)
         </code></pre>
+=======
+        <div class="code">
+          val wr = new WebcamReceiver() <br>
+          val ssc = sc.toStreaming(strTime) <br>
+          val imgList = ssc.receiverStream(wr)
+        </div>
+
+        ### Filter images
+
+        <div class="code">
+          val filtImgs = allImgs.mapValues(\_.run("Median...","radius=3"))
+        </div>
+
+        ### Create a background image
+
+        <div class="code">
+          val totImgs = inImages.count() <br>
+          val bgImage = inImages.reduce(\_ add \_).multiply(1.0/totImgs)
+        </div>
+>>>>>>> master
       </script>
     </section>
 
@@ -710,6 +812,7 @@
 
         ### Remove the background image and find the mean value
 
+<<<<<<< HEAD
         <pre><code>
           val eventImages = filtImgs.
               transform{
@@ -730,6 +833,28 @@
           eventImages.filter(iv => Math.abs(iv.\_1)>20).
             foreachRDD(showResultsStr("outlier",\_))
         </code></pre>
+=======
+        <div class="code">
+          val eventImages = filtImgs. <br>
+              transform{ <br>
+              inImages => <br>
+                val corImage = inImages.map { <br>
+                  case (inTime,inImage) => <br>
+                    val corImage = inImage.subtract(bgImage) <br>
+                    (corImage.getImageStatistics().mean, <br>
+                      (inTime,corImage)) <br>
+                } <br>
+                corImage <br>
+            }
+        </div>
+
+        ### Show the outliers
+
+        <div class="code">
+          eventImages.filter(iv => Math.abs(iv.\_1)>20). <br>
+            foreachRDD(showResultsStr("outlier",\_))
+        </div>
+>>>>>>> master
       </script>
     </section>
 
@@ -775,6 +900,7 @@
         * Thanks to Java, it is *hardware agnostic*
 
         <div class='code'>
+<<<<<<< HEAD
           def spread\_voxels(pvec: ((Int,Int),Double), windSize: Int = 1) = {
           val wind=(-windSize to windSize)
           val pos=pvec.\_1
@@ -785,6 +911,18 @@
          
           val filtImg=roiImg.
               flatMap(cvec => spread\_voxels(cvec)).
+=======
+          def spread\_voxels(pvec: ((Int,Int),Double), windSize: Int = 1) = { <br>
+          val wind=(-windSize to windSize) <br>
+          val pos=pvec.\_1 <br>
+          val scalevalue=pvec.\_2/(wind.length*wind.length) <br>
+          for(x<-wind; y<-wind) <br>
+            yield ((pos.\_1+x,pos.\_2+y),scalevalue) <br>
+          } <br>
+          <br>
+          val filtImg=roiImg. <br>
+              flatMap(cvec => spread\_voxels(cvec)). <br>
+>>>>>>> master
               filter(roiFun).reduceByKey(\_ + \_)
         </div>
 
@@ -994,7 +1132,11 @@
 
         Now instead of trying to find the intensity for the ring, we can combine density and distance to identify it
 
+<<<<<<< HEAD
         <div class='code'>
+=======
+        <div class="code">
+>>>>>>> master
           if f(5&#60;Distance&#60;10&0.5&#60;Intensity&#60;1.0)
         </div>
 

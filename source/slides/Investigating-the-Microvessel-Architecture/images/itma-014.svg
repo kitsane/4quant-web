@@ -1,0 +1,154 @@
+
+<svg width="532pt" height="774pt"
+ viewBox="0.00 0.00 532.00 774.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 770)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-770 528,-770 528,4 -4,4"/>
+<!-- xscan -->
+<g id="node1" class="node"><title>xscan</title>
+<polygon fill="lightgray" stroke="lightgray" points="522.902,-766 443.098,-766 443.098,-730 522.902,-730 522.902,-766"/>
+<text text-anchor="middle" x="483" y="-743.8" font-family="Times,serif" font-size="14.00">for x in [...]</text>
+</g>
+<!-- yscan -->
+<g id="node2" class="node"><title>yscan</title>
+<polygon fill="lightgray" stroke="lightgray" points="454.902,-694 375.098,-694 375.098,-658 454.902,-658 454.902,-694"/>
+<text text-anchor="middle" x="415" y="-671.8" font-family="Times,serif" font-size="14.00">for y in [...]</text>
+</g>
+<!-- xscan&#45;&gt;yscan -->
+<g id="edge1" class="edge"><title>xscan&#45;&gt;yscan</title>
+<path fill="none" stroke="black" d="M466.191,-729.697C457.874,-721.135 447.695,-710.656 438.61,-701.304"/>
+<polygon fill="black" stroke="black" points="441.094,-698.838 431.616,-694.104 436.073,-703.716 441.094,-698.838"/>
+</g>
+<!-- zscan -->
+<g id="node3" class="node"><title>zscan</title>
+<polygon fill="lightgray" stroke="lightgray" points="398.312,-622 319.688,-622 319.688,-586 398.312,-586 398.312,-622"/>
+<text text-anchor="middle" x="359" y="-599.8" font-family="Times,serif" font-size="14.00">for z in [...]</text>
+</g>
+<!-- yscan&#45;&gt;zscan -->
+<g id="edge2" class="edge"><title>yscan&#45;&gt;zscan</title>
+<path fill="none" stroke="black" d="M401.157,-657.697C394.511,-649.389 386.422,-639.277 379.113,-630.141"/>
+<polygon fill="black" stroke="black" points="381.664,-627.727 372.683,-622.104 376.197,-632.099 381.664,-627.727"/>
+</g>
+<!-- iscan -->
+<g id="node4" class="node"><title>iscan</title>
+<polygon fill="lightgray" stroke="lightgray" points="269.94,-550 164.06,-550 164.06,-514 269.94,-514 269.94,-550"/>
+<text text-anchor="middle" x="217" y="-527.8" font-family="Times,serif" font-size="14.00">for ix in [&#45;1,0,1]</text>
+</g>
+<!-- zscan&#45;&gt;iscan -->
+<g id="edge3" class="edge"><title>zscan&#45;&gt;iscan</title>
+<path fill="none" stroke="black" d="M324.263,-585.876C305.181,-576.469 281.321,-564.708 260.953,-554.667"/>
+<polygon fill="black" stroke="black" points="262.388,-551.472 251.871,-550.19 259.292,-557.751 262.388,-551.472"/>
+</g>
+<!-- imagea -->
+<g id="node8" class="node"><title>imagea</title>
+<ellipse fill="lightsteelblue" stroke="lightsteelblue" cx="312" cy="-460" rx="66.2141" ry="18"/>
+<text text-anchor="middle" x="312" y="-455.8" font-family="Times,serif" font-size="14.00">Load Image A</text>
+</g>
+<!-- zscan&#45;&gt;imagea -->
+<g id="edge7" class="edge"><title>zscan&#45;&gt;imagea</title>
+<path fill="none" stroke="black" d="M353.331,-585.871C345.285,-561.564 330.475,-516.819 320.941,-488.013"/>
+<polygon fill="black" stroke="black" points="324.154,-486.583 317.689,-478.189 317.509,-488.783 324.154,-486.583"/>
+</g>
+<!-- jscan -->
+<g id="node5" class="node"><title>jscan</title>
+<polygon fill="lightgray" stroke="lightgray" points="188.94,-478 83.0605,-478 83.0605,-442 188.94,-442 188.94,-478"/>
+<text text-anchor="middle" x="136" y="-455.8" font-family="Times,serif" font-size="14.00">for iy in [&#45;1,0,1]</text>
+</g>
+<!-- iscan&#45;&gt;jscan -->
+<g id="edge4" class="edge"><title>iscan&#45;&gt;jscan</title>
+<path fill="none" stroke="black" d="M196.978,-513.697C186.874,-504.965 174.464,-494.24 163.482,-484.75"/>
+<polygon fill="black" stroke="black" points="165.647,-481.995 155.792,-478.104 161.07,-487.291 165.647,-481.995"/>
+</g>
+<!-- kscan -->
+<g id="node6" class="node"><title>kscan</title>
+<polygon fill="lightgray" stroke="lightgray" points="169.94,-406 64.0605,-406 64.0605,-370 169.94,-370 169.94,-406"/>
+<text text-anchor="middle" x="117" y="-383.8" font-family="Times,serif" font-size="14.00">for ix in [&#45;1,0,1]</text>
+</g>
+<!-- jscan&#45;&gt;kscan -->
+<g id="edge5" class="edge"><title>jscan&#45;&gt;kscan</title>
+<path fill="none" stroke="black" d="M131.303,-441.697C129.187,-433.898 126.638,-424.509 124.282,-415.829"/>
+<polygon fill="black" stroke="black" points="127.64,-414.838 121.643,-406.104 120.884,-416.672 127.64,-414.838"/>
+</g>
+<!-- imageb -->
+<g id="node9" class="node"><title>imageb</title>
+<ellipse fill="lightsteelblue" stroke="lightsteelblue" cx="66" cy="-316" rx="65.9169" ry="18"/>
+<text text-anchor="middle" x="66" y="-311.8" font-family="Times,serif" font-size="14.00">Load Image B</text>
+</g>
+<!-- kscan&#45;&gt;imageb -->
+<g id="edge6" class="edge"><title>kscan&#45;&gt;imageb</title>
+<path fill="none" stroke="black" d="M104.393,-369.697C98.4026,-361.474 91.1235,-351.483 84.5208,-342.421"/>
+<polygon fill="black" stroke="black" points="87.1792,-340.126 78.4617,-334.104 81.5215,-344.248 87.1792,-340.126"/>
+</g>
+<!-- overlap -->
+<g id="node7" class="node"><title>overlap</title>
+<polygon fill="pink" stroke="pink" points="312,-261.663 214.911,-173.668 409.089,-173.668 312,-261.663"/>
+<text text-anchor="middle" x="312" y="-207.2" font-family="Times,serif" font-size="14.00">Calculate</text>
+<text text-anchor="middle" x="312" y="-190.4" font-family="Times,serif" font-size="14.00">Overlap</text>
+</g>
+<!-- overlap&#45;&gt;xscan -->
+<g id="edge10" class="edge"><title>overlap&#45;&gt;xscan</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M352.959,-224.762C403.548,-253.66 483,-311.123 483,-387 483,-605 483,-605 483,-605 483,-645.885 483,-693.392 483,-721.782"/>
+<ellipse fill="red" stroke="red" cx="483" cy="-725.951" rx="4" ry="4"/>
+</g>
+<!-- overlap&#45;&gt;yscan -->
+<g id="edge11" class="edge"><title>overlap&#45;&gt;yscan</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M347.292,-229.759C386.694,-261.787 445,-320.428 445,-387 445,-533 445,-533 445,-533 445,-574.738 432.439,-621.916 423.573,-650.019"/>
+<ellipse fill="red" stroke="red" cx="422.301" cy="-653.953" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- overlap&#45;&gt;zscan -->
+<g id="edge12" class="edge"><title>overlap&#45;&gt;zscan</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M340.761,-236.124C368.722,-270.773 407,-328.83 407,-387 407,-461 407,-461 407,-461 407,-504.054 386.952,-550.768 372.769,-578.428"/>
+<ellipse fill="red" stroke="red" cx="370.806" cy="-582.165" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- overlap&#45;&gt;iscan -->
+<g id="edge13" class="edge"><title>overlap&#45;&gt;iscan</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M296.536,-247.918C280.161,-295.389 254.212,-373.46 236,-442 230.351,-463.258 225.227,-487.716 221.728,-505.607"/>
+<ellipse fill="red" stroke="red" cx="220.902" cy="-509.891" rx="4.00001" ry="4.00001"/>
+</g>
+<!-- overlap&#45;&gt;jscan -->
+<g id="edge14" class="edge"><title>overlap&#45;&gt;jscan</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M279.163,-232.347C260.489,-249.805 237.759,-273.483 222,-298 194.064,-341.461 205.13,-361.43 179,-406 172.924,-416.364 164.916,-426.832 157.459,-435.696"/>
+<ellipse fill="red" stroke="red" cx="154.774" cy="-438.813" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- overlap&#45;&gt;kscan -->
+<g id="edge15" class="edge"><title>overlap&#45;&gt;kscan</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M274.171,-227.51C247.418,-245.117 211.553,-270.772 184,-298 163.962,-317.802 145.035,-343.884 132.442,-362.688"/>
+<ellipse fill="red" stroke="red" cx="129.978" cy="-366.422" rx="4.00002" ry="4.00002"/>
+</g>
+<!-- update -->
+<g id="node11" class="node"><title>update</title>
+<polygon fill="lightgray" stroke="lightgray" points="428.262,-108 327.738,-108 327.738,-72 428.262,-72 428.262,-108"/>
+<text text-anchor="middle" x="378" y="-85.8" font-family="Times,serif" font-size="14.00">Update Offsets</text>
+</g>
+<!-- overlap&#45;&gt;update -->
+<g id="edge17" class="edge"><title>overlap&#45;&gt;update</title>
+<path fill="none" stroke="black" d="M328.997,-173.415C339.373,-155.963 352.536,-133.826 362.606,-116.89"/>
+<polygon fill="black" stroke="black" points="365.742,-118.464 367.845,-108.08 359.725,-114.886 365.742,-118.464"/>
+</g>
+<!-- imagea&#45;&gt;overlap -->
+<g id="edge8" class="edge"><title>imagea&#45;&gt;overlap</title>
+<path fill="none" stroke="black" d="M312,-441.873C312,-407.689 312,-329.348 312,-271.873"/>
+<polygon fill="black" stroke="black" points="315.5,-271.759 312,-261.759 308.5,-271.76 315.5,-271.759"/>
+</g>
+<!-- imageb&#45;&gt;overlap -->
+<g id="edge9" class="edge"><title>imageb&#45;&gt;overlap</title>
+<path fill="none" stroke="black" d="M98.6669,-300.26C139.922,-281.645 211.395,-249.395 260.145,-227.398"/>
+<polygon fill="black" stroke="black" points="261.597,-230.582 269.273,-223.279 258.718,-224.202 261.597,-230.582"/>
+</g>
+<!-- nscan -->
+<g id="node10" class="node"><title>nscan</title>
+<polygon fill="none" stroke="green" stroke-width="2" points="502.976,-36 395.024,-36 395.024,-0 502.976,-0 502.976,-36"/>
+<text text-anchor="middle" x="449" y="-13.8" font-family="Times,serif" font-size="14.00">while(offsets&gt;0)</text>
+</g>
+<!-- nscan&#45;&gt;xscan -->
+<g id="edge16" class="edge"><title>nscan&#45;&gt;xscan</title>
+<path fill="none" stroke="black" d="M460.889,-36.2838C481.339,-67.7479 521,-137.131 521,-202 521,-605 521,-605 521,-605 521,-646.367 505.765,-692.278 494.588,-720.395"/>
+<polygon fill="black" stroke="black" points="491.244,-719.327 490.69,-729.907 497.721,-721.981 491.244,-719.327"/>
+</g>
+<!-- update&#45;&gt;nscan -->
+<g id="edge18" class="edge"><title>update&#45;&gt;nscan</title>
+<path fill="none" stroke="black" d="M395.551,-71.6966C404.234,-63.135 414.863,-52.6562 424.348,-43.3045"/>
+<polygon fill="black" stroke="black" points="426.988,-45.6175 431.651,-36.1043 422.073,-40.6327 426.988,-45.6175"/>
+</g>
+</g>
+</svg>
