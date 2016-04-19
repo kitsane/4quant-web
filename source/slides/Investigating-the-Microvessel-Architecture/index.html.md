@@ -28,7 +28,7 @@
             * Streaming
         * Outlook / Developments
 
-        ![Internal Structures](/slides/Investigating-the-Microvessel-Architecture/images/itma-004.png)
+        ![Internal Structures](Investigating-the-Microvessel-Architecture/itma-004.png)
       </script>
     </section>
 
@@ -78,7 +78,7 @@
       <script type='text/template'>
         ## Time Breakdown
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-005.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-005.png)
       </script>
     </section>
 
@@ -101,7 +101,7 @@
       <script type='text/template'>
         ## Science or IT?
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-006.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-006.png)
       </script>
     </section>
 
@@ -120,7 +120,7 @@
       <script type='text/template'>
         ## Mouse Brain: Full Vascular Imaging
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-007.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-007.png)
       </script>
     </section>
 
@@ -139,7 +139,7 @@
       <script type='text/template'>
         ## The Scanning
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-008.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-008.svg)
 
         ### Thank you Alessandra and Alberto!
       </script>
@@ -149,9 +149,9 @@
       <script type='text/template'>
         ## The Scanning
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-009.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-009.png)
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-010.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-010.png)
       </script>
     </section>
 
@@ -179,7 +179,7 @@
       <script type='text/template'>
         ## Let&#39;s Stitch
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-011.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-011.svg)
       </script>
     </section>
 
@@ -187,7 +187,7 @@
       <script type='text/template'>
         ## How does that look?
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-012.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-012.png)
       </script>
     </section>
 
@@ -195,7 +195,7 @@
       <script type='text/template'>
         ## How does that look?
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-013.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-013.png)
       </script>
     </section>
 
@@ -214,7 +214,7 @@
       <script type='text/template'>
         ## But it gets better
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-014.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-014.svg)
       </script>
     </section>
 
@@ -275,7 +275,7 @@
       <script type='text/template'>
         ## A Cluster?
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-015.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-015.svg)
       </script>
     </section>
 
@@ -287,7 +287,7 @@
         * The *driver* determines which data need to be loaded
         * *Driver → Master* exact data to load
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-016.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-016.svg)
       </script>
     </section>
 
@@ -306,8 +306,8 @@
       <script type='text/template'>
         ## Steps
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-017.svg)
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-018.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-017.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-018.svg)
       </script>
     </section>
 
@@ -320,7 +320,7 @@
         * → tell machine 1 to send image 0 to machine 2
         * → tell machine 2 to calculate: $Overlap(A→B)$
         * …
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-019.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-019.svg)
       </script>
     </section>
 
@@ -339,7 +339,7 @@
       <script type='text/template'>
         ## Problems
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-020.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-020.png)
       </script>
     </section>
 
@@ -410,7 +410,7 @@
 
         You **conduct** the orchestra, you don&#39;t spend time telling each person what to do
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-021.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-021.png)
       </script>
     </section>
 
@@ -470,7 +470,7 @@
         * The Spark Image Layer is a *Domain Specific Language* for Microscopy for Spark.
         * It converts common imaging tasks into coarse-grained Spark operations
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-022.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-022.png)
       </script>
     </section>
 
@@ -480,7 +480,7 @@
 
         We have developed a number of commands for SIL handling standard image processing tasks
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-023.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-023.png)
       </script>
     </section>
     <section data-markdown>
@@ -492,7 +492,7 @@
           <img alt='4Quant' class='inline-image' src='/slides/Investigating-the-Microvessel-Architecture/images/itma-024.png'>
         </span>
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-025.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-025.png)
       </script>
     </section>
 
@@ -555,7 +555,7 @@
       <script type='text/template'>
         ## Stitching?
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-026.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-026.png)
       </script>
     </section>
 
@@ -582,7 +582,7 @@
       <script type='text/template'>
         ## Cross Correlating
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-027.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-027.png)
       </script>
     </section>
 
@@ -617,7 +617,7 @@
             }.combineImages()
         </div>
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-028.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-028.png)
       </script>
     </section>
 
@@ -647,7 +647,7 @@
       <script type='text/template'>
         ## Searching?
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-029.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-029.png)
 
         ### 2 years later
 
@@ -750,7 +750,7 @@
       <script type='text/template'>
         ## Distribution and Analysis
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-030.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-030.svg)
       </script>
     </section>
 
@@ -758,7 +758,7 @@
       <script type='text/template'>
         ## Distribution and Analysis
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-031.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-031.svg)
       </script>
     </section>
 
@@ -766,7 +766,7 @@
       <script type='text/template'>
         ## Many Nodes
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-032.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-032.svg)
       </script>
     </section>
 
@@ -776,8 +776,8 @@
 
         In the biological imaging community, the open source tools of ImageJ2 and Fiji are widely accepted and have a large number of readily available plugins and tools.
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-033.png)
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-034.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-033.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-034.png)
 
         We can integrate the functionality directly into Spark and perform operations on much larger datasets than a single machine could have in memory. Additionally these analyses can be performed on streaming data.
       </script>
@@ -787,7 +787,7 @@
       <script type='text/template'>
         ## Streaming: Real-time Image Processing
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-035.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-035.svg)
       </script>
     </section>
 
@@ -905,7 +905,7 @@
 
         We also try to publish as much code, educational material, and samples as possible on our github account.
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-036.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-036.png)
 
         * [https://github.com/4Quant](https://github.com/4Quant)
       </script>
@@ -917,11 +917,11 @@
 
         ### Flavio Trolese
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-037.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-037.png)
 
         ### Dr. Prat Das Kanungo
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-038.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-038.png)
       </script>
     </section>
 
@@ -931,11 +931,11 @@
 
         ### Dr. Ana Balan
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-039.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-039.png)
 
         ### Prof. Marco Stampanoni
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-040.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-040.png)
       </script>
     </section>
 
@@ -946,7 +946,7 @@
         * AIT at PSI and Scientific Computer at ETH
         * TOMCAT Group
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-041.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-041.png)
       </script>
     </section>
 
@@ -983,7 +983,7 @@
 
         The 0815 approach, using standard tools and lots of clicking, one image at a time
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-042.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-042.png)
       </script>
     </section>
 
@@ -1023,7 +1023,7 @@
 
         If **you** looked at one 1000 x 1000 sized image every *second*
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-043.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-043.png)
       </script>
     </section>
 
@@ -1063,7 +1063,7 @@
       <script type='text/template'>
         ## Top Down Science
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-044.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-044.svg)
       </script>
     </section>
 
@@ -1088,7 +1088,7 @@
         * from long, arduous studies involving careful model selection
         * to hypothesis and model creation based on the correlations and trends found in the raw data
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-045.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-045.svg)
       </script>
     </section>
 
@@ -1100,7 +1100,7 @@
 
         ### Transistors $∝ 2^{T/(18 months)}$
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-046.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-046.png)
 
         *Based on data from [https://gist.github.com/humberto-ortiz/de4b3a621602b78bf90d](https://gist.github.com/humberto-ortiz/de4b3a621602b78bf90d)*
       </script>
@@ -1139,7 +1139,7 @@
       <script type='text/template'>
         ## Cloud Computing Costs
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-047.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-047.png)
       </script>
     </section>
 
@@ -1153,7 +1153,7 @@
         * Python/MPI script to pool results
         * MySQL Database storing results
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-048.svg)
+        ![](Investigating-the-Microvessel-Architecture/itma-048.svg)
       </script>
     </section>
 
@@ -1185,7 +1185,7 @@
       <script type='text/template'>
         ## Compartmentalized
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-049.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-049.png)
       </script>
     </section>
 
@@ -1205,7 +1205,7 @@
       <script type='text/template'>
         ## Cost Comparison: Why this hasn&#39;t been done before?
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-050.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-050.png)
       </script>
     </section>
 
@@ -1224,7 +1224,7 @@
       <script type='text/template'>
         ## Scaling Costs
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-051.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-051.png)
       </script>
     </section>
 
@@ -1251,7 +1251,7 @@
 
         ### ↓Load Myleoma Data Subset
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-052.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-052.png)
       </script>
     </section>
 
@@ -1261,7 +1261,7 @@
 
         ### ↓Perform analysis on a every image
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-053.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-053.png)
       </script>
     </section>
 
@@ -1271,7 +1271,7 @@
 
         ### ↓Filter out the most anisotropic cells
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-054.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-054.png)
       </script>
     </section>
 
@@ -1279,7 +1279,7 @@
       <script type='text/template'>
         ## Quantitative Search Machine for Images: Maps
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-055.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-055.png)
       </script>
     </section>
 
@@ -1306,7 +1306,7 @@
 
         ### We can then visualize these contours easily
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-056.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-056.png)
       </script>
     </section>
 
@@ -1316,7 +1316,7 @@
 
         ### or apply them back to the original map
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-057.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-057.png)
       </script>
     </section>
 
@@ -1326,7 +1326,7 @@
 
         Bottleneck is filesystem connection, many nodes (10+) reading in parallel brings even GPFS-based infiniband system to a crawl
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-058.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-058.png)
       </script>
     </section>
 
@@ -1339,7 +1339,7 @@
         * Use fast local storage for storing everything redundantly → less transfer and fault-tolerance
         * Largest file size: 512 yottabytes, Yahoo has 14 petabyte filesystem in use
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-059.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-059.png)
       </script>
     </section>
 
@@ -1438,7 +1438,7 @@
 
         Here we use a [KNIME](http://www.knime.org/) -based workflow and our Spark Imaging Layer extensions to create a workflow without any Scala or programming knowledge and with an easily visible flow from one block to the next without any performance overhead of using other tools.
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-060.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-060.png)
       </script>
     </section>
 
@@ -1446,7 +1446,7 @@
       <script type='text/template'>
         ## Little blocks for big data
 
-        ![](/slides/Investigating-the-Microvessel-Architecture/images/itma-061.png)
+        ![](Investigating-the-Microvessel-Architecture/itma-061.png)
       </script>
     </section>
 
