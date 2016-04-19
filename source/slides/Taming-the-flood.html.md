@@ -531,17 +531,21 @@
         <i></i>
         * Filter all of the images
 
-        <div class='code'>
+        <pre>
+          <code>
           CREATE TABLE FilteredImages AS <br>
           SELECT boneId,GaussianFilter(image) FROM ImageTable
-        </div>
+                  </code>
+          </pre>
 
         * Segment hard and soft tissues
 
-        <div class='code'>
+        <pre>
+          <code>
           CREATE TABLE ThresholdImages AS <br>
           SELECT boneId,ApplyThreshold(image,OTSU) FROM FilteredImages
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -551,10 +555,12 @@
         <i></i>
         * Label cells
 
-        <div class='code'>
+        <pre>
+          <code>
           CREATE TABLE ThresholdImages AS <br>
           SELECT boneId,ComponentLabel(image) FROM PorosityImages
-        </div>
+                  </code>
+          </pre>
 
         * Export results
 
@@ -652,13 +658,15 @@
       <script type='text/template'>
         ## Science Problems: Big Stitching
 
-        <div class='code'>
+        <pre>
+          <code>
           dispField = Images. <br>
             cartesian(Images).map{ <br>
             ((xA,ImgA), (xB,ImgB)) => <br>
               xcorr(ImgA,ImgB,in=xB-xA) <br>
             }
-        </div>
+                  </code>
+          </pre>
 
         ![](Taming-the-flood/tf-025.png)
       </script>
@@ -680,7 +688,8 @@
 
         The stitching itself, rather than rewriting the original data can be done in a lazy fashion as certain regions of the image are read.
 
-        <div class='code'>
+        <pre>
+          <code>
           def getView(tPos,tSize) = <br>
             stImgs. <br>
             filter(x=>abs(x-tPos)<img.size). <br>
@@ -688,7 +697,8 @@
              val oImg = new Image(tSize) <br>
              oImg.copy(img,x,tPos) <br>
           }.addImages(AVG)
-        </div>
+                  </code>
+          </pre>
 
         This also ensures the original data is left unaltered and all analysis is reversible.
       </script>
@@ -698,9 +708,11 @@
       <script type='text/template'>
         ## Viewing Regions
 
-        <div class='code'>
+        <pre>
+          <code>
           getView(Pos(26.5,13),Size(2,2))
-        </div>
+                  </code>
+          </pre>
 
         ![](Taming-the-flood/tf-027.png)
       </script>
@@ -941,12 +953,14 @@
 
         ### ↓Translate to SQL
 
-        <div class='code'>
+        <pre>
+          <code>
           SELECT contour FROM ( <br>
             SELECT COMPONENT_LABEL(THRESHOLD(tile,200)) FROM esriTiles <br>
             WHERE DIST(LAT,-47.53000992328762,LONG,8.215198516845703)<1 <br>
             ) WHERE area>200
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -996,11 +1010,13 @@
       <script type='text/template'>
         ## Streaming Analysis Real-time Webcam Processing
 
-        <div class="code">
+        <pre>
+          <code>
           val wr = new WebcamReceiver() <br>
           val ssc = sc.toStreaming(strTime) <br>
           val imgList = ssc.receiverStream(wr)
-        </div>
+                  </code>
+          </pre>
 
         ### Filter images
 
@@ -1010,10 +1026,12 @@
 
         ### Create a background image
 
-        <div class="code">
+        <pre>
+          <code>
           val totImgs = inImages.count() <br>
           val bgImage = inImages.reduce(\_ add \_).multiply(1.0/totImgs)
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -1023,7 +1041,8 @@
 
         ### Remove the background image and find the mean value
 
-        <div class="code">
+        <pre>
+          <code>
           val eventImages = filtImgs. <br>
               transform{ <br>
               inImages => <br>
@@ -1035,7 +1054,8 @@
                 } <br>
                 corImage <br>
             }
-        </div>
+                  </code>
+          </pre>
 
         ### Show the outliers
 

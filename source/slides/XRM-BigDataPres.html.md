@@ -489,13 +489,15 @@
 
         Much simplier code and combining different pieces of information is trivial. For example calculating the distance to the nearest vessel and then determining the average distance of each cell
 
-        <div class="code">
+        <pre>
+          <code>
           cellDist = vesselImage.invert. <br>
             calculateDistance <br>
           cellLabel = cellThreshold.makeLabel <br>
           avgCellDist = cellLabel.join(cellDist). <br>
             groupBy(LABEL).reduce(MEAN)
-        </div>
+                  </code>
+          </pre>
 
         This analysis can be done easily since the types are flexible
 
@@ -712,17 +714,21 @@
 
         Scala code can be slow, but it is very high level and can be automatically translated to CPU or GPU code with projects like ScalaCL
 
-        <div class="code">
+        <pre>
+          <code>
           val myData = new Array(1,2,3,4,5) <br>
           val doubleSum = myData.map(\_*2).reduce(\_+\_)
-        </div>
+                  </code>
+          </pre>
 
         Using **ScalaCL** to run on GPUs with 2-4X performance improvement
 
-        <div class="code">
+        <pre>
+          <code>
           val clData = myData.cl
           val doubleSum = clData.map(\_*2).reduce(\_+\_)
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
     <section data-markdown>
@@ -901,14 +907,16 @@
             * Apply a *filter* operation with the function `(random()<nPoints/4)`
         1. Create a function called nearest center which takes a point $\vec x$  and returns the nearest center to the point and the point itself
 
-        <div class="code">
+        <pre>
+        <code>
         nearestCenter(x) = { <br>
             for cCenter in Centers <br>
               pointDist(cCenter) = dist(x,cCenter) <br>
             end <br>
             return (argmin(pointDist),x) <br>
           }
-        </div>
+                </code>
+        </pre>
 
         1. *Map* `nearestCenter` onto **Points** as **NearestCenterList**
       </script>
@@ -951,21 +959,27 @@
 
         * Count the number of pixels
 
-        <div class="code">
+        <pre>
+          <code>
           imgAsKV.count
-        </div>
+                  </code>
+          </pre>
 
         * Get the first value
 
-        <div class="code">
+        <pre>
+          <code>
           imgAsKV.take(1)
-        </div>
+                  </code>
+          </pre>
 
         * Sample 100 values from the data
 
-        <div class="code">
+        <pre>
+          <code>
           imgAsKV.sample(true,0.1,0).collect
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -986,9 +1000,11 @@
 
         ### Get Volume Fraction
 
-        <div class="code">
+        <pre>
+          <code>
           100.0*labelImg.count/(imgAsKV.count)
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
     
@@ -1033,10 +1049,12 @@
 
         * Create the first labels from a thresheld image as a mutable type
 
-        <div class="code">
+        <pre>
+          <code>
           val xWidth=100 <br>
           var newLabels=labelImg.map(pvec => (pvec.\_1,(pvec.\_1.\_1.toLong*xWidth+pvec.\_1.\_2+1,true)))
-        </div>
+                  </code>
+          </pre>
 
         * Spreading to Neighbor Function
 
@@ -1087,13 +1105,15 @@
         <i></i>
         * Average Voxel Count
 
-        <div class="code">
+        <pre>
+          <code>
           val labelSize = newLabels. <br>
             map(pvec => (pvec.\_2.\_1,1)). <br>
             reduceByKey((a,b) => (a+b)). <br>
             map(\_.\_2) <br>
           labelSize.reduce((a,b) => (a+b))*1.0/labelSize.count
-        </div>
+                  </code>
+          </pre>
 
         * Center of Volume for Each Label
 

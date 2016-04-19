@@ -393,7 +393,8 @@
       <script type='text/template'>
         ## Making Coding Simpler with Types
 
-        <div class='code'>
+        <pre>
+            <code>
             trait BasicMathSupport[T] extends Serializable { <br>
                 def plus(a: T, b: T): T <br>
                 def times(a: T, b: T): T <br>
@@ -405,7 +406,8 @@
                 def divide(a: T, b: T): T = times(a, invert(b)) <br>
                 def compare(a: T, b: T): Int <br>
             }
-        </div>
+                    </code>
+            </pre>
       </script>
     </section>
 
@@ -415,7 +417,8 @@
 
         * Simple filter implementation
 
-        <div class='code'>
+        <pre>
+          <code>
           def SimpleFilter[T](inImage: Image[T]) <br>
           (implicit val wst: BasicMathSupport[T]) = { <br>
           val width: Double = 1 <br>
@@ -423,18 +426,21 @@
           kernelReduce = (ptA,ptB) => (ptA + ptB) \* 0.5 <br>
           runFilter(inImage,kernel,kernelReduce) <br>
           }
-        </div>
+                  </code>
+          </pre>
 
         * Spectra as well supported types
 
-        <div class='code'>
+        <pre>
+        <code>
         implicit val SpectraBMS = new BasicMathSupport[Array[Double]] {
             def plus(a: Array[Double], b: Array[Double]) =
               a.zip(b).map(\_ + \_)
         ...
             def scale(a: Array[Double], b: Double) =
               a.map(_*b)
-        </div>
+                </code>
+        </pre>
       </script>
     </section>
 
@@ -511,10 +517,12 @@
             * `val bones = sc.loadImages("work/f2_bones/*/bone.tif")`
             * Segment hard and soft tissues
 
-        <div class="code">
+        <pre>
+          <code>
           val hardTissue = bones.threshold(OTSU) <br>
           val softTissue = hardTissue.invert
-        </div>
+                  </code>
+          </pre>
 
         * Label cells
 
@@ -602,13 +610,15 @@
       <script type='text/template'>
         ## Science Problems: Big Stitching
 
-        <div class='code'>
+        <pre>
+<code>
           dispField = Images. <br>
             cartesian(Images).map{ <br>
             ((xA,ImgA), (xB,ImgB)) => <br>
               xcorr(ImgA,ImgB,in=xB-xA) <br>
             }
-        </div>
+        </code>
+</pre>
 
         ![](Interactive-Scientific-Image-Analysis/isia-022.png)
       </script>
@@ -630,7 +640,8 @@
 
         The stitching itself, rather than rewriting the original data can be done in a lazy fashion as certain regions of the image are read.
 
-        <div class='code'>
+        <pre>
+          <code>
           def getView(tPos,tSize) = <br>
             stImgs. <br>
             filter(x=>abs(x-tPos)<img.size). <br>
@@ -638,7 +649,8 @@
              val oImg = new Image(tSize) <br>
              oImg.copy(img,x,tPos) <br>
           }.addImages(AVG)
-        </div>
+                  </code>
+          </pre>
 
         This also ensures the original data is left unaltered and all analysis is reversible.
       </script>
@@ -648,9 +660,11 @@
       <script type='text/template'>
         ## Viewing Regions
 
-        <div class='code'>
+        <pre>
+          <code>
           getView(Pos(26.5,13),Size(2,2))
-        </div>
+                  </code>
+          </pre>
 
         ![](Interactive-Scientific-Image-Analysis/isia-024.png)
       </script>
@@ -683,11 +697,13 @@
       <script type='text/template'>
         ## Streaming Analysis Real-time Webcam Processing
 
-        <div class="code">
+        <pre>
+          <code>
           val wr = new WebcamReceiver() <br>
           val ssc = sc.toStreaming(strTime) <br>
           val imgList = ssc.receiverStream(wr)
-        </div>
+                  </code>
+          </pre>
 
         ### Filter images
 
@@ -697,10 +713,12 @@
 
         ### Create a background image
 
-        <div class="code">
+        <pre>
+          <code>
           val totImgs = inImages.count() <br>
           val bgImage = inImages.reduce(\_ add \_).multiply(1.0/totImgs)
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -710,7 +728,8 @@
 
         ### Remove the background image and find the mean value
 
-        <div class="code">
+        <pre>
+          <code>
           val eventImages = filtImgs. <br>
               transform{ <br>
               inImages => <br>
@@ -722,7 +741,8 @@
                 } <br>
                 corImage <br>
             }
-        </div>
+                  </code>
+          </pre>
 
         ### Show the outliers
 

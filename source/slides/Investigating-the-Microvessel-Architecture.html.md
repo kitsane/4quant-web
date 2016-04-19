@@ -520,18 +520,22 @@
 
         * Now start processing, run a gaussian filter on all the images to reduce the noise
 
-        <div class="code">
+        <pre>
+         <code>
          filteredImages = Images.gaussianFilter(1,0.5)
-        </div>
+                 </code>
+         </pre>
 
         * Calculate the volume fraction at a threshold of 50%
 
-        <div class="code">
+        <pre>
+         <code>
          volFraction = Images.threshold(0.5). <br>
           map{keyImg => <br>
             (sum(keyImg.img),keyImg.size) <br>
             }.reduce(_+_)
-        </div>
+                 </code>
+         </pre>
       </script>
     </section>
 
@@ -544,10 +548,12 @@
          * Start simple and match the images up with its neighbors (all image permutations and filter out the proximal ones)
          pairImages = Images.
 
-        <div class="code">
+        <pre>
+          <code>
           cartesian(Images).
           filter((im1,im2) => dist(im1.pos,im2.pos)<1)
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -565,7 +571,8 @@
 
         The cross correlation can then be executed on each pair of images from the new RDD (*pairImages*) by using the **map** command
 
-        <div class="code">
+        <pre>
+          <code>
           displacementField = pairImages. <br>
             map{ <br>
             ((posA,ImgA), (posB,ImgB)) => <br>
@@ -574,7 +581,8 @@
                 in=posB-posA) <br>
          <br>
             }
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -592,11 +600,13 @@
 
         From the updated information provided by the cross correlations and by applying appropriate smoothing criteria across windows.
 
-        <div class="code">
+        <pre>
+          <code>
           smoothField = displacementField. <br>
               window(3,3,3). <br>
               map(gaussianSmoothFunction)
-        </div>
+                  </code>
+          </pre>
 
         This also ensures the original data is left unaltered and all analysis is reversible.
       </script>
@@ -608,14 +618,16 @@
 
         The final stiching can then be done by
 
-        <div class="code">
+        <pre>
+          <code>
           alignImages. <br>
             filter(x=>abs(x-tPos)<img.size). <br>
             map { (x,img) => <br>
              new Image(tSize). <br>
               copy(img,x,tPos) <br>
             }.combineImages()
-        </div>
+                  </code>
+          </pre>
 
         ![](Investigating-the-Microvessel-Architecture/itma-028.png)
       </script>
@@ -686,7 +698,8 @@
 
         How many of the bone samples measured had a cortical thickness larger than 30mm?
 
-        <div class="code">
+        <pre>
+          <code>
           SELECT COUNT(*) FROM ( <br>
             SELECT THICKNESS( <br>
               SEGMENT_CORTICAL( <br>
@@ -694,18 +707,21 @@
               ) <br>
             ) AS thk WHERE thk>30 <br>
           )
-        </div>
+                  </code>
+          </pre>
 
         Is there a correlation between cortical thickness and mineral content?
 
-        <div class="code">
+        <pre>
+          <code>
           SELECT THICKNESS(cortical), <br>
             IMG_AVG(cortical) FROM ( <br>
             SELECT SEGMENT_CORTICAL( <br>
               GAUSSFILT(imgData) <br>
               ) AS cortical <br>
             )
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -713,18 +729,24 @@
       <script type='text/template'>
         ## Image Query Engine: A PhD in 9 lines
 
-        <div class="code">
+        <pre>
+          <code>
           CREATE TABLE FilteredBones AS
           SELECT sampleId,GaussianFilter(image) FROM BoneImages
-        </div>
-        <div class="code">
+                  </code>
+          </pre>
+        <pre>
+          <code>
           CREATE TABLE ThresholdImages AS
           SELECT boneId,ApplyThreshold(image,OTSU) FROM FilteredBones
-        </div>
-        <div class="code">
+                  </code>
+          </pre>
+        <pre>
+          <code>
           CREATE TABLE CellImages AS
           SELECT boneId,ComponentLabel(image) FROM PorosityImages
-        </div>
+                  </code>
+          </pre>
         <div class="code">
           CREATE TABLE CellAnalysis AS
           SELECT boneId,AnalyzeShape(CellImages) FROM CellImages GROUP BY boneId
@@ -795,11 +817,13 @@
       <script type='text/template'>
         ## Streaming Analysis Real-time Webcam Processing
 
-        <div class="code">
+        <pre>
+          <code>
           val wr = new WebcamReceiver() <br>
           val ssc = sc.toStreaming(strTime) <br>
           val imgList = ssc.receiverStream(wr)
-        </div>
+                  </code>
+          </pre>
 
         ### Filter images
 
@@ -809,10 +833,12 @@
 
         ### Create a background image
 
-        <div class="code">
+        <pre>
+          <code>
           val totImgs = inImages.count() <br>
           val bgImage = inImages.reduce(\_ add \_).multiply(1.0/totImgs)
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -822,7 +848,8 @@
 
         ### Remove the background image and find the mean value
 
-        <div class="code">
+        <pre>
+          <code>
           val eventImages = filtImgs. <br>
               transform{ <br>
               inImages => <br>
@@ -834,7 +861,8 @@
                 } <br>
                 corImage <br>
             }
-        </div>
+                  </code>
+          </pre>
 
         ### Show the outliers
 
@@ -1291,12 +1319,14 @@
 
         ### ↓Translate to SQL
 
-        <div class='code'>
+        <pre>
+          <code>
           SELECT contour FROM ( <br>
             SELECT COMPONENT_LABEL(THRESHOLD(tile,200)) FROM esriTiles <br>
             WHERE DIST(LAT,-47.53000992328762,LONG,8.215198516845703)<1 <br>
             ) WHERE area>200
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 

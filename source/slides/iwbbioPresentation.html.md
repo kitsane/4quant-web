@@ -651,10 +651,12 @@
       <script type='text/template'>
         ## Perform a threshold
 
-        <div class="code">
+        <pre>
+          <code>
           val threshVal=127 <br>
           val labelImg=inImg.filter(_._2>threshVal)
-        </div>
+                  </code>
+          </pre>
 
         * Runs on 1 core on your laptop or 1000 cores in the cloud or on Merlin or the beamline.
         * If one computer crashes or disconnects it **automatically** continues on another one.

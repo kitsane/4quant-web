@@ -682,21 +682,27 @@
 
         * Count the number of pixels
 
-        <div class="code">
+        <pre>
+          <code>
           imgAsKV.count
-        </div>
+                  </code>
+          </pre>
 
         * Get the first value
 
-        <div class="code">
+        <pre>
+          <code>
           imgAsKV.take(1)
-        </div>
+                  </code>
+          </pre>
 
         * Sample 100 values from the data
 
-        <div class="code">
+        <pre>
+          <code>
           imgAsKV.sample(true,0.1,0).collect
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -717,9 +723,11 @@
 
         ### Get Volume Fraction
 
-        <div class="code">
+        <pre>
+          <code>
           100.0*labelImg.count/(imgAsKV.count)
-        </div>
+                  </code>
+          </pre>
       </script>
     </section>
 
@@ -764,10 +772,12 @@
 
         * Create the first labels from a thresheld image as a mutable type
 
-        <div class="code">
+        <pre>
+          <code>
           val xWidth=100 <br>
           var newLabels=labelImg.map(pvec => (pvec.\_1,(pvec.\_1.\_1.toLong*xWidth+pvec.\_1.\_2+1,true)))
-        </div>
+                  </code>
+          </pre>
 
         * Spreading to Neighbor Function
 
@@ -818,13 +828,15 @@
         <i></i>
         * Average Voxel Count
 
-        <div class="code">
+        <pre>
+          <code>
           val labelSize = newLabels. <br>
             map(pvec => (pvec.\_2.\_1,1)). <br>
             reduceByKey((a,b) => (a+b)). <br>
             map(\_.\_2) <br>
           labelSize.reduce((a,b) => (a+b))*1.0/labelSize.count
-        </div>
+                  </code>
+          </pre>
 
         * Center of Volume for Each Label
 
