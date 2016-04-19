@@ -16,9 +16,9 @@
         1. Institute for Biomechanics, ETH Zurich, 8093 Zurich, Switzerland
 
         <p class='title-image-block'>
-          <img alt='Paul Scherrer Institute' class='inline-image' src='../images/slides/iwbbio/iwbbio-001.png'>
-          <img alt='ETH Zurich' class='inline-image' src='../images/slides/iwbbio/iwbbio-002.png'>
-          <img alt='4Quant' class='inline-image' src='../images/slides/iwbbio/iwbbio-003.png'>
+          <img alt='Paul Scherrer Institute' class='inline-image' src='/slides/iwbbioPresentation/images/iwbbio-001.png'>
+          <img alt='ETH Zurich' class='inline-image' src='/slides/iwbbioPresentation/images/iwbbio-002.png'>
+          <img alt='4Quant' class='inline-image' src='/slides/iwbbioPresentation/images/iwbbio-003.png'>
         </p>
       </script>
     </section>
@@ -54,7 +54,7 @@
       <script type='text/template'>
         ## Introduction
 
-        ![](../images/slides/iwbbio/iwbbio-004.png)
+        ![](iwbbioPresentation/iwbbio-004.png)
 
         ### Implied
 
@@ -74,7 +74,7 @@
             * with **1.8mm** field of view
         * achieve **>10 Hz** temporal resolution
 
-        ![](../images/slides/iwbbio/iwbbio-005.png)
+        ![](iwbbioPresentation/iwbbio-005.png)
 
         *[1] Mokso et al., J. Phys. D, 46(49),2013*
       </script>
@@ -95,7 +95,7 @@
       <script type='text/template'>
         ## Phenotyping
 
-        ![](../images/slides/iwbbio/iwbbio-006.png)
+        ![](iwbbioPresentation/iwbbio-006.png)
       </script>
     </section>
 
@@ -116,7 +116,7 @@
 
         1300 bone samples measured at $0.7 μ$ m resolution in 2 weeks, **automatically**
 
-        ![](../images/slides/iwbbio/iwbbio-007.png)
+        ![](iwbbioPresentation/iwbbio-007.png)
       </script>
     </section>
 
@@ -126,7 +126,7 @@
 
         Just like genetics, the burden of imaging is moving from acquisition to post-processing
 
-        ![](../images/slides/iwbbio/iwbbio-008.png)
+        ![](iwbbioPresentation/iwbbio-008.png)
 
         *[3] Sboner A,et. al. Genome Biology, 2011*
       </script>
@@ -272,7 +272,7 @@
         * In-memory caching
         * Based on Scala, offers interactive REPL
 
-        ![](../images/slides/iwbbio/iwbbio-009.png)
+        ![](iwbbioPresentation/iwbbio-009.png)
 
         *Zaharia, M., et. al (2012). Resilient distributed datasets: a fault-tolerant abstraction for in-memory cluster computing*
       </script>
@@ -316,7 +316,7 @@
       <script type='text/template'>
         ## Spark: Imaging Layer / TIPL
 
-        ![](../images/slides/iwbbio/iwbbio-010.png)
+        ![](iwbbioPresentation/iwbbio-010.png)
       </script>
     </section>
 
@@ -340,7 +340,7 @@
         * Distance Maps for Colocation Analysis
         * Voronoi Tesselation for Density and Neighborhood Metrics
 
-        ![](../images/slides/iwbbio/iwbbio-011.png)
+        ![](iwbbioPresentation/iwbbio-011.png)
       </script>
     </section>
 
@@ -348,7 +348,7 @@
       <script type='text/template'>
         ## Image Processing Results
 
-        ![](../images/slides/iwbbio/iwbbio-012.png)
+        ![](iwbbioPresentation/iwbbio-012.png)
       </script>
     </section>
 
@@ -395,7 +395,7 @@
 
         How does this result look visually? Each line shows the mean ± standard deviation for sample. The range within a single sample is clearly much larger than between
 
-        ![](../images/slides/iwbbio/iwbbio-013.png)
+        ![](iwbbioPresentation/iwbbio-013.png)
       </script>
     </section>
 
@@ -405,7 +405,7 @@
 
         Phenotype values at D9Mit259 Marker located on chromosome 9 in the mouse
 
-        ![](../images/slides/iwbbio/iwbbio-014.png)
+        ![](iwbbioPresentation/iwbbio-014.png)
       </script>
 
     <!-- TODO: 404 error here ! https://rawgit.com/4Quant/IWBBIO2014/master/iwbbioPresentation.html#/19 -->
@@ -415,7 +415,7 @@
       <script type='text/template'>
         ## Spark Imaging Performance
 
-        ![](../images/slides/iwbbio/iwbbio-015.png)
+        ![](iwbbioPresentation/iwbbio-015.png)
       </script>
     </section>
 
@@ -423,7 +423,7 @@
       <script type='text/template'>
         ## Spark Imaging Performance
 
-        ![](../images/slides/iwbbio/iwbbio-016.png)
+        ![](iwbbioPresentation/iwbbio-016.png)
       </script>
     </section>
 
@@ -509,7 +509,7 @@
       <script type='text/template'>
         ## Quo Vadis: Synchrotron-based µCT Imaging?
 
-        ![](../images/slides/iwbbio/iwbbio-017.png)
+        ![](iwbbioPresentation/iwbbio-017.png)
       </script>
     </section>
 
@@ -517,7 +517,7 @@
       <script type='text/template'>
         ## Quo Vadis: Synchrotron-based µCT Imaging?
 
-        ![](../images/slides/iwbbio/iwbbio-018.png)
+        ![](iwbbioPresentation/iwbbio-018.png)
       </script>
     </section>
 
@@ -549,7 +549,7 @@
 
         Source could the camera server itself or a watched directory on a machine.
 
-        ![](../images/slides/iwbbio/iwbbio-019.png)
+        ![](iwbbioPresentation/iwbbio-019.png)
       </script>
     </section>
 
@@ -611,7 +611,7 @@
         * AIT at PSI
         * X-Ray Microscopy Group at the TOMCAT Beamline of the Swiss Light Source
 
-        ![](../images/slides/iwbbio/iwbbio-020.png)
+        ![](iwbbioPresentation/iwbbio-020.png)
       </script>
     </section>
 

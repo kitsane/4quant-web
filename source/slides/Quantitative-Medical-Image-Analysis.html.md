@@ -9,9 +9,9 @@
         <br>
         LifeScienceForumBasel, 18 June 2015
 
-        ![SIL](../images/slides/qmia/qmia-001.png)
-        ![Paul Scherrer Institute](../images/slides/qmia/qmia-002.png)
-        ![ETH Zurich](../images/slides/qmia/qmia-003.png)
+        ![SIL](Quantitative-Medical-Image-Analysis/qmia-001.png)
+        ![Paul Scherrer Institute](Quantitative-Medical-Image-Analysis/qmia-002.png)
+        ![ETH Zurich](Quantitative-Medical-Image-Analysis/qmia-003.png)
       </script>
     </section>
 
@@ -47,7 +47,7 @@
         * Commercial Projects
         * Outlook / Developments
 
-        ![Internal Structures](../images/slides/qmia/qmia-004.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-004.png)
       </script>
     </section>
 
@@ -57,7 +57,7 @@
 
         Look for potentially cancerous nodules in the following lung image, taken from [NPR](http://www.npr.org/sections/health-shots/2013/02/11/171409656/why-even-radiologists-can-miss-a-gorilla-hiding-in-plain-sight)
 
-        ![](../images/slides/qmia/qmia-005.jpg)
+        ![](Quantitative-Medical-Image-Analysis/qmia-005.jpg)
       </script>
     </section>
 
@@ -81,7 +81,7 @@
 
         Which center square seems brighter?
 
-        ![Internal Structures](../images/slides/qmia/qmia-006.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-006.png)
       </script>
     </section>
 
@@ -91,7 +91,7 @@
 
         ### Are the intensities constant in the image?
 
-        ![Internal Structures](../images/slides/qmia/qmia-007.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-007.png)
       </script>
     </section>
 
@@ -119,7 +119,7 @@
       <script type='text/template'>
         ## Overwhelmed: Bone Physiology
 
-        ![Internal Structures](../images/slides/qmia/qmia-008.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-008.png)
       </script>
     </section>
 
@@ -129,7 +129,7 @@
 
         Do it all over again for 96 more samples, this time with 2000 slices instead of just one!
 
-        ![Internal Structures](../images/slides/qmia/qmia-009.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-009.png)
       </script>
     </section>
 
@@ -138,7 +138,7 @@
         ## A Genome Level Study
 
         * Genetic studies require hundreds to thousands of samples
-        * ![Internal Structures](../images/slides/qmia/qmia-010.png)
+        * ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-010.png)
         * For this study, the difference between 717 and 1200 samples is the difference between finding the **links** and finding *nothing*.
       </script>
     </section>
@@ -148,7 +148,7 @@
         ## A Genome Level Study
 
         * Now again with 1090 samples!
-        * ![Internal Structures](../images/slides/qmia/qmia-011.png)
+        * ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-011.png)
       </script>
     </section>
 
@@ -158,7 +158,7 @@
 
         * Those metrics were quantitative and could be easily visually extracted from the images
         * What happens if you have softer metrics
-        * ![Internal Structures](../images/slides/qmia/qmia-012.png)
+        * ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-012.png)
       </script>
     </section>
 
@@ -178,7 +178,7 @@
 
         As the amount of data increases
 
-        ![Internal Structures](../images/slides/qmia/qmia-013.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-013.png)
       </script>
     </section>
 
@@ -241,7 +241,7 @@
       <script type='text/template'>
         ## Time Breakdown
 
-        ![Internal Structures](../images/slides/qmia/qmia-014.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-014.png)
       </script>
     </section>
 
@@ -264,7 +264,7 @@
       <script type='text/template'>
         ## Science or IT?
 
-        ![Internal Structures](../images/slides/qmia/qmia-015.png)
+        ![Internal Structures](Quantitative-Medical-Image-Analysis/qmia-015.png)
       </script>
     </section>
 
@@ -274,7 +274,7 @@
 
         If **you** looked at one 1000 x 1000 sized image every *second*
 
-        ![](../images/slides/qmia/qmia-016.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-016.png)
       </script>
     </section>
 
@@ -359,7 +359,7 @@
         * Python/MPI script to pool results
         * MySQL Database storing results
 
-        ![](../images/slides/qmia/qmia-017.svg)
+        ![](Quantitative-Medical-Image-Analysis/qmia-017.svg)
       </script>
     </section>
 
@@ -472,7 +472,7 @@
         * The Spark Image Layer is a *Domain Specific Language* for Microscopy for Spark.
         * It converts common imaging tasks into coarse-grained Spark operations
 
-        ![](../images/slides/qmia/qmia-018.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-018.png)
       </script>
     </section>
 
@@ -482,7 +482,7 @@
 
         We have developed a number of commands for SIL handling standard image processing tasks
 
-        ![](../images/slides/qmia/qmia-019.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-019.png)
       </script>
     </section>
     <section data-markdown>
@@ -491,10 +491,10 @@
 
         <span>
           Fully exensible with
-          <img alt='4Quant' class='inline-image' src='../images/slides/qmia/qmia-020.png'>
+          <img alt='4Quant' class='inline-image' src='/slides/Quantitative-Medical-Image-Analysis/images/qmia-020.png'>
         </span>
 
-        ![](../images/slides/qmia/qmia-021.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-021.png)
       </script>
     </section>
 
@@ -521,7 +521,7 @@
 
         ### ↓Load Myleoma Data Subset
 
-        ![](../images/slides/qmia/qmia-022.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-022.png)
       </script>
     </section>
 
@@ -531,7 +531,7 @@
 
         ### ↓Perform analysis on a every image
 
-        ![](../images/slides/qmia/qmia-023.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-023.png)
       </script>
     </section>
 
@@ -541,7 +541,7 @@
 
         ### ↓Filter out the most anisotropic cells
 
-        ![](../images/slides/qmia/qmia-024.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-024.png)
       </script>
     </section>
 
@@ -562,7 +562,7 @@
       <script type='text/template'>
         ## Distribution and Analysis
 
-        ![](../images/slides/qmia/qmia-025.svg)
+        ![](Quantitative-Medical-Image-Analysis/qmia-025.svg)
       </script>
     </section>
 
@@ -570,7 +570,7 @@
       <script type='text/template'>
         ## Distribution and Analysis
 
-        ![](../images/slides/qmia/qmia-026.svg)
+        ![](Quantitative-Medical-Image-Analysis/qmia-026.svg)
       </script>
     </section>
 
@@ -592,7 +592,7 @@
 
         ###For the same price as a single radiologist, you get (each blue dot is 20 computers):
 
-        ![](../images/slides/qmia/qmia-027.svg)
+        ![](Quantitative-Medical-Image-Analysis/qmia-027.svg)
       </script>
     </section>
 
@@ -612,7 +612,7 @@
       <script type='text/template'>
         ## Cost Comparison: Why this hasn&#39;t been done before?
 
-        ![](../images/slides/qmia/qmia-028.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-028.png)
       </script>
     </section>
 
@@ -632,7 +632,7 @@
       <script type='text/template'>
         ## Scaling Costs
 
-        ![](../images/slides/qmia/qmia-029.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-029.png)
       </script>
     </section>
 
@@ -660,7 +660,7 @@
 
         ### Instead of
 
-        ![](../images/slides/qmia/qmia-030.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-030.png)
       </script>
     </section>
 
@@ -670,8 +670,8 @@
 
         ### We have
 
-        * Healthy ![](../images/slides/qmia/qmia-031.png)
-        * Sick ![](../images/slides/qmia/qmia-032.png)
+        * Healthy ![](Quantitative-Medical-Image-Analysis/qmia-031.png)
+        * Sick ![](Quantitative-Medical-Image-Analysis/qmia-032.png)
       </script>
     </section>
 
@@ -713,11 +713,11 @@
 
         ### Flavio Trolese
 
-        ![](../images/slides/qmia/qmia-033.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-033.png)
 
         ### Dr. Prat Das Kanungo
 
-        ![](../images/slides/qmia/qmia-034.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-034.png)
       </script>
     </section>
 
@@ -727,11 +727,11 @@
 
         ### Dr. Ana Balan
 
-        ![](../images/slides/qmia/qmia-035.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-035.png)
 
         ### Prof. Marco Stampanoni
 
-        ![](../images/slides/qmia/qmia-036.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-036.png)
       </script>
     </section>
 
@@ -744,7 +744,7 @@
         * Keith Cheng from Penn State Medical Center
         * AIT at PSI and Scientific Computer at ETH
 
-        ![](../images/slides/qmia/qmia-037.png)
+        ![](Quantitative-Medical-Image-Analysis/qmia-037.png)
       </script>
     </section>
 

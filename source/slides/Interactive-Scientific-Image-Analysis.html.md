@@ -9,10 +9,10 @@
         <br>
         Spark East, NYC, 19 March 2015
 
-        ![SIL](../images/slides/isia/isia-001.png)
-        ![4Quant](../images/slides/isia/isia-002.png)
-        ![Paul Scherrer Institute](../images/slides/isia/isia-003.png)
-        ![ETH Zurich](../images/slides/isia/isia-004.png)
+        ![SIL](Interactive-Scientific-Image-Analysis/isia-001.png)
+        ![4Quant](Interactive-Scientific-Image-Analysis/isia-002.png)
+        ![Paul Scherrer Institute](Interactive-Scientific-Image-Analysis/isia-003.png)
+        ![ETH Zurich](Interactive-Scientific-Image-Analysis/isia-004.png)
       </script>
     </section>
 
@@ -50,7 +50,7 @@
         * Large Datasets
         * Outlook / Developments
 
-        ![](../images/slides/isia/isia-005.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-005.png)
       </script>
     </section>
 
@@ -66,7 +66,7 @@
         * achieve >10 Hz temporal resolution
         * **8GB/s** of images
 
-        ![](../images/slides/isia/isia-006.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-006.png)
 
         *[1] Mokso et al., J. Phys. D, 46(49),2013*
       </script>
@@ -125,7 +125,7 @@
       <script type='text/template'>
         ## Research Image Science in 2015: More and faster
 
-        ![](../images/slides/isia/isia-007.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-007.png)
       </script>
     </section>
 
@@ -135,7 +135,7 @@
 
         If **you** looked at one 1000 x 1000 sized image every *second*
 
-        ![](../images/slides/isia/isia-008.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-008.png)
       </script>
     </section>
 
@@ -162,7 +162,7 @@
 
         ### Transistors $∝ 2^{T/(18 months)}$
 
-        ![](../images/slides/isia/isia-009.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-009.png)
 
         *Based on data from [https://gist.github.com/humberto-ortiz/de4b3a621602b78bf90d](https://gist.github.com/humberto-ortiz/de4b3a621602b78bf90d)*
       </script>
@@ -191,7 +191,7 @@
 
         The figure shows the range of cloud costs (determined by peak usage) compared to a local workstation with utilization shown as the average number of hours the computer is used each week.
 
-        ![](../images/slides/isia/isia-010.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-010.png)
       </script>
     </section>
 
@@ -201,7 +201,7 @@
 
         The figure shows the cost of a cloud based solution as a percentage of the cost of buying a single machine. The values below 1 show the percentage as a number. The panels distinguish the average time to replacement for the machines in months
 
-        ![](../images/slides/isia/isia-011.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-011.png)
       </script>
     </section>
 
@@ -311,7 +311,7 @@
         * The Spark Image Layer is a *Domain Specific Language* for Microscopy for Spark.
         * It converts common imaging tasks into coarse-grained Spark operations
 
-        ![](../images/slides/isia/isia-012.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-012.png)
       </script>
     </section>
 
@@ -321,7 +321,7 @@
 
         We have developed a number of commands for SIL handling standard image processing tasks
 
-        ![](../images/slides/isia/isia-013.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-013.png)
       </script>
     </section>
     <section data-markdown>
@@ -330,10 +330,10 @@
 
         <span>
           Fully exensible with
-          <img alt='4Quant' class='inline-image' src='../images/slides/isia/isia-014.png'>
+          <img alt='4Quant' class='inline-image' src='/slides/Interactive-Scientific-Image-Analysis/images/isia-014.png'>
         </span>
 
-        ![](../images/slides/isia/isia-015.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-015.png)
       </script>
     </section>
 
@@ -343,7 +343,7 @@
 
         Hyperspectral imaging is a rapidly growing area with the potentially for massive datasets and a severe deficit of usuable tools.
 
-        ![](../images/slides/isia/isia-016.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-016.png)
       </script>
     </section>
 
@@ -359,7 +359,7 @@
       <script type='text/template'>
         ## Use case: Hyperspectral Imaging
 
-        ![](../images/slides/isia/isia-017.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-017.png)
       </script>
     </section>
 
@@ -467,7 +467,7 @@
       <script type='text/template'>
         ## Scientific Cases: Genome-scale Imaging
 
-        ![](../images/slides/isia/isia-018.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-018.png)
       </script>
     </section>
 
@@ -477,7 +477,7 @@
 
         Genetic studies require hundreds to thousands of samples, in this case the difference between 717 and 1200 samples is the difference between finding the links and finding nothing.
 
-        ![](../images/slides/isia/isia-019.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-019.png)
       </script>
     </section>
 
@@ -572,7 +572,7 @@
       <script type='text/template'>
         ## Science Problems: Full Brain Imaging
 
-        ![](../images/slides/isia/isia-020.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-020.png)
       </script>
     </section>
 
@@ -594,7 +594,7 @@
 
         Images: $RDD[((x,y,z),Img[Double])]=[(\vec x ,Img),⋯]$
 
-        ![](../images/slides/isia/isia-021.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-021.png)
       </script>
     </section>
 
@@ -610,7 +610,7 @@
             }
         </div>
 
-        ![](../images/slides/isia/isia-022.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-022.png)
       </script>
     </section>
 
@@ -620,7 +620,7 @@
 
         From the updated information provided by the cross correlations and by applying appropriate smoothing criteria (if necessary).
 
-        ![](../images/slides/isia/isia-023.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-023.png)
       </script>
     </section>
 
@@ -652,7 +652,7 @@
           getView(Pos(26.5,13),Size(2,2))
         </div>
 
-        ![](../images/slides/isia/isia-024.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-024.png)
       </script>
     </section>
 
@@ -662,9 +662,9 @@
 
         In the biological imaging community, the open source tools of ImageJ2 and Fiji are widely accepted and have a large number of readily available plugins and tools.
 
-        ![](../images/slides/isia/isia-025.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-025.png)
 
-        ![](../images/slides/isia/isia-026.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-026.png)
 
         We can integrate the functionality directly into Spark and perform operations on much larger datasets than a single machine could have in memory. Additionally these analyses can be performed on streaming data.
       </script>
@@ -674,7 +674,7 @@
       <script type='text/template'>
         ## Real-time with Spark Streaming: Webcam
 
-        ![](../images/slides/isia/isia-027.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-027.png)
       </script>
     </section>
 
@@ -798,7 +798,7 @@
 
         Here we use a [KNIME](http://www.knime.org/) -based workflow and our Spark Imaging Layer extensions to create a workflow without any Scala or programming knowledge and with an easily visible flow from one block to the next without any performance overhead of using other tools.
 
-        ![](../images/slides/isia/isia-028.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-028.png)
       </script>
     </section>
 
@@ -806,7 +806,7 @@
       <script type='text/template'>
         ## Little blocks for big data
 
-        ![](../images/slides/isia/isia-029.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-029.png)
       </script>
     </section>
 
@@ -876,7 +876,7 @@
         * AIT at PSI and Scientific Computer at ETH
         * TOMCAT Group
 
-        ![](../images/slides/isia/isia-030.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-030.png)
       </script>
     </section>
 
@@ -905,7 +905,7 @@
 
         We are used to seeing images in a grid format where the position indicates the row and column in the grid and the intensity (absorption, reflection, tip deflection, etc) is shown as a different color
 
-        ![](../images/slides/isia/isia-031.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-031.png)
       </script>
     </section>
 
@@ -946,7 +946,7 @@
 
         So we have an image of a cell and we want to identify the membrane (the ring) from the nucleus (the point in the middle).
 
-        ![](../images/slides/isia/isia-032.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-032.png)
       </script>
     </section>
 
@@ -956,7 +956,7 @@
 
         A simple threshold doesn&#39;t work because we identify the point in the middle as well. We could try to use morphological tricks to get rid of the point in the middle, or we could better tune our segmentation to the ring structure.
 
-        ![](../images/slides/isia/isia-033.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-033.png)
       </script>
     </section>
 
@@ -966,7 +966,7 @@
 
         In this case we add a very simple feature to the image, the distance from the center of the image (distance).
 
-        ![](../images/slides/isia/isia-034.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-034.png)
 
         | x | y | Intensity | Distance |
         | --- | --- | --- | --- |
@@ -985,7 +985,7 @@
 
         We now have a more complicated image, which we can&#39;t as easily visualize, but we can incorporate these two pieces of information together.
 
-        ![](../images/slides/isia/isia-035.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-035.png)
       </script>
     </section>
     <section data-markdown>
@@ -998,7 +998,7 @@
           if f(5&#60;Distance&#60;10&0.5&#60;Intensity&#60;1.0)
         </div>
 
-        ![](../images/slides/isia/isia-036.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-036.png)
       </script>
     </section>
 
@@ -1006,7 +1006,7 @@
       <script type='text/template'>
         ## Applying two criteria
 
-        ![](../images/slides/isia/isia-037.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-037.png)
       </script>
     </section>
 
@@ -1035,7 +1035,7 @@
       <script type='text/template'>
         ## Common Features
 
-        ![](../images/slides/isia/isia-038.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-038.png)
       </script>
     </section>
 
@@ -1045,7 +1045,7 @@
 
         The distributions of the features appear very different and can thus likely be used for identifying different parts of the images.
 
-        ![](../images/slides/isia/isia-039.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-039.png)
       </script>
     </section>
 
@@ -1055,8 +1055,8 @@
 
         Combine this with our *a priori* information (called supervised analysis)
 
-        ![](../images/slides/isia/isia-040.png)
-        ![](../images/slides/isia/isia-041.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-040.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-041.png)
       </script>
     </section>
 
@@ -1083,7 +1083,7 @@
 
         Want to predict Training from x,y, Absorb, and Scatter → MLLib: Logistic Regression, Random Forest, K-Nearest Neighbors, …
 
-        ![](../images/slides/isia/isia-042.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-042.png)
       </script>
     </section>
 
@@ -1103,7 +1103,7 @@
 
         Such systems can be easily represented by a graph, and analyzed using GraphX in a distributed, fault tolerant manner.
 
-        ![](../images/slides/isia/isia-043.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-043.png)
       </script>
     </section>
 
@@ -1113,7 +1113,7 @@
 
         Bottleneck is filesystem connection, many nodes (10+) reading in parallel brings even GPFS-based infiniband system to a crawl
 
-        ![](../images/slides/isia/isia-044.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-044.png)
       </script>
     </section>
 
@@ -1126,7 +1126,7 @@
         * Use fast local storage for storing everything redundantly → less transfer and fault-tolerance
         * Largest file size: 512 yottabytes, Yahoo has 14 petabyte filesystem in use
 
-        ![](../images/slides/isia/isia-045.png)
+        ![](Interactive-Scientific-Image-Analysis/isia-045.png)
       </script>
     </section>
 

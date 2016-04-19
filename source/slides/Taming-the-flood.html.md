@@ -8,9 +8,9 @@
         <br>
         ICTMS 2015, 30 June 2015 (4quant.com/ICTMS2015)
 
-        ![SIL](../images/slides/teaming-the-flood/tf-001.png)
-        ![Paul Scherrer Institute](../images/slides/teaming-the-flood/tf-002.png)
-        ![ETH Zurich](../images/slides/teaming-the-flood/tf-003.png)
+        ![SIL](Taming-the-flood/tf-001.png)
+        ![Paul Scherrer Institute](Taming-the-flood/tf-002.png)
+        ![ETH Zurich](Taming-the-flood/tf-003.png)
 
       </script>
     </section>
@@ -48,7 +48,7 @@
         * Outlook / Developments
         * New Science?
 
-        ![Internal Structures](../images/slides/teaming-the-flood/tf-004.png)
+        ![Internal Structures](Taming-the-flood/tf-004.png)
       </script>
     </section>
 
@@ -103,7 +103,7 @@
       <script type='text/template'>
         ## Data Flood
 
-        ![](../images/slides/teaming-the-flood/tf-005.png)
+        ![](Taming-the-flood/tf-005.png)
       </script>
     </section>
 
@@ -126,7 +126,7 @@
       <script type='text/template'>
         ## Time Breakdown
 
-        ![](../images/slides/teaming-the-flood/tf-006.png)
+        ![](Taming-the-flood/tf-006.png)
       </script>
     </section>
 
@@ -149,7 +149,7 @@
       <script type='text/template'>
         ## Science or IT?
 
-        ![](../images/slides/teaming-the-flood/tf-007.png)
+        ![](Taming-the-flood/tf-007.png)
       </script>
     </section>
 
@@ -159,7 +159,7 @@
 
         If **you** looked at one 1000 x 1000 sized image every *second*
 
-        ![](../images/slides/teaming-the-flood/tf-008.png)
+        ![](Taming-the-flood/tf-008.png)
       </script>
     </section>
 
@@ -186,7 +186,7 @@
 
         ### Transistors $∝ 2^{T/(18 months)}$
 
-        ![](../images/slides/teaming-the-flood/tf-009.png)
+        ![](Taming-the-flood/tf-009.png)
 
         *Based on data from [https://gist.github.com/humberto-ortiz/de4b3a621602b78bf90d](https://gist.github.com/humberto-ortiz/de4b3a621602b78bf90d)*
       </script>
@@ -224,7 +224,7 @@
       <script type='text/template'>
         ## Cloud Computing Costs
 
-        ![](../images/slides/teaming-the-flood/tf-010.png)
+        ![](Taming-the-flood/tf-010.png)
       </script>
     </section>
 
@@ -246,7 +246,7 @@
 
         The 0815 approach, using standard tools and lots of clicking, one image at a time
 
-        ![](../images/slides/teaming-the-flood/tf-011.png)
+        ![](Taming-the-flood/tf-011.png)
       </script>
     </section>
 
@@ -258,7 +258,7 @@
 
         analysis → complex, multistep, and time-consuming
 
-        ![](../images/slides/teaming-the-flood/tf-012.png)
+        ![](Taming-the-flood/tf-012.png)
       </script>
     </section>
 
@@ -266,7 +266,7 @@
       <script type='text/template'>
         ## Real Example: Genome-Scale Imaging of Bone
 
-        ![](../images/slides/teaming-the-flood/tf-013.png)
+        ![](Taming-the-flood/tf-013.png)
 
         Genetic studies require hundreds to thousands of samples, in this case the difference between 717 and 1200 samples is the difference between finding the links and finding nothing.
       </script>
@@ -317,7 +317,7 @@
         * Python/MPI script to pool results
         * MySQL Database storing results
 
-        ![](../images/slides/teaming-the-flood/tf-014.svg)
+        ![](Taming-the-flood/tf-014.svg)
       </script>
     </section>
 
@@ -348,7 +348,7 @@
       <script type='text/template'>
         ## Compartmentalized
 
-        ![](../images/slides/teaming-the-flood/tf-015.png)
+        ![](Taming-the-flood/tf-015.png)
       </script>
     </section>
 
@@ -425,7 +425,7 @@
 
         You **conduct** the orchestra, you don&#39;t spend time telling each person what to do
 
-        ![](../images/slides/teaming-the-flood/tf-016.png)
+        ![](Taming-the-flood/tf-016.png)
       </script>
     </section>
 
@@ -485,7 +485,7 @@
         * The Spark Image Layer is a *Domain Specific Language* for Microscopy for Spark.
         * It converts common imaging tasks into coarse-grained Spark operations
 
-        ![](../images/slides/teaming-the-flood/tf-017.png)
+        ![](Taming-the-flood/tf-017.png)
       </script>
     </section>
 
@@ -495,7 +495,7 @@
 
         We have developed a number of commands for SIL handling standard image processing tasks
 
-        ![](../images/slides/teaming-the-flood/tf-018.png)
+        ![](Taming-the-flood/tf-018.png)
       </script>
     </section>
     <section data-markdown>
@@ -504,10 +504,10 @@
 
         <span>
           Fully exensible with
-          <img alt='4Quant' class='inline-image' src='../images/slides/teaming-the-flood/tf-019.png'>
+          <img alt='4Quant' class='inline-image' src='/slides/Taming-the-flood/images/tf-019.png'>
         </span>
 
-        ![](../images/slides/teaming-the-flood/tf-020.png)
+        ![](Taming-the-flood/tf-020.png)
       </script>
     </section>
 
@@ -582,7 +582,7 @@
       <script type='text/template'>
         ## Cost Comparison: Why this hasn&#39;t been done before?
 
-        ![](../images/slides/teaming-the-flood/tf-021.png)
+        ![](Taming-the-flood/tf-021.png)
       </script>
     </section>
 
@@ -603,7 +603,7 @@
       <script type='text/template'>
         ## Scaling Costs
 
-        ![](../images/slides/teaming-the-flood/tf-022.png)
+        ![](Taming-the-flood/tf-022.png)
       </script>
     </section>
 
@@ -622,7 +622,7 @@
       <script type='text/template'>
         ## Example Projects: Full Brain Imaging
 
-        ![](../images/slides/teaming-the-flood/tf-023.png)
+        ![](Taming-the-flood/tf-023.png)
       </script>
     </section>
 
@@ -644,7 +644,7 @@
 
         Images: $RDD[((x,y,z),Img[Double])]=[(x⃗ ,Img),⋯]$
 
-        ![](../images/slides/teaming-the-flood/tf-024.png)
+        ![](Taming-the-flood/tf-024.png)
       </script>
     </section>
 
@@ -660,7 +660,7 @@
             }
         </div>
 
-        ![](../images/slides/teaming-the-flood/tf-025.png)
+        ![](Taming-the-flood/tf-025.png)
       </script>
     </section>
 
@@ -670,7 +670,7 @@
 
         From the updated information provided by the cross correlations and by applying appropriate smoothing criteria (if necessary).
 
-        ![](../images/slides/teaming-the-flood/tf-026.png)
+        ![](Taming-the-flood/tf-026.png)
       </script>
     </section>
 
@@ -702,7 +702,7 @@
           getView(Pos(26.5,13),Size(2,2))
         </div>
 
-        ![](../images/slides/teaming-the-flood/tf-027.png)
+        ![](Taming-the-flood/tf-027.png)
       </script>
     </section>
 
@@ -729,7 +729,7 @@
 
         ### ↓Load Myleoma Data Subset
 
-        ![](../images/slides/teaming-the-flood/tf-028.png)
+        ![](Taming-the-flood/tf-028.png)
       </script>
     </section>
 
@@ -739,7 +739,7 @@
 
         ### ↓Perform analysis on a every image
 
-        ![](../images/slides/teaming-the-flood/tf-029.png)
+        ![](Taming-the-flood/tf-029.png)
       </script>
     </section>
 
@@ -749,7 +749,7 @@
 
         ### ↓Filter out the most anisotropic cells
 
-        ![](../images/slides/teaming-the-flood/tf-030.png)
+        ![](Taming-the-flood/tf-030.png)
       </script>
     </section>
 
@@ -770,7 +770,7 @@
       <script type='text/template'>
         ## Distribution and Analysis
 
-        ![](../images/slides/teaming-the-flood/tf-031.svg)
+        ![](Taming-the-flood/tf-031.svg)
       </script>
     </section>
 
@@ -778,7 +778,7 @@
       <script type='text/template'>
         ## Distribution and Analysis
 
-        ![](../images/slides/teaming-the-flood/tf-032.svg)
+        ![](Taming-the-flood/tf-032.svg)
       </script>
     </section>
 
@@ -786,7 +786,7 @@
       <script type='text/template'>
         ## Many Nodes
 
-        ![](../images/slides/teaming-the-flood/tf-033.svg)
+        ![](Taming-the-flood/tf-033.svg)
       </script>
     </section>
 
@@ -810,7 +810,7 @@
       <script type='text/template'>
         ## Top Down Science
 
-        ![](../images/slides/teaming-the-flood/tf-034.svg)
+        ![](Taming-the-flood/tf-034.svg)
       </script>
     </section>
 
@@ -835,7 +835,7 @@
         * from long, arduous studies involving careful model selection
         * to hypothesis and model creation based on the correlations and trends found in the raw data
 
-        ![](../images/slides/teaming-the-flood/tf-035.svg)
+        ![](Taming-the-flood/tf-035.svg)
       </script>
     </section>
 
@@ -877,11 +877,11 @@
 
         ### Flavio Trolese
 
-        ![](../images/slides/teaming-the-flood/tf-036.png)
+        ![](Taming-the-flood/tf-036.png)
 
         ### Dr. Prat Das Kanungo
 
-        ![](../images/slides/teaming-the-flood/tf-037.png)
+        ![](Taming-the-flood/tf-037.png)
       </script>
     </section>
 
@@ -891,11 +891,11 @@
 
         ### Dr. Ana Balan
 
-        ![](../images/slides/teaming-the-flood/tf-038.png)
+        ![](Taming-the-flood/tf-038.png)
 
         ### Prof. Marco Stampanoni
 
-        ![](../images/slides/teaming-the-flood/tf-039.png)
+        ![](Taming-the-flood/tf-039.png)
       </script>
     </section>
 
@@ -906,7 +906,7 @@
         * AIT at PSI and Scientific Computer at ETH
         * TOMCAT Group
 
-        ![](../images/slides/teaming-the-flood/tf-040.png)
+        ![](Taming-the-flood/tf-040.png)
       </script>
     </section>
 
@@ -929,7 +929,7 @@
       <script type='text/template'>
         ## Quantitative Search Machine for Images: Maps
 
-        ![](../images/slides/teaming-the-flood/tf-041.png)
+        ![](Taming-the-flood/tf-041.png)
       </script>
     </section>
 
@@ -956,7 +956,7 @@
 
         ### We can then visualize these contours easily
 
-        ![](../images/slides/teaming-the-flood/tf-042.png)
+        ![](Taming-the-flood/tf-042.png)
       </script>
     </section>
 
@@ -966,7 +966,7 @@
 
         ### or apply them back to the original map
 
-        ![](../images/slides/teaming-the-flood/tf-043.png)
+        ![](Taming-the-flood/tf-043.png)
       </script>
     </section>
 
@@ -976,9 +976,9 @@
 
         In the biological imaging community, the open source tools of ImageJ2 and Fiji are widely accepted and have a large number of readily available plugins and tools.
 
-        ![](../images/slides/teaming-the-flood/tf-044.png)
+        ![](Taming-the-flood/tf-044.png)
 
-        ![](../images/slides/teaming-the-flood/tf-046.png)
+        ![](Taming-the-flood/tf-046.png)
 
         We can integrate the functionality directly into Spark and perform operations on much larger datasets than a single machine could have in memory. Additionally these analyses can be performed on streaming data.
       </script>
@@ -988,7 +988,7 @@
       <script type='text/template'>
         ## Real-time with Spark Streaming: Webcam
 
-        ![](../images/slides/teaming-the-flood/tf-045.png)
+        ![](Taming-the-flood/tf-045.png)
       </script>
     </section>
 
@@ -1149,7 +1149,7 @@
 
         Here we use a [KNIME](http://www.knime.org/) -based workflow and our Spark Imaging Layer extensions to create a workflow without any Scala or programming knowledge and with an easily visible flow from one block to the next without any performance overhead of using other tools.
 
-        ![](../images/slides/teaming-the-flood/tf-047.png)
+        ![](Taming-the-flood/tf-047.png)
       </script>
     </section>
 
@@ -1157,7 +1157,7 @@
       <script type='text/template'>
         ## Little blocks for big data
 
-        ![](../images/slides/teaming-the-flood/tf-048.png)
+        ![](Taming-the-flood/tf-048.png)
       </script>
     </section>
   </div>

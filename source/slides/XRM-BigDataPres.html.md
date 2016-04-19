@@ -8,10 +8,10 @@
         Kevin Mader <br>
         October 2014, XRM Big Data Satellite Workshop
 
-        ![](../images/slides/xrm/xrm-001.png)
-        ![](../images/slides/xrm/xrm-002.png)
-        ![](../images/slides/xrm/xrm-003.png)
-        ![](../images/slides/xrm/xrm-004.png)
+        ![](XRM-BigDataPres/xrm-001.png)
+        ![](XRM-BigDataPres/xrm-002.png)
+        ![](XRM-BigDataPres/xrm-003.png)
+        ![](XRM-BigDataPres/xrm-004.png)
       </script>
     </section>
 
@@ -39,7 +39,7 @@
         * handle the flood of data from current and next generation instruments
         * avoid mistakes through thorough, quantitative unit-testing
 
-        ![](../images/slides/xrm/xrm-005.png)
+        ![](XRM-BigDataPres/xrm-005.png)
       </script>
     </section>
 
@@ -55,7 +55,7 @@
         * achieve >10 Hz temporal resolution
         * **8GB/s** of images
 
-        ![](../images/slides/xrm/xrm-006.png)
+        ![](XRM-BigDataPres/xrm-006.png)
 
         *[1] Mokso et al., J. Phys. D, 46(49),2013*
       </script>
@@ -166,7 +166,7 @@
 
         Images are only as useful as what you can do with them, the bottleneck isn&#39;t measurement speed, but analysis
 
-        ![](../images/slides/xrm/xrm-007.png)
+        ![](XRM-BigDataPres/xrm-007.png)
 
         *Adapted from: Sboner A,et. al. Genome Biology, 2011*
       </script>
@@ -357,7 +357,7 @@
 
         Bottleneck is filesystem connection, many nodes (10+) reading in parallel brings even GPFS-based fiber system to a crawl
 
-        ![](../images/slides/xrm/xrm-008.png)
+        ![](XRM-BigDataPres/xrm-008.png)
       </script>
     </section>
 
@@ -370,7 +370,7 @@
         * Use fast local storage for storing everything redundantly → less transfer and fault-tolerance
         * Largest file size: 512 yottabytes, Yahoo has 14 petabyte filesystem in use
 
-        ![](../images/slides/xrm/xrm-009.png)
+        ![](XRM-BigDataPres/xrm-009.png)
       </script>
     </section>
 
@@ -400,7 +400,7 @@
         * It converts common imaging tasks into coarse-grained Spark operations
         * Spark handles processing, fault-tolerance, and resource management
 
-        ![](../images/slides/xrm/xrm-010.png)
+        ![](XRM-BigDataPres/xrm-010.png)
       </script>
     </section>
 
@@ -410,7 +410,7 @@
 
         We have developed a number of commands for SIL handling standard image processing tasks
 
-        ![](../images/slides/xrm/xrm-011.png)
+        ![](XRM-BigDataPres/xrm-011.png)
       </script>
     </section>
 
@@ -418,11 +418,11 @@
       <script type='text/template'>
         <span>
           New components can be added using
-          <img alt='4Quant' class='inline-image' src='../images/slides/xrm/xrm-013.png'>
+          <img alt='4Quant' class='inline-image' src='/slides/XRM-BigDataPres/images/xrm-013.png'>
           or imported from ImageJ directly. The resulting analyses are then <em>parallelized</em> by the Spark Engine and run on multiple cores/CPUs locally, on a cluster, supercomputer, or even a virtual in the cluster in the cloud which can be started in seconds.
         </span>
 
-        ![](../images/slides/xrm/xrm-012.png)
+        ![](XRM-BigDataPres/xrm-012.png)
       </script>
     </section>
 
@@ -430,7 +430,7 @@
       <script type='text/template'>
         ## How does scaling look?
 
-        ![](../images/slides/xrm/xrm-014.png)
+        ![](XRM-BigDataPres/xrm-014.png)
       </script>
     </section>
 
@@ -438,7 +438,7 @@
       <script type='text/template'>
         ## How does scaling look?
 
-        ![](../images/slides/xrm/xrm-015.png)
+        ![](XRM-BigDataPres/xrm-015.png)
       </script>
     </section>
 
@@ -446,7 +446,7 @@
       <script type='text/template'>
         ## Fault-Tolerance
 
-        ![](../images/slides/xrm/xrm-016.png)
+        ![](XRM-BigDataPres/xrm-016.png)
       </script>
     </section>
 
@@ -499,7 +499,7 @@
 
         This analysis can be done easily since the types are flexible
 
-        ![](../images/slides/xrm/xrm-017.png)
+        ![](XRM-BigDataPres/xrm-017.png)
       </script>
     </section>
 
@@ -507,7 +507,7 @@
       <script type='text/template'>
         ## Practical Meaning
 
-        ![](../images/slides/xrm/xrm-018.png)
+        ![](XRM-BigDataPres/xrm-018.png)
       </script>
     </section>
 
@@ -517,7 +517,7 @@
 
         Hyperspectral imaging is a rapidly growing area with the potentially for massive datasets and a severe deficit of usuable tools.  
 
-        ![](../images/slides/xrm/xrm-019.png)   
+        ![](XRM-BigDataPres/xrm-019.png)   
       </script>
     </section>
 
@@ -534,7 +534,7 @@
       <script type='text/template'>
         ## Hyperspectral Imaging        
         
-        ![](../images/slides/xrm/xrm-020.png) 
+        ![](XRM-BigDataPres/xrm-020.png) 
       </script>
     </section>
 
@@ -589,7 +589,7 @@
       <script type='text/template'>
         ## Imaging as Machine Learning
 
-        ![](../images/slides/xrm/xrm-021.png) 
+        ![](XRM-BigDataPres/xrm-021.png) 
       </script>
     </section>
 
@@ -597,7 +597,7 @@
       <script type='text/template'>
         ## Imaging as Machine Learning
         
-        ![](../images/slides/xrm/xrm-022.png) 
+        ![](XRM-BigDataPres/xrm-022.png) 
       </script>
     </section>
 
@@ -626,7 +626,7 @@
         * Data into a ZeroMQ pipe
         * Spark Streaming on ZeroMQ pipe
 
-        ![](../images/slides/xrm/xrm-023.png) 
+        ![](XRM-BigDataPres/xrm-023.png) 
       </script>
     </section>
 
@@ -646,7 +646,7 @@
 
         Such systems can be easily represented by a graph, and analyzed using GraphX in a distributed, fault tolerant manner.
 
-        ![](../images/slides/xrm/xrm-024.png)
+        ![](XRM-BigDataPres/xrm-024.png)
         $$E = \frac12 \sum_i\sum_{\langle j\rangle_i} J[1 - \delta(S_i - S_j)]$$
       </script>
     </section>
@@ -676,7 +676,7 @@
       <script type='text/template'>
         ## Cellular Potts Simulations
 
-        ![](../images/slides/xrm/xrm-025.png) 
+        ![](XRM-BigDataPres/xrm-025.png) 
       </script>
     </section>
 
@@ -684,7 +684,7 @@
       <script type='text/template'>
         ## Cellular Potts Simulations
         
-        ![](../images/slides/xrm/xrm-026.png) 
+        ![](XRM-BigDataPres/xrm-026.png) 
       </script>
     </section>
 
@@ -807,7 +807,7 @@
         * AIT at PSI
         * TOMCAT Group
 
-        ![](../images/slides/xrm/xrm-027.png)
+        ![](XRM-BigDataPres/xrm-027.png)
       </script>
     </section>
 
