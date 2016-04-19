@@ -23,7 +23,7 @@ page '/slides/*', layout: :slides_layout
 
 # Reload the browser automatically whenever files change
 configure :development do
- activate :livereload
+ # activate :livereload
 end
 
 activate :breadcrumbs
@@ -33,12 +33,18 @@ activate :google_analytics do |ga|
 end
 
 activate :blog do |blog|
-  blog.permalink = 'news/:year-:month-:day-:title'
-  blog.sources = 'news/:year-:month-:day-:title'
+  blog.permalink = 'news/:year-:month-:day-:title/index.html'
+  blog.sources = 'news/:year-:month-:day-:title/index.html'
   blog.summary_generator = Proc.new  do |resource, rendered, length, ellipsis|
     "#{rendered.split(SUMMARY_START).last.split(SUMMARY_END).first}#{ellipsis}"
   end
 end
+
+activate :blog do |slides|
+  slides.permalink = 'slides/:title/index.html.md'
+  slides.sources = 'slides/:title/index.html.md'
+end
+
 
 activate :external_pipeline do |pipe|
   pipe.name = :gulp
@@ -69,6 +75,13 @@ helpers do
 
   def cleanup_summary_start_end_separator(html)
     html.sub(SUMMARY_START, "").sub(SUMMARY_END, "")
+  end
+
+  def slide_img(directory)
+    img_path = Pathname.new(directory)
+    parent = img_path.parent
+    parentstring = parent.to_str
+    content_tag :li, class: 'img_fluid', src: "/slides/#{parentstring}/images/#{filename}", alt: filename
   end
 end
 
