@@ -76,3 +76,62 @@ $ bundle exec middleman deploy
 
 You can visit the site under [4quant](http://kitsane.github.io/4quant-web).
 
+## How to News
+
+News articles are to be placed under ```./source/news/``` in a directory with the naming schema ```./source/news/YYYY-MM-DD-News-Article-Title```. 
+
+Within this dir, there is a index.html.md file to be written in Markdown with the header like:
+
+```
+---
+title: 'Flood Risk Analytics'
+date: 2015-08-09
+---
+```
+
+Code sample blocks within slides are to be placed between the markdown Syntax like:
+
+```
+~~~ json
+{
+    "fancy":"item",
+    "moreFancy": ["array","items"],
+    "no": 1
+}
+~~~
+```
+
+### Images
+
+The images go into the subdir ```images``` as a subdir of ```./source/news/YYYY-MM-DD-News-Article-Title```. Within the markdown they're to be referenced like ```![image](images/image-name.png)```.
+
+## How to Slides
+
+Slides are to be placed under ```./source/slides/``` in a directory with the naming schema ```./source/news/Your-Slides-Title```.
+
+Within this dir, there is a index.html.md file to be written in Markdown with the header like:
+
+```
+---
+title: 'Your Slide Title'
+date: 2015-08-09
+---
+```
+
+The Syntax explained by [hakimel/reveal.js](https://github.com/hakimel/reveal.js) is to be followed.
+
+Code sample blocks within slides are to be placed between the markdown Syntax like:
+
+```
+~~~ json
+{
+    "fancy":"item",
+    "moreFancy": ["array","items"],
+    "no": 1
+}
+~~~
+```
+
+### Images
+
+The images go into the subdir ```images``` as a subdir of ```./source/news/Your-Slides-Title```. Within the markdown they're to be referenced like ```![image](images/image-name.png)```.
