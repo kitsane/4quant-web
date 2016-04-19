@@ -28,7 +28,7 @@ Reveal.initialize({
   overview: false,
 
   // Vertical centering of slides
-  center: true,
+  center: false,
 
   // Enables touch navigation on devices with touch input
   touch: true,
