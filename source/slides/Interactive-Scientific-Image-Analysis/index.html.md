@@ -393,7 +393,7 @@
       <script type='text/template'>
         ## Making Coding Simpler with Types
 
-        <div class='code'>
+        ~~~
             trait BasicMathSupport[T] extends Serializable { <br>
                 def plus(a: T, b: T): T <br>
                 def times(a: T, b: T): T <br>
@@ -405,7 +405,7 @@
                 def divide(a: T, b: T): T = times(a, invert(b)) <br>
                 def compare(a: T, b: T): Int <br>
             }
-        </div>
+        ~~~
       </script>
     </section>
 
@@ -415,7 +415,7 @@
 
         * Simple filter implementation
 
-        <div class='code'>
+        ~~~
           def SimpleFilter[T](inImage: Image[T]) <br>
           (implicit val wst: BasicMathSupport[T]) = { <br>
           val width: Double = 1 <br>
@@ -423,18 +423,18 @@
           kernelReduce = (ptA,ptB) => (ptA + ptB) \* 0.5 <br>
           runFilter(inImage,kernel,kernelReduce) <br>
           }
-        </div>
+        ~~~
 
         * Spectra as well supported types
 
-        <div class='code'>
+        ~~~
         implicit val SpectraBMS = new BasicMathSupport[Array[Double]] {
             def plus(a: Array[Double], b: Array[Double]) =
               a.zip(b).map(\_ + \_)
         ...
             def scale(a: Array[Double], b: Double) =
               a.map(_*b)
-        </div>
+        ~~~
       </script>
     </section>
 
@@ -602,14 +602,13 @@
       <script type='text/template'>
         ## Science Problems: Big Stitching
 
-        <div class='code'>
+        ~~~
           dispField = Images. <br>
             cartesian(Images).map{ <br>
             ((xA,ImgA), (xB,ImgB)) => <br>
               xcorr(ImgA,ImgB,in=xB-xA) <br>
             }
-        </div>
-
+        ~~~
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-022.png)
       </script>
     </section>
@@ -630,7 +629,7 @@
 
         The stitching itself, rather than rewriting the original data can be done in a lazy fashion as certain regions of the image are read.
 
-        <div class='code'>
+        ~~~
           def getView(tPos,tSize) = <br>
             stImgs. <br>
             filter(x=>abs(x-tPos)<img.size). <br>
@@ -638,7 +637,7 @@
              val oImg = new Image(tSize) <br>
              oImg.copy(img,x,tPos) <br>
           }.addImages(AVG)
-        </div>
+        ~~~
 
         This also ensures the original data is left unaltered and all analysis is reversible.
       </script>
@@ -648,9 +647,9 @@
       <script type='text/template'>
         ## Viewing Regions
 
-        <div class='code'>
+        ~~~
           getView(Pos(26.5,13),Size(2,2))
-        </div>
+        ~~~
 
         ![](/slides/Interactive-Scientific-Image-Analysis/images/isia-024.png)
       </script>
@@ -774,7 +773,7 @@
         * Thanks to Map-Reduce, it is *fault-tolerant, parallel, distributed*
         * Thanks to Java, it is *hardware agnostic*
 
-        <div class='code'>
+        ~~~
           def spread\_voxels(pvec: ((Int,Int),Double), windSize: Int = 1) = { <br>
           val wind=(-windSize to windSize) <br>
           val pos=pvec.\_1 <br>
@@ -786,7 +785,7 @@
           val filtImg=roiImg. <br>
               flatMap(cvec => spread\_voxels(cvec)). <br>
               filter(roiFun).reduceByKey(\_ + \_)
-        </div>
+        ~~~
 
         * But it is also not really so readable
       </script>

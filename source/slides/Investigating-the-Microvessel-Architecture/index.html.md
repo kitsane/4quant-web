@@ -1291,12 +1291,12 @@
 
         ### ↓Translate to SQL
 
-        <div class='code'>
+        ~~~
           SELECT contour FROM ( <br>
             SELECT COMPONENT_LABEL(THRESHOLD(tile,200)) FROM esriTiles <br>
             WHERE DIST(LAT,-47.53000992328762,LONG,8.215198516845703)<1 <br>
             ) WHERE area>200
-        </div>
+        ~~~
       </script>
     </section>
 
@@ -1414,7 +1414,7 @@
         * Thanks to Map-Reduce, it is *fault-tolerant, parallel, distributed*
         * Thanks to Java, it is *hardware agnostic*
 
-        <div class='code'>
+        ~~~
           def spread\_voxels(pvec: ((Int,Int),Double), windSize: Int = 1) = { <br>
           val wind=(-windSize to windSize) <br>
           val pos=pvec.\_1 <br>
@@ -1426,7 +1426,7 @@
           val filtImg=roiImg. <br>
               flatMap(cvec => spread\_voxels(cvec)). <br>
               filter(roiFun).reduceByKey(\_ + \_)
-        </div>
+        ~~~
 
         * But it is also not really so readable
       </script>
