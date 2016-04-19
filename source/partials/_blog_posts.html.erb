@@ -1,8 +1,8 @@
-<% if !defined?(display_articles) || display_articles > blog.articles.length %>
-  <% display_articles = blog.articles.length %>
+<% if !defined?(display_articles) || display_articles > blog('news').articles.length %>
+  <% display_articles = blog('news').articles.length %>
 <% end %>
 
-<% blog.articles[0..display_articles].each do |article| %>
+<% blog('news').articles[0..display_articles].each do |article| %>
 <div class="card card-block text-xs-left p-l-0">
   <h2 class="card-title">
     <a href="<%= article.url %>"><%= article.title %></a>
