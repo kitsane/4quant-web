@@ -15,21 +15,21 @@ The input videos can be 24 hours or longer so for this example we just show a sm
 
 ### Sifting through old data
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-001.png">
+<img alt='4Quant' src="images/ce-001.png">
 
 ### Filter out samples with unique features
 
 <div class="half-width-image">
-  <img alt='4Quant' src="images/capsule-endoscopy/ce-002.png">
-  <img alt='4Quant' src="images/capsule-endoscopy/ce-003.png">
+  <img alt='4Quant' src="images/ce-002.png">
+  <img alt='4Quant' src="images/ce-003.png">
 </div>
 
 ### Real-time Processing
 
 <div class="half-width-image">
-  <img alt='4Quant' src="images/capsule-endoscopy/ce-004.gif">
-  <img alt='4Quant' src="images/capsule-endoscopy/ce-005.gif">
-  <img alt='4Quant' src="images/capsule-endoscopy/ce-006.gif">
+  <img alt='4Quant' src="images/ce-004.gif">
+  <img alt='4Quant' src="images/ce-005.gif">
+  <img alt='4Quant' src="images/ce-006.gif">
 </div>
 
 
@@ -43,7 +43,7 @@ The first question is how the data can be processed. The basic work is done by a
 
 The true value of such a scalable system is not in the single analysis, but in the ability to analyze hundreds, thousands, and even millions of samples at the same time.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-008.svg">
+<img alt='4Quant' src="images/ce-008.svg">
 
 With cloud-integration and Big Data-based frameworks, even handling an entire city network with 100s of drones and cameras running continuously is an easy task without worrying about networks, topology, or fault-tolerance.
 
@@ -51,28 +51,28 @@ With cloud-integration and Big Data-based frameworks, even handling an entire ci
 
 The images which are collected by the capsule continuously and converted into a video. We can then analyze each frame of the video to identify interesting sites.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-009.png">
+<img alt='4Quant' src="images/ce-009.png">
 
 The first step in this identification is to segment the frame into so-called superpixels, a standard technique for grouping similar regions together and makes examining textures and other parameters much easier.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-010.png">
-<img alt='4Quant' src="images/capsule-endoscopy/ce-011.png">
+<img alt='4Quant' src="images/ce-010.png">
+<img alt='4Quant' src="images/ce-011.png">
 
 The data can be then analyzed in more detail to extract quantitatively meaningful metrics on the structure of the tissue.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-012.png">
+<img alt='4Quant' src="images/ce-012.png">
 
 From all of the images general trends can be identified by examining all of the phenotypes and trying to identify the important ones for differentiating disease. The following figure shows the relationship between shape (of the super-pixels) and the healthy segments as pink dots and the abnormal as blue dots. The shape and position provide some differentation but are not definitive enough to clearly distinguish the two groups.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-013.png">
+<img alt='4Quant' src="images/ce-013.png">
 
 Here we show the relative color components for each channel (red, green, and blue) and how they are related to the tissue labeled as healthy and abnormal.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-014.png">
+<img alt='4Quant' src="images/ce-014.png">
 
 Here rather than showing the relative intensities we show the median absolute deviation which is better at characterizing the variation inside each structure.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-015.png">
+<img alt='4Quant' src="images/ce-015.png">
 
 The results can also be summarized as statistical outputs for comparing the phenotypes values for the groups of normal and abnormal tissue.
 
@@ -93,7 +93,7 @@ The results can also be summarized as statistical outputs for comparing the phen
 
 The intensities of the healthy and unusual tissues can be easily compared on such a graph where it is clear that the relative amounts of blue and green play an important role in differentiating the normal and abnormal structures.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-016.png">
+<img alt='4Quant' src="images/ce-016.png">
 
 ### Machine Learning
 
@@ -101,7 +101,7 @@ The quantitatively meaningful data can then be used to train machine learning al
 
 Here we show a simple decision tree trained to identify lesions using color, position, texture and shape.
 
-<img alt='4Quant' src="images/capsule-endoscopy/ce-017.png">
+<img alt='4Quant' src="images/ce-017.png">
 
 The subtree responsible for color-based analysis. Given a large set of data the trees can be more robustly tested and improved to provide the highest sensitivity and specificity criteria.
 

@@ -19,11 +19,11 @@ For an evidence-based risk modeling to be a reality, it is essential to have acc
 
 In parallel, the latest satellite developments from NASA, Google, Airbus Defense EADS and others provide frequent (weekly) high resolution (10m) imaging of the entire planet. These measurements result in petabytes of data generation.
 
-<div class="half-width-image"><img alt='4Quant' src="images/flood-risk/fr-001.png"></div>
+<div class="half-width-image"><img alt='4Quant' src="images/fr-001.png"></div>
 
 ### Image Query and Analysis Engine
 
-<div class="half-width-image"><img alt='4Quant' src="images/flood-risk/fr-002.png"></div>
+<div class="half-width-image"><img alt='4Quant' src="images/fr-002.png"></div>
 
 Our tools enable large, complicated satellite imaging datasets to be processed easily and scaled across hundreds of machines.
 
@@ -40,8 +40,8 @@ Here we locate and segment the water for a single day in the following images.
 </div>
 
 <div class="half-width-image">
-  <img alt='4Quant' src="images/flood-risk/fr-001.png">
-  <img alt='4Quant' src="images/flood-risk/fr-003.png">
+  <img alt='4Quant' src="images/fr-001.png">
+  <img alt='4Quant' src="images/fr-003.png">
 </div>
 
 The data can also be processed over months even years worth of old images to characterize the standard changes in water levels.
@@ -53,7 +53,7 @@ The data can also be processed over months even years worth of old images to cha
       DATE BETWEEN 4-8-2000 AND 4-8-2015
 </div>
 
-<img alt='4Quant' src="images/flood-risk/fr-004.png">
+<img alt='4Quant' src="images/fr-004.png">
 
 This information can then be summarized by year to get a better idea of the most extreme cases from a large pool
 
@@ -65,7 +65,7 @@ This information can then be summarized by year to get a better idea of the most
       GROUP BY DATE.YEAR <br>
 </div>
 
-<img alt='4Quant' src="images/flood-risk/fr-005.png">
+<img alt='4Quant' src="images/fr-005.png">
 
 | year | min.area  | max.area  |
 | ---  |    ---    |    ---    |
@@ -95,8 +95,8 @@ This information can then be summarized by year to get a better idea of the most
 </div>
 
 <div class="half-width-image">
-  <img alt='4Quant' src="images/flood-risk/fr-001.png">
-  <img alt='4Quant' src="images/flood-risk/fr-006.png">
+  <img alt='4Quant' src="images/fr-001.png">
+  <img alt='4Quant' src="images/fr-006.png">
 </div>
 
 #### Identify the houses distance from the river
@@ -104,11 +104,11 @@ This information can then be summarized by year to get a better idea of the most
 <div class="code">SELECT bd.pos,rv.distance FROM Buildings AS bd JOIN Distance(River) AS rv ON bd.pos = rv.pos</div>
 
 <div class="half-width-image">
-  <img alt='4Quant' src="images/flood-risk/fr-007.png">
-  <img alt='4Quant' src="images/flood-risk/fr-006.png">
+  <img alt='4Quant' src="images/fr-007.png">
+  <img alt='4Quant' src="images/fr-006.png">
 </div>
 
-<img alt='4Quant' src="images/flood-risk/fr-008.png">
+<img alt='4Quant' src="images/fr-008.png">
 
 Or an interactive map for more exact examination:
 
@@ -116,17 +116,17 @@ Or an interactive map for more exact examination:
 
 Furthermore the data can be analyzed using standard tools like Excel, R, or Matlab for further quantifying and modeling of the risk.
 
-<img alt='4Quant' src="images/flood-risk/fr-009.png">
+<img alt='4Quant' src="images/fr-009.png">
 
 A more detailed distribution which allows us to see that the larger more expensive buildings (the category furthest on the right) are preferentially located close to the river. This could be a major concern for future risks.
 
-<img alt='4Quant' src="images/flood-risk/fr-010.png">
+<img alt='4Quant' src="images/fr-010.png">
 
 ## How
 
 There are two interfaces available the *data consumer* and the *data scientist*.
 
-<img alt='4Quant' src="images/flood-risk/fr-011.png">
+<img alt='4Quant' src="images/fr-011.png">
 
 * For the **data consumer** There interface is SQL console (JDBC-compatible), which can be examined with ad-hoc queries as shown above. The data can be combined and integrated with other sources using standard SQL operations and the full class of 4Quant’s imaging tools are available as integrated functions.
 * For the **data scientist** There is a Scala/Java and Python interface. With this interface new code can be compiled and execute to process the images and other data. Anything from new image processing functions (denoising, feature recognition, optical character recognition) to further analyses (covariance matrix-based identification) can easily be integrated in our high-throughput pipeline.
@@ -141,11 +141,11 @@ The first question is how the data can be processed. The basic work is done by a
 
 Beyond a single train, our system scales linearly to multiple datasources and petabytes of information across hundreds of computers to keep the computation real-time.
 
-<img alt='4Quant' src="images/flood-risk/fr-013.svg">
+<img alt='4Quant' src="images/fr-013.svg">
 
 With cloud-integration and Big Data-based frameworks, even handling an entire satellite network with 100s of satellites continuously collecting data is an easy task without worrying about networks, topology, or fault-tolerance. Below is an example for 30 different map sources where the tasks are seamlessly, evenly divided among 50 different machines.
 
-<img alt='4Quant' src="images/flood-risk/fr-014.svg">
+<img alt='4Quant' src="images/fr-014.svg">
 
 ### Processing the Data
 

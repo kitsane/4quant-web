@@ -13,14 +13,14 @@ SUMMARY_STARTIn a wide range of crimes from grand theft auto to child abduction,
 
 Traffic cameras are in wide-spread use for monitoring the movement of cars and identifying problems. The information from these cameras is rich and the combination of an entire network of images can reconstruct the movements of a single vehicle.
 
-<img alt='4Quant' src="images/pursuing-criminals/pc-001.png" class="img-fluid">
+<img alt='4Quant' src="images/pc-001.png" class="img-fluid">
 
 
 The image data on their own are however difficult to process and particularly examining an entire network has typically required hundreds of expensive employees to hand screen the images (approximately 2 per employee). Electronic solutions while existant are typically inflexible, and poorly scalable to the types of problems needed for real-time ad-hoc analysis.
 
 ### Real-time image processing
 
-<img alt='4Quant' src="images/pursuing-criminals/pc-002.png" class="img-fluid">
+<img alt='4Quant' src="images/pc-002.png" class="img-fluid">
 
 Using our 4Quant SQL, it is now possible to process these streams in a flexible scalable manner to query the live stream of images as if they were all in a database.
 
@@ -30,16 +30,16 @@ SELECT * FROM TrafficCameras WHERE DETECT_CAR(image)
 
 <div class="row">
   <div class="col-sm-3 col-xs-12">
-    <img alt='4Quant' src="images/pursuing-criminals/pc-003.gif" class="img-fluid">
+    <img alt='4Quant' src="images/pc-003.gif" class="img-fluid">
   </div>
   <div class="col-sm-3 col-xs-12">
-    <img alt='4Quant' src="images/pursuing-criminals/pc-004.gif" class="img-fluid">
+    <img alt='4Quant' src="images/pc-004.gif" class="img-fluid">
   </div>
   <div class="col-sm-3 col-xs-12">
-    <img alt='4Quant' src="images/pursuing-criminals/pc-005.gif" class="img-fluid">
+    <img alt='4Quant' src="images/pc-005.gif" class="img-fluid">
   </div>
   <div class="col-sm-3 col-xs-12">
-    <img alt='4Quant' src="images/pursuing-criminals/pc-006.gif" class="img-fluid">
+    <img alt='4Quant' src="images/pc-006.gif" class="img-fluid">
   </div>
 </div>
 
@@ -86,7 +86,7 @@ The final step is to identify the license plate number and compare it to the [AS
     DETECT_CAR(image).LICENCE_PLATE = Astra.ID
 ~~~
 
-  <img alt='4Quant' src="images/pursuing-criminals/pc-007.jpeg" class="img-fluid">
+  <img alt='4Quant' src="images/pc-007.jpeg" class="img-fluid">
 
 ### How?
 
@@ -110,7 +110,7 @@ With cloud-integration and *Big Data*-based frameworks, even handling an entire 
 
 <div class="row">
   <div class="col-xs-12">
-    <img alt='4Quant' src="images/pursuing-criminals/pc-010.svg" class="img-fluid">
+    <img alt='4Quant' src="images/pc-010.svg" class="img-fluid">
   </div>
 </div>
 
@@ -120,7 +120,7 @@ The images which are collected by the traffic cameras at rate of 30 frames per s
 
 <div class="row">
   <div class="col-xs-12">
-    <img alt='4Quant' src="images/pursuing-criminals/pc-011.png" class="img-fluid">
+    <img alt='4Quant' src="images/pc-011.png" class="img-fluid">
   </div>
 </div>
 
@@ -128,18 +128,18 @@ The segmented image above can be transformed into quantitative metrics at each t
 
 <div class="row">
   <div class="col-xs-12">
-    <img alt='4Quant' src="images/pursuing-criminals/pc-012.png" class="img-fluid">
+    <img alt='4Quant' src="images/pc-012.png" class="img-fluid">
   </div>
 </div>
 
 The data can then be broken down into small scenes where the number and flow of cars in each grouping can be evaluated.
 
-<img alt='4Quant' src="images/pursuing-criminals/pc-013.png" class="img-fluid">
-<img alt='4Quant' src="images/pursuing-criminals/pc-014.png" class="img-fluid">
+<img alt='4Quant' src="images/pc-013.png" class="img-fluid">
+<img alt='4Quant' src="images/pc-014.png" class="img-fluid">
 
 The data can also be smoothed to show more clearly trends and car counts on a single image.
 
-<img alt='4Quant' src="images/pursuing-criminals/pc-015.png">
+<img alt='4Quant' src="images/pc-015.png">
 
 ## Technical Aspects
 

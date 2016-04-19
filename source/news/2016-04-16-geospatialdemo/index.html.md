@@ -39,7 +39,7 @@ Although we execute the command one one machine, the data will be evenly loaded 
   val shapeAnalysis = EllipsoidAnalysis.runIntensityShapeAnalysis(uniqueRegions)
 </div>
 
-<img alt='4Quant' src="images/geospatialdemo/geospatialdemo-001.png">
+<img alt='4Quant' src="images/geospatialdemo-001.png">
 
 <iframe height="560" width="560" src="http://4quant.com/geospatialdemo/map_unnamed-chunk-8.html"></iframe>
 
@@ -96,7 +96,7 @@ We apply component labeling and then filter to results to only keep the middle s
     }
 </div>
 
-<img alt='4Quant' src="images/geospatialdemo/geospatialdemo-002.png">
+<img alt='4Quant' src="images/geospatialdemo-002.png">
 
 <iframe height="560" width="560" src="http://4quant.com/geospatialdemo/map_unnamed-chunk-12.html"></iframe>
 
@@ -109,8 +109,8 @@ Now we can calculate the shape information for the tree areas to look at some of
   val shapeAnalysis = EllipsoidAnalysis.runIntensityShapeAnalysis(treeRegions)
 </div>
 
-<img alt='4Quant' src="images/geospatialdemo/geospatialdemo-003.png">
-<img alt='4Quant' src="images/geospatialdemo/geospatialdemo-004.png">
+<img alt='4Quant' src="images/geospatialdemo-003.png">
+<img alt='4Quant' src="images/geospatialdemo-004.png">
 
 We can then place the statistics back onto the map (for the largest ones)
 
@@ -121,7 +121,7 @@ We can then place the statistics back onto the map (for the largest ones)
 Additionally metrics can be calculated like tree density and displayed on their own
 
 
-<img alt='4Quant' src="images/geospatialdemo/geospatialdemo-005.png">
+<img alt='4Quant' src="images/geospatialdemo-005.png">
 
 Or projected back on top of the original data and a standard map
 

@@ -18,14 +18,14 @@ The graph below shows the same patient with (left) and without (right) precision
 * The precision case is *clear*, the patient’s liver is definitely larger than it should be.
 * The standard medicine is *inconclusive*, a bit larger, but nothing definitive.
 
-<img alt='4Quant' src="images/indexing/indexing-001.png" class="img-fluid">
+<img alt='4Quant' src="images/indexing-001.png" class="img-fluid">
 
 Despite recent boosts in popularity, both personalized and precision medicine are still not part of the standard diagnosis process for many diseases.
 
 ### *Image Query and Analysis Engine*
 
 <div class="half-width-image">
-  <img alt='4Quant' src="images/indexing/indexing-002.png" class="img-fluid">
+  <img alt='4Quant' src="images/indexing-002.png" class="img-fluid">
 </div>
 
 Standard imaging modalities like thorax CT and MRI are commonly used to diagnose a number of different diseases. These images are normally examined once for a single specific diagnosis and then archived. Hospitals are required to archive a majority of patient imaging studies and scans for a minimum of 10 years. These essential data are just sitting unused on PACS, tapes, and other storage volumes.
@@ -42,7 +42,7 @@ A hospital database with thousands of patient images can be quickly screening fo
 SELECT Image as ChestCT FROM PatientImages WHERE Modality="CT" AND Region="Chest"
 ```
 
-<div class="half-width-image"><img alt='4Quant' src="images/indexing/indexing-003.gif" class="img-fluid"></div>
+<div class="half-width-image"><img alt='4Quant' src="images/indexing-003.gif" class="img-fluid"></div>
 
 ### Perform Segmentation
 
@@ -50,11 +50,11 @@ SELECT Image as ChestCT FROM PatientImages WHERE Modality="CT" AND Region="Chest
 SELECT CHEST_SEGMENTATION(Image) as ChestSeg FROM ChestCT
 ```
 
-<div class="half-width-image"><img alt='4Quant' src="images/indexing/indexing-004.gif" class="img-fluid"></div>
+<div class="half-width-image"><img alt='4Quant' src="images/indexing-004.gif" class="img-fluid"></div>
 
 ### To individual organs
 
-<div class="half-width-image"><img alt='4Quant' src="images/indexing/indexing-005.gif" class="img-fluid"></div>
+<div class="half-width-image"><img alt='4Quant' src="images/indexing-005.gif" class="img-fluid"></div>
 
 ### Extract the bones
 
@@ -62,7 +62,7 @@ SELECT CHEST_SEGMENTATION(Image) as ChestSeg FROM ChestCT
 SELECT BoneImage FROM ChestSeq
 ```
 
-<div class="half-width-image"><img alt='4Quant' src="images/indexing/indexing-006.gif" class="img-fluid"></div>
+<div class="half-width-image"><img alt='4Quant' src="images/indexing-006.gif" class="img-fluid"></div>
 
 ### Extract Meaningful Information
 
@@ -71,7 +71,7 @@ SELECT pt.Age,EstimateBoneMineralDensity(cs.BoneImage) as BMD<br/>
   FROM PatientDatabase AS pt JOIN ChestSeq AS cs ON pt.id == cs.PatientId
 ```
 
-<img alt='4Quant' src="images/indexing/indexing-007.png" class="img-fluid">
+<img alt='4Quant' src="images/indexing-007.png" class="img-fluid">
 
 ### What else?
 
@@ -81,7 +81,7 @@ Our *Image Query and Analysis Engine* runs in the cloud or locally and is used a
 SELECT * FROM ChestSeq GROUP BY Tissue.Type
 ```
 
-<img alt='4Quant' src="images/indexing/indexing-008.png" class="img-fluid">
+<img alt='4Quant' src="images/indexing-008.png" class="img-fluid">
 
 From all of the images general trends can be identified by examining all of the phenotypes and trying to identify the important ones for differentiating disease. The following figure shows the relationship between shape (of the super-pixels) and the healthy segments as pink dots and the abnormal as blue dots. The shape and position provide some differentation but are not definitive enough to clearly distinguish the two groups.
 
@@ -97,7 +97,7 @@ The quantitatively meaningful data can then be used to train machine learning al
 
 Here we show a simple decision tree trained to identify lesions using color, position, texture and shape.
 
-<img alt='4Quant' src="images/indexing/indexing-009.png" class="img-fluid">
+<img alt='4Quant' src="images/indexing-009.png" class="img-fluid">
 
 Furthermore the ability to parallelize and scale means thousands to millions of videos can be analyzed at the same time to learn even more about the structures of the digestive track and identify new possibilities for diagnosis.
 
@@ -111,7 +111,7 @@ The first question is how the data can be processed. The basic work is done by a
 
 The true value of such a scalable system is not in the single analysis, but in the ability to analyze hundreds, thousands, and even millions of samples at the same time.
 
-<img alt='4Quant' src="images/indexing/indexing-011.svg" class="img-fluid">
+<img alt='4Quant' src="images/indexing-011.svg" class="img-fluid">
 
 With cloud-integration and Big Data-based frameworks, even handling an entire city network with 100s of drones and cameras running continuously is an easy task without worrying about networks, topology, or fault-tolerance.
 

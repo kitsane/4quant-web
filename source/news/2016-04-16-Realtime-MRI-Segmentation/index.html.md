@@ -17,31 +17,31 @@ The latest surgical suites and MRI technologies have made subsecond measurements
 SELECT Image as ChestCT FROM PatientImages WHERE Modality="CT" AND Region="Chest"
 ```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-001.gif" class="img-fluid">
+<img alt='4Quant' src="images/mammo-001.gif" class="img-fluid">
 
 ### Perform Segmentation
 
 ```SELECT CHEST_SEGMENTATION(Image) as ChestSeg FROM ChestCT```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-002.gif" class="img-fluid">
+<img alt='4Quant' src="images/mammo-002.gif" class="img-fluid">
 
 ### Extract the heart since it is the most dose-sensitive
 
 ```SELECT HeartRegion FROM ChestSeq```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-003.gif" class="img-fluid">
+<img alt='4Quant' src="images/mammo-003.gif" class="img-fluid">
 
 ### Track the Position of the Heart
 
 ```SELECT CenterOfMass(roi) FROM HeartRegion GROUP BY time```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-004.png" class="img-fluid">
+<img alt='4Quant' src="images/mammo-004.png" class="img-fluid">
 
 It is also possible to create outlines from the structures which can then be used to update surgical plans, and provide information to the latest generation of devices which can then updating the treatment plan in real time.
 
 ```SELECT CreateOutlines(roi) FROM HeartRegion GROUP BY Organ```
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-005.png" class="img-fluid">
+<img alt='4Quant' src="images/mammo-005.png" class="img-fluid">
 
 ### Image Query and Analysis Engine
 
@@ -55,7 +55,7 @@ The quantitatively meaningful data can then be used to train machine learning al
 
 Here we show a simple decision tree trained to identify lesions using color, position, texture and shape.
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-006.png" class="img-fluid">
+<img alt='4Quant' src="images/mammo-006.png" class="img-fluid">
 
 Furthermore the ability to parallelize and scale means thousands to millions of videos can be analyzed at the same time to learn even more about the structures of the digestive track and identify new possibilities for diagnosis.
 
@@ -64,12 +64,12 @@ Furthermore the ability to parallelize and scale means thousands to millions of 
 The first question is how the data can be processed. The basic work is done by a simple workflow on top of our Spark Image Layer. This abstracts away the complexities of cloud computing and distributed analysis. You focus only on the core task of image processing.
 
 <div class="half-width-image">
-  <img alt='4Quant' class='' src="images/realtime-mri-segmentation/mammo-007.svg" class="img-fluid">
+  <img alt='4Quant' class='' src="images/mammo-007.svg" class="img-fluid">
 </div>
 
 The true value of such a scalable system is not in the single analysis, but in the ability to analyze hundreds, thousands, and even millions of samples at the same time.
 
-<img alt='4Quant' src="images/realtime-mri-segmentation/mammo-008.svg" class="img-fluid">
+<img alt='4Quant' src="images/mammo-008.svg" class="img-fluid">
 
 With cloud-integration and Big Data-based frameworks, even handling an entire city network with 100s of drones and cameras running continuously is an easy task without worrying about networks, topology, or fault-tolerance.
 
