@@ -11,8 +11,8 @@
 @import "../../bower_components/bootstrap/scss/tables.scss";
 @import "../../bower_components/bootstrap/scss/type.scss";
 
-// Syntax hilight for highlight.js
-@import "highlight/github.css.scss";
+// Temporary hard import till gulp 4 which supports symlinks
+@import "vendor/github.css.scss";
 
 // Reveal scss and theme
 @import "../../bower_components/reveal.js/css/reveal.scss";
