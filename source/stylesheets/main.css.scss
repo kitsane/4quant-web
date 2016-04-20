@@ -103,6 +103,10 @@ b, strong {
     padding-left: $spacer;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   // Google Maps image
   .google-maps {
     width: 100%;
