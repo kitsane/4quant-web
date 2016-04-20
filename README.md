@@ -44,7 +44,6 @@ To install all dependencies, bundle the project:
 ```Bash
 $ bundle
 $ npm install
-$ bower install
 $ gulp
 ```
 

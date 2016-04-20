@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     bower = require('gulp-bower'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
+    runSequence = require('run-sequence'),
     sass = require('gulp-sass');
 
 var config = {
@@ -15,11 +15,11 @@ gulp.task('bower', function() {
   return bower();
 });
 
-gulp.task('icons', function() {
+gulp.task('fonts', function() {
   return gulp.src([
-                  config.bowerDir + '/font-awesome/fonts/**.*',
-                  config.bowerDir + '/reveal.js/lib/font/*/**.*'
-                  ])
+    config.bowerDir + '/font-awesome/fonts/**.*',
+    config.bowerDir + '/reveal.js/lib/font/*/**.*'
+    ])
     .pipe(gulp.dest(config.outputDir + '/fonts'));
 });
 
@@ -32,7 +32,6 @@ gulp.task('images', function() {
 gulp.task('sass', function() {
   return gulp.src('source/stylesheets/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(rename('main.css'))
     .pipe(gulp.dest(config.outputDir + '/stylesheets'));
 });
 
@@ -48,7 +47,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('markedjs', function() {
-    gulp.src([
+    return gulp.src([
       config.bowerDir + "/reveal.js/plugin/markdown/marked.js",
       config.bowerDir + "/reveal.js/plugin/markdown/markdown.js",
       config.bowerDir + "/reveal.js/plugin/highlight/highlight.js",
@@ -56,8 +55,8 @@ gulp.task('markedjs', function() {
       config.bowerDir + "/reveal.js/lib/js/head.min.js",
       config.bowerDir + "/reveal.js/plugin/math/math.js",
       config.bowerDir + "/reveal.js/plugin/zoom-js/zoom.js"
-      ])
-      .pipe(gulp.dest(config.outputDir + '/javascripts'));
+    ])
+    .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
 gulp.task('revealjs', function() {
@@ -69,11 +68,12 @@ gulp.task('revealjs', function() {
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
-gulp.task('default', ['sass', 'scripts', 'revealjs', 'markedjs', 'icons', 'images']);
+gulp.task('default', function() {
+  runSequence('bower', ['sass', 'scripts', 'revealjs', 'markedjs', 'fonts', 'images']);
+});
 
 gulp.task('watch', function() {
-  gulp.watch(config.bowerDir  + '/**/*', ['sass', 'scripts', 'icons']);
   gulp.watch('source/images/**/*', ['images']);
   gulp.watch('source/stylesheets/**/*.scss', ['sass']);
-  gulp.watch('source/javascripts/**/*.js', ['scripts']);
+  gulp.watch('source/javascripts/**/*.js', ['scripts, revealjs']);
 });
