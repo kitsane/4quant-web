@@ -4,8 +4,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps');
+    sass = require('gulp-sass');
 
 var config = {
   bowerDir: 'bower_components',
@@ -32,9 +31,7 @@ gulp.task('images', function() {
 
 gulp.task('sass', function() {
   return gulp.src('source/stylesheets/**/*.scss')
-    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
     .pipe(rename('main.css'))
     .pipe(gulp.dest(config.outputDir + '/stylesheets'));
 });
@@ -45,10 +42,8 @@ gulp.task('scripts', function() {
       config.bowerDir + "/bootstrap/js/dist/util.js",
       config.bowerDir + "/bootstrap/js/dist/modal.js"
     ])
-    .pipe(sourcemaps.init())
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat("concat.js"))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
@@ -62,7 +57,6 @@ gulp.task('markedjs', function() {
       config.bowerDir + "/reveal.js/plugin/math/math.js",
       config.bowerDir + "/reveal.js/plugin/zoom-js/zoom.js"
       ])
-      .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
@@ -72,7 +66,6 @@ gulp.task('revealjs', function() {
       "source/javascripts/reveal_initialize.js"
     ])
     .pipe(concat("reveal.js"))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
