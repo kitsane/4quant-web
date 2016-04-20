@@ -7,7 +7,7 @@
       <%= partial 'partials/navigation' %>
 
       <div class="content-container container">
-        <% unless current_page.data.title.downcase == 'home' %>
+        <% unless current_page.data.title.to_s.downcase == 'home' %>
           <div class="row">
             <div class="col-xs-12">
               <ul class="breadcrumb">
