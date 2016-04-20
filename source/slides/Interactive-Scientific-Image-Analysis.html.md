@@ -76,7 +76,10 @@
       <script type='text/template'>
         ## Synchrotron-based X-Ray Tomographic Microscopy
 
-        <iframe width='100%' height='700' src='https://www.youtube.com/embed/rV9r_j748t4' frameborder='0' allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/embed/rV9r_j748t4" class="embed-responsive-item"></iframe>
+        </div>
+
       </script>
     </section>
 
@@ -84,7 +87,9 @@
       <script type='text/template'>
         ## Synchrotron-based X-Ray Tomographic Microscopy
 
-        <iframe width='100%' height='700' src='https://www.youtube.com/embed/z_c5538xmP8' frameborder='0' allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/embed/z_c5538xmP8" class="embed-responsive-item"></iframe>
+        </div>
 
         *Courtesy of M. Pistone at U. Bristol*
       </script>
@@ -450,7 +455,10 @@
 
         Combining many different components together inside of the Spark Shell, IPython or Zeppelin, make it easier to assemble workflows
 
-        <iframe width='100%' height='600' src='https://www.youtube.com/embed/HHWeMaXGqME' frameborder="0" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/embed/HHWeMaXGqME" class="embed-responsive-item"></iframe>
+        </div>
+
       </script>
     </section>
 
@@ -757,7 +765,10 @@
       <script type='text/template'>
         ## Streaming Demo with Webcam
 
-        <iframe width="100%" height="700" src='https://www.youtube.com/embed/YXwkTPxjAFs' frameborder="0" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/embed/YXwkTPxjAFs" class="embed-responsive-item"></iframe>
+        </div>
+
       </script>
     </section>
 

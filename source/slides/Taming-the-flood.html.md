@@ -1070,7 +1070,10 @@
       <script type='text/template'>
         ## Streaming Demo with Webcam
 
-        <iframe width="100%" height="700" src='https://www.youtube.com/embed/YXwkTPxjAFs' frameborder="0" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/embed/YXwkTPxjAFs" class="embed-responsive-item"></iframe>
+        </div>
+
       </script>
     </section>
 
@@ -1107,7 +1110,10 @@
 
         ### Web and Image Database Examples
 
-        <iframe width='100%' height='600' src='https://www.youtube.com/embed/HHWeMaXGqME' frameborder="0" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/embed/HHWeMaXGqME" class="embed-responsive-item"></iframe>
+        </div>
+
       </script>
     </section>
 

@@ -61,11 +61,15 @@ The information from each camera can be displayed with position instead of time,
 
 <img alt='4Quant' src="images/railway-check/rc-012.png" class="img-fluid">
 
-<iframe height="560" width="560" src="http://4quant.com/Railway-Check/widget_distmap.html"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="http://4quant.com/Railway-Check/widget_distmap.html"></iframe>
+</div>
 
 With many train-mounted cameras the entire network can then be analyzed in real-time, with interactive alerts showing directly on the route plan.
 
-<iframe height="560" width="560" src="http://4quant.com/Railway-Check/widget_samap.html"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="http://4quant.com/Railway-Check/widget_samap.html"></iframe>
+</div>
 
 ## Technical Aspects
 

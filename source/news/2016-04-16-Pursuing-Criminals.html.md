@@ -24,9 +24,9 @@ The image data on their own are however difficult to process and particularly ex
 
 Using our 4Quant SQL, it is now possible to process these streams in a flexible scalable manner to query the live stream of images as if they were all in a database.
 
-~~~
+```
 SELECT * FROM TrafficCameras WHERE DETECT_CAR(image)
-~~~
+```
 
 <div class="row">
   <div class="col-sm-3 col-xs-12">
@@ -45,38 +45,44 @@ SELECT * FROM TrafficCameras WHERE DETECT_CAR(image)
 
 More importantly many streams can be integrated together and queried as one coherent entity. For example if a white car has been reported missing, thousands the cameras can be screened for bars by color
 
-~~~SQL
+```SQL
 SELECT position,color FROM TrafficCameras WHERE <br>
   DETECT_CAR(image) GROUP BY DETECT_CAR(image).COLOR
-~~~
+```
 
-<iframe height="560" width="560" src="http://4quant.com/Pursuing-Criminals/widget_carmap.html"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="http://4quant.com/Pursuing-Criminals/widget_carmap.html" class="embed-responsive-item"></iframe>
+</div>
 
 If we know the care was a white Subaru, we can further limit the results by taking only the white cars whose make is Subaru.
 
-~~~
+```
   SELECT position FROM TrafficCameras WHERE
     DETECT_CAR(image).MAKE="Subaru" AND
     DETECT_CAR(image).COLOR="white"
-~~~
+```
 
-<iframe height="560" width="560" src="http://4quant.com/Pursuing-Criminals/widget_whitemap.html"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="http://4quant.com/Pursuing-Criminals/widget_whitemap.html" class="embed-responsive-item"></iframe>
+</div>
 
 Now we can start to integrate the other information about the time (the last 10 minutes) and an idea about where the perpetrator might be (100km of Zurich).
 
-~~~
+```
   SELECT image,position FROM TrafficCameras WHERE
     TIME BETWEEN 10:40 AND 10:50 AND
     DISTANCE(position,"Zurich")<100
     DETECT_CAR(image).MAKE="Subaru" AND
     DETECT_CAR(image).COLOR="white"
-~~~
+```
 
-<iframe height="560" width="560" src="http://4quant.com/Pursuing-Criminals/widget_foundmap.html"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="http://4quant.com/Pursuing-Criminals/widget_foundmap.html" class="embed-responsive-item"></iframe>
+</div>
 
 The final step is to identify the license plate number and compare it to the [ASTRA database](http://www.astra.admin.ch/) to identify exactly who this scoundrel is and put them to justice.
 
-~~~
+```
   SELECT Astra.Owner.Picture FROM TrafficCameras WHERE
     TIME BETWEEN 10:40 AND 10:50 AND
     DISTANCE(position,"Zurich")<100
@@ -84,7 +90,7 @@ The final step is to identify the license plate number and compare it to the [AS
     DETECT_CAR(image).COLOR="white"
     INNER JOIN astraCarTable as Astra ON
     DETECT_CAR(image).LICENCE_PLATE = Astra.ID
-~~~
+```
 
   <img alt='4Quant' src="images/pursuing-criminals/pc-007.jpeg" class="img-fluid">
 
@@ -147,15 +153,15 @@ The data can also be smoothed to show more clearly trends and car counts on a si
 
 Once the cluster has been comissioned and you have the *StreamingSparkContext* called `ssc` (automatically provided in [Databricks Cloud](https://databricks.com/product/databricks-cloud) or [Zeppelin](http://zeppelin.incubator.apache.org/)), the data can be loaded using the Spark Image Layer. Since we are using real-time analysis, we acquire the images from a streaming source
 
-~~~
+```
   val trafficCam1 = TrafficCameraReceiver("https://drone-8092")
   val trafficCam2 = TrafficCameraReceiver("https://drone-8093")
   val metaImageStream = ssc.receiverStream(trafficCam1 ++ trafficCam2)
-~~~
+```
 
 Although we execute the command on one machine, the analysis will be distributed over the entire set of cluster resources available to `ssc`. To further process the images, we can take advantage of the rich set of functionality built into Spark Image Layer
 
-~~~
+```
   def identifyCar(time: Double, pos: GeoPos, inImage: Img[Byte]) = {
     // Run the image processing steps on all images
     val carOutline = inImage.
@@ -177,7 +183,7 @@ Although we execute the command on one machine, the analysis will be distributed
   }
   // apply the operation to all images as they come in
   val carStream = metaImageStream.map(identifyCar)
-~~~
+```
 
 The entire pipeline can then be started to run in real-time on all the new images as they stream in. If the tasks become more computationally intensive, then the computing power can be scaled up and down elastically.
 
