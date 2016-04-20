@@ -73,7 +73,7 @@ gulp.task('revealjs', function() {
 });
 
 gulp.task('default', function() {
-  runSequence('bower', ['sass', 'scripts', 'revealjs', 'markedjs', 'fonts', 'images']);
+  runSequence('bower', ['sass', 'scripts', 'revealjs', 'markedjs', 'fonts']);
 });
 
 gulp.task('watch', function() {
