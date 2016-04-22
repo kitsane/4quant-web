@@ -29,6 +29,7 @@
     "run-sequence": "^1.1.5"
   },
   "dependencies": {
-    "jpegtran-bin": "^3.0.6"
+    "jpegtran-bin": "^3.0.6",
+    "marked": "^0.3.5"
   }
 }
