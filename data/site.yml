@@ -1,7 +1,7 @@
 company:
-  name: '4Quant Ltd.'
-  short_name: '4Quant'
-  claim: 'Big Image Analytics'
+  name: 'Uni-Spital Basel Radiology'
+  short_name: 'USB-Radio'
+  claim: 'Radiology to the future'
   street: 'Technoparkstrasse 1'
   city: 'CH-8005 Zurich'
   country: 'Switzerland'

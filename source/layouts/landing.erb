@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang='<%= data.site.options.language %>'>
+  <%= partial 'partials/head' %>
+
+  <body class='<%= page_classes %>'>
+    <div class="content-wrapper">
+
+      <div class="content-container container">
+
+
+        <div class="row content">
+          <div class="col-xs-12">
+            <%= cleanup_summary_start_end_separator(yield) %>
+          </div>
+        </div>
+      </div>
+
+      <%= partial 'partials/footer' %>
+
+      <% if config[:environment] == :production %>
+        <%= google_analytics_universal_tag %>
+      <% end %>
+    </div>
+  </body>
+</html>
