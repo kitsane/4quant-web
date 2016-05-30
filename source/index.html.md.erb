@@ -1,17 +1,25 @@
 ---
 title: "Home"
 ---
-
 <div class="jumbotron jumbotron-fluid text-xs-center p-b-1">
-  <div class="container">
-    <h1 class="display-3">Exploit the full potential of your image and video data</h1>
-    <p class="lead p-t-1 p-b-1">We analyze your tera- and petabytes of image and video data for your customer advantage and monetization.</p>
-    <div class="row text-xs-center">
-      <div class="col-sm-6 p-b-1 center-block">
-        <a class="btn btn-primary" href="contact.html" role="button">Contact us for a live demo</a>
-      </div>
-      <div class="col-sm-6 center-block">
-        <a class="btn btn-secondary" href="solutions.html" role="button">Check out our solutions</a>
+  <h1 class="display-5">Headline that matches what was clicked</h1>
+  <p class="lead">A supporting subheader to provide extra information</p>
+  <div class="row bg-info  p-b-3 p-t-3">
+    <div class="col-sm-4 col-sm-push-1">
+      <img src="http://placehold.it/550x300" alt="placeholder" class="image-fluid">
+    </div>
+    <div class="col-sm-3 col-sm-push-4">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+        </div>
+        <img src="http://placehold.it/250x50" alt="Card image" class="image-fluid">
+        <div class="card-block">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
       </div>
     </div>
   </div>
@@ -76,46 +84,46 @@ title: "Home"
         <div class="clearfix"></div>
         <blockquote class="blockquote">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
-      <div class="col-sm-6">
-        <div class="clearfix"></div>
-        <blockquote class="blockquote">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
     </div>
+    <div class="col-sm-6">
+      <div class="clearfix"></div>
+      <blockquote class="blockquote">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
   </div>
 </div>
-<div class="content-section">
-  <div class="container p-x-0">
-    <div class="row p-t-2">
-      <div class="col-sm-12">
-        <div class="clearfix"></div>
-        <p>unsere treuen kunden und partner bla bla </p>
-      </div>
-    </div>
-    <div class="row p-b-2">
-      <% data.brands.customers.each do |brand| %>
-        <div class="col-sm-3 col-xs-4 p-b-1">
-          <%= image_tag "brands/customers/#{brand.image}", alt: brand.name, class: 'img-rounded img-fluid' %>
-        </div>
-      <% end %>
-    </div>
-  </div>
+</div>
 </div>
 <div class="content-section">
-  <div class="container p-x-0">
-    <div class="row p-t-2">
-      <div class="col-sm-12">
-        <h2>News</h2>
-        <p>News bla bla bla</p>
-      </div>
-    </div>
-    <div class="row">
-      <%= partial 'partials/last_news', locals: { display_articles: 3 }  %>
-    </div>
+<div class="container p-x-0">
+<div class="row p-t-2">
+  <div class="col-sm-12">
+    <div class="clearfix"></div>
+    <p>unsere treuen kunden und partner bla bla </p>
   </div>
+</div>
+<div class="row p-b-2">
+  <% data.brands.customers.each do |brand| %>
+  <div class="col-sm-3 col-xs-4 p-b-1">
+    <%= image_tag "brands/customers/#{brand.image}", alt: brand.name, class: 'img-rounded img-fluid' %>
+  </div>
+  <% end %>
+</div>
+</div>
+</div>
+<div class="content-section">
+<div class="container p-x-0">
+<div class="row p-t-2">
+  <div class="col-sm-12">
+    <h2>News</h2>
+    <p>News bla bla bla</p>
+  </div>
+</div>
+<div class="row">
+  <%= partial 'partials/last_news', locals: { display_articles: 3 }  %>
+</div>
+</div>
 </div>

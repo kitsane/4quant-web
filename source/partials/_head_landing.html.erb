@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Large-scale image analysis, big image analytics, radiomics, machine learning, artificial intelligence, deep learning, quantification of images, medical image analysis, apache spark, radiology" />
+
+  <% if config[:environment] == :development %>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <% else %>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="application-name" content="Name">
+    <meta name="msapplication-tooltip" content="Tooltip">
+    <meta name="msapplication-config" content="ieconfig.xml">
+  <% end %>
+
+  <title>
+    <%= data.site.company.name %> | <%= current_page.data.title || data.site.company.claim.upcase %>
+  </title>
+
+  <%= stylesheet_link_tag :landing %>
+  <%= javascript_include_tag :concat %>
+</head>
