@@ -86,7 +86,61 @@ b, strong {
   a {
     text-decoration: none;
   }
+  .hero-frame {
+    div.action {
+      @media (min-width: #{map-get($grid-breakpoints, md)}) {
+        margin-bottom: -13rem;
+      }
+      .card {
+        background-color: #222;
+        color: #fff;
+      }
+    }
+    background-color: teal;
+    margin-left:0;
+    margin-right:0;
+  }
 
+  .hero-sub {
+    border: 1px solid #555;
+    border-width: 1px 0;
+    background-color: green;
+    margin-left:0;
+    margin-right:0;
+    .testemonial {
+      font-size: .75rem;
+      border-left:0;
+      margin: .7rem 0 0 .7rem;
+      padding: 0;
+      font-style: italic;
+    }
+    .credit {
+      font-size: .7rem;
+      margin:0 1rem .3rem 0;
+      padding:0;
+      text-align: right;
+    }
+
+  }
+  .bullet {
+    li {
+      font-size: .9rem;
+      margin-top: .3rem;
+      span {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+        left: -2rem;
+        margin-right: -2rem;
+        background-color: #AAA;
+        color: #FFF;
+        border: 1px solid black;
+        border-radius: .75rem;
+        text-align: center;
+      }
+    }
+  }
   table {
     @extend .table;
     @extend .table-sm;

@@ -2,10 +2,9 @@
 <html lang='<%= data.site.options.language %>'>
   <%= partial 'partials/head' %>
   <body class='<%= page_classes %>'>
-            <%= cleanup_summary_start_end_separator(yield) %>
-
-      <%= partial 'partials/footer' %>
-
+<div class="content-wrapper content">
+<%= cleanup_summary_start_end_separator(yield) %>
+</div>
       <% if config[:environment] == :production %>
         <%= google_analytics_universal_tag %>
       <% end %>
