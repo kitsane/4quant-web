@@ -9,6 +9,7 @@ pages:
   - apt-get update -yqqq
   - apt-get install -y nodejs
   - gem install bundler
+  - npm install npm -g
   - bundle
   - npm install
   - gulp
