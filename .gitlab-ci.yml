@@ -7,7 +7,7 @@ pages:
 
   script:
   - apt-get update -yqqq
-  - apt-get install -y nodejs
+  - apt-get install -y nodejs npm
   - gem install bundler
   - npm install npm -g
   - bundle
