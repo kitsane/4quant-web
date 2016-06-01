@@ -8,9 +8,10 @@ pages:
   script:
   - apt-get update -yqqq
   - apt-get install -y nodejs
-  - bundle install
+  - gem install bundler
+  - bundle
   - npm install
-  - gulp default
+  - gulp
   - bundle exec middleman build
   artifacts:
     paths:
