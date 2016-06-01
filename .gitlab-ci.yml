@@ -1,0 +1,19 @@
+image: ruby:2.3
+
+pages:
+  cache:
+    paths:
+    - vendor
+
+  script:
+  - apt-get update -yqqq
+  - apt-get install -y nodejs
+  - bundle install
+  - npm install
+  - gulp default
+  - bundle exec middleman build
+  artifacts:
+    paths:
+    - build
+  only:
+  - bs-radio/start
