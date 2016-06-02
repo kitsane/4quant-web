@@ -1,0 +1,22 @@
+<footer class="navbar navbar-dark bg-inverse">
+  <div class="container p-y-2">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <ul class="nav navbar-nav">
+          <%= navigation_list(data.site.main_navigation, li_class: "nav-item", a_class: "nav-link") %>
+        </ul>
+        <address>
+          <%= data.site.company.name %>
+          <br/>
+          <%= data.site.company.street %>,
+          <%= data.site.company.city %>,
+          <%= data.site.company.country%>
+          <br/>
+          <a href="mailto:<%= data.site.company.email%>"><%= data.site.company.email%></a>
+          <br/>
+          <%= data.site.company.mwst%>
+        </address>
+      </div>
+    </div>
+  </div>
+</footer>
