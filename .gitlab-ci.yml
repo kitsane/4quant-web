@@ -12,7 +12,7 @@ pages:
   - npm install npm -g
   - bundle
   - npm install
-  - gulp
+  - bower install
   - bundle exec middleman build
   artifacts:
     paths:
