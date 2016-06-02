@@ -5,6 +5,12 @@
 <div class="content-wrapper content">
 <%= cleanup_summary_start_end_separator(yield) %>
 </div>
+
+<div class="content-wrapper">
+    <%= partial 'partials/footer' %>
+</div>
+
+
       <% if config[:environment] == :production %>
         <%= google_analytics_universal_tag %>
       <% end %>
