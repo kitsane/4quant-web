@@ -80,7 +80,9 @@ b, strong {
   font-size: $font-size-sm;
   -webkit-margin-after: $spacer / 2;
 }
-
+.induct-content {
+  padding-right: 1rem;
+}
 .content-container {
   padding-top: .1rem;
 }
