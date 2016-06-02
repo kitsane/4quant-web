@@ -1,14 +1,14 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 // Font import
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
-@import "landing_application_and_bootstrap_variables.css.scss";
+@import 'landing_application_and_bootstrap_variables';
 
-@import '../../bower_components/bootstrap/scss/bootstrap.scss';
-@import '../../bower_components/font-awesome/scss/font-awesome.scss';
-@import '../../bower_components/sass-pygments/styles/native.scss';
+@import '../../bower_components/bootstrap/scss/bootstrap';
+@import '../../bower_components/font-awesome/scss/font-awesome';
+@import '../../bower_components/sass-pygments/styles/native';
 
 html {
   height: 100%;
@@ -16,10 +16,10 @@ html {
 }
 
 body {
-  font-weight: $font-weight-light;
-  height: 100%;
-  overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  height: 100%;
+  font-weight: $font-weight-light;
+  overflow: scroll;
 }
 
 @media (max-width: #{map-get($grid-breakpoints, xs)}) {
