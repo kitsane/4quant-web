@@ -100,11 +100,17 @@ b, strong {
         margin-bottom: -8rem;
       }
       .card {
-        background-color: #222;
+        background-color: #F9CB9C;
         color: #fff;
       }
+      .card-header, .btn-primary {
+        background-color: #FF9C00;
+      }
+      .btn-primary {
+        border-color: #FF9C00;
+      }
     }
-    background-color: teal;
+    background-color: #B6D7A8;
     margin-left:0;
     margin-right:0;
   }
@@ -112,7 +118,7 @@ b, strong {
   .hero-sub {
     border: 1px solid #AAA;
     border-width: 1px 0;
-    background-color: green;
+    background-color: #94C67B;
     margin-left:0;
     margin-right:0;
   }
