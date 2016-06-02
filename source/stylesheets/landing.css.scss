@@ -108,6 +108,19 @@ b, strong {
     margin-left:0;
     margin-right:0;
     .testemonial {
+  .reinforce-statement, .closing-statement {
+    border: 1px solid #333;
+    background-color: #555;
+    color: #EEE;
+    padding: 1rem .2rem .4rem .2rem;
+  }
+  .reinforce-statement {
+    margin: .3rem 0 2rem 0;
+  }
+  .closing-statement {
+    margin: .3rem 0 0 0;
+    border-bottom: 1px solid #666;
+  }
       font-size: .75rem;
       border-left:0;
       margin: .7rem 0 0 .7rem;
