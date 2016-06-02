@@ -91,8 +91,11 @@ b, strong {
   }
   .hero-frame {
     div.action {
-      @media (min-width: #{map-get($grid-breakpoints, md)}) {
+      @media (min-width: #{map-get($grid-breakpoints, md)})  and (max-width: #{map-get($grid-breakpoints, lg) - 1}) {
         margin-bottom: -13rem;
+      }
+      @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+        margin-bottom: -8rem;
       }
       .card {
         background-color: #222;
