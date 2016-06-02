@@ -40,9 +40,9 @@ body {
 }
 @media (min-width: #{map-get($grid-breakpoints, xl) + 1}) {
   html {
+    font-size: #{$font-size-root + map-get($responsive-font-adaptions, xl)}px;
   }
 }
-
 .content-wrapper {
   display: table;
   height: 100%;
