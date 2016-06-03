@@ -54,6 +54,17 @@ div.chat {
   }
 
   .type-write {
-
+    padding: .3rem .4rem;
+    background-color: #ccc;
+    border-top: 1px solid #999;
+    margin-top: .2rem;
+    div {
+      font-size: .8rem;
+      font-weight: 500;
+      border: 1px solid #999;
+      border-radius: 10px;
+      padding: .1rem .3rem;
+      background-color: white;
+    }
   }
 }
