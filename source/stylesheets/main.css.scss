@@ -81,7 +81,9 @@ b, strong {
 .content-container {
   padding-top: .1rem;
 }
-
+.content-container.container {
+  padding-top: $navbar-height + 10;
+}
 .content {
   a {
     text-decoration: none;
