@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+// Font import
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+@import 'chat_bootstrap_variables';
+
+@import '../../bower_components/bootstrap/scss/bootstrap.scss';
+@import '../../bower_components/font-awesome/scss/font-awesome.scss';
+@import '../../bower_components/sass-pygments/styles/native.scss';
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-weight: $font-weight-light;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+@import 'responsive_fonts';
+
+.content-wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  color: $body-color;
+
+  & + small {
+    margin-right: $grid-gutter-width / 2;
+    font-size: $font-size-sm;
+    white-space: nowrap;
+  }
+}
+
+p, small, a, ul {
+  font-weight: $font-weight-light;
+}
+
+b, strong {
+  font-weight: $font-weight-bold;
+}
+
+.breadcrumb {
+  padding: 0;
+  background-color: $white;
+  font-size: $font-size-sm;
+  -webkit-margin-after: $spacer / 2;
+}
+
+.content-container {
+  padding-top: .1rem;
+}
+.content-container.container {
+  padding-top: $navbar-height + 10;
+}
+.content {
+  a {
+    text-decoration: none;
+  }
+  .hero-frame {
+    div.action {
+      @media (min-width: #{map-get($grid-breakpoints, md)}) {
+        margin-bottom: -13rem;
+      }
+      .card {
+        background-color: #222;
+        color: #fff;
+      }
+    }
+    background-color: teal;
+    margin-left:0;
+    margin-right:0;
+  }
+
+  .hero-sub {
+    border: 1px solid #555;
+    border-width: 1px 0;
+    background-color: green;
+    margin-left:0;
+    margin-right:0;
+    .testemonial {
+      font-size: .75rem;
+      border-left:0;
+      margin: .7rem 0 0 .7rem;
+      padding: 0;
+      font-style: italic;
+    }
+    .credit {
+      font-size: .7rem;
+      margin:0 1rem .3rem 0;
+      padding:0;
+      text-align: right;
+    }
+
+  }
+  .bullet {
+    li {
+      font-size: .9rem;
+      margin-top: .3rem;
+      span {
+        background-color: #aaa;
+        border: 1px solid black;
+        color: #FFF;
+        display: inline-block;
+        height: 1.5rem;
+        left: -2rem;
+        margin-right: -2rem;
+        position: relative;
+        text-align: center;
+        border-radius: .75rem;
+        width: 1.5rem;  
+      }
+    }
+  }
+  table {
+    @extend .table;
+    @extend .table-sm;
+    @extend .table-striped;
+    font-size: $font-size-sm;
+  }
+
+  blockquote {
+    @extend .blockquote;
+    font-size: $font-size-base;
+  }
+
+  ul,
+  ol {
+    padding-left: $spacer;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  // Google Maps image
+  .google-maps {
+    width: 100%;
+  }
+}
+
+.syntax {
+  font-size: $font-size-sm;
+  padding: $spacer;
+}
+
+// Navbar
+.navbar {
+  padding: {
+    left: 0;
+    right: 0;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    margin-right: $spacer;
+
+    & + .nav-item {
+      margin-left: 0;
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+  }
+}
+
+.bg-faded {
+  background-color: $white;
+}
+
+.navbar-toggler {
+  &:focus {
+    outline: transparent;
+  }
+
+  padding: {
+    left: 0;
+    right: 0;
+  }
+}
+
+.navbar-toggler-close {
+  color: $white;
+}
+
+.navbar-brand {
+  display: block;
+  float: initial;
+  font-weight: $font-weight-regular;
+  margin-right: 0;
+}
+
+// Navigation open
+.modal {
+  li {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  a {
+    color: $white;
+    display: block;
+    font-weight: $font-weight-light;
+    padding: {
+      bottom: $spacer-y / 2;
+      top: $spacer-y / 2;
+    }
+    text-decoration: none;
+  }
+}
+
+// footer
+footer {
+  display: table-row;
+  height: 1px;
+
+  .nav {
+    display: inline-block;
+    padding-bottom: $spacer;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: $spacer-x;
+  }
+
+  .navbar-nav .nav-link {
+    padding-bottom: 0;
+  }
+
+  li {
+    &:last-child a::after {
+      content: '';
+    }
+
+    a::after {
+      content: '·';
+      margin-left: $spacer-x;
+    }
+  }
+
+  a,
+  address {
+    color: $white;
+    font-size: $font-size-sm;
+  }
+}
+
+.fa-icon-row {
+  margin-bottom: $spacer;
+}
+
+.fa-icon {
+  background-color: #33383b;
+  color: $white;
+  display: inline-block;
+  height: $icon-size;
+  line-height: $icon-size;
+  text-align: center;
+  width: $icon-size;
+
+  & + .fa-icon {
+    margin-left: $spacer-x;
+  }
+}
+
+.img-brand {
+  max-height: 90px;
+}
+
+.card {
+  border: 0;
+}
+
+.card-text {
+  line-height: $line-height-sm;
+  margin-bottom: $spacer-y / 2;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-block {
+  padding-bottom: $spacer / 2;
+  padding-left: $spacer;
+  padding-right: $spacer / 2;
+  padding-top: $spacer / 2;
+}
+
+@import 'chatwindow';

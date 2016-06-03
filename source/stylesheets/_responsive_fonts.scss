@@ -1,0 +1,22 @@
+
+@media (max-width: #{map-get($grid-breakpoints, xs)}) {
+  html {
+    font-size:  #{$font-size-root + map-get($responsive-font-adaptions, xs)}px;
+  }
+}
+
+@media (min-width: #{map-get($grid-breakpoints, xs) + 1}) and (max-width: #{map-get($grid-breakpoints, sm)}) {
+  html {
+    font-size: #{$font-size-root + map-get($responsive-font-adaptions, sm)}px;
+  }
+}
+@media (min-width: #{map-get($grid-breakpoints, lg) + 1})  and (max-width: #{map-get($grid-breakpoints, xl)}) {
+  html {
+    font-size: #{$font-size-root + map-get($responsive-font-adaptions, lg)}px;
+  }
+}
+@media (min-width: #{map-get($grid-breakpoints, xl) + 1}) {
+  html {
+    font-size: #{$font-size-root + map-get($responsive-font-adaptions, xl)}px;
+  }
+}
