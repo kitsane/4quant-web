@@ -43,10 +43,21 @@ gulp.task('scripts', function() {
     return gulp.src([
       config.bowerDir + "/jquery/dist/jquery.min.js",
       config.bowerDir + "/bootstrap/js/dist/util.js",
-      config.bowerDir + "/bootstrap/js/dist/modal.js"
+      config.bowerDir + "/bootstrap/js/dist/modal.js",
     ])
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat("concat.js"))
+    .pipe(gulp.dest(config.outputDir + '/javascripts'));
+});
+gulp.task('jsChat', function() {
+    return gulp.src([
+      config.bowerDir + "/jquery/dist/jquery.min.js",
+      config.bowerDir + "/bootstrap/js/dist/util.js",
+      config.bowerDir + "/bootstrap/js/dist/modal.js",
+      "source/javascripts/chat.js",
+    ])
+    .pipe(babel({ presets: ['es2015'] }))
+    .pipe(concat("chat.js"))
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
@@ -73,7 +84,7 @@ gulp.task('revealjs', function() {
 });
 
 gulp.task('default', function() {
-  runSequence('bower', ['sass', 'scripts', 'revealjs', 'markedjs', 'fonts']);
+  runSequence('bower', ['sass', 'scripts', 'jsChat', 'revealjs', 'markedjs', 'fonts']);
 });
 
 gulp.task('watch', function() {
