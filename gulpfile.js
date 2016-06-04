@@ -84,10 +84,10 @@ gulp.task('revealjs', function() {
 });
 
 gulp.task('default', function() {
-  runSequence('bower', ['sass', 'scripts', 'jsChat', 'revealjs', 'markedjs', 'fonts']);
+  runSequence('bower', ['sass', 'scripts', 'jsChat', 'fonts']);
 });
 
 gulp.task('watch', function() {
   gulp.watch('source/stylesheets/**/*.scss', ['sass']);
-  gulp.watch('source/javascripts/**/*.js', ['scripts, revealjs']);
+  gulp.watch('source/javascripts/**/*.js', ['scripts', 'jsChat']);
 });
