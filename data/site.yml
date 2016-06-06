@@ -1,7 +1,7 @@
 company:
-  name: 'Uni-Spital Basel Radiology'
-  short_name: 'USB-Radio'
-  claim: 'Radiology to the future'
+  name: '4Quant'
+  short_name: 'Geoimaging'
+  claim: 'Lightning fast Geoimaging Analytics'
   street: 'Technoparkstrasse 1'
   city: 'CH-8005 Zurich'
   country: 'Switzerland'
@@ -10,19 +10,19 @@ company:
 
 main_navigation:
   home: ''
-  technology: 'technology.html'
-  solutions: 'solutions.html'
-  news: 'news.html'
-  about: 'about.html'
-  jobs: 'jobs.html'
+  imagedata: 'bigImageDataTechnology.html'
+  analytics: 'universalAnalyticsAccess.html'
+  security: 'cyberSecurityFocus.html'
+  assetallocation: 'insurerAssetAllocation.html'
+  trade: 'globalTradeSurveillance.html'
+  bondvalution: 'catBondValuation.html'
   contact: 'contact.html'
-  legals: 'legals.html'
 
 social_media:
   facebook: 'https://www.facebook.com/4quant/'
   twitter: 'https://twitter.com/4quant'
   linkedin: 'https://www.linkedin.com/company/4quant'
-  slideshare: 'https://de.slideshare.net/KevinMader/'
+  slideshare: 'httpsa://de.slideshare.net/KevinMader/'
   youtube: 'https://www.youtube.com/channel/UCjnOPgOLaj4pQjVeisQe2Mg'
   medium: 'https://medium.com/@4quant'
   angellist: 'https://angel.co/4quant'
