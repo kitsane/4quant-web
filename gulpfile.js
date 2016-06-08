@@ -53,7 +53,8 @@ gulp.task('jsChat', function() {
     return gulp.src([
       config.bowerDir + "/jquery/dist/jquery.min.js",
       config.bowerDir + "/bootstrap/js/dist/util.js",
-      config.bowerDir + "/bootstrap/js/dist/modal.js"
+      config.bowerDir + "/bootstrap/js/dist/modal.js",
+      config.bowerDir + "/typed.js/js/typed.js"
     ])
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat("chat.js"))
@@ -62,6 +63,7 @@ gulp.task('jsChat', function() {
 
 gulp.task('chatTesting', function () {
   return gulp.src(['source/javascripts/chatTest.js'])
+  .pipe(babel({ presets: ['es2015'] }))
   .pipe(gulp.dest(config.outputDir + '/javascripts'));
 })
 
