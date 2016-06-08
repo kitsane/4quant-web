@@ -1,14 +1,17 @@
 div.chat {
-  height: 20rem;
+  height: 22.3rem;
   width: 50%;
   border: 1px solid black;
-  border-radius: 2px;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  overflow: hidden;
+  .chat-text{
+    height: 20rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow: hidden;
+  }
   .bubble {
     width: 85%;
     div {
@@ -54,11 +57,16 @@ div.chat {
   }
 
   .type-write {
+    position: relative;
+    bottom: 0;
+    left: 0;
     padding: .3rem .4rem;
     background-color: #ccc;
     border-top: 1px solid #999;
-    margin-top: .2rem;
-    > div {
+    div.frame {
+      position: relative;
+    bottom: 0;
+    left: 0;
       font-size: .8rem;
       font-weight: 500;
       border: 1px solid #999;
@@ -66,7 +74,7 @@ div.chat {
       padding: .1rem .3rem;
       background-color: white;
       width: 100%;
-      height: 1.5rem;
+      min-height: 1.5rem;
       &:focus {
         outline: transparent;
       }

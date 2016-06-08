@@ -54,18 +54,13 @@ gulp.task('jsChat', function() {
       config.bowerDir + "/jquery/dist/jquery.min.js",
       config.bowerDir + "/bootstrap/js/dist/util.js",
       config.bowerDir + "/bootstrap/js/dist/modal.js",
-      config.bowerDir + "/typed.js/js/typed.js"
+      config.bowerDir + "/typed.js/js/typed.js",
+      'source/javascripts/ChatEmu.js'
     ])
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat("chat.js"))
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
-
-gulp.task('chatTesting', function () {
-  return gulp.src(['source/javascripts/chatTest.js'])
-  .pipe(babel({ presets: ['es2015'] }))
-  .pipe(gulp.dest(config.outputDir + '/javascripts'));
-})
 
 gulp.task('markedjs', function() {
     return gulp.src([
@@ -90,10 +85,10 @@ gulp.task('revealjs', function() {
 });
 
 gulp.task('default', function() {
-  runSequence('bower', ['sass', 'scripts', 'jsChat', 'chatTesting', 'fonts']);
+  runSequence('bower', ['sass', 'scripts', 'jsChat', 'fonts']);
 });
 
 gulp.task('watch', function() {
   gulp.watch('source/stylesheets/**/*.scss', ['sass']);
-  gulp.watch('source/javascripts/**/*.js', ['scripts', 'jsChat', 'chatTesting']);
+  gulp.watch('source/javascripts/**/*.js', ['scripts', 'jsChat']);
 });

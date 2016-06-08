@@ -1,7 +1,7 @@
 
 function ChatEmu() {
   "use strict";
-    this.dialog = ["hallo", "sali", "Lorem ipsum Ullamco aute amet eu consequat id.", "Lorem ipsum Incididunt in enim ullamco voluptate fugiat sit quis culpa eu cillum nulla Duis.", "ok, na dann", "ja ist gut...", "Jetzt weis ich bescheid."];
+    this.dialog = ["hallo", "sali", "Lorem ipsum Ullamco aute amet eu consequat id.", "Lorem ipsum Incididunt in enim ullamco voluptate fugiat sit quis culpa eu cillum nulla Duis.", "ok, na dann", "ja ist gut...", "Jetzt weis ich bescheid.", "ja super sache eh...", "jetzt wird gelabert um des labern willens", "jah, Radiologie rocks, alter!","hallo", "sali", "Lorem ipsum Ullamco aute amet eu consequat id.", "Lorem ipsum Incididunt in enim ullamco voluptate fugiat sit quis culpa eu cillum nulla Duis.", "ok, na dann", "ja ist gut...", "Jetzt weis ich bescheid.", "ja super sache eh...", "jetzt wird gelabert um des labern willens", "jah, Radiologie rocks, alter!"];
 
     this.typeAnimation();
 }
@@ -49,7 +49,7 @@ ChatEmu.prototype.reply = function() {
     return this.chatBubble(text, 'you');
   }).then((pre) => {
     var myResponse = this.dalayMyResponse();
-    myResponse.then((text) => {this.typeAnimation(text)});
+    myResponse.then((text) => {this.typeAnimation(text)}).catch((retVal) => { return retVal; });
   }).catch((retVal) => {
     return retVal;
   });
@@ -80,3 +80,7 @@ ChatEmu.prototype.typeAnimation = function() {
     });
   }
 }
+
+$(document).ready(function() {
+  var chatExample = new ChatEmu();
+});
