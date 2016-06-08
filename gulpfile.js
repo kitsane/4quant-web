@@ -88,10 +88,10 @@ gulp.task('revealjs', function() {
 });
 
 gulp.task('default', function() {
-  runSequence('bower', ['sass', 'scripts', 'jsChat', 'fonts']);
+  runSequence('bower', ['sass', 'scripts', 'jsChat', 'chatTesting', 'fonts']);
 });
 
 gulp.task('watch', function() {
   gulp.watch('source/stylesheets/**/*.scss', ['sass']);
-  gulp.watch('source/javascripts/**/*.js', ['scripts', 'jsChat']);
+  gulp.watch('source/javascripts/**/*.js', ['scripts', 'jsChat', 'chatTesting']);
 });
