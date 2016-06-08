@@ -53,13 +53,17 @@ gulp.task('jsChat', function() {
     return gulp.src([
       config.bowerDir + "/jquery/dist/jquery.min.js",
       config.bowerDir + "/bootstrap/js/dist/util.js",
-      config.bowerDir + "/bootstrap/js/dist/modal.js",
-      "source/javascripts/chat.js",
+      config.bowerDir + "/bootstrap/js/dist/modal.js"
     ])
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat("chat.js"))
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
+
+gulp.task('chatTesting', function () {
+  return gulp.src(['source/javascripts/chatTest.js'])
+  .pipe(gulp.dest(config.outputDir + '/javascripts'));
+})
 
 gulp.task('markedjs', function() {
     return gulp.src([
