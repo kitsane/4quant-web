@@ -16,6 +16,7 @@ main_navigation:
   assetallocation: 'insurerAssetAllocation.html'
   trade: 'globalTradeSurveillance.html'
   bondvalution: 'catBondValuation.html'
+  catbondvaluation: 'realtimeCATBondValuation.html'
   contact: 'contact.html'
 
 social_media:
