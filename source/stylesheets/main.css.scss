@@ -22,12 +22,25 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+.card-columns {
+  -ms-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  -webkit-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+}
+
 @media (max-width: #{map-get($grid-breakpoints, xs) -1}) {
   html {
     font-size:  #{map-get($responsive-font-sizes, xs)}px;
   }
   .landing-container > div {
     padding: 0;
+  }
+  .card-columns {
+    -ms-columns: 1 auto;
+    -moz-columns: 1 auto;
+    -webkit-columns: 1 auto;
+    columns: 1 auto;
   }
 }
 @media (min-width: #{map-get($grid-breakpoints, xs)})  and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
@@ -37,6 +50,12 @@ body {
   .landing-container > div {
     padding: 0 .5rem;
   }
+  .card-columns {
+    -ms-columns: 1 auto;
+    -moz-columns: 1 auto;
+    -webkit-columns: 1 auto;
+    columns: 1 auto;
+  }
 }
 @media (min-width: #{map-get($grid-breakpoints, sm)})  and (max-width: #{map-get($grid-breakpoints, md) - 1}) {
   html {
@@ -45,9 +64,14 @@ body {
   .landing-container > div {
     padding: 0rem;
   }
-
   div.action {
     margin-bottom: -4rem;
+  }
+  .card-columns {
+    -ms-columns: 2 auto;
+    -moz-columns: 2 auto;
+    -webkit-columns: 2 auto;
+    columns: 2 auto;
   }
 }
 @media (min-width: #{map-get($grid-breakpoints, md)})  and (max-width: #{map-get($grid-breakpoints, lg) - 1}) {
@@ -60,6 +84,12 @@ body {
   div.action {
     margin-bottom: -7rem;
   }
+  .card-columns {
+    -ms-columns: 2 auto;
+    -moz-columns: 2 auto;
+    -webkit-columns: 2 auto;
+    columns: 2 auto;
+  }
 }
 @media (min-width: #{map-get($grid-breakpoints, lg)})  and (max-width: #{map-get($grid-breakpoints, xl) - 1}) {
   html {
@@ -70,6 +100,12 @@ body {
   }
   div.action {
     margin-bottom: -8rem;
+  }
+  .card-columns {
+    -ms-columns: 2 auto;
+    -moz-columns: 2 auto;
+    -webkit-columns: 2 auto;
+    columns: 2 auto;
   }
 }
 @media (min-width: #{map-get($grid-breakpoints, xl)}) {
@@ -83,6 +119,12 @@ body {
   div.action {
     margin-bottom: -10rem;
   }
+  .card-columns {
+    -ms-columns: 3 auto;
+    -moz-columns: 3 auto;
+    -webkit-columns: 3 auto;
+    columns: 3 auto;
+  }
 }
 
 
@@ -91,6 +133,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 
 h1 {
   text-transform: uppercase;
