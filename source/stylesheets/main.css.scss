@@ -217,7 +217,19 @@ table {
   padding-top: $navbar-height + 20;
 }
 
+.content-container-landing {
+  padding-top: 0;
+  .col-xs-12 {
+    min-height:0;
+  }
+}
+
+.content-container-after-hero {
+  padding-top: 1rem;
+}
+
 .content {
+  
   a {
     text-decoration: none;
   }
