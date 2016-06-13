@@ -69,15 +69,21 @@ $link-hover-decoration: none;
 
 // Grid breakpoints
 $grid-breakpoints: (
-  xs: 0,
-  sm: 544px,
-  md: 992px
+  xs: 320px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xl: 1600px
 );
 
 // Grid containers
 $container-max-widths: (
-  sm: 760px
-);
+  xs: 760px,
+  sm: 760px,
+  md: 760px,
+  lg: 760px,
+  xl: 1000px,
+) !default;
 
 // Grid columns
 $grid-columns:               12 !default;
@@ -90,7 +96,15 @@ $font-family-monospace: 'Roboto Mono', monospace;
 $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root: 22px;
+$font-size-root: 20px;
+
+$responsive-font-sizes: (
+  xs: $font-size-root - 7,
+  sm: $font-size-root - 4,
+  md: $font-size-root - 2,
+  lg: $font-size-root,
+  xl: $font-size-root + 4
+);
 
 $font-size-base:             1rem !default;
 $font-size-lg:               1.25rem !default;
