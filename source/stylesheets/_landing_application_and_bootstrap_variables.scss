@@ -84,13 +84,7 @@ $container-max-widths: (
   xl: 70%,
 ) !default;
 
-$responsive-font-adaptions: (
-  xs: -7,
-  sm: -3,
-  md: -1,
-  lg: 0,
-  xl: 5
-);
+
 
 // Grid columns
 $grid-columns:               12 !default;
@@ -104,6 +98,14 @@ $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 22;
+
+$responsive-font-sizes: (
+  xs: $font-size-root - 7,
+  sm: $font-size-root - 3,
+  md: $font-size-root - 1,
+  lg: $font-size-root,
+  xl: $font-size-root + 4
+);
 
 $font-size-base:             1rem !default;
 $font-size-lg:               1.25rem !default;
