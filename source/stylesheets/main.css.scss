@@ -22,23 +22,69 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-@media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+@media (max-width: #{map-get($grid-breakpoints, xs) -1}) {
   html {
-    font-size: $font-size-root - 2;
+    font-size:  #{map-get($responsive-font-sizes, xs)}px;
+  }
+  .landing-container > div {
+    padding: 0;
+  }
+}
+@media (min-width: #{map-get($grid-breakpoints, xs)})  and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+  html {
+    font-size:  #{map-get($responsive-font-sizes, xs)}px;
+  }
+  .landing-container > div {
+    padding: 0 .5rem;
+  }
+}
+@media (min-width: #{map-get($grid-breakpoints, sm)})  and (max-width: #{map-get($grid-breakpoints, md) - 1}) {
+  html {
+    font-size: #{map-get($responsive-font-sizes, sm)}px;
+  }
+  .landing-container > div {
+    padding: 0rem;
+  }
+
+  div.action {
+    margin-bottom: -4rem;
+  }
+}
+@media (min-width: #{map-get($grid-breakpoints, md)})  and (max-width: #{map-get($grid-breakpoints, lg) - 1}) {
+  html {
+    font-size: #{map-get($responsive-font-sizes, md)}px;
+  }
+  .landing-container > div {
+    padding: 0 2rem;
+  }
+  div.action {
+    margin-bottom: -7rem;
+  }
+}
+@media (min-width: #{map-get($grid-breakpoints, lg)})  and (max-width: #{map-get($grid-breakpoints, xl) - 1}) {
+  html {
+    font-size: #{map-get($responsive-font-sizes, xl)}px;
+  }
+  .landing-container > div {
+    padding: 0 4rem;
+  }
+  div.action {
+    margin-bottom: -8rem;
+  }
+}
+@media (min-width: #{map-get($grid-breakpoints, xl)}) {
+  html {
+    font-size: #{map-get($responsive-font-sizes, xl) + 2}px;
+  }
+  .landing-container > div {
+    padding: 0 6rem;
+  }
+
+  div.action {
+    margin-bottom: -10rem;
   }
 }
 
-@media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-  html {
-    font-size: $font-size-root - 4;
-  }
-}
-
-@media (min-width: 544px) and (max-width: 760px) {
-  html {
-    font-size: 18px;
-  }
-}
 
 .content-wrapper {
   display: table;
