@@ -123,6 +123,95 @@ b, strong {
   font-size: $font-size-sm;
   -webkit-margin-after: $spacer / 2;
 }
+.testemonial {
+    font-size: .85rem;
+    border-left:0;
+    margin: .7rem 0 0 .7rem;
+    padding: 0;
+    font-style: italic;
+  }
+  .credit {
+    font-size: .8rem;
+    width: 40%;
+    margin:0 auto .3rem auto;
+    padding:0;
+    text-align: right;
+  }
+.hero-frame {
+  
+  img {
+      max-width: 100%;
+  }
+  div.action {
+    .card {
+      background-color: #F9CB9C;
+    }
+    .card-header, .btn-primary {
+      background-color: #FF9C00;
+      color: #fff;
+    }
+    .btn-primary {
+      width: 60%;
+      border-color: #FF9C00;
+    }
+  }
+  background-color: #B6D7A8;
+  margin-left:0;
+  margin-right:0;
+}
+
+.hero-sub {
+  border: 1px solid #AAA;
+  border-width: 1px 0;
+  background-color: #94C67B;
+  margin-left:0;
+  margin-right:0;
+}
+.reinforce-statement, .closing-statement {
+  border: 1px solid #333;
+  background-color: #555;
+  color: #EEE;
+  padding: 1rem .2rem .4rem .2rem;
+  div {
+    padding-top: .7rem;
+    padding-bottom: .5rem;
+  }
+}
+.reinforce-statement {
+  margin: .3rem 0 2rem 0;
+}
+.closing-statement {
+  margin: .3rem 0 0 0;
+  border-bottom: 1px solid #666;
+}
+.bullet {
+  padding-left: 2rem;
+  dd, dt {
+    font-size: .9rem;
+    margin-top: .3rem;
+  }
+  dd {
+    margin-top: -1.4rem;
+  }
+  dt {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: -2rem;
+      margin-bottom: -.5rem;
+      background-color: #AAA;
+      color: #FFF;
+      border: 1px solid black;
+      border-radius: .75rem;
+      text-align: center;
+  }
+}
+table {
+  @extend .table;
+  @extend .table-sm;
+  @extend .table-striped;
+  font-size: $font-size-sm;
+}
 
 .content-container {
   padding-top: $navbar-height + 20;
@@ -131,67 +220,6 @@ b, strong {
 .content {
   a {
     text-decoration: none;
-  }
-  .hero-frame {
-    div.action {
-      @media (min-width: #{map-get($grid-breakpoints, md)}) {
-        margin-bottom: -13rem;
-      }
-      .card {
-        background-color: #222;
-        color: #fff;
-      }
-    }
-    background-color: teal;
-    margin-left:0;
-    margin-right:0;
-  }
-
-  .hero-sub {
-    border: 1px solid #555;
-    border-width: 1px 0;
-    background-color: green;
-    margin-left:0;
-    margin-right:0;
-    .testemonial {
-      font-size: .75rem;
-      border-left:0;
-      margin: .7rem 0 0 .7rem;
-      padding: 0;
-      font-style: italic;
-    }
-    .credit {
-      font-size: .7rem;
-      margin:0 1rem .3rem 0;
-      padding:0;
-      text-align: right;
-    }
-
-  }
-  .bullet {
-    li {
-      font-size: .9rem;
-      margin-top: .3rem;
-      span {
-        display: inline-block;
-        width: 1.5rem;
-        height: 1.5rem;
-        position: relative;
-        left: -2rem;
-        margin-right: -2rem;
-        background-color: #AAA;
-        color: #FFF;
-        border: 1px solid black;
-        border-radius: .75rem;
-        text-align: center;
-      }
-    }
-  }
-  table {
-    @extend .table;
-    @extend .table-sm;
-    @extend .table-striped;
-    font-size: $font-size-sm;
   }
 
   blockquote {
