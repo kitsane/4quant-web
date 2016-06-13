@@ -76,15 +76,14 @@ $grid-breakpoints: (
   xl: 1600px
 );
 
+// Grid containers
 $container-max-widths: (
-  xs: 100%,
-  sm: 100%,
-  md: 90%,
-  lg: 80%,
-  xl: 70%,
+  xs: 760px,
+  sm: 760px,
+  md: 760px,
+  lg: 760px,
+  xl: 1000px,
 ) !default;
-
-
 
 // Grid columns
 $grid-columns:               12 !default;
@@ -101,8 +100,8 @@ $font-size-root: 22;
 
 $responsive-font-sizes: (
   xs: $font-size-root - 7,
-  sm: $font-size-root - 3,
-  md: $font-size-root - 1,
+  sm: $font-size-root - 4,
+  md: $font-size-root - 2,
   lg: $font-size-root,
   xl: $font-size-root + 4
 );
