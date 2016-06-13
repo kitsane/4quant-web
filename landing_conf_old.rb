@@ -12,6 +12,7 @@ page '/*.txt', layout: false
 # Slides
 page '/slides/*', layout: :slides_layout
 
+page '/index.*', layout: :landing
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
