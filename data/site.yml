@@ -9,7 +9,7 @@ company:
   mwst: 'CHE-168.792.194'
 
 main_navigation:
-  home: ''
+  home: '/'
   'Big Image Data Technology': 'bigImageDataTechnology.html'
   'Universal Analytics Access': 'universalAnalyticsAccess.html'
   'Cyber Security Focus': 'cyberSecurityFocus.html'
