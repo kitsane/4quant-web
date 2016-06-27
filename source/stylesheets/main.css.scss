@@ -308,6 +308,19 @@ table {
   .google-maps {
     width: 100%;
   }
+  .cards-adaption {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    .m-x-1 {
+      margin-left: 1rem !important;
+      margin-right: 1rem !important;
+      .card-block {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
 }
 
 .syntax {
