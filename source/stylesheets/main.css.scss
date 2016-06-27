@@ -56,6 +56,10 @@ body {
     -webkit-columns: 1 auto;
     columns: 1 auto;
   }
+  // Fix for iphone icon problem
+  footer .col-xs-1 {
+    flex: 0 0 2.1rem;
+  }
 }
 @media (min-width: #{map-get($grid-breakpoints, sm)})  and (max-width: #{map-get($grid-breakpoints, md) - 1}) {
   html {
