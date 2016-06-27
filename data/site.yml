@@ -10,13 +10,13 @@ company:
 
 main_navigation:
   home: ''
-  imagedata: 'bigImageDataTechnology.html'
-  analytics: 'universalAnalyticsAccess.html'
-  security: 'cyberSecurityFocus.html'
-  assetallocation: 'insurerAssetAllocation.html'
-  trade: 'globalTradeSurveillance.html'
-  bondvalution: 'catBondValuation.html'
-  catbondvaluation: 'realtimeCATBondValuation.html'
+  'Big Image Data Technology': 'bigImageDataTechnology.html'
+  'Universal Analytics Access': 'universalAnalyticsAccess.html'
+  'Cyber Security Focus': 'cyberSecurityFocus.html'
+  'Insurer Asset Allocation': 'insurerAssetAllocation.html'
+  'Global Trade Surveillance': 'globalTradeSurveillance.html'
+  'Cat Bond Valuation': 'catBondValuation.html'
+  'Realtime CAT Bond Valuation': 'realtimeCATBondValuation.html'
   contact: 'contact.html'
 
 social_media:
