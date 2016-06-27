@@ -4,6 +4,8 @@ title: "Big Image Data Technology"
 
 # Big Image Data Technology
 
+![Big Image Tech](http://www.cbdscougars.com/banner5751_1.jpg)
+
 ## Querying images as easy as any other data
 
 A key pain point of today’s image analysis that it involves mostly manual work. A good example is that labels of structures on satellite images and maps, such as buildings or streets, are assigned manually. Consequently, most of a company’s image material cannot be used or companies do not use images in their routine business processes overall.

@@ -4,6 +4,8 @@ title: "Cyber Security Focus"
 
 # Cyber Security Focus
 
+![](http://ocean.eu.com/wp-content/uploads/2013/04/IT-security-lg.jpg)
+
 ## Inherent image data security
 
 We recognize that companies opt against cloud solutions due to raised data protection requirements. In certain sectors, such as insurance and financial services, even legal prerequisites exist that require client data storage and processing within the company’s jurisdiction. Simultaneously, companies do not see a business case in investing in additional own data processing infrastructure.

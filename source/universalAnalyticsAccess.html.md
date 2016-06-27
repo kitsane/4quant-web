@@ -4,6 +4,8 @@ title: "Universal Analytics Access"
 
 # Universal Analytics Access
 
+![](https://cdn.datafloq.com/blog_pictures/Analyzing-the-Internet-of-Things.jpg)
+
 ## Teaching image analysis to the Internet of Things
 
 Today, only a handful of specific industries use significant amounts of geospatial imagery. Reasons for sparse employment of image data in operations are limited accessibility, limited analysis capabilities for specialized business applications, and lack of strategic attention as image data was traditionally out of corporate business focus.
