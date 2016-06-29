@@ -171,18 +171,15 @@ b, strong {
   -webkit-margin-after: $spacer / 2;
 }
 .testemonial {
-    font-size: .85rem;
+    font-size: 1rem;
     border-left:0;
-    margin: .7rem 0 0 .7rem;
     padding: 0;
     font-style: italic;
+    margin: 0 auto;
   }
   .credit {
     font-size: .8rem;
-    width: 40%;
-    margin:0 auto .3rem auto;
     padding:0;
-    text-align: right;
   }
 .hero-frame {
   
@@ -213,6 +210,7 @@ b, strong {
   background-color: #94C67B;
   margin-left:0;
   margin-right:0;
+  text-align: center;
 }
 .reinforce-statement, .closing-statement {
   border: 1px solid #333;
@@ -223,11 +221,17 @@ b, strong {
     padding-top: .7rem;
     padding-bottom: .5rem;
   }
+  h3 {
+    text-align: center;
+  }
 }
 .reinforce-statement {
   margin: .3rem 0 2rem 0;
 }
 .closing-statement {
+  h3 {
+    text-align: center;
+  }
   margin: .3rem 0 0 0;
   border-bottom: 1px solid #666;
 }
