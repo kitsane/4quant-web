@@ -192,6 +192,10 @@ b, strong {
     .testemonial-img {
       display: block;
       text-align: right;
+      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
     }
     .testemonial-text {
       display:block;
