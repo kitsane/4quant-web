@@ -24,9 +24,9 @@
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^1.5.3",
-    "run-sequence": "^1.1.5"
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "run-sequence": "^1.2.2"
   },
   "dependencies": {
     "jpegtran-bin": "^3.0.6",
