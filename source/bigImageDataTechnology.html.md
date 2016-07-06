@@ -1,5 +1,5 @@
 ---
-title: "Big Image Data Technology"
+title: "Image Technology"
 ---
 
 # Big Image Data Technology

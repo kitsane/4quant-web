@@ -1,5 +1,5 @@
 ---
-title: "Cyber Security Focus"
+title: "Cyber Security"
 ---
 
 # Cyber Security Focus

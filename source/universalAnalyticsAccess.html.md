@@ -1,5 +1,5 @@
 ---
-title: "Universal Analytics Access"
+title: "Analytics Access"
 ---
 
 # Universal Analytics Access
