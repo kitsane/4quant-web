@@ -1,12 +1,13 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     babel = require('gulp-babel'),
     bower = require('gulp-bower'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
     runSequence = require('run-sequence'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    uglyfly = require('gulp-uglyfly');
 
-var config = {
+const config = {
   bowerDir: 'bower_components',
   outputDir: '.tmp/dist'
 }
@@ -42,11 +43,15 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
     return gulp.src([
       config.bowerDir + "/jquery/dist/jquery.min.js",
-      config.bowerDir + "/bootstrap/js/dist/util.js",
-      config.bowerDir + "/bootstrap/js/dist/modal.js"
+      // config.bowerDir + "/bootstrap/js/dist/util.js",
+      // config.bowerDir + "/bootstrap/js/dist/modal.js",
+      // "bower_components/tether/dist/js/tether.js",
+      "bower_components/bootstrap/dist/js/bootstrap.min.js",
+      "source/javascripts/main.js",
     ])
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat("concat.js"))
+    .pipe(uglyfly())
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
@@ -60,6 +65,7 @@ gulp.task('markedjs', function() {
       config.bowerDir + "/reveal.js/plugin/math/math.js",
       config.bowerDir + "/reveal.js/plugin/zoom-js/zoom.js"
     ])
+    .pipe(uglyfly())
     .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
@@ -78,5 +84,9 @@ gulp.task('default', function() {
 
 gulp.task('watch', function() {
   gulp.watch('source/stylesheets/**/*.scss', ['sass']);
-  gulp.watch('source/javascripts/**/*.js', ['scripts, revealjs']);
+  // gulp.watch('source/javascripts/**/*.js', ['scripts', 'revealjs']);
+});
+
+gulp.task('scriptswatch', function() {
+  gulp.watch('source/javascripts/**/*.js', ['scripts']);
 });

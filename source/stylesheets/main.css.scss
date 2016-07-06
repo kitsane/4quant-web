@@ -94,6 +94,7 @@ body {
     -webkit-columns: 2 auto;
     columns: 2 auto;
   }
+
 }
 @media (min-width: #{map-get($grid-breakpoints, lg)})  and (max-width: #{map-get($grid-breakpoints, xl) - 1}) {
   html {
@@ -212,6 +213,9 @@ b, strong {
   div.action {
     .card {
       background-color: #F9CB9C;
+      h4 {
+        margin-bottom: .1rem;
+      }
     }
     .card-header, .btn-primary {
       background-color: #FF9C00;
@@ -223,9 +227,7 @@ b, strong {
       border-color: #FF9C00;
     }
     .contact-form-card {
-  h4 {
-    margin-bottom: .2rem;
-  }
+  
 }
   }
   background-color: #B6D7A8;
@@ -307,6 +309,21 @@ table {
 .content-container-after-hero {
   padding-top: 1rem;
 }
+
+.carousel-indicators {
+  bottom: -.3rem;
+  li {
+    background-color: transparent;
+    border: 1px solid $brand-gray;
+    width:.5rem;height:.5rem;
+    bottom: 0;
+  }
+  .active {
+    background-color: #988177;
+    border: 1px solid $brand-gray;
+  }
+}
+
 a > h4, a > h3, a > h2 {
   text-decoration: none;
   color: $brand-gray;

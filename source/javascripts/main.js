@@ -1,8 +1,8 @@
 var testemonialCarouselOpts = {
   interval: 2000,
   pause: "hover",
-  wrap: true,
-  keyboard: true,
+  wrap: false,
+  keyboard: false,
 }
 
 $('#testemonial-carousel-one').carousel(testemonialCarouselOpts);
