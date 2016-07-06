@@ -27,18 +27,20 @@ title: "Home"
 <p class="card-text">
   Please reach out to us with your questions, requests for further information and requests for demonstrators. Our friendly team is happy to engage with you.
 </p>
-<form>
+<form action="http://mailthis.to/4quant" method="post">
 <div class="input-group input-group-sm m-t-1">
 <span class="input-group-addon" id="addon-email"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
-<input type="email" class="form-control" placeholder="Email" aria-describedby="email">
+<input type="email" name="email" id="name" class="form-control" placeholder="Your Email" aria-describedby="email">
+<input type="hidden" name="_replyto" value="%email">
+<input type="text" name="_honey" value="" class="form-honey">
 </div>
 <div class="input-group input-group-sm m-t-1">
 <span class="input-group-addon" id="addon-name"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
 <input type="text" class="form-control" placeholder="Name" aria-describedby="name">
 </div>
 <div class="input-group input-group-sm m-t-1">
-<span class="input-group-addon" id="addon-reason"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i></span>
-<input type="text" class="form-control" placeholder="Reason" aria-describedby="reason">
+    <span class="input-group-addon" id="addon-reason"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i></span>
+    <textarea class="form-control" id="ReasonOfContact" rows="3" placeholder="Your Message …" aria-describedby="reason"></textarea>
 </div>
 <div class="input-group input-group-sm m-t-2 m-b-2 center-block">
 <button type="button" class="btn btn-primary btn-sm">Send</button>
@@ -88,10 +90,10 @@ title: "Home"
 </dl>
 </div>
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-<!--  <blockquote class="testemonial">
+ <blockquote class="testemonial">
 Example customer testemonial. They are the best ever and ever the best.
 </blockquote>
-<p class="credit">Jane Doe, Nowhere Ltd.</p> -->
+<p class="credit">Jane Doe, Nowhere Ltd.</p>
 </div>
 </div>
 </div>
@@ -100,11 +102,11 @@ Example customer testemonial. They are the best ever and ever the best.
 <div class="landing-container">
 <div class="row reinforce-statement text-md-left text-sm-left text-xs-center">
 <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-xl-12">
-<!--   <blockquote class="testemonial">
+   <blockquote class="testemonial">
 Example customer testemonial. They are the best ever and ever the best.<br>
 <span class="credit">Jane Doe, Nowhere Ltd.</span>
 </blockquote>
--->
+
 <h3>
   Real time big geoimage analytics supports vast efficiency gains and enables completely new business models.
 </h3>
