@@ -84,9 +84,6 @@ gulp.task('default', function() {
 
 gulp.task('watch', function() {
   gulp.watch('source/stylesheets/**/*.scss', ['sass']);
-  // gulp.watch('source/javascripts/**/*.js', ['scripts', 'revealjs']);
+  gulp.watch('source/javascripts/**/*.js', ['scripts', 'revealjs']);
 });
 
-gulp.task('scriptswatch', function() {
-  gulp.watch('source/javascripts/**/*.js', ['scripts']);
-});
