@@ -21,3 +21,4 @@ node_modules
 bower_components
 .tmp
 source/stylesheets/highlight
+npm-debug.log.*
