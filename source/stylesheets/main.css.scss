@@ -10,6 +10,39 @@
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';
 @import '../../bower_components/sass-pygments/styles/native.scss';
 
+$white: #fff;
+$color1: #1a3140;
+$color2: #659fa6;
+$color3: #f2d6a2;
+$color4: #f2786d;
+$color5: #d9304f;
+
+// Colors
+$hero-frame-background-color: #B6D7A8;
+
+$hero-frame-action-background-color: #F9CB9C;
+$hero-frame-action-card-header-background-color: #FF9C00;
+
+$hero-sub-background-color: #94C67B;
+$hero-sub-border-color: #AAA;
+
+$reinforce-statement-background-color: #555;
+$reinforce-statement-border-color: #333;
+
+$closing-statement-border-bottom-color: #666;
+
+$bullet-color: #FFF;
+$bullet-background-color: #AAA;
+
+$carousel-indicator-border-color: $brand-gray;
+$carousel-indicator-background-color: transparent;
+$carousel-indicator-active-background-color: #988177;
+
+$fa-icon-color: $white;
+$fa-icon-background-color: #33383b;
+
+$header-link-color: $brand-gray;
+
 html {
   height: 100%;
   overflow: hidden;
@@ -180,6 +213,24 @@ b, strong {
   font-size: $font-size-sm;
   -webkit-margin-after: $spacer / 2;
 }
+
+// Testemonial Related
+.carousel-indicators {
+  bottom: -.3rem;
+  li {
+    background-color: $carousel-indicator-background-color;
+    border: 1px solid $carousel-indicator-border-color;
+    width:.5rem;height:.5rem;
+    bottom: 0;
+    @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+      bottom: -1rem;
+    }
+  }
+  .active {
+    background-color: $carousel-indicator-active-background-color;
+    border: 1px solid $brand-gray;
+  }
+}
 .testemonial {
     font-size: 1rem;
     border-left:0;
@@ -216,40 +267,40 @@ b, strong {
   }
   div.action {
     .card {
-      background-color: #F9CB9C;
+      background-color: $hero-frame-action-background-color;
       h4 {
         margin-bottom: .1rem;
       }
     }
     .card-header, .btn-primary {
-      background-color: #FF9C00;
+      background-color: $hero-frame-action-card-header-background-color;
       color: #fff;
     }
     .btn-primary {
       width: 60%;
       margin: 1rem 0 .6rem 0;
-      border-color: #FF9C00;
+      border-color: $hero-frame-action-card-header-background-color;
     }
     .contact-form-card {
   
 }
   }
-  background-color: #B6D7A8;
+  background-color: $hero-frame-background-color;
   margin-left:0;
   margin-right:0;
 }
 
 .hero-sub {
-  border: 1px solid #AAA;
+  border: 1px solid $hero-sub-border-color;
   border-width: 1px 0;
-  background-color: #94C67B;
+  background-color: $hero-sub-background-color;
   margin-left:0;
   margin-right:0;
   text-align: center;
 }
 .reinforce-statement, .closing-statement {
-  border: 1px solid #333;
-  background-color: #555;
+  border: 1px solid $reinforce-statement-border-color;
+  background-color: $reinforce-statement-background-color;
   color: #EEE;
   padding: 1rem .2rem .4rem .2rem;
   div {
@@ -268,7 +319,7 @@ b, strong {
     text-align: center;
   }
   margin: .3rem 0 0 0;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid $closing-statement-border-bottom-color
 }
 .bullet {
   padding-left: 2rem;
@@ -285,8 +336,8 @@ b, strong {
       height: 1.5rem;
       margin-left: -2rem;
       margin-bottom: -.5rem;
-      background-color: #AAA;
-      color: #FFF;
+      background-color: $bullet-background-color;
+      color: $bullet-color;
       border: 1px solid black;
       border-radius: .75rem;
       text-align: center;
@@ -314,23 +365,11 @@ table {
   padding-top: 1rem;
 }
 
-.carousel-indicators {
-  bottom: -.3rem;
-  li {
-    background-color: transparent;
-    border: 1px solid $brand-gray;
-    width:.5rem;height:.5rem;
-    bottom: 0;
-  }
-  .active {
-    background-color: #988177;
-    border: 1px solid $brand-gray;
-  }
-}
+
 
 a > h4, a > h3, a > h2 {
   text-decoration: none;
-  color: $brand-gray;
+  color: $header-link-color;
 
 }
 .content {
@@ -498,8 +537,8 @@ footer {
 }
 
 .fa-icon {
-  background-color: #33383b;
-  color: $white;
+  background-color: $fa-icon-background-color;
+  color: $fa-icon-color;
   display: inline-block;
   height: $icon-size;
   width: $icon-size;
