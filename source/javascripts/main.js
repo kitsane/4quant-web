@@ -1,4 +1,5 @@
-var testemonialCarouselOpts = {
+$(function($) {
+    const testemonialCarouselOpts = {
   interval: 2000,
   pause: "hover",
   wrap: false,
@@ -7,3 +8,5 @@ var testemonialCarouselOpts = {
 
 $('#testemonial-carousel-one').carousel(testemonialCarouselOpts);
 $('#testemonial-carousel-two').carousel(testemonialCarouselOpts);
+$('textarea').autogrow();
+});
