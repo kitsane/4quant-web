@@ -1,0 +1,114 @@
+
+$contact-form-border-radius: .3rem;
+$contact-form-heights: 1.8rem;
+$contact-form-font-size: .8rem;
+$contact-form-line-height: 1.1;
+$contact-form-mobile-width: 95%;
+$contact-form-desktop-width-left: 35%;
+$contact-form-desktop-width-right: 64%;
+$contact-form-input-width: 39%;
+$contact-form-send-width: 19%;
+
+.contact-container, .contact-form {
+  background-color: $reinforce-statement-background-color;
+  color: $reinforce-statement-color;
+}
+.contact-form {
+  padding: 1rem .2rem .4rem .2rem;
+  margin: 1rem auto;
+  max-width: 1000px;
+  display: block;
+  line-height: $contact-form-line-height;
+  .info-text {
+    width: $contact-form-desktop-width-left;
+    display: inline-block;
+    text-align: right;
+    padding-right: 0;
+  }
+
+  .contact-form-group {
+    width: $contact-form-desktop-width-right;
+    margin-left: 0;
+    padding-left: .1rem;
+    text-align: left;
+    display: inline-block;
+    .email, .text, .send {
+      height: $contact-form-heights;
+      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+    .email {
+      display: inline-block;
+      border-radius:$contact-form-border-radius 0 0 $contact-form-border-radius;
+      line-height: $contact-form-line-height;
+      width: $contact-form-input-width;
+      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+        display: block;
+        border-radius:$contact-form-border-radius $contact-form-border-radius 0 0;
+        width: $contact-form-mobile-width;
+        margin-bottom: .2rem;
+      }
+    }
+    .hiddendiv {
+        display: none;
+        white-space: pre-wrap;
+        min-height: $contact-form-heights;
+        font-family: $font-family-sans-serif;
+        font-size: $contact-form-font-size;
+        line-height: $contact-form-line-height;
+        word-wrap: break-word;
+        @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+          min-height: $contact-form-heights * 2;
+        }
+    }
+    .text {
+      display: inline-block;
+      resize: none;
+      overflow: auto;
+      font-size: $contact-form-font-size;
+      line-height: $contact-form-line-height;
+      min-height: $contact-form-heights;
+      border-radius: 0;
+      width: $contact-form-input-width;
+      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+        display: block;
+        width: $contact-form-mobile-width;
+        margin-bottom: .2rem;
+        min-height: $contact-form-heights * 2;
+      }
+    }
+    .send {
+      line-height: 1;
+      font-size: $contact-form-font-size;
+      display: inline-block;
+      border-radius:.0 $contact-form-border-radius $contact-form-border-radius 0;
+      border: 1px solid #ccc;
+      padding: .4rem;
+      width:s$contact-form-send-width;
+      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+        display: block;
+        border-radius:0 0 $contact-form-border-radius $contact-form-border-radius;
+        width: $contact-form-mobile-width;
+      }
+    }
+  }
+  @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+    .info-text, .contact-form-group {
+      display: block;
+      width: $contact-form-mobile-width;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+.form-honey {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  position:absolute;
+  top:0;
+  left:0;
+}

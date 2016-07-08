@@ -3,81 +3,19 @@
 // Font import
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
-
+@import "colors";
+@import "font-related";
 @import "application_and_bootstrap_variables.css.scss";
 
 @import '../../bower_components/bootstrap/scss/bootstrap.scss';
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';
-@import '../../bower_components/sass-pygments/styles/native.scss';
+@import '../../bower_components/sass-pygments/styles/scss/native.scss';
 
-$white: #fff;
-$color1: #1a3140;
-$color2: #659fa6;
-$color3: #f2d6a2;
-$color3b: rgba(242, 214, 162, .5);
-$color4: #f2786d;
-$color5: #d9304f;
 
-// colors
-// $hero-frame-background-color: #b6d7a8;
-$hero-frame-background-color: $white;
+@import "inline-contact-form";
+@import "media-queries";
+@import "testemonial";
 
-$hero-frame-action-background-color: $color3b;
-$hero-frame-action-card-header-background-color: $color3;
-$hero-frame-action-card-header-border-color: $white;
-
-$hero-frame-action-button-border-color: $color2;
-$hero-frame-action-button-color: $color1;
-$hero-frame-action-button-background-color: $color2;
-
-$hero-frame-card-header-color: $brand-gray;
-
-$hero-sub-background-color: $brand-gray;
-$hero-sub-border-color: #aaa;
-
-$reinforce-statement-color: $brand-gray;
-$reinforce-statement-background-color: $white;
-$reinforce-statement-border-color: #333;
-
-$closing-statement-border-bottom-color: #666;
-
-$bullet-color: #fff;
-$bullet-background-color: #aaa;
-
-$carousel-indicator-border-color: $brand-gray;
-$carousel-indicator-background-color: transparent;
-$carousel-indicator-active-background-color:$white;
-
-$fa-icon-color: $white;
-$fa-icon-background-color: #33383b;
-
-$header-link-color: $brand-gray;
-
-// $hero-frame-background-color: #b6d7a8;
-
-// $hero-frame-action-background-color: #f9cb9c;
-// $hero-frame-action-card-header-background-color: #ff9c00;
-
-// $hero-sub-background-color: #94c67b;
-// $hero-sub-border-color: #aaa;
-
-// $reinforce-statement-color: #EEE;
-// $reinforce-statement-background-color: #555;
-// $reinforce-statement-border-color: #333;
-
-// $closing-statement-border-bottom-color: #666;
-
-// $bullet-color: #fff;
-// $bullet-background-color: #aaa;
-
-// $carousel-indicator-border-color: $brand-gray;
-// $carousel-indicator-background-color: transparent;
-// $carousel-indicator-active-background-color: #988177;
-
-// $fa-icon-color: $white;
-// $fa-icon-background-color: #33383b;
-
-// $header-link-color: $brand-gray;
 html {
   height: 100%;
   overflow: hidden;
@@ -90,115 +28,6 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.card-columns {
-  -ms-column-gap: 1.25rem;
-  -moz-column-gap: 1.25rem;
-  -webkit-column-gap: 1.25rem;
-  column-gap: 1.25rem;
-}
-
-@media (max-width: #{map-get($grid-breakpoints, xs) -1}) {
-  html {
-    font-size:  #{map-get($responsive-font-sizes, xs)}px;
-  }
-  .landing-container > div {
-    padding: 0;
-  }
-  .card-columns {
-    -ms-columns: 1 auto;
-    -moz-columns: 1 auto;
-    -webkit-columns: 1 auto;
-    columns: 1 auto;
-  }
-}
-@media (min-width: #{map-get($grid-breakpoints, xs)})  and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-  html {
-    font-size:  #{map-get($responsive-font-sizes, xs)}px;
-  }
-  .landing-container > div {
-    padding: 0 .5rem;
-  }
-  .card-columns {
-    -ms-columns: 1 auto;
-    -moz-columns: 1 auto;
-    -webkit-columns: 1 auto;
-    columns: 1 auto;
-  }
-  // Fix for iphone icon problem
-  footer .col-xs-1 {
-    flex: 0 0 2.1rem;
-  }
-}
-@media (min-width: #{map-get($grid-breakpoints, sm)})  and (max-width: #{map-get($grid-breakpoints, md) - 1}) {
-  html {
-    font-size: #{map-get($responsive-font-sizes, sm)}px;
-  }
-  .landing-container > div {
-    padding: 0rem;
-  }
-  // div.action {
-  //   margin-bottom: -4rem;
-  // }
-  .card-columns {
-    -ms-columns: 2 auto;
-    -moz-columns: 2 auto;
-    -webkit-columns: 2 auto;
-    columns: 2 auto;
-  }
-}
-@media (min-width: #{map-get($grid-breakpoints, md)})  and (max-width: #{map-get($grid-breakpoints, lg) - 1}) {
-  html {
-    font-size: #{map-get($responsive-font-sizes, md)}px;
-  }
-  .landing-container > div {
-    padding: 0 2rem;
-  }
-  // div.action {
-  //   margin-bottom: -7rem;
-  // }
-  .card-columns {
-    -ms-columns: 2 auto;
-    -moz-columns: 2 auto;
-    -webkit-columns: 2 auto;
-    columns: 2 auto;
-  }
-
-}
-@media (min-width: #{map-get($grid-breakpoints, lg)})  and (max-width: #{map-get($grid-breakpoints, xl) - 1}) {
-  html {
-    font-size: #{map-get($responsive-font-sizes, xl)}px;
-  }
-  .landing-container > div {
-    padding: 0 4rem;
-  }
-  // div.action {
-  //   margin-bottom: -8rem;
-  // }
-  .card-columns {
-    -ms-columns: 2 auto;
-    -moz-columns: 2 auto;
-    -webkit-columns: 2 auto;
-    columns: 2 auto;
-  }
-}
-@media (min-width: #{map-get($grid-breakpoints, xl)}) {
-  html {
-    font-size: #{map-get($responsive-font-sizes, xl) + 2}px;
-  }
-  .landing-container > div {
-    padding: 0 6rem;
-  }
-
-  // div.action {
-  //   margin-bottom: -10rem;
-  // }
-  .card-columns {
-    -ms-columns: 3 auto;
-    -moz-columns: 3 auto;
-    -webkit-columns: 3 auto;
-    columns: 3 auto;
-  }
-}
 
 
 .content-wrapper {
@@ -207,14 +36,7 @@ body {
   width: 100%;
 }
 
-.form-honey {
-  visibility: hidden;
-  width: 1px;
-  height: 1px;
-  position:absolute;
-  top:0;
-  left:0;
-}
+
 
 h1 {
   text-transform: uppercase;
@@ -249,54 +71,7 @@ b, strong {
   -webkit-margin-after: $spacer / 2;
 }
 
-// Testemonial Related
-.carousel-indicators {
-  bottom: -.3rem;
-  li {
-    background-color: $carousel-indicator-background-color;
-    border: 1px solid $carousel-indicator-border-color;
-    width:.5rem;height:.5rem;
-    bottom: 0;
-    @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-      bottom: -1rem;
-    }
-  }
-  .active {
-    background-color: $carousel-indicator-active-background-color;
-    border: 1px solid $brand-gray;
-  }
-}
-.testemonial {
-    font-size: 1rem;
-    border-left:0;
-    padding: 0;
-    font-style: italic;
-    margin: 1.8rem auto;
-    word-break: keep-all;
-    text-align: left;
-    border:0 !important;
-    .testemonial-img {
-      display: block;
-      text-align: right;
-      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-        text-align: center;
-        margin-bottom: 1rem;
-      }
-    }
-    .testemonial-text {
-      display:block;
-    }
-
-   .credit {
-      font-size: .8rem;
-      padding:0;
-      display: block;
-      text-align: right;
-    }
-  }
- 
 .hero-frame {
-  
   img {
       max-width: 100%;
   }
@@ -320,7 +95,6 @@ b, strong {
       color: $hero-frame-action-button-color;
       border-color: $hero-frame-action-button-border-color;
     }
-    
   }
   background-color: $hero-frame-background-color;
   margin-left:0;
@@ -337,108 +111,6 @@ b, strong {
   margin-left:0;
   margin-right:0;
   text-align: center;
-}
-
-.contact-form {
-  $contact-form-border-radius: .3rem;
-  $contact-form-heights: 1.8rem;
-  $contact-form-font-size: .8rem;
-  $contact-form-line-height: 1.1;
-  $contact-form-mobile-width: 95%;
-  $contact-form-desktop-width-left: 35%;
-  $contact-form-desktop-width-right: 62%;
-  $contact-form-input-width: 39%;
-  $contact-form-send-width: 19%;
-
-  background-color: $reinforce-statement-background-color;
-  color: $reinforce-statement-color;
-  padding: 1rem .2rem .4rem .2rem;
-  margin: 1rem auto;
-  max-width: 1000px;
-  display: block;
-  line-height: $contact-form-line-height;
-  .info-text {
-    width: $contact-form-desktop-width-left;
-    display: inline-block;
-    padding-right: 1rem;
-    text-align: center;
-  }
-
-  .contact-form-group {
-    width: $contact-form-desktop-width-right;
-    margin-left: 1%;
-    text-align: center;
-    display: inline-block;
-    .email, .text, .send {
-      height: $contact-form-heights;
-      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    .email {
-      display: inline-block;
-      border-radius:$contact-form-border-radius 0 0 $contact-form-border-radius;
-      line-height: $contact-form-line-height;
-      width: $contact-form-input-width;
-      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-        display: block;
-        border-radius:$contact-form-border-radius $contact-form-border-radius 0 0;
-        width: $contact-form-mobile-width;
-        margin-bottom: .2rem;
-      }
-    }
-    .hiddendiv {
-        display: none;
-        white-space: pre-wrap;
-        min-height: $contact-form-heights;
-        font-family: $font-family-sans-serif;
-        font-size: $contact-form-font-size;
-        line-height: $contact-form-line-height;
-        word-wrap: break-word;
-        @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-          min-height: $contact-form-heights * 2;
-        }
-    }
-    .text {
-      display: inline-block;
-      resize: none;
-      overflow: auto;
-      font-size: $contact-form-font-size;
-      line-height: $contact-form-line-height;
-      min-height: $contact-form-heights;
-      border-radius: 0;
-      width: $contact-form-input-width;
-      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-        display: block;
-        width: $contact-form-mobile-width;
-        margin-bottom: .2rem;
-        min-height: $contact-form-heights * 2;
-      }
-    }
-    .send {
-      line-height: 1;
-      font-size: $contact-form-font-size;
-      display: inline-block;
-      border-radius:.0 $contact-form-border-radius $contact-form-border-radius 0;
-      border: 1px solid #ccc;
-      padding: .4rem;
-      width:s$contact-form-send-width;
-      @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-        display: block;
-        border-radius:0 0 $contact-form-border-radius $contact-form-border-radius;
-        width: $contact-form-mobile-width;
-      }
-    }
-  }
-  @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
-    .info-text, .contact-form-group {
-      display: block;
-      width: $contact-form-mobile-width;
-      margin: 0 auto;
-      text-align: center;
-    }
-  }
 }
 
 .reinforce-statement, .closing-statement {

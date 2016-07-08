@@ -1,0 +1,44 @@
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-serif:          Georgia, 'Times New Roman', Times, serif !default;
+$font-family-monospace: 'Roboto Mono', monospace;
+$font-family-base:           $font-family-sans-serif !default;
+
+// Base HTML font size
+$font-size-root: 20px;
+
+$responsive-font-sizes: (
+  xs: $font-size-root - 7,
+  sm: $font-size-root - 4,
+  md: $font-size-root - 2,
+  lg: $font-size-root,
+  xl: $font-size-root + 4
+);
+
+$font-size-base:             1rem !default;
+$font-size-lg:               1.25rem !default;
+$font-size-sm: .8rem;
+$font-size-xs: .6rem;
+
+$font-size-h1: 1.8rem;
+$font-size-h2: 1.2rem;
+$font-size-h3: 1.1rem;
+$font-size-h4: 1rem;
+$font-size-h5: 1rem;
+$font-size-h6:               1rem !default;
+
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size: 1.8rem !default;
+$display4-size:               3.5rem !default;
+
+$display1-weight:             300 !default;
+$display2-weight:             300 !default;
+$display3-weight: 600 !default;
+$display4-weight:             300 !default;
+
+$line-height:                1.5 !default;
