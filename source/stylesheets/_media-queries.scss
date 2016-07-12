@@ -1,4 +1,4 @@
-@media (max-width: #{map-get($grid-breakpoints, xs)}) {
+@media (max-width: #{map-get($grid-breakpoints, xs) -1}) {
   html {
     font-size:  #{map-get($responsive-font-sizes, xs)};
   }
@@ -6,19 +6,18 @@
     padding: 0;
   }
 }
-@media (min-width: #{map-get($grid-breakpoints, xs)+1})  and (max-width: #{map-get($grid-breakpoints, sm)}) {
+
+@media (min-width: #{map-get($grid-breakpoints, xs)})  and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
   html {
     font-size:  #{map-get($responsive-font-sizes, xs)};
-  }
-  .landing-container > div {
-    padding: 0 .5rem;
   }
   // Fix for iphone icon problem
   footer .col-xs-1 {
     flex: 0 0 2.1rem;
   }
 }
-@media (min-width: #{map-get($grid-breakpoints, sm)+1})  and (max-width: #{map-get($grid-breakpoints, md)}) {
+
+@media (min-width: #{map-get($grid-breakpoints, sm)})  and (max-width: #{map-get($grid-breakpoints, md) - 1}) {
   html {
     font-size: #{map-get($responsive-font-sizes, sm)};
   }
@@ -26,16 +25,17 @@
     padding: 0rem;
   }
 }
-@media (min-width: #{map-get($grid-breakpoints, md)+1})  and (max-width: #{map-get($grid-breakpoints, lg)}) {
+
+@media (min-width: #{map-get($grid-breakpoints, md)})  and (max-width: #{map-get($grid-breakpoints, lg) - 1}) {
   html {
     font-size: #{map-get($responsive-font-sizes, md)};
   }
   .landing-container > div {
     padding: 0 2rem;
   }
-
 }
-@media (min-width: #{map-get($grid-breakpoints, lg)+1})  and (max-width: #{map-get($grid-breakpoints, xl)}) {
+
+@media (min-width: #{map-get($grid-breakpoints, lg)})  and (max-width: #{map-get($grid-breakpoints, xl) - 1}) {
   html {
     font-size: #{map-get($responsive-font-sizes, xl)};
   }
@@ -43,7 +43,8 @@
     padding: 0 4rem;
   }
 }
-@media (min-width: #{map-get($grid-breakpoints, xl)+1}) {
+
+@media (min-width: #{map-get($grid-breakpoints, xl)}) {
   html {
     font-size: #{map-get($responsive-font-sizes, xl) + 2};
   }

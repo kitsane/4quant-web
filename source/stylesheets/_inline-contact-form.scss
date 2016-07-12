@@ -15,7 +15,7 @@ $contact-form-send-width: 19%;
 }
 .contact-form {
   padding: 1rem .2rem .4rem .2rem;
-  margin: 1rem auto;
+  margin: $main-paragraph-gaps-top*2 auto $main-paragraph-gaps-bottom*0.75 auto;
   max-width: 1000px;
   display: block;
   line-height: $contact-form-line-height;
@@ -99,7 +99,7 @@ $contact-form-send-width: 19%;
     .info-text, .contact-form-group {
       display: block;
       width: $contact-form-mobile-width;
-      margin: 0 auto;
+      margin: $main-paragraph-gaps-top auto $main-paragraph-gaps-bottom*0.75 auto;
       text-align: center;
     }
   }
