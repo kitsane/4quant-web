@@ -13,7 +13,6 @@
 
 
 @import "inline-contact-form";
-@import "media-queries";
 @import "testemonial";
 
 html {
@@ -388,3 +387,5 @@ footer {
   padding-left: $spacer;
   padding-bottom: $spacer / 2;
 }
+
+@import "media-queries";

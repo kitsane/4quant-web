@@ -1,6 +1,7 @@
 company:
   name: '4Quant'
   short_name: 'Geoimaging'
+  project_name: 'Project Gilfoyle'
   claim: 'Lightning fast Geoimaging Analytics'
   street: 'Technoparkstrasse 1'
   city: 'CH-8005 Zurich'

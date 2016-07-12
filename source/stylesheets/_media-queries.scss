@@ -1,102 +1,53 @@
-@media (max-width: #{map-get($grid-breakpoints, xs) -1}) {
+@media (max-width: #{map-get($grid-breakpoints, xs)}) {
   html {
-    font-size:  #{map-get($responsive-font-sizes, xs)}px;
+    font-size:  #{map-get($responsive-font-sizes, xs)};
   }
   .landing-container > div {
     padding: 0;
   }
-  .card-columns {
-    -ms-columns: 1 auto;
-    -moz-columns: 1 auto;
-    -webkit-columns: 1 auto;
-    columns: 1 auto;
-  }
 }
-@media (min-width: #{map-get($grid-breakpoints, xs)})  and (max-width: #{map-get($grid-breakpoints, sm) - 1}) {
+@media (min-width: #{map-get($grid-breakpoints, xs)+1})  and (max-width: #{map-get($grid-breakpoints, sm)}) {
   html {
-    font-size:  #{map-get($responsive-font-sizes, xs)}px;
+    font-size:  #{map-get($responsive-font-sizes, xs)};
   }
   .landing-container > div {
     padding: 0 .5rem;
-  }
-  .card-columns {
-    -ms-columns: 1 auto;
-    -moz-columns: 1 auto;
-    -webkit-columns: 1 auto;
-    columns: 1 auto;
   }
   // Fix for iphone icon problem
   footer .col-xs-1 {
     flex: 0 0 2.1rem;
   }
 }
-@media (min-width: #{map-get($grid-breakpoints, sm)})  and (max-width: #{map-get($grid-breakpoints, md) - 1}) {
+@media (min-width: #{map-get($grid-breakpoints, sm)+1})  and (max-width: #{map-get($grid-breakpoints, md)}) {
   html {
-    font-size: #{map-get($responsive-font-sizes, sm)}px;
+    font-size: #{map-get($responsive-font-sizes, sm)};
   }
   .landing-container > div {
     padding: 0rem;
   }
-  // div.action {
-  //   margin-bottom: -4rem;
-  // }
-  .card-columns {
-    -ms-columns: 2 auto;
-    -moz-columns: 2 auto;
-    -webkit-columns: 2 auto;
-    columns: 2 auto;
-  }
 }
-@media (min-width: #{map-get($grid-breakpoints, md)})  and (max-width: #{map-get($grid-breakpoints, lg) - 1}) {
+@media (min-width: #{map-get($grid-breakpoints, md)+1})  and (max-width: #{map-get($grid-breakpoints, lg)}) {
   html {
-    font-size: #{map-get($responsive-font-sizes, md)}px;
+    font-size: #{map-get($responsive-font-sizes, md)};
   }
   .landing-container > div {
     padding: 0 2rem;
   }
-  // div.action {
-  //   margin-bottom: -7rem;
-  // }
-  .card-columns {
-    -ms-columns: 2 auto;
-    -moz-columns: 2 auto;
-    -webkit-columns: 2 auto;
-    columns: 2 auto;
-  }
 
 }
-@media (min-width: #{map-get($grid-breakpoints, lg)})  and (max-width: #{map-get($grid-breakpoints, xl) - 1}) {
+@media (min-width: #{map-get($grid-breakpoints, lg)+1})  and (max-width: #{map-get($grid-breakpoints, xl)}) {
   html {
-    font-size: #{map-get($responsive-font-sizes, xl)}px;
+    font-size: #{map-get($responsive-font-sizes, xl)};
   }
   .landing-container > div {
     padding: 0 4rem;
   }
-  // div.action {
-  //   margin-bottom: -8rem;
-  // }
-  .card-columns {
-    -ms-columns: 2 auto;
-    -moz-columns: 2 auto;
-    -webkit-columns: 2 auto;
-    columns: 2 auto;
-  }
 }
-@media (min-width: #{map-get($grid-breakpoints, xl)}) {
+@media (min-width: #{map-get($grid-breakpoints, xl)+1}) {
   html {
-    font-size: #{map-get($responsive-font-sizes, xl) + 2}px;
+    font-size: #{map-get($responsive-font-sizes, xl) + 2};
   }
   .landing-container > div {
     padding: 0 6rem;
-  }
-
-  // div.action {
-  //   margin-bottom: -10rem;
-  // }
-  .card-columns {
-    -ms-columns: 3 auto;
-    -moz-columns: 3 auto;
-    -webkit-columns: 3 auto;
-    columns: 3 auto;
   }
 }
