@@ -1,0 +1,76 @@
+// Navbar
+.navbar {
+  padding: {
+    left: 0;
+    right: 0;
+  }
+  height: $navbar-height;
+  a {
+     text-decoration: none;
+     &:hover {
+       color: $white;
+     }
+   }
+}
+
+.navbar-nav {
+  .nav-item {
+    margin-right: $spacer;
+
+    & + .nav-item {
+      margin-left: 0;
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+  }
+}
+
+.bg-faded {
+  background-color: $white;
+}
+
+.navbar-toggler {
+  &:focus {
+    outline: transparent;
+  }
+
+  padding: {
+    left: 0;
+    right: 0;
+  }
+}
+
+.navbar-toggler-close {
+  color: $white;
+}
+
+.navbar-brand {
+  display: block;
+  float: initial;
+  margin-right: 0;
+  font-weight: $font-weight-regular;
+}
+
+// Navigation open
+.modal {
+  li {
+    //width: 250px;
+    width: 400px;
+    max-width:100%;
+    margin: 0 auto;
+  }
+
+  a {
+    display: block;
+    color: $white;
+    font-weight: $font-weight-light;
+    text-decoration: none;
+    width: 100%;
+    padding: {
+      top: $spacer-y / 2;
+      bottom: $spacer-y / 2;
+    }
+  }
+}
