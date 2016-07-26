@@ -40,20 +40,36 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(config.outputDir + '/stylesheets'));
 });
 
-gulp.task('scripts', function () {
+gulp.task('scripts-nobabel', function() {
     return gulp.src([
-      config.bowerDir + "/jquery/dist/jquery.min.js",
-      config.bowerDir + "/bootstrap/js/dist/util.js",
-      config.bowerDir + "/bootstrap/js/dist/modal.js",
-      config.bowerDir + "/bootstrap/js/dist/carousel.js",
-      config.bowerDir + "/bootstrap/js/dist/tooltip.js",
-      config.bowerDir + "/bootstrap/js/dist/util.js",
+        config.bowerDir + "/jquery/dist/jquery.min.js",
+        config.bowerDir + "/tether/dist/js/tether.js",
+        config.bowerDir + "/bootstrap/js/dist/util.js",
+        config.bowerDir + "/bootstrap/js/dist/modal.js",
+        config.bowerDir + "/bootstrap/js/dist/carousel.js",
+      //   config.bowerDir + "/bootstrap/js/dist/tooltip.js",
+    ])
+    .pipe(concat("noBabel.js"))
+    .pipe(gulp.dest(config.outputDir + '/javascripts'));
+});
+
+gulp.task('scripts-babel', function() {
+    return gulp.src([
       "source/javascripts/main.js",
     ])
-        // .pipe(babel({ presets: ['es2015'] }))
-        .pipe(concat("concat.js"))
-        // .pipe(uglyfly())
-        .pipe(gulp.dest(config.outputDir + '/javascripts'));
+    .pipe(babel({ presets: ['es2015'] }))
+    .pipe(concat("babel.js"))
+    .pipe(gulp.dest(config.outputDir + '/javascripts'));
+});
+
+gulp.task('scripts', ['scripts-nobabel', 'scripts-babel'], function () {
+    return gulp.src([
+      config.outputDir + '/javascripts/noBabel.js',
+      config.outputDir + '/javascripts/babel.js',
+    ])
+    .pipe(concat("concat.js"))
+    .pipe(uglyfly())
+    .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
 gulp.task('markedjs', function () {
@@ -66,8 +82,8 @@ gulp.task('markedjs', function () {
       config.bowerDir + "/reveal.js/plugin/math/math.js",
       config.bowerDir + "/reveal.js/plugin/zoom-js/zoom.js"
     ])
-        .pipe(uglyfly())
-        .pipe(gulp.dest(config.outputDir + '/javascripts'));
+    .pipe(uglyfly())
+    .pipe(gulp.dest(config.outputDir + '/javascripts'));
 });
 
 gulp.task('revealjs', function () {
