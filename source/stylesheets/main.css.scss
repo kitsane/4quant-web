@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @import "colors";
 @import "font-related";
-@import "application_and_bootstrap_variables.css.scss";
+@import "app_and_bs4_variables";
 
 @import '../../bower_components/bootstrap/scss/bootstrap.scss';
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';
@@ -189,7 +189,7 @@ a > h4, a > h3, a > h2 {
 
 }
 .content {
-  
+
   a {
     text-decoration: none;
   }
@@ -403,7 +403,7 @@ h1, h2, p, ul, form {
       font-size: 1.2rem;
     }
   }
-  
+
   .card-img-top {
       padding-left: $main-paragraph-gaps-top*0.7;
       padding-right: $main-paragraph-gaps-top*0.7;
@@ -411,7 +411,7 @@ h1, h2, p, ul, form {
 
   @media (max-width: #{map-get($grid-breakpoints, lg) - 1}) {
     padding: $main-paragraph-gaps-top*0.7;
-    
+
   }
 
   @media (max-width: #{map-get($grid-breakpoints, sm) - 1}) {

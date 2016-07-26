@@ -3,8 +3,9 @@
 // Font import
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
-
-@import "application_and_bootstrap_variables.css.scss";
+@import "colors";
+@import "font-related";
+@import "app_and_bs4_variables";
 
 // bootstrap parts used
 @import "../../bower_components/bootstrap/scss/mixins.scss";
