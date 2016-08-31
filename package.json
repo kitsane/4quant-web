@@ -30,7 +30,8 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.14.0",
     "jpegtran-bin": "^3.0.6",
-    "marked": "^0.3.5"
+    "marked": "^0.3.6"
   }
 }
